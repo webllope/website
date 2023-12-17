@@ -1,9 +1,7 @@
 ---
 import { getCollection } from "astro:content";
-import { Picture } from "@astrojs/image/components";
 import Layout from "@layouts/Layout.astro";
-import Container from "@components/container.astro";
-import Sectionhead from "@components/sectionhead.astro";
+import AdvancedSectionhead from "@components/advanced-sectionhead.astro";
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedTeamMembers = await getCollection("team", ({ data }) => {
@@ -12,51 +10,638 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 ---
 
 <Layout title="About">
-  <Container>
-    <Sectionhead>
-      <Fragment slot="title">About</Fragment>
-      <Fragment slot="desc">We are a small passionate team.</Fragment>
-    </Sectionhead>
-
-    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-      <h2 class="font-bold text-3xl text-gray-800">
-        Empowering the world with Astro.
-      </h2>
-      <p class="text-lg leading-relaxed text-slate-500">
-        We're a multi-cultural team from around the world! We come from diverse
-        backgrounds, bringing different personalities, experiences and skills to
-        the job. This is what makes our team so special.
+  <AdvancedSectionhead
+    section="About us"
+    title="Our strength is collaboration"
+    description="We are a small passionate team. We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.">
+    <div class="mt-10 max-w-2xl space-y-6 text-base">
+      <p>
+        Studio was started by three friends who noticed that developer studios
+        were charging clients double what an in-house team would cost. Since the
+        beginning, we have been committed to doing things differently by
+        charging triple instead.
+      </p>
+      <p>
+        At Studio, we're more than just colleagues — we're a family. This means
+        we pay very little and expect people to work late. We want our employees
+        to bring their whole selves to work. In return, we just ask that they
+        keep themselves there until at least 6:30pm.
       </p>
     </div>
-    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
-      {
-        publishedTeamMembers.map((teamMemberEntry) => (
-          <div class="group">
-            <div class="w-full aspect-square">
-              <Picture
-                src={teamMemberEntry.data.avatar.src}
-                alt={teamMemberEntry.data.avatar.alt}
-                sizes="(max-width: 800px) 100vw, 400px"
-                widths={[200, 400]}
-                aspectRatio="1:1"
-                background="#ffffff"
-                fit="cover"
-                position="center"
-                class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl"
-              />
-            </div>
+  </AdvancedSectionhead>
 
-            <div class="mt-4 text-center">
-              <h2 class="text-lg text-gray-800">
-                {teamMemberEntry.data.name}
+  <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-16">
+    <div class="mx-auto max-w-2xl lg:max-w-none">
+      <div>
+        <dl
+          class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:auto-cols-fr lg:grid-flow-col lg:grid-cols-none">
+          <div
+            class="flex flex-col-reverse pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px"
+            style="opacity: 1; transform: none;">
+            <dt class="mt-2 text-base text-neutral-600">
+              Underpaid employees
+            </dt><dd
+              class="font-display text-3xl font-semibold text-neutral-950 sm:text-4xl">
+              35
+            </dd>
+          </div><div
+            class="flex flex-col-reverse pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px"
+            style="opacity: 1; transform: none;">
+            <dt class="mt-2 text-base text-neutral-600">Placated clients</dt><dd
+              class="font-display text-3xl font-semibold text-neutral-950 sm:text-4xl">
+              52
+            </dd>
+          </div><div
+            class="flex flex-col-reverse pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px"
+            style="opacity: 1; transform: none;">
+            <dt class="mt-2 text-base text-neutral-600">Invoices billed</dt><dd
+              class="font-display text-3xl font-semibold text-neutral-950 sm:text-4xl">
+              $25M
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div><div
+    class="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:max-w-none">
+        <div class="max-w-2xl" style="opacity: 1; transform: none;">
+          <h2>
+            <span
+              class="mb-6 block font-display text-base font-semibold text-white"
+              >Our culture</span
+            ><span class="sr-only"> -</span><span
+              class="block font-display tracking-tight [text-wrap:balance] text-4xl font-medium sm:text-5xl text-white"
+              >Balance your passion with your passion for life.</span
+            >
+          </h2><div class="mt-6 text-xl text-neutral-300">
+            <p>
+              We are a group of like-minded people who share the same core
+              values.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div><div class="mx-auto max-w-7xl px-6 lg:px-8 mt-16">
+      <div class="mx-auto max-w-2xl lg:max-w-none">
+        <div>
+          <ul
+            role="list"
+            class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+            <li
+              class="text-base text-neutral-300 before:bg-white after:bg-white/10">
+              <div style="opacity: 1; transform: none;">
+                <div
+                  class="pl-8 relative before:absolute after:absolute before:bg-white after:bg-white/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
+                  <strong class="font-semibold text-white">Loyalty.</strong> Our
+                  team has been with us since the beginning because none of them
+                  are allowed to have LinkedIn profiles.
+                </div>
+              </div>
+            </li><li
+              class="text-base text-neutral-300 before:bg-white after:bg-white/10">
+              <div style="opacity: 1; transform: none;">
+                <div
+                  class="pl-8 relative before:absolute after:absolute before:bg-white after:bg-white/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
+                  <strong class="font-semibold text-white">Trust.</strong> We don’t
+                  care when our team works just as long as they are working every
+                  waking second.
+                </div>
+              </div>
+            </li><li
+              class="text-base text-neutral-300 before:bg-white after:bg-white/10">
+              <div style="opacity: 1; transform: none;">
+                <div
+                  class="pl-8 relative before:absolute after:absolute before:bg-white after:bg-white/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
+                  <strong class="font-semibold text-white">Compassion.</strong> You
+                  never know what someone is going through at home and we make sure
+                  to never find out.
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div><div class="mx-auto max-w-7xl px-6 lg:px-8 mt-24 sm:mt-32 lg:mt-40">
+    <div class="mx-auto max-w-2xl lg:max-w-none">
+      <div class="space-y-24">
+        <div>
+          <div
+            class="relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px"
+            style="opacity: 1; transform: none;">
+          </div><div
+            class="grid grid-cols-1 gap-6 pt-12 sm:pt-16 lg:grid-cols-4 xl:gap-8">
+            <div style="opacity: 1; transform: none;">
+              <h2 class="font-display text-2xl font-semibold text-neutral-950">
+                Leadership
               </h2>
-              <h3 class="text-sm text-slate-500">
-                {teamMemberEntry.data.title}
-              </h3>
+            </div><div class="lg:col-span-3">
+              <ul
+                role="list"
+                class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-8">
+                <li>
+                  <div style="opacity: 1; transform: none;">
+                    <div
+                      class="group relative overflow-hidden rounded-3xl bg-neutral-100">
+                      <img
+                        alt=""
+                        loading="lazy"
+                        width="1800"
+                        height="1800"
+                        decoding="async"
+                        data-nimg="1"
+                        class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
+                        srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fleslie-alexander.cf5840d1.jpg&w=1920&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fleslie-alexander.cf5840d1.jpg&w=3840&q=75 2x"
+                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fleslie-alexander.cf5840d1.jpg&w=3840&q=75"
+                        style="color: transparent;"
+                      /><div
+                        class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
+                        <p
+                          class="font-display text-base/6 font-semibold tracking-wide text-white">
+                          Leslie Alexander
+                        </p><p class="mt-2 text-sm text-white">
+                          Co-Founder / CEO
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li><li>
+                  <div style="opacity: 1; transform: none;">
+                    <div
+                      class="group relative overflow-hidden rounded-3xl bg-neutral-100">
+                      <img
+                        alt=""
+                        loading="lazy"
+                        width="1800"
+                        height="1800"
+                        decoding="async"
+                        data-nimg="1"
+                        class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
+                        srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmichael-foster.00319162.jpg&w=1920&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmichael-foster.00319162.jpg&w=3840&q=75 2x"
+                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmichael-foster.00319162.jpg&w=3840&q=75"
+                        style="color: transparent;"
+                      /><div
+                        class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
+                        <p
+                          class="font-display text-base/6 font-semibold tracking-wide text-white">
+                          Michael Foster
+                        </p><p class="mt-2 text-sm text-white">
+                          Co-Founder / CTO
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li><li>
+                  <div style="opacity: 1; transform: none;">
+                    <div
+                      class="group relative overflow-hidden rounded-3xl bg-neutral-100">
+                      <img
+                        alt=""
+                        loading="lazy"
+                        width="1800"
+                        height="1800"
+                        decoding="async"
+                        data-nimg="1"
+                        class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
+                        srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdries-vincent.5cac3ed5.jpg&w=1920&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdries-vincent.5cac3ed5.jpg&w=3840&q=75 2x"
+                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdries-vincent.5cac3ed5.jpg&w=3840&q=75"
+                        style="color: transparent;"
+                      /><div
+                        class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
+                        <p
+                          class="font-display text-base/6 font-semibold tracking-wide text-white">
+                          Dries Vincent
+                        </p><p class="mt-2 text-sm text-white">
+                          Partner &amp; Business Relations
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
-        ))
-      }
+        </div><div>
+          <div
+            class="relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px"
+            style="opacity: 1; transform: none;">
+          </div><div
+            class="grid grid-cols-1 gap-6 pt-12 sm:pt-16 lg:grid-cols-4 xl:gap-8">
+            <div style="opacity: 1; transform: none;">
+              <h2 class="font-display text-2xl font-semibold text-neutral-950">
+                Team
+              </h2>
+            </div><div class="lg:col-span-3">
+              <ul
+                role="list"
+                class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-8">
+                <li>
+                  <div style="opacity: 1; transform: none;">
+                    <div
+                      class="group relative overflow-hidden rounded-3xl bg-neutral-100">
+                      <img
+                        alt=""
+                        loading="lazy"
+                        width="1800"
+                        height="1800"
+                        decoding="async"
+                        data-nimg="1"
+                        class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
+                        srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fchelsea-hagon.073aa8f2.jpg&w=1920&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fchelsea-hagon.073aa8f2.jpg&w=3840&q=75 2x"
+                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fchelsea-hagon.073aa8f2.jpg&w=3840&q=75"
+                        style="color: transparent;"
+                      /><div
+                        class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
+                        <p
+                          class="font-display text-base/6 font-semibold tracking-wide text-white">
+                          Chelsea Hagon
+                        </p><p class="mt-2 text-sm text-white">
+                          Senior Developer
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li><li>
+                  <div style="opacity: 1; transform: none;">
+                    <div
+                      class="group relative overflow-hidden rounded-3xl bg-neutral-100">
+                      <img
+                        alt=""
+                        loading="lazy"
+                        width="1800"
+                        height="1800"
+                        decoding="async"
+                        data-nimg="1"
+                        class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
+                        srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Femma-dorsey.4fab86fa.jpg&w=1920&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Femma-dorsey.4fab86fa.jpg&w=3840&q=75 2x"
+                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Femma-dorsey.4fab86fa.jpg&w=3840&q=75"
+                        style="color: transparent;"
+                      /><div
+                        class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
+                        <p
+                          class="font-display text-base/6 font-semibold tracking-wide text-white">
+                          Emma Dorsey
+                        </p><p class="mt-2 text-sm text-white">
+                          Senior Designer
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li><li>
+                  <div style="opacity: 1; transform: none;">
+                    <div
+                      class="group relative overflow-hidden rounded-3xl bg-neutral-100">
+                      <img
+                        alt=""
+                        loading="lazy"
+                        width="1800"
+                        height="1800"
+                        decoding="async"
+                        data-nimg="1"
+                        class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
+                        srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fleonard-krasner.5a4a4614.jpg&w=1920&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fleonard-krasner.5a4a4614.jpg&w=3840&q=75 2x"
+                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fleonard-krasner.5a4a4614.jpg&w=3840&q=75"
+                        style="color: transparent;"
+                      /><div
+                        class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
+                        <p
+                          class="font-display text-base/6 font-semibold tracking-wide text-white">
+                          Leonard Krasner
+                        </p><p class="mt-2 text-sm text-white">
+                          VP, User Experience
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li><li>
+                  <div style="opacity: 1; transform: none;">
+                    <div
+                      class="group relative overflow-hidden rounded-3xl bg-neutral-100">
+                      <img
+                        alt=""
+                        loading="lazy"
+                        width="1800"
+                        height="1800"
+                        decoding="async"
+                        data-nimg="1"
+                        class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
+                        srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fblake-reid.bcc5ac4f.jpg&w=1920&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fblake-reid.bcc5ac4f.jpg&w=3840&q=75 2x"
+                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fblake-reid.bcc5ac4f.jpg&w=3840&q=75"
+                        style="color: transparent;"
+                      /><div
+                        class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
+                        <p
+                          class="font-display text-base/6 font-semibold tracking-wide text-white">
+                          Blake Reid
+                        </p><p class="mt-2 text-sm text-white">
+                          Junior Copywriter
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li><li>
+                  <div style="opacity: 1; transform: none;">
+                    <div
+                      class="group relative overflow-hidden rounded-3xl bg-neutral-100">
+                      <img
+                        alt=""
+                        loading="lazy"
+                        width="1800"
+                        height="1800"
+                        decoding="async"
+                        data-nimg="1"
+                        class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
+                        srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fkathryn-murphy.550962fd.jpg&w=1920&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fkathryn-murphy.550962fd.jpg&w=3840&q=75 2x"
+                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fkathryn-murphy.550962fd.jpg&w=3840&q=75"
+                        style="color: transparent;"
+                      /><div
+                        class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
+                        <p
+                          class="font-display text-base/6 font-semibold tracking-wide text-white">
+                          Kathryn Murphy
+                        </p><p class="mt-2 text-sm text-white">
+                          VP, Human Resources
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li><li>
+                  <div style="opacity: 1; transform: none;">
+                    <div
+                      class="group relative overflow-hidden rounded-3xl bg-neutral-100">
+                      <img
+                        alt=""
+                        loading="lazy"
+                        width="1800"
+                        height="1800"
+                        decoding="async"
+                        data-nimg="1"
+                        class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
+                        srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwhitney-francis.ced7480b.jpg&w=1920&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwhitney-francis.ced7480b.jpg&w=3840&q=75 2x"
+                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwhitney-francis.ced7480b.jpg&w=3840&q=75"
+                        style="color: transparent;"
+                      /><div
+                        class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
+                        <p
+                          class="font-display text-base/6 font-semibold tracking-wide text-white">
+                          Whitney Francis
+                        </p><p class="mt-2 text-sm text-white">
+                          Content Specialist
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li><li>
+                  <div style="opacity: 1; transform: none;">
+                    <div
+                      class="group relative overflow-hidden rounded-3xl bg-neutral-100">
+                      <img
+                        alt=""
+                        loading="lazy"
+                        width="1800"
+                        height="1800"
+                        decoding="async"
+                        data-nimg="1"
+                        class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
+                        srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjeffrey-webb.a90fe9d1.jpg&w=1920&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjeffrey-webb.a90fe9d1.jpg&w=3840&q=75 2x"
+                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjeffrey-webb.a90fe9d1.jpg&w=3840&q=75"
+                        style="color: transparent;"
+                      /><div
+                        class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
+                        <p
+                          class="font-display text-base/6 font-semibold tracking-wide text-white">
+                          Jeffrey Webb
+                        </p><p class="mt-2 text-sm text-white">
+                          Account Coordinator
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li><li>
+                  <div style="opacity: 1; transform: none;">
+                    <div
+                      class="group relative overflow-hidden rounded-3xl bg-neutral-100">
+                      <img
+                        alt=""
+                        loading="lazy"
+                        width="1800"
+                        height="1800"
+                        decoding="async"
+                        data-nimg="1"
+                        class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
+                        srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbenjamin-russel.da51eb4b.jpg&w=1920&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbenjamin-russel.da51eb4b.jpg&w=3840&q=75 2x"
+                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbenjamin-russel.da51eb4b.jpg&w=3840&q=75"
+                        style="color: transparent;"
+                      /><div
+                        class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
+                        <p
+                          class="font-display text-base/6 font-semibold tracking-wide text-white">
+                          Benjamin Russel
+                        </p><p class="mt-2 text-sm text-white">
+                          Senior Developer
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li><li>
+                  <div style="opacity: 1; transform: none;">
+                    <div
+                      class="group relative overflow-hidden rounded-3xl bg-neutral-100">
+                      <img
+                        alt=""
+                        loading="lazy"
+                        width="1800"
+                        height="1800"
+                        decoding="async"
+                        data-nimg="1"
+                        class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
+                        srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fangela-fisher.f2122cd4.jpg&w=1920&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fangela-fisher.f2122cd4.jpg&w=3840&q=75 2x"
+                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fangela-fisher.f2122cd4.jpg&w=3840&q=75"
+                        style="color: transparent;"
+                      /><div
+                        class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
+                        <p
+                          class="font-display text-base/6 font-semibold tracking-wide text-white">
+                          Angela Fisher
+                        </p><p class="mt-2 text-sm text-white">
+                          Front-end Developer
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </Container>
+  </div><div class="relative pt-24 sm:pt-32 lg:pt-40 mt-24 sm:mt-32 lg:mt-40">
+    <div
+      class="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-gradient-to-b from-neutral-50">
+      <svg
+        aria-hidden="true"
+        class="absolute inset-0 h-full w-full fill-neutral-100 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
+        ><rect width="100%" height="100%" fill="url(#:r2j:)" stroke-width="0"
+        ></rect><svg x="50%" y="-270" stroke-width="0" class="overflow-visible"
+          ><path
+            transform="translate(64 160)"
+            d="M45.119 4.5a11.5 11.5 0 0 0-11.277 9.245l-25.6 128C6.82 148.861 12.262 155.5 19.52 155.5h63.366a11.5 11.5 0 0 0 11.277-9.245l25.6-128c1.423-7.116-4.02-13.755-11.277-13.755H45.119Z"
+          ></path><path
+            transform="translate(128 320)"
+            d="M45.119 4.5a11.5 11.5 0 0 0-11.277 9.245l-25.6 128C6.82 148.861 12.262 155.5 19.52 155.5h63.366a11.5 11.5 0 0 0 11.277-9.245l25.6-128c1.423-7.116-4.02-13.755-11.277-13.755H45.119Z"
+          ></path><path
+            transform="translate(288 480)"
+            d="M45.119 4.5a11.5 11.5 0 0 0-11.277 9.245l-25.6 128C6.82 148.861 12.262 155.5 19.52 155.5h63.366a11.5 11.5 0 0 0 11.277-9.245l25.6-128c1.423-7.116-4.02-13.755-11.277-13.755H45.119Z"
+          ></path><path
+            transform="translate(512 320)"
+            d="M45.119 4.5a11.5 11.5 0 0 0-11.277 9.245l-25.6 128C6.82 148.861 12.262 155.5 19.52 155.5h63.366a11.5 11.5 0 0 0 11.277-9.245l25.6-128c1.423-7.116-4.02-13.755-11.277-13.755H45.119Z"
+          ></path><path
+            transform="translate(544 640)"
+            d="M45.119 4.5a11.5 11.5 0 0 0-11.277 9.245l-25.6 128C6.82 148.861 12.262 155.5 19.52 155.5h63.366a11.5 11.5 0 0 0 11.277-9.245l25.6-128c1.423-7.116-4.02-13.755-11.277-13.755H45.119Z"
+          ></path><path
+            transform="translate(320 800)"
+            d="M45.119 4.5a11.5 11.5 0 0 0-11.277 9.245l-25.6 128C6.82 148.861 12.262 155.5 19.52 155.5h63.366a11.5 11.5 0 0 0 11.277-9.245l25.6-128c1.423-7.116-4.02-13.755-11.277-13.755H45.119Z"
+          ></path></svg
+        ><defs
+          ><pattern
+            id=":r2j:"
+            width="96"
+            height="480"
+            x="50%"
+            patternUnits="userSpaceOnUse"
+            patternTransform="translate(0 -270)"
+            fill="none"
+            ><path
+              d="M128 0 98.572 147.138A16 16 0 0 1 82.883 160H13.117a16 16 0 0 0-15.69 12.862l-26.855 134.276A16 16 0 0 1-45.117 320H-116M64-160 34.572-12.862A16 16 0 0 1 18.883 0h-69.766a16 16 0 0 0-15.69 12.862l-26.855 134.276A16 16 0 0 1-109.117 160H-180M192 160l-29.428 147.138A15.999 15.999 0 0 1 146.883 320H77.117a16 16 0 0 0-15.69 12.862L34.573 467.138A16 16 0 0 1 18.883 480H-52M-136 480h58.883a16 16 0 0 0 15.69-12.862l26.855-134.276A16 16 0 0 1-18.883 320h69.766a16 16 0 0 0 15.69-12.862l26.855-134.276A16 16 0 0 1 109.117 160H192M-72 640h58.883a16 16 0 0 0 15.69-12.862l26.855-134.276A16 16 0 0 1 45.117 480h69.766a15.999 15.999 0 0 0 15.689-12.862l26.856-134.276A15.999 15.999 0 0 1 173.117 320H256M-200 320h58.883a15.999 15.999 0 0 0 15.689-12.862l26.856-134.276A16 16 0 0 1-82.883 160h69.766a16 16 0 0 0 15.69-12.862L29.427 12.862A16 16 0 0 1 45.117 0H128"
+            ></path></pattern
+          ></defs
+        ></svg
+      >
+    </div><div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:max-w-none">
+        <div class="max-w-2xl" style="opacity: 1; transform: none;">
+          <h2>
+            <span
+              class="block font-display tracking-tight [text-wrap:balance] text-2xl font-semibold text-neutral-950"
+              >From the blog</span
+            >
+          </h2><div class="mt-6 text-xl text-neutral-600">
+            <p>
+              Our team of experienced designers and developers has just one
+              thing on their mind; working on your ideas to draw a smile on the
+              face of your users worldwide. From conducting Brand Sprints to UX
+              Design.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div><div class="mx-auto max-w-7xl px-6 lg:px-8 mt-24">
+      <div class="mx-auto max-w-2xl lg:max-w-none">
+        <div class="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
+          <div style="opacity: 1; transform: none;">
+            <article>
+              <div
+                class="relative flex flex-col items-start pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
+                <h3 class="mt-6 text-base font-semibold text-neutral-950">
+                  The Future of Web Development: Our Predictions for 2023
+                </h3><time
+                  datetime="2023-04-06"
+                  class="order-first text-sm text-neutral-600"
+                  >April 6, 2023</time
+                ><p class="mt-2.5 text-base text-neutral-600">
+                  Let’s explore the latest trends in web development, and
+                  regurgitate some predictions we read on Twitter for how they
+                  will shape the industry in the coming year.
+                </p><a
+                  class="mt-6 flex gap-x-3 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"
+                  aria-label="Read more: The Future of Web Development: Our Predictions for 2023"
+                  href="/blog/future-of-web-development"
+                  >Read more<svg
+                    viewBox="0 0 24 6"
+                    aria-hidden="true"
+                    class="w-6 flex-none fill-current"
+                    ><path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M24 3 18 .5v2H0v1h18v2L24 3Z"></path></svg
+                  ><span class="absolute inset-0"></span></a
+                >
+              </div>
+            </article>
+          </div><div style="opacity: 1; transform: none;">
+            <article>
+              <div
+                class="relative flex flex-col items-start pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
+                <h3 class="mt-6 text-base font-semibold text-neutral-950">
+                  3 Lessons We Learned Going Back to the Office
+                </h3><time
+                  datetime="2023-02-18"
+                  class="order-first text-sm text-neutral-600"
+                  >February 18, 2023</time
+                ><p class="mt-2.5 text-base text-neutral-600">
+                  Earlier this year we made the bold decision to make everyone
+                  come back to the office full-time after two years working from
+                  a dressing table in the corner of their bedroom.
+                </p><a
+                  class="mt-6 flex gap-x-3 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"
+                  aria-label="Read more: 3 Lessons We Learned Going Back to the Office"
+                  href="/blog/3-lessons-we-learned-going-back-to-the-office"
+                  >Read more<svg
+                    viewBox="0 0 24 6"
+                    aria-hidden="true"
+                    class="w-6 flex-none fill-current"
+                    ><path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M24 3 18 .5v2H0v1h18v2L24 3Z"></path></svg
+                  ><span class="absolute inset-0"></span></a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><div class="mx-auto max-w-7xl px-6 lg:px-8 mt-24 sm:mt-32 lg:mt-40">
+    <div class="mx-auto max-w-2xl lg:max-w-none">
+      <div
+        class="-mx-6 rounded-3xl bg-neutral-950 px-6 py-20 sm:mx-0 sm:py-32 md:px-12"
+        style="opacity: 1; transform: none;">
+        <div class="mx-auto max-w-4xl">
+          <div class="max-w-xl">
+            <h2
+              class="font-display text-3xl font-medium text-white [text-wrap:balance] sm:text-4xl">
+              Tell us about your project
+            </h2><div class="mt-6 flex">
+              <a
+                class="inline-flex rounded-full px-4 py-1.5 text-sm font-semibold transition bg-white text-neutral-950 hover:bg-neutral-200"
+                href="/contact"><span class="relative top-px">Say Hej</span></a
+              >
+            </div><div class="mt-10 border-t border-white/10 pt-10">
+              <h3 class="font-display text-base font-semibold text-white">
+                Our offices
+              </h3><ul
+                role="list"
+                class="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
+                <li>
+                  <address class="text-sm not-italic text-neutral-300">
+                    <strong class="text-white">Copenhagen</strong><br />1
+                    Carlsberg Gate<br />1260, København, Denmark
+                  </address>
+                </li><li>
+                  <address class="text-sm not-italic text-neutral-300">
+                    <strong class="text-white">Billund</strong><br />24 Lego
+                    Allé<br />7190, Billund, Denmark
+                  </address>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </Layout>

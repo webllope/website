@@ -1,69 +1,75 @@
 ---
 // @ts-ignore
 import { Icon } from "astro-icon";
+import Container from "./container.astro";
 
 const features = [
   {
-    title: "Bring Your Own Framework",
+    title: "Mayor visibilidad",
     description:
-      "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
-    icon: "bx:bxs-briefcase",
+      "Desarrollamos sitios web aptos para móviles que no solo atraen, sino que retienen a los visitantes convirtiéndolos en clientes reales de tu negocio.",
+    icon: "mdi:eye",
   },
   {
-    title: "100% Static HTML, No JS",
+    title: "Mejor presencia",
     description:
-      "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
-    icon: "bx:bxs-window-alt",
+      "Mejoramos la presencia de tu negocio en línea, haciendo que este se posicione por encima de otros en las búsquedas de los usuarios.",
+    icon: "bx:bxs-star",
   },
   {
-    title: "On-Demand Components",
+    title: "Expandir audiencia",
     description:
-      "Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.  ",
-    icon: "bx:bxs-data",
+      "Amplia experiencia en la traducción a idiomas, atrayendo así al público extranjero a tu negocio tras proporcionar sus idiomas en tu web.",
+    icon: "fluent:people-20-filled",
   },
   {
-    title: "Broad Integration",
+    title: "Información instantánea",
     description:
-      "Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
-    icon: "bx:bxs-bot",
+      "Los usuarios obtienen información instantánea sobre tu negocio sin tiempo de espera, aumentando así la conversión de visitante a cliente.",
+    icon: "bi:info",
   },
   {
-    title: "SEO Enabled",
+    title: "Soluciones online",
     description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
-    icon: "bx:bxs-file-find",
+      "Facilitamos al cliente acciones como reservas, consultas, pasarelas de pago…",
+    icon: "ion:card",
   },
   {
-    title: "Community",
+    title: "Diferencia de la competencia",
     description:
-      "Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.",
-    icon: "bx:bxs-user",
+      "Destaca entre la competencia local al tener una presencia en línea profesional y completa.",
+    icon: "uil:user-exclamation",
   },
 ];
 ---
 
-<div class="mt-16 md:mt-0">
-  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Everything you need to start a website
-  </h2>
-  <p class="text-lg mt-4 text-slate-600">
-    Astro comes batteries included. It takes the best parts of state-of-the-art
-    tools and adds its own innovations.
-  </p>
-</div>
+<Container>
+  <div class="mt-16 md:mt-0">
+    <h2 class="text-4xl lg:text-5xl font-medium lg:tracking-tight">
+      ¿Qué beneficios te dará tener tu propia web?
+    </h2>
+    <p class="text-lg mt-4 text-slate-600">
+      Desbloquea el potencial de tu negocio con Webllope. Nos especializamos en
+      resolver desafíos digitales complejos, para que puedas centrarte en hacer
+      crecer tu negocio.
+    </p>
+  </div>
 
-<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
-  {
-    features.map((item) => (
-      <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
-          <Icon class="text-white" name={item.icon} />
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+    {
+      features.map((item) => (
+        <div class="flex gap-4 items-start">
+          <div class="bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+            <Icon class="text-white" name={item.icon} />
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+            <p class="text-slate-500 mt-2 leading-relaxed">
+              {item.description}
+            </p>
+          </div>
         </div>
-        <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
-          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
-        </div>
-      </div>
-    ))
-  }
-</div>
+      ))
+    }
+  </div>
+</Container>

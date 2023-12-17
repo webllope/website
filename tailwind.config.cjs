@@ -5,8 +5,17 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter Variable", "Inter", ...defaultTheme.fontFamily.sans],
+        sans: [
+          '"Mona-Sans", "Inter Variable", "Inter"',
+          {
+            ...defaultTheme.fontFamily.sans,
+            fontVariationSettings: '"wdth" 125'
+          }],
       },
+
+      borderRadius: {
+        '4xl': '2.5rem',
+      }
     },
   },
   plugins: [require("@tailwindcss/typography")],

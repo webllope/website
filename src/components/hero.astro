@@ -1,32 +1,59 @@
 ---
 import { Picture } from "@astrojs/image/components";
+// import heroImage from "assets/hero-alt.png";
 import heroImage from "assets/hero.png";
 import Link from "@components/ui/link.astro";
-import { Icon } from "astro-icon";
+import AdvancedSectionhead from "./advanced-sectionhead.astro";
+import Background from "./background.astro";
 ---
 
-<main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
+<main class="pb-8 md:pb-24">
+  <Background />
+  <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-24 sm:mt-32 lg:mt-40">
+    <div class="mx-auto max-w-2xl lg:max-w-none">
+      <div style="opacity: 1; transform: none;">
+        <h1
+          class="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
+          Crea tu página web por un coste mínimo.
+        </h1>
+      </div>
+      <div class="mt-6 max-w-3xl text-xl text-neutral-600">
+        <p>
+          ¿Quieres que tu negocio local destaque en internet? Pon a tu
+          disposición un profesional en diseño y desarrollo web para transformar
+          tu idea en un sitio web sorprendente y funcional.
+        </p>
+        <slot />
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- <main
+  class="pt-16 pb-8 md:pt-12 md:pb-24">
   <div class="py-6 md:order-1 hidden md:block">
     <Picture
       src={heroImage}
       alt="Astronaut in the air"
       widths={[200, 400, 600]}
-      aspectRatio="4:3"
-      sizes="(max-width: 800px) 100vw, 620px"
+      sizes="(max-width: 800px) 1200vw, 620px"
       loading="eager"
       format="avif"
     />
   </div>
-  <div>
+  <div class="pt-14">
     <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Marketing website done with Astro
+      class="font-display text-2xl lg:text-3xl xl:text-4xl font-medium tracking-tight [text-wrap:balance] mb-4">
+      Convierte tu idea en realidad
     </h1>
-    <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Astroship is a starter template for startups, marketing websites & landing
-      pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly create
-      any website with this starter.
+    <h1
+      class="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
+      Crea tu página web por un coste mínimo
+    </h1>
+    <p class="text-lg mt-12 text-slate-600 max-w-xl">
+      ¿Quieres que tu negocio local destaque en internet? Pon a tu disposición
+      un profesional en diseño y desarrollo web para transformar tu idea en un
+      sitio web sorprendente y funcional.
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
@@ -35,9 +62,7 @@ import { Icon } from "astro-icon";
         target="_blank"
         class="flex gap-1 items-center justify-center"
         rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
-
-        Download for Free
+        ¡Contacta ya!
       </Link>
       <Link
         size="lg"
@@ -51,4 +76,4 @@ import { Icon } from "astro-icon";
       </Link>
     </div>
   </div>
-</main>
+</main> -->
