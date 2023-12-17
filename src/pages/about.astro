@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import AdvancedSectionhead from "@components/advanced-sectionhead.astro";
+import Blank from "@assets/blank.jpg";
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedTeamMembers = await getCollection("team", ({ data }) => {
@@ -104,9 +105,9 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
               <div style="opacity: 1; transform: none;">
                 <div
                   class="pl-8 relative before:absolute after:absolute before:bg-white after:bg-white/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
-                  <strong class="font-semibold text-white">Trust.</strong> We don’t
-                  care when our team works just as long as they are working every
-                  waking second.
+                  <strong class="font-semibold text-white">Trust.</strong> We
+                  don’t care when our team works just as long as they are
+                  working every waking second.
                 </div>
               </div>
             </li><li
@@ -114,9 +115,9 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
               <div style="opacity: 1; transform: none;">
                 <div
                   class="pl-8 relative before:absolute after:absolute before:bg-white after:bg-white/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
-                  <strong class="font-semibold text-white">Compassion.</strong> You
-                  never know what someone is going through at home and we make sure
-                  to never find out.
+                  <strong class="font-semibold text-white">Compassion.</strong>
+                  You never know what someone is going through at home and we
+                  make sure to never find out.
                 </div>
               </div>
             </li>
@@ -153,8 +154,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
                         decoding="async"
                         data-nimg="1"
                         class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
-                        srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fleslie-alexander.cf5840d1.jpg&w=1920&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fleslie-alexander.cf5840d1.jpg&w=3840&q=75 2x"
-                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fleslie-alexander.cf5840d1.jpg&w=3840&q=75"
+                        src={Blank.src}
                         style="color: transparent;"
                       /><div
                         class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
@@ -179,8 +179,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
                         decoding="async"
                         data-nimg="1"
                         class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
-                        srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmichael-foster.00319162.jpg&w=1920&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmichael-foster.00319162.jpg&w=3840&q=75 2x"
-                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmichael-foster.00319162.jpg&w=3840&q=75"
+                        src={Blank.src}
                         style="color: transparent;"
                       /><div
                         class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
@@ -205,8 +204,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
                         decoding="async"
                         data-nimg="1"
                         class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
-                        srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdries-vincent.5cac3ed5.jpg&w=1920&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdries-vincent.5cac3ed5.jpg&w=3840&q=75 2x"
-                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdries-vincent.5cac3ed5.jpg&w=3840&q=75"
+                        src={Blank.src}
                         style="color: transparent;"
                       /><div
                         class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
@@ -249,8 +247,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
                         decoding="async"
                         data-nimg="1"
                         class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
-                        srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fchelsea-hagon.073aa8f2.jpg&w=1920&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fchelsea-hagon.073aa8f2.jpg&w=3840&q=75 2x"
-                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fchelsea-hagon.073aa8f2.jpg&w=3840&q=75"
+                        src={Blank.src}
                         style="color: transparent;"
                       /><div
                         class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
@@ -275,8 +272,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
                         decoding="async"
                         data-nimg="1"
                         class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
-                        srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Femma-dorsey.4fab86fa.jpg&w=1920&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Femma-dorsey.4fab86fa.jpg&w=3840&q=75 2x"
-                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Femma-dorsey.4fab86fa.jpg&w=3840&q=75"
+                        src={Blank.src}
                         style="color: transparent;"
                       /><div
                         class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
@@ -301,8 +297,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
                         decoding="async"
                         data-nimg="1"
                         class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
-                        srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fleonard-krasner.5a4a4614.jpg&w=1920&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fleonard-krasner.5a4a4614.jpg&w=3840&q=75 2x"
-                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fleonard-krasner.5a4a4614.jpg&w=3840&q=75"
+                        src={Blank.src}
                         style="color: transparent;"
                       /><div
                         class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
@@ -327,8 +322,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
                         decoding="async"
                         data-nimg="1"
                         class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
-                        srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fblake-reid.bcc5ac4f.jpg&w=1920&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fblake-reid.bcc5ac4f.jpg&w=3840&q=75 2x"
-                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fblake-reid.bcc5ac4f.jpg&w=3840&q=75"
+                        src={Blank.src}
                         style="color: transparent;"
                       /><div
                         class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
@@ -353,8 +347,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
                         decoding="async"
                         data-nimg="1"
                         class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
-                        srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fkathryn-murphy.550962fd.jpg&w=1920&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fkathryn-murphy.550962fd.jpg&w=3840&q=75 2x"
-                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fkathryn-murphy.550962fd.jpg&w=3840&q=75"
+                        src={Blank.src}
                         style="color: transparent;"
                       /><div
                         class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
@@ -379,8 +372,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
                         decoding="async"
                         data-nimg="1"
                         class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
-                        srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwhitney-francis.ced7480b.jpg&w=1920&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwhitney-francis.ced7480b.jpg&w=3840&q=75 2x"
-                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwhitney-francis.ced7480b.jpg&w=3840&q=75"
+                        src={Blank.src}
                         style="color: transparent;"
                       /><div
                         class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
@@ -389,84 +381,6 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
                           Whitney Francis
                         </p><p class="mt-2 text-sm text-white">
                           Content Specialist
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </li><li>
-                  <div style="opacity: 1; transform: none;">
-                    <div
-                      class="group relative overflow-hidden rounded-3xl bg-neutral-100">
-                      <img
-                        alt=""
-                        loading="lazy"
-                        width="1800"
-                        height="1800"
-                        decoding="async"
-                        data-nimg="1"
-                        class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
-                        srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjeffrey-webb.a90fe9d1.jpg&w=1920&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjeffrey-webb.a90fe9d1.jpg&w=3840&q=75 2x"
-                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjeffrey-webb.a90fe9d1.jpg&w=3840&q=75"
-                        style="color: transparent;"
-                      /><div
-                        class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
-                        <p
-                          class="font-display text-base/6 font-semibold tracking-wide text-white">
-                          Jeffrey Webb
-                        </p><p class="mt-2 text-sm text-white">
-                          Account Coordinator
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </li><li>
-                  <div style="opacity: 1; transform: none;">
-                    <div
-                      class="group relative overflow-hidden rounded-3xl bg-neutral-100">
-                      <img
-                        alt=""
-                        loading="lazy"
-                        width="1800"
-                        height="1800"
-                        decoding="async"
-                        data-nimg="1"
-                        class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
-                        srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbenjamin-russel.da51eb4b.jpg&w=1920&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbenjamin-russel.da51eb4b.jpg&w=3840&q=75 2x"
-                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbenjamin-russel.da51eb4b.jpg&w=3840&q=75"
-                        style="color: transparent;"
-                      /><div
-                        class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
-                        <p
-                          class="font-display text-base/6 font-semibold tracking-wide text-white">
-                          Benjamin Russel
-                        </p><p class="mt-2 text-sm text-white">
-                          Senior Developer
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </li><li>
-                  <div style="opacity: 1; transform: none;">
-                    <div
-                      class="group relative overflow-hidden rounded-3xl bg-neutral-100">
-                      <img
-                        alt=""
-                        loading="lazy"
-                        width="1800"
-                        height="1800"
-                        decoding="async"
-                        data-nimg="1"
-                        class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
-                        srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fangela-fisher.f2122cd4.jpg&w=1920&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fangela-fisher.f2122cd4.jpg&w=3840&q=75 2x"
-                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fangela-fisher.f2122cd4.jpg&w=3840&q=75"
-                        style="color: transparent;"
-                      /><div
-                        class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
-                        <p
-                          class="font-display text-base/6 font-semibold tracking-wide text-white">
-                          Angela Fisher
-                        </p><p class="mt-2 text-sm text-white">
-                          Front-end Developer
                         </p>
                       </div>
                     </div>

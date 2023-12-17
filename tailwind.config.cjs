@@ -9,13 +9,14 @@ module.exports = {
           '"Mona-Sans", "Inter Variable", "Inter"',
           {
             ...defaultTheme.fontFamily.sans,
-            fontVariationSettings: '"wdth" 125'
-          }],
+            fontVariationSettings: '"wdth" 125',
+          },
+        ],
       },
 
       borderRadius: {
-        '4xl': '2.5rem',
-      }
+        "4xl": "2.5rem",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],

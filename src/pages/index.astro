@@ -1,34 +1,154 @@
 ---
-import Container from "@components/container.astro";
 import Cta from "@components/cta.astro";
 import Features from "@components/features.astro";
 import Hero from "@components/hero.astro";
 import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
 import Background from "@components/background.astro";
+
+import MailSmirkSmall from "@assets/logos/logo-light.249606f6.svg";
+import PhobiaSmall from "@assets/logos/logo-light.ada2d552.svg";
+import FamilyFundSmall from "@assets/logos/logo-light.5c8de99c.svg";
+import UnsealSmall from "@assets/logos/logo-light.f6ce2960.svg";
+import HomeWorkSmall from "@assets/logos/logo-light.da1195d8.svg";
+import GreenLifeSmall from "@assets/logos/logo-light.1704e6d8.svg";
+import BrightPathSmall from "@assets/logos/logo-light.456aa9d9.svg";
+import NorthAdventuresSmall from "@assets/logos/logo-light.e19f9c9b.svg";
 ---
 
 <Layout title="">
   <Background />
   <Hero />
-  <div
-    class="mt-24 rounded-4xl bg-neutral-950 py-20 sm:py-32 mb-32">
+  <div class="mt-24 rounded-4xl bg-neutral-950 py-20 sm:py-32 mb-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl lg:max-w-none">
-        <div
-          class="flex items-center gap-x-8"
-          style="opacity: 1; transform: none;">
-          <h2
-            class="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with hundreds of amazing people
-          </h2>
-          <div class="h-px flex-auto bg-neutral-800"></div>
-        </div>
-        <div>
-          <ul
-            role="list"
-            class="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4">
-          </ul>
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:max-w-none">
+          <div
+            class="flex items-center gap-x-8"
+            style="opacity: 1; transform: none;">
+            <h2
+              class="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
+              We've worked with hundreds of amazing people
+            </h2><div class="h-px flex-auto bg-neutral-800"></div>
+          </div>
+          <div>
+            <ul
+              role="list"
+              class="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4">
+              <li>
+                <div style="opacity: 1; transform: none;">
+                  <img
+                    alt="Phobia"
+                    loading="lazy"
+                    width="184"
+                    height="36"
+                    decoding="async"
+                    data-nimg="1"
+                    src={PhobiaSmall.src}
+                    style="color: transparent;"
+                  />
+                </div>
+              </li>
+              <li>
+                <div style="opacity: 1; transform: none;">
+                  <img
+                    alt="Family Fund"
+                    loading="lazy"
+                    width="184"
+                    height="36"
+                    decoding="async"
+                    data-nimg="1"
+                    src={FamilyFundSmall.src}
+                    style="color: transparent;"
+                  />
+                </div>
+              </li>
+              <li>
+                <div style="opacity: 1; transform: none;">
+                  <img
+                    alt="Unseal"
+                    loading="lazy"
+                    width="184"
+                    height="36"
+                    decoding="async"
+                    data-nimg="1"
+                    src={UnsealSmall.src}
+                    style="color: transparent;"
+                  />
+                </div>
+              </li>
+              <li>
+                <div style="opacity: 1; transform: none;">
+                  <img
+                    alt="Mail Smirk"
+                    loading="lazy"
+                    width="184"
+                    height="36"
+                    decoding="async"
+                    data-nimg="1"
+                    src={MailSmirkSmall.src}
+                    style="color: transparent;"
+                  />
+                </div>
+              </li>
+              <li>
+                <div style="opacity: 1; transform: none;">
+                  <img
+                    alt="Home Work"
+                    loading="lazy"
+                    width="184"
+                    height="36"
+                    decoding="async"
+                    data-nimg="1"
+                    src={HomeWorkSmall.src}
+                    style="color: transparent;"
+                  />
+                </div>
+              </li>
+              <li>
+                <div style="opacity: 1; transform: none;">
+                  <img
+                    alt="Green Life"
+                    loading="lazy"
+                    width="184"
+                    height="36"
+                    decoding="async"
+                    data-nimg="1"
+                    src={GreenLifeSmall.src}
+                    style="color: transparent;"
+                  />
+                </div>
+              </li>
+              <li>
+                <div style="opacity: 1; transform: none;">
+                  <img
+                    alt="Bright Path"
+                    loading="lazy"
+                    width="184"
+                    height="36"
+                    decoding="async"
+                    data-nimg="1"
+                    src={BrightPathSmall.src}
+                    style="color: transparent;"
+                  />
+                </div>
+              </li>
+              <li>
+                <div style="opacity: 1; transform: none;">
+                  <img
+                    alt="North Adventures"
+                    loading="lazy"
+                    width="184"
+                    height="36"
+                    decoding="async"
+                    data-nimg="1"
+                    src={NorthAdventuresSmall.src}
+                    style="color: transparent;"
+                  />
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

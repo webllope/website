@@ -1,14 +1,26 @@
 ---
 import AdvancedSectionhead from "@components/advanced-sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
+import FamilyFund from "@assets/logos/logomark-dark.4d2947be.svg";
+import Unseal from "@assets/logos/logomark-dark.73187f97.svg";
+import Phobia from "@assets/logos/logomark-dark.00d7d7b3.svg";
+import MailSmirkSmall from "@assets/logos/logo-dark.ac5d2e8d.svg";
+import PhobiaSmall from "@assets/logos/logo-dark.353d4760.svg";
+import FamilyFundSmall from "@assets/logos/logo-dark.7370ef3f.svg";
+import UnsealSmall from "@assets/logos/logo-dark.4785dd63.svg";
+import HomeWorkSmall from "@assets/logos/logo-dark.e87ae13a.svg";
+import GreenLifeSmall from "@assets/logos/logo-dark.645d638e.svg";
+import BrightPathSmall from "@assets/logos/logo-dark.1ff7dc9b.svg";
+import NorthAdventuresSmall from "@assets/logos/logo-dark.ad8a4f58.svg";
 ---
 
-<Layout>
+<Layout title="Our work">
   <AdvancedSectionhead
     section="Our work"
     title="Proven solutions for real-world problems."
     description="We believe in efficiency and maximizing our resources to provide the best value to our clients. The primary way we do that is by re-using the same five projects we’ve been developing for the past decade."
   />
+
   <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-40">
     <div class="mx-auto max-w-2xl lg:max-w-none">
       <div style="opacity: 1; transform: none;">
@@ -31,7 +43,7 @@ import Layout from "@layouts/Layout.astro";
                     decoding="async"
                     data-nimg="1"
                     class="h-16 w-16 flex-none"
-                    src="/_next/static/media/logomark-dark.4d2947be.svg"
+                    src={FamilyFund.src}
                     style="color: transparent;"
                   /><h3
                     class="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
@@ -103,7 +115,7 @@ import Layout from "@layouts/Layout.astro";
                     decoding="async"
                     data-nimg="1"
                     class="h-16 w-16 flex-none"
-                    src="/_next/static/media/logomark-dark.73187f97.svg"
+                    src={Unseal.src}
                     style="color: transparent;"
                   /><h3
                     class="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
@@ -172,7 +184,7 @@ import Layout from "@layouts/Layout.astro";
                     decoding="async"
                     data-nimg="1"
                     class="h-16 w-16 flex-none"
-                    src="/_next/static/media/logomark-dark.00d7d7b3.svg"
+                    src={Phobia.src}
                     style="color: transparent;"
                   /><h3
                     class="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
@@ -231,7 +243,9 @@ import Layout from "@layouts/Layout.astro";
         </div>
       </div>
     </div>
-  </div><div
+  </div>
+
+  <div
     class="relative isolate bg-neutral-50 py-16 sm:py-28 md:py-32 mt-24 sm:mt-32 lg:mt-40">
     <svg
       aria-hidden="true"
@@ -279,8 +293,8 @@ import Layout from "@layouts/Layout.astro";
               class="relative font-display text-3xl font-medium tracking-tight text-neutral-950 sm:text-4xl">
               <p
                 class="before:content-['“'] after:content-['”'] sm:before:absolute sm:before:right-full">
-                We approached <em>Studio</em> because we loved their past work. They
-                delivered something remarkably similar in record time.
+                We approached <em>Studio</em> because we loved their past work.
+                They delivered something remarkably similar in record time.
               </p>
             </blockquote><figcaption class="mt-10">
               <img
@@ -290,7 +304,7 @@ import Layout from "@layouts/Layout.astro";
                 height="36"
                 decoding="async"
                 data-nimg="1"
-                src="/_next/static/media/logo-dark.ac5d2e8d.svg"
+                src={MailSmirkSmall.src}
                 style="color: transparent;"
               />
             </figcaption>
@@ -322,7 +336,7 @@ import Layout from "@layouts/Layout.astro";
                   height="36"
                   decoding="async"
                   data-nimg="1"
-                  src="/_next/static/media/logo-dark.353d4760.svg"
+                  src={PhobiaSmall.src}
                   style="color: transparent;"
                 />
               </div>
@@ -338,7 +352,7 @@ import Layout from "@layouts/Layout.astro";
                   height="36"
                   decoding="async"
                   data-nimg="1"
-                  src="/_next/static/media/logo-dark.7370ef3f.svg"
+                  src={FamilyFundSmall.src}
                   style="color: transparent;"
                 />
               </div>
@@ -354,7 +368,7 @@ import Layout from "@layouts/Layout.astro";
                   height="36"
                   decoding="async"
                   data-nimg="1"
-                  src="/_next/static/media/logo-dark.4785dd63.svg"
+                  src={UnsealSmall.src}
                   style="color: transparent;"
                 />
               </div>
@@ -370,7 +384,7 @@ import Layout from "@layouts/Layout.astro";
                   height="36"
                   decoding="async"
                   data-nimg="1"
-                  src="/_next/static/media/logo-dark.ac5d2e8d.svg"
+                  src={MailSmirkSmall.src}
                   style="color: transparent;"
                 />
               </div>
@@ -386,7 +400,7 @@ import Layout from "@layouts/Layout.astro";
                   height="36"
                   decoding="async"
                   data-nimg="1"
-                  src="/_next/static/media/logo-dark.e87ae13a.svg"
+                  src={HomeWorkSmall.src}
                   style="color: transparent;"
                 />
               </div>
@@ -402,7 +416,7 @@ import Layout from "@layouts/Layout.astro";
                   height="36"
                   decoding="async"
                   data-nimg="1"
-                  src="/_next/static/media/logo-dark.645d638e.svg"
+                  src={GreenLifeSmall.src}
                   style="color: transparent;"
                 />
               </div>
@@ -418,7 +432,7 @@ import Layout from "@layouts/Layout.astro";
                   height="36"
                   decoding="async"
                   data-nimg="1"
-                  src="/_next/static/media/logo-dark.1ff7dc9b.svg"
+                  src={BrightPathSmall.src}
                   style="color: transparent;"
                 />
               </div>
@@ -434,7 +448,7 @@ import Layout from "@layouts/Layout.astro";
                   height="36"
                   decoding="async"
                   data-nimg="1"
-                  src="/_next/static/media/logo-dark.ad8a4f58.svg"
+                  src={NorthAdventuresSmall.src}
                   style="color: transparent;"
                 />
               </div>
