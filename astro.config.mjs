@@ -15,4 +15,9 @@ export default defineConfig({
     mdx(),
     sitemap(),
   ],
+  adapter: vercel({
+    speedInsights: {
+      enabled: true,
+    },
+  }),
 });
