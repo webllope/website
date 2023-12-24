@@ -1,5 +1,31 @@
 ---
 import Logo from "./logo.astro";
+
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const items = {
+  work: [
+    { name: "FamilyFund", path: "/work/family-fund" },
+    { name: "Unseal", path: "/work/unseal" },
+    { name: "Phobia", path: "/work/phobia" },
+  ],
+  company: [
+    { name: t("footer.company.about"), path: "/about" },
+    { name: t("footer.company.process"), path: "/process" },
+    // TODO: in progress
+    // { name: t("footer.company.blog"), path: "/blog" },
+    { name: t("footer.company.contact"), path: "/contact" },
+  ],
+  connect: [
+    { name: "Facebook", url: "https://facebook.com" },
+    { name: "Instagram", url: "https://instagram.com" },
+    { name: "Twitter", url: "https://twitter.com" },
+    { name: "GitHub", url: "https://github.com" },
+  ],
+};
 ---
 
 <footer class="mx-auto max-w-7xl px-6 lg:px-8 mt-24 w-full sm:mt-32 lg:mt-40">
@@ -11,83 +37,61 @@ import Logo from "./logo.astro";
             <li>
               <div
                 class="font-display text-sm font-semibold tracking-wider text-neutral-950">
-                Work
-              </div><ul role="list" class="mt-4 text-sm text-neutral-700">
+                {t("footer.work.title")}
+              </div>
+              <ul role="list" class="mt-4 text-sm text-neutral-700">
+                {
+                  items.work.map((item) => (
+                    <li class="mt-4">
+                      <a
+                        class="transition hover:text-neutral-950"
+                        href={item.path}>
+                        {item.name}
+                      </a>
+                    </li>
+                  ))
+                }
                 <li class="mt-4">
-                  <a
-                    class="transition hover:text-neutral-950"
-                    href="/work/family-fund">FamilyFund</a
-                  >
-                </li><li class="mt-4">
-                  <a
-                    class="transition hover:text-neutral-950"
-                    href="/work/unseal">Unseal</a
-                  >
-                </li><li class="mt-4">
-                  <a
-                    class="transition hover:text-neutral-950"
-                    href="/work/phobia">Phobia</a
-                  >
-                </li><li class="mt-4">
-                  <a class="transition hover:text-neutral-950" href="/work"
-                    >See all <span aria-hidden="true">→</span></a
-                  >
+                  <a class="transition hover:text-neutral-950" href="/work">
+                    See all <span aria-hidden="true">→</span>
+                  </a>
                 </li>
               </ul>
-            </li><li>
+            </li>
+            <li>
               <div
                 class="font-display text-sm font-semibold tracking-wider text-neutral-950">
                 Company
-              </div><ul role="list" class="mt-4 text-sm text-neutral-700">
-                <li class="mt-4">
-                  <a class="transition hover:text-neutral-950" href="/about"
-                    >About</a
-                  >
-                </li><li class="mt-4">
-                  <a class="transition hover:text-neutral-950" href="/process"
-                    >Process</a
-                  >
-                </li><li class="mt-4">
-                  <a class="transition hover:text-neutral-950" href="/blog"
-                    >Blog</a
-                  >
-                </li><li class="mt-4">
-                  <a class="transition hover:text-neutral-950" href="/contact"
-                    >Contact us</a
-                  >
-                </li>
+              </div>
+              <ul role="list" class="mt-4 text-sm text-neutral-700">
+                {
+                  items.company.map((item) => (
+                    <li class="mt-4">
+                      <a
+                        class="transition hover:text-neutral-950"
+                        href={item.path}>
+                        {item.name}
+                      </a>
+                    </li>
+                  ))
+                }
               </ul>
             </li><li>
               <div
                 class="font-display text-sm font-semibold tracking-wider text-neutral-950">
                 Connect
               </div><ul role="list" class="mt-4 text-sm text-neutral-700">
-                <li class="mt-4">
-                  <a
-                    class="transition hover:text-neutral-950"
-                    href="https://facebook.com">Facebook</a
-                  >
-                </li><li class="mt-4">
-                  <a
-                    class="transition hover:text-neutral-950"
-                    href="https://instagram.com">Instagram</a
-                  >
-                </li><li class="mt-4">
-                  <a
-                    class="transition hover:text-neutral-950"
-                    href="https://twitter.com">Twitter</a
-                  >
-                </li><li class="mt-4">
-                  <a
-                    class="transition hover:text-neutral-950"
-                    href="https://github.com">GitHub</a
-                  >
-                </li><li class="mt-4">
-                  <a
-                    class="transition hover:text-neutral-950"
-                    href="https://dribbble.com">Dribbble</a
-                  >
-                </li>
+                {
+                  items.connect.map((item) => (
+                    <li class="mt-4">
+                      <a
+                        class="transition hover:text-neutral-950"
+                        href={item.url}>
+                        {item.name}
+                      </a>
+                    </li>
+                  ))
+                }
               </ul>
             </li>
           </ul>

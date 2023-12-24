@@ -2,16 +2,12 @@ import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
-import vercel from '@astrojs/vercel/static';
+import vercel from "@astrojs/vercel/static";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astroship.web3templates.com",
-  integrations: [
-    tailwind(),
-    mdx(),
-    sitemap(),
-  ],
+  site: "https://webllope.es",
+  integrations: [tailwind(), mdx(), sitemap()],
   adapter: vercel({
     speedInsights: {
       enabled: true,
@@ -20,4 +16,11 @@ export default defineConfig({
       enabled: true,
     },
   }),
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en", "es"],
+    routing: {
+      prefixDefaultLocale: false,
+    },
+  },
 });

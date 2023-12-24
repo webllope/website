@@ -1,0 +1,66 @@
+---
+import MailSmirkSmall from "@assets/logos/logo-light.249606f6.svg";
+import PhobiaSmall from "@assets/logos/logo-light.ada2d552.svg";
+import FamilyFundSmall from "@assets/logos/logo-light.5c8de99c.svg";
+import UnsealSmall from "@assets/logos/logo-light.f6ce2960.svg";
+import HomeWorkSmall from "@assets/logos/logo-light.da1195d8.svg";
+import GreenLifeSmall from "@assets/logos/logo-light.1704e6d8.svg";
+import BrightPathSmall from "@assets/logos/logo-light.456aa9d9.svg";
+import NorthAdventuresSmall from "@assets/logos/logo-light.e19f9c9b.svg";
+
+const clients = [
+  {
+    name: "Phobia",
+    img: PhobiaSmall.src,
+  },
+  {
+    name: "Family Fund",
+    img: FamilyFundSmall.src,
+  },
+  {
+    name: "Unseal",
+    img: UnsealSmall.src,
+  },
+  {
+    name: "Mail Smirk",
+    img: MailSmirkSmall.src,
+  },
+  {
+    name: "Home Work",
+    img: HomeWorkSmall.src,
+  },
+  {
+    name: "Green Lige",
+    img: GreenLifeSmall.src,
+  },
+  {
+    name: "Bright Path",
+    img: BrightPathSmall.src,
+  },
+  {
+    name: "North Adventures",
+    img: NorthAdventuresSmall.src,
+  },
+];
+---
+
+<ul role="list" class="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4">
+  {
+    clients.map((client) => (
+      <li>
+        <div style="opacity: 1; transform: none;">
+          <img
+            alt={client.name}
+            loading="lazy"
+            width="184"
+            height="36"
+            decoding="async"
+            data-nimg="1"
+            src={client.img}
+            style="color: transparent;"
+          />
+        </div>
+      </li>
+    ))
+  }
+</ul>

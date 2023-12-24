@@ -2,42 +2,40 @@
 // @ts-ignore
 import { Icon } from "astro-icon";
 import Container from "./container.astro";
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 const features = [
   {
-    title: "Mayor visibilidad",
-    description:
-      "Desarrollamos sitios web aptos para móviles que no solo atraen, sino que retienen a los visitantes convirtiéndolos en clientes reales de tu negocio.",
+    title: t("features.visibility.title"),
+    description: t("features.visibility.description"),
     icon: "mdi:eye",
   },
   {
-    title: "Mejor presencia",
-    description:
-      "Mejoramos la presencia de tu negocio en línea, haciendo que este se posicione por encima de otros en las búsquedas de los usuarios.",
+    title: t("features.presence.title"),
+    description: t("features.presence.description"),
     icon: "bx:bxs-star",
   },
   {
-    title: "Expandir audiencia",
-    description:
-      "Amplia experiencia en la traducción a idiomas, atrayendo así al público extranjero a tu negocio tras proporcionar sus idiomas en tu web.",
+    title: t("features.audience.title"),
+    description: t("features.audience.description"),
     icon: "fluent:people-20-filled",
   },
   {
-    title: "Información instantánea",
-    description:
-      "Los usuarios obtienen información instantánea sobre tu negocio sin tiempo de espera, aumentando así la conversión de visitante a cliente.",
+    title: t("features.instantInfo.title"),
+    description: t("features.instantInfo.description"),
     icon: "bi:info",
   },
   {
-    title: "Soluciones online",
-    description:
-      "Facilitamos al cliente acciones como reservas, consultas, pasarelas de pago…",
+    title: t("features.onlineSolutions.title"),
+    description: t("features.onlineSolutions.description"),
     icon: "ion:card",
   },
   {
-    title: "Diferencia de la competencia",
-    description:
-      "Destaca entre la competencia local al tener una presencia en línea profesional y completa.",
+    title: t("features.differentiation.title"),
+    description: t("features.differentiation.description"),
     icon: "uil:user-exclamation",
   },
 ];
@@ -46,12 +44,10 @@ const features = [
 <Container>
   <div class="mt-16 md:mt-0">
     <h2 class="text-4xl lg:text-5xl font-medium lg:tracking-tight">
-      ¿Qué beneficios te dará tener tu propia web?
+      {t("features.primary")}
     </h2>
     <p class="text-lg mt-4 text-slate-600">
-      Desbloquea el potencial de tu negocio con Webllope. Nos especializamos en
-      resolver desafíos digitales complejos, para que puedas centrarte en hacer
-      crecer tu negocio.
+      {t("features.secondary")}
     </p>
   </div>
 

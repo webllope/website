@@ -1,46 +1,37 @@
 ---
 import Container from "@components/container.astro";
-// import Link from "@components/ui/link.astro";
-import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 import Logo from "@components/logo.astro";
 
-const menuitems = [
-  // {
-  //   title: "Features",
-  //   path: "#",
-  //   children: [
-  //     { title: "Action", path: "/" },
-  //     { title: "Another action", path: "#" },
-  //     { title: "Dropdown Submenu", path: "#" },
-  //     { title: "404 Page", path: "/404" },
-  //   ],
-  // },
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import LanguagePicker from "@components/language-picker.astro";
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const menuitems: Array<{ title: string; path: string; badge?: boolean }> = [
   {
-    title: "Servicios",
+    title: t("nav.services"),
     path: "/services",
   },
   {
-    title: "Nuestro trabajo",
+    title: t("nav.work"),
     path: "/work",
   },
+  // TODO: for the future
+  // {
+  //   title: t("nav.blog"),
+  //   path: "/blog",
+  // },
   {
-    title: "Blog",
-    path: "/blog",
-  },
-  {
-    title: "Sobre nosotros",
+    title: t("nav.aboutUs"),
     path: "/about",
   },
   {
-    title: "Contacto",
+    title: t("nav.contact"),
     path: "/contact",
   },
-  // {
-  //   title: "Pro Version",
-  //   badge: true,
-  //   path: "https://astroship-pro.web3templates.com/",
-  // },
 ];
 ---
 
@@ -57,34 +48,23 @@ const menuitems = [
         <ul class="flex flex-col lg:flex-row lg:gap-3">
           {
             menuitems.map((item, index) => (
-              <>
-                {item.children && (
-                  <Dropdown
-                    title={item.title}
-                    children={item.children}
-                    lastItem={index === menuitems.length - 1}
-                  />
-                )}
-
-                {!item.children && (
-                  <li>
-                    <a
-                      href={item.path}
-                      class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900">
-                      <h2> {item.title}</h2>
-                      {item.badge && (
-                        <span class="ml-1 px-2 py-0.5 text-[10px] animate-pulse font-semibold uppercase text-white bg-indigo-600 rounded-full">
-                          New
-                        </span>
-                      )}
-                    </a>
-                  </li>
-                )}
-              </>
+              <li>
+                <a
+                  href={getRelativeLocaleUrl(lang, item.path)}
+                  class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900">
+                  <h2> {item.title}</h2>
+                  {item.badge && (
+                    <span class="ml-1 px-2 py-0.5 text-[10px] animate-pulse font-semibold uppercase text-white bg-indigo-600 rounded-full">
+                      New
+                    </span>
+                  )}
+                </a>
+              </li>
             ))
           }
         </ul>
       </MenuItems>
+      <LanguagePicker />
     </Astronav>
   </header>
 </Container>
