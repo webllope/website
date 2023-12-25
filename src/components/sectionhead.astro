@@ -1,12 +1,33 @@
 ---
-const { align = "center" } = Astro.props;
+import Background from "./background.astro";
+
+const { section, title, description } = Astro.props;
 ---
 
-<div class:list={["mt-16", align === "center" && "text-center"]}>
-  <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    <slot name="title">Title</slot>
-  </h1>
-  <p class="text-lg mt-4 text-slate-600">
-    <slot name="desc">Some description goes here</slot>
-  </p>
+<Background />
+<div class="mx-auto max-w-7xl px-6 lg:px-8 mt-24 sm:mt-32 lg:mt-40">
+  <div class="mx-auto max-w-2xl lg:max-w-none">
+    <div style="opacity: 1; transform: none;">
+      <h1>
+        {
+          section && (
+            <span class="block font-display text-base font-bold text-neutral-950">
+              {section}
+            </span>
+          )
+        }
+        <!-- <span class="sr-only"> -</span> -->
+      </h1>
+      <span
+        class="mt-6 block max-w-5xl font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-6xl">
+        {title}
+      </span>
+    </div>
+    <div class="mt-6 max-w-3xl text-xl text-neutral-600">
+      <p>
+        {description}
+      </p>
+      <slot />
+    </div>
+  </div>
 </div>

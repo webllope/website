@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
-import AdvancedSectionhead from "@components/advanced-sectionhead.astro";
+import Sectionhead from "@components/sectionhead.astro";
 
 // Filter blog entries with 'draft: false' & date before current date
 const publishedBlogEntries = await getCollection("blog", ({ data }) => {
@@ -15,7 +15,7 @@ publishedBlogEntries.sort(function (a, b) {
 ---
 
 <Layout title="Blog">
-  <AdvancedSectionhead
+  <Sectionhead
     section="Blog"
     title="The latest articles and news"
     description="Stay up-to-date with the latest industry news as our marketing teams finds new ways to re-purpose old CSS tricks articles."

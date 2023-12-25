@@ -1,67 +1,64 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
-import AdvancedSectionhead from "@components/advanced-sectionhead.astro";
 import Blank from "@assets/blank.jpg";
+import Sectionhead from "@components/sectionhead.astro";
+import Records from "@components/records.astro";
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedTeamMembers = await getCollection("team", ({ data }) => {
   return !data.draft && data.publishDate < new Date();
 });
+
+const recordsData = [
+  { description: "Years old", value: 1 },
+  { description: "Satisfied clients", value: 5 },
+  { description: "Projects completed", value: 10 },
+];
+
+const cultureData = [
+  {
+    label: "Loyalty",
+    description:
+      "Our team has been with us since the beginning sharing common goals.",
+  },
+  {
+    label: "Trust",
+    description:
+      "We don't care when our team works just as long as they get work done while having a positive work-life balance.",
+  },
+  {
+    label: "Quality",
+    description:
+      "We really care about our work quality so we put all our effort on crafting realiable and good software.",
+  },
+];
 ---
 
 <Layout title="About">
-  <AdvancedSectionhead
+  <Sectionhead
     section="About us"
     title="Our strength is collaboration"
     description="We are a small passionate team. We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.">
     <div class="mt-10 max-w-2xl space-y-6 text-base">
       <p>
-        Studio was started by three friends who noticed that developer studios
-        were charging clients double what an in-house team would cost. Since the
-        beginning, we have been committed to doing things differently by
-        charging triple instead.
+        Webllope was started by two friends who realized the growth potential
+        that technology could bring to small businesses. The main problem of
+        those businesses is the lack of awareness about how custom solutions
+        adapted to their business model could help them.
       </p>
       <p>
-        At Studio, we're more than just colleagues — we're a family. This means
-        we pay very little and expect people to work late. We want our employees
-        to bring their whole selves to work. In return, we just ask that they
-        keep themselves there until at least 6:30pm.
+        At Webllope, we're more than just colleagues — we're a family. We took
+        our first steps in the field of computers engineering together in the
+        university. Since then and up to today, we've looking to improve the
+        world through technology.
       </p>
     </div>
-  </AdvancedSectionhead>
+  </Sectionhead>
 
   <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-16">
     <div class="mx-auto max-w-2xl lg:max-w-none">
-      <div>
-        <dl
-          class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:auto-cols-fr lg:grid-flow-col lg:grid-cols-none">
-          <div
-            class="flex flex-col-reverse pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px"
-            style="opacity: 1; transform: none;">
-            <dt class="mt-2 text-base text-neutral-600">
-              Underpaid employees
-            </dt><dd
-              class="font-display text-3xl font-semibold text-neutral-950 sm:text-4xl">
-              35
-            </dd>
-          </div><div
-            class="flex flex-col-reverse pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px"
-            style="opacity: 1; transform: none;">
-            <dt class="mt-2 text-base text-neutral-600">Placated clients</dt><dd
-              class="font-display text-3xl font-semibold text-neutral-950 sm:text-4xl">
-              52
-            </dd>
-          </div><div
-            class="flex flex-col-reverse pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px"
-            style="opacity: 1; transform: none;">
-            <dt class="mt-2 text-base text-neutral-600">Invoices billed</dt><dd
-              class="font-display text-3xl font-semibold text-neutral-950 sm:text-4xl">
-              $25M
-            </dd>
-          </div>
-        </dl>
-      </div>
+      <Records data={recordsData} />
     </div>
   </div><div
     class="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
@@ -70,13 +67,15 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
         <div class="max-w-2xl" style="opacity: 1; transform: none;">
           <h2>
             <span
-              class="mb-6 block font-display text-base font-semibold text-white"
-              >Our culture</span
-            ><span class="sr-only"> -</span><span
-              class="block font-display tracking-tight [text-wrap:balance] text-4xl font-medium sm:text-5xl text-white"
-              >Balance your passion with your passion for life.</span
-            >
-          </h2><div class="mt-6 text-xl text-neutral-300">
+              class="mb-6 block font-display text-base font-semibold text-white">
+              Our culture
+            </span>
+            <span
+              class="block font-display tracking-tight [text-wrap:balance] text-4xl font-medium sm:text-5xl text-white">
+              Balance your passion with your passion for life.
+            </span>
+          </h2>
+          <div class="mt-6 text-xl text-neutral-300">
             <p>
               We are a group of like-minded people who share the same core
               values.
@@ -84,43 +83,27 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
           </div>
         </div>
       </div>
-    </div><div class="mx-auto max-w-7xl px-6 lg:px-8 mt-16">
+    </div>
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-16">
       <div class="mx-auto max-w-2xl lg:max-w-none">
         <div>
           <ul
             role="list"
             class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
-            <li
-              class="text-base text-neutral-300 before:bg-white after:bg-white/10">
-              <div style="opacity: 1; transform: none;">
-                <div
-                  class="pl-8 relative before:absolute after:absolute before:bg-white after:bg-white/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
-                  <strong class="font-semibold text-white">Loyalty.</strong> Our
-                  team has been with us since the beginning because none of them
-                  are allowed to have LinkedIn profiles.
-                </div>
-              </div>
-            </li><li
-              class="text-base text-neutral-300 before:bg-white after:bg-white/10">
-              <div style="opacity: 1; transform: none;">
-                <div
-                  class="pl-8 relative before:absolute after:absolute before:bg-white after:bg-white/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
-                  <strong class="font-semibold text-white">Trust.</strong> We
-                  don't care when our team works just as long as they are
-                  working every waking second.
-                </div>
-              </div>
-            </li><li
-              class="text-base text-neutral-300 before:bg-white after:bg-white/10">
-              <div style="opacity: 1; transform: none;">
-                <div
-                  class="pl-8 relative before:absolute after:absolute before:bg-white after:bg-white/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
-                  <strong class="font-semibold text-white">Compassion.</strong>
-                  You never know what someone is going through at home and we
-                  make sure to never find out.
-                </div>
-              </div>
-            </li>
+            {
+              cultureData.map((item) => (
+                <li class="text-base text-neutral-300 before:bg-white after:bg-white/10">
+                  <div style="opacity: 1; transform: none;">
+                    <div class="pl-8 relative before:absolute after:absolute before:bg-white after:bg-white/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
+                      <strong class="font-semibold text-white">
+                        {item.label}.
+                      </strong>{" "}
+                      {item.description}
+                    </div>
+                  </div>
+                </li>
+              ))
+            }
           </ul>
         </div>
       </div>
@@ -138,86 +121,47 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
               <h2 class="font-display text-2xl font-semibold text-neutral-950">
                 Leadership
               </h2>
-            </div><div class="lg:col-span-3">
+            </div>
+            <div class="lg:col-span-3">
               <ul
                 role="list"
                 class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-8">
-                <li>
-                  <div style="opacity: 1; transform: none;">
-                    <div
-                      class="group relative overflow-hidden rounded-3xl bg-neutral-100">
-                      <img
-                        alt=""
-                        loading="lazy"
-                        width="1800"
-                        height="1800"
-                        decoding="async"
-                        data-nimg="1"
-                        class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
-                        src={Blank.src}
-                        style="color: transparent;"
-                      /><div
-                        class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
-                        <p
-                          class="font-display text-base/6 font-semibold tracking-wide text-white">
-                          Leslie Alexander
-                        </p><p class="mt-2 text-sm text-white">
-                          Co-Founder / CEO
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </li><li>
-                  <div style="opacity: 1; transform: none;">
-                    <div
-                      class="group relative overflow-hidden rounded-3xl bg-neutral-100">
-                      <img
-                        alt=""
-                        loading="lazy"
-                        width="1800"
-                        height="1800"
-                        decoding="async"
-                        data-nimg="1"
-                        class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
-                        src={Blank.src}
-                        style="color: transparent;"
-                      /><div
-                        class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
-                        <p
-                          class="font-display text-base/6 font-semibold tracking-wide text-white">
-                          Michael Foster
-                        </p><p class="mt-2 text-sm text-white">
-                          Co-Founder / CTO
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </li><li>
-                  <div style="opacity: 1; transform: none;">
-                    <div
-                      class="group relative overflow-hidden rounded-3xl bg-neutral-100">
-                      <img
-                        alt=""
-                        loading="lazy"
-                        width="1800"
-                        height="1800"
-                        decoding="async"
-                        data-nimg="1"
-                        class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
-                        src={Blank.src}
-                        style="color: transparent;"
-                      /><div
-                        class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
-                        <p
-                          class="font-display text-base/6 font-semibold tracking-wide text-white">
-                          Dries Vincent
-                        </p><p class="mt-2 text-sm text-white">
-                          Partner &amp; Business Relations
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
+                {
+                  publishedTeamMembers
+                    .filter((m) => m.data.roles.includes("leadership"))
+                    .sort((a, b) => a.data.id - b.data.id)
+                    .map((m) => (
+                      <li>
+                        <div style="opacity: 1; transform: none;">
+                          <div class="group relative overflow-hidden rounded-3xl bg-neutral-100">
+                            <>
+                              <img
+                                alt=""
+                                loading="lazy"
+                                width="1800"
+                                height="1800"
+                                decoding="async"
+                                data-nimg="1"
+                                class="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
+                                src={Blank.src}
+                                style="color: transparent;"
+                              />
+                              <div class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
+                                <>
+                                  <p class="font-display text-base/6 font-semibold tracking-wide text-white">
+                                    {m.data.name}
+                                  </p>
+                                  <p class="mt-2 text-sm text-white">
+                                    {m.data.title}
+                                  </p>
+                                </>
+                              </div>
+                            </>
+                          </div>
+                        </div>
+                      </li>
+                    ))
+                }
               </ul>
             </div>
           </div>
@@ -446,8 +390,8 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
             <p>
               Our team of experienced designers and developers has just one
               thing on their mind; working on your ideas to draw a smile on the
-              face of your users worldwide. From conducting Brand Sprints to UX
-              Design.
+              face of your users worldwide. From trivial problems to complex
+              engineering solutions.
             </p>
           </div>
         </div>
@@ -458,7 +402,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
           <div style="opacity: 1; transform: none;">
             <article>
               <div
-                class="relative flex flex-col items-start pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
+                class="relative flex flex-col items-start pl-8 before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                 <h3 class="mt-6 text-base font-semibold text-neutral-950">
                   The Future of Web Development: Our Predictions for 2023
                 </h3><time

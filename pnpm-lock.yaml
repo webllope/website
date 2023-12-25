@@ -20,6 +20,9 @@ dependencies:
   '@fontsource-variable/inter':
     specifier: ^5.0.5
     version: 5.0.5
+  '@iconify-json/devicon':
+    specifier: ^1.1.33
+    version: 1.1.33
   '@tailwindcss/typography':
     specifier: ^0.5.9
     version: 0.5.9(tailwindcss@3.3.3)
@@ -620,6 +623,16 @@ packages:
 
   /@fontsource-variable/inter@5.0.5:
     resolution: {integrity: sha512-hmj/jffr+1tabEPmvm+/b89MtbO6hd5PVbQ6HoMGTO7RMF5eD2C9UcprCgZTOF3OWh5uC21C9HZGN0O9wxe+UQ==}
+    dev: false
+
+  /@iconify-json/devicon@1.1.33:
+    resolution: {integrity: sha512-0DS9Q716HJSR00aaC5HUB0onollqG9PCkFAzQ85klKXzML3+HDTA0hfK92G/VGplmaNwHRSeMu9Ang7yT/tn6A==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: false
+
+  /@iconify/types@2.0.0:
+    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
     dev: false
 
   /@jridgewell/gen-mapping@0.3.3:
