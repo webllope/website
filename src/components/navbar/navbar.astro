@@ -40,7 +40,8 @@ const menuitems: Array<{ title: string; path: string; badge?: boolean }> = [
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
         <Logo />
-        <div class="block lg:hidden">
+        <div class="flex flex-row gap-8 items-center lg:hidden">
+          <LanguagePicker variant="small" />
           <MenuIcon class="w-4 h-4 text-gray-800" />
         </div>
       </div>
@@ -64,7 +65,9 @@ const menuitems: Array<{ title: string; path: string; badge?: boolean }> = [
           }
         </ul>
       </MenuItems>
-      <LanguagePicker />
+      <div class="hidden lg:block">
+        <LanguagePicker />
+      </div>
     </Astronav>
   </header>
 </Container>

@@ -8,6 +8,8 @@ import { languages } from "@i18n/i18n";
 import type { Language } from "@i18n/i18n";
 
 const lang = getLangFromUrl(Astro.url);
+
+const { variant = "normal" } = Astro.props;
 ---
 
 <li class="relative list-none">
@@ -16,7 +18,11 @@ const lang = getLangFromUrl(Astro.url);
       class="flex items-center gap-1 w-full lg:w-auto lg:px-3 py-2 text-gray-600 hover:text-gray-900">
       <div class="flex items-center gap-4">
         <Icon class="text-black" size={20} name="ic:baseline-translate" />
-        <h1 class="font-normal mr-2">{languages[lang]}</h1>
+        {
+          variant != "small" && (
+            <h1 class="font-normal mr-2">{languages[lang]}</h1>
+          )
+        }
       </div>
 
       <svg

@@ -20,10 +20,10 @@ const items = {
     { name: t("footer.company.contact"), path: "/contact" },
   ],
   connect: [
-    { name: "Facebook", url: "https://facebook.com" },
-    { name: "Instagram", url: "https://instagram.com" },
-    { name: "Twitter", url: "https://twitter.com" },
-    { name: "GitHub", url: "https://github.com" },
+    { name: "Facebook", url: "https://facebook.com/webllope" },
+    { name: "Instagram", url: "https://instagram.com/webllope" },
+    { name: "Twitter", url: "https://twitter.com/webllope" },
+    { name: "GitHub", url: "https://github.com/webllope" },
   ],
 };
 ---
@@ -53,7 +53,8 @@ const items = {
                 }
                 <li class="mt-4">
                   <a class="transition hover:text-neutral-950" href="/work">
-                    See all <span aria-hidden="true">→</span>
+                    {t("footer.seeAll")}
+                    <span aria-hidden="true">→</span>
                   </a>
                 </li>
               </ul>
@@ -61,7 +62,7 @@ const items = {
             <li>
               <div
                 class="font-display text-sm font-semibold tracking-wider text-neutral-950">
-                Company
+                {t("footer.company.title")}
               </div>
               <ul role="list" class="mt-4 text-sm text-neutral-700">
                 {
@@ -79,7 +80,7 @@ const items = {
             </li><li>
               <div
                 class="font-display text-sm font-semibold tracking-wider text-neutral-950">
-                Connect
+                {t("footer.connect.title")}
               </div><ul role="list" class="mt-4 text-sm text-neutral-700">
                 {
                   items.connect.map((item) => (
@@ -99,13 +100,12 @@ const items = {
           <form class="max-w-sm">
             <h2
               class="font-display text-sm font-semibold tracking-wider text-neutral-950">
-              Sign up for our newsletter
+              {t("footer.newsletter.primary")}
             </h2><p class="mt-4 text-sm text-neutral-700">
-              Subscribe to get the latest design news, articles, resources and
-              inspiration.
+              {t("footer.newsletter.secondary")}
             </p><div class="relative mt-6">
               <input
-                placeholder="Email address"
+                placeholder={t("footer.newsletter.placeholder")}
                 autocomplete="email"
                 aria-label="Email address"
                 class="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pl-6 pr-20 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5"

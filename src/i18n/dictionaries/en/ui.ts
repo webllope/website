@@ -1,4 +1,5 @@
 export const ui = {
+  banner: "NEW YEAR OFFER FOR A LIMITED TIME 🎉",
   nav: {
     home: "Home",
     services: "Services",
@@ -18,6 +19,16 @@ export const ui = {
       process: "Process",
       blog: "Blog",
       contact: "Contact Us",
+    },
+    connect: {
+      title: "Connect",
+    },
+    seeAll: "See all",
+    newsletter: {
+      primary: "Sign up for our newsletter",
+      secondary:
+        "Subscribe to get the latest design news, articles, resources and inspiration.",
+      placeholder: "Email address",
     },
   },
 };
