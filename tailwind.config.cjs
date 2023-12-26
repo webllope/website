@@ -6,10 +6,20 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: [
-          '"Mona-Sans", "Inter Variable", "Inter"',
+          '"MonaSans", "Inter Variable", "Inter"',
           {
             ...defaultTheme.fontFamily.sans,
             fontVariationSettings: '"wdth" 125',
+          },
+        ],
+      },
+
+      fontSize: {
+        "6xl": [
+          "3rem",
+          {
+            ...defaultTheme.fontSize["6xl"],
+            lineHeight: "3.5rem",
           },
         ],
       },

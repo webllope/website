@@ -1,4 +1,5 @@
 ---
+import { social } from "../data";
 import Logo from "./logo.astro";
 
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
@@ -20,10 +21,10 @@ const items = {
     { name: t("footer.company.contact"), path: "/contact" },
   ],
   connect: [
-    { name: "Facebook", url: "https://facebook.com/webllope" },
-    { name: "Instagram", url: "https://instagram.com/webllope" },
-    { name: "Twitter", url: "https://twitter.com/webllope" },
-    { name: "GitHub", url: "https://github.com/webllope" },
+    { name: "Facebook", url: social.facebook },
+    { name: "Instagram", url: social.instagram },
+    { name: "Twitter", url: social.twitter },
+    { name: "GitHub", url: social.github },
   ],
 };
 ---
@@ -135,19 +136,4 @@ const items = {
       </div>
     </div>
   </div>
-
-  <!-- <footer class="my-20">
-  <p class="text-center text-sm text-slate-500">
-    Copyright © {new Date().getFullYear()} Webllope. All rights reserved.
-  </p>
-  <p class="text-center text-xs text-slate-500 mt-1">
-    Made by <a
-      href="https://web3templates.com"
-      target="_blank"
-      rel="noopener"
-      class="hover:underline">
-      Web3Templates
-    </a>
-  </p>
-</footer> -->
 </footer>

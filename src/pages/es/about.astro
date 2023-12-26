@@ -14,47 +14,47 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 });
 
 const recordsData = [
-  { description: "Years old", value: 1 },
-  { description: "Satisfied clients", value: 5 },
-  { description: "Completed projects", value: 10 },
+  { description: "Año", value: 1 },
+  { description: "Clientes satisfechos", value: 5 },
+  { description: "Proyectos completados", value: 10 },
 ];
 
 const cultureData = [
   {
-    label: "Loyalty",
+    label: "Lealtad",
     description:
-      "Our team has been with us since the beginning sharing common goals.",
+      "Nuestro equipo ha estado con nosotros desde el inicio y con metas en común.",
   },
   {
-    label: "Trust",
+    label: "Confianza",
     description:
-      "We don't care when our team works just as long as they get work done while having a positive work-life balance.",
+      "No nos preocupamos de cuando trabaja nuestro equipo siempre y cuando completen su trabajo manteniendo un buen balance trabajo-vida personal.",
   },
   {
-    label: "Quality",
+    label: "Calidad",
     description:
-      "We really care about our work quality so we put all our effort on crafting realiable and robust software.",
+      "Nos preocupamos mucho por la calidad de nuestro trabajo, por lo que ponemos todo nuestro esfuerzo en crear software fiable y robusto.",
   },
 ];
 ---
 
 <Layout title="About">
   <Sectionhead
-    section="About us"
-    title="Our strength is collaboration"
-    description="We are a small passionate team. We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.">
+    section="Sobre nosotros"
+    title="Nuestro punto fuerte es la colaboración"
+    description="Somos un equipo pequeño y apasionado. Creemos que nuestra fortaleza se debe a nuestro enfoque colaborativo, poniendo a los clientes en el centro de lo que hacemos.">
     <div class="mt-10 max-w-2xl space-y-6 text-base">
       <p>
-        Webllope was started by two friends who realized the growth potential
-        that technology could bring to small businesses. The main problem of
-        those businesses is the lack of awareness about how custom solutions
-        adapted to their business model could help them.
+        Webllope nace gracias a dos amigos que se dieron cuenta del potencial de
+        crecimiento que la tecnoloogía puede dar a pequeños negocios. El
+        principal problema de estos negocios es la falta de consciencia acerca
+        de cómo soluciones adaptadas a su modelo de negocio pueden ayudarlos.
       </p>
       <p>
-        At Webllope, we're more than just colleagues — we're a family. We took
-        our first steps in the field of computers engineering together in the
-        university. Since then and up to today, we've looking to improve the
-        world through technology.
+        En Webllope somos más que compañeros — somos una familia. Dimos nuestros
+        primeros pasos en la ingeniería informática juntos, durante nuestro paso
+        por la universidad. Desde entonces y hasta ahora, intentado mejorar el
+        mundo con la tecnología como medio.
       </p>
     </div>
   </Sectionhead>
@@ -74,15 +74,16 @@ const cultureData = [
           <h2>
             <span
               class="mb-6 block font-display text-base font-semibold text-white">
-              Our culture
+              Nuestra cultura
             </span>
             <span
               class="block font-display tracking-tight [text-wrap:balance] text-4xl font-medium sm:text-5xl text-white">
-              Balance your passion with your passion for life.
+              Equilibra tu pasión con tu pasión por la vida.
             </span>
           </h2>
           <p class="mt-6 text-xl text-neutral-300">
-            We are a group of like-minded people who share the same core values.
+            Somos un grupo de personas con cosas en común que compartimos los
+            mismo valores básicos.
           </p>
         </div>
       </div>
@@ -123,7 +124,7 @@ const cultureData = [
             class="grid grid-cols-1 gap-6 pt-12 sm:pt-16 lg:grid-cols-4 xl:gap-8">
             <div style="opacity: 1; transform: none;">
               <h2 class="font-display text-2xl font-semibold text-neutral-950">
-                Leadership
+                Liderazgo
               </h2>
             </div>
             <div class="lg:col-span-3">
@@ -173,7 +174,7 @@ const cultureData = [
             class="grid grid-cols-1 gap-6 pt-12 sm:pt-16 lg:grid-cols-4 xl:gap-8">
             <div style="opacity: 1; transform: none;">
               <h2 class="font-display text-2xl font-semibold text-neutral-950">
-                Team
+                Equipo
               </h2>
             </div>
             <div class="lg:col-span-3">

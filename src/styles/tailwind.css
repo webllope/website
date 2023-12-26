@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .body {
+    @apply font-sans;
+  }
+
+  .sans-normal {
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+  }
+}

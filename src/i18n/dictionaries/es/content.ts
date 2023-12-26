@@ -50,9 +50,24 @@ const cta = {
   button: "Ver servicios",
 };
 
+const fromBlog = {
+  title: "Nuestro blog",
+  description:
+    "Solo hay una cosa en la mente de nuestro experimentado equipo de diseñadores y desarrolladores, trabajar en tus ideas para conseguir una sonrisa en la cara de los usuarios a nivel mundial. Desde problemas triviales hasta complejas soluciones de ingeniería.",
+  readMore: "Leer más",
+};
+
+const aboutYourProject = {
+  title: "Cuéntanos sobre tu proyecto",
+  button: "Dí Hola",
+  offices: "Nuestras oficinas",
+};
+
 export const content = {
   hero,
   features,
   logos,
   cta,
+  fromBlog,
+  aboutYourProject,
 };

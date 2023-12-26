@@ -9,7 +9,7 @@ image:
   }
 publishDate: "2022-11-09 16:39"
 category: "Courses"
-author: "Marcell Ziemann"
+author: "chema-martinez"
 tags: [webdev, tailwindcss, frontend]
 ---
 

@@ -50,4 +50,24 @@ const cta = {
   button: "View services",
 };
 
-export const content = { hero, features, logos, cta };
+const fromBlog = {
+  title: "From the blog",
+  description:
+    "Our team of experienced designers and developers has just one thing on their mind; working on your ideas to draw a smile on the face of your users worldwide. From trivial problems to complex engineering solutions.",
+  readMore: "Read more",
+};
+
+const aboutYourProject = {
+  title: "Tell us about your project",
+  button: "Say Hi",
+  offices: "Our offices",
+};
+
+export const content = {
+  hero,
+  features,
+  logos,
+  cta,
+  fromBlog,
+  aboutYourProject,
+};

@@ -9,7 +9,7 @@ image:
   }
 publishDate: "2022-11-08 11:39"
 category: "Tutorials"
-author: "Janette Lynch"
+author: "daniel-maestre"
 tags: [webdev, tailwindcss, frontend]
 ---
 

@@ -1,11 +1,12 @@
 ---
-
+const { patternId = ":R1lda:" } = Astro.props;
 ---
 
 <svg
   aria-hidden="true"
   class="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full fill-neutral-50 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]">
-  <rect width="100%" height="100%" fill="url(#:R1lda:)" stroke-width="0"></rect>
+  <rect width="100%" height="100%" fill={`url(#${patternId})`} stroke-width="0"
+  ></rect>
   <svg x="50%" y="-96" stroke-width="0" class="overflow-visible">
     <path
       transform="translate(64 160)"
@@ -34,7 +35,7 @@
   </svg>
   <defs>
     <pattern
-      id=":R1lda:"
+      id={patternId}
       width="96"
       height="480"
       x="50%"

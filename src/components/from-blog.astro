@@ -1,0 +1,106 @@
+---
+import { getFormattedDate } from "@utils/all";
+import { getCollection } from "astro:content";
+
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const [firstEntry, secondEntry] = (
+  await getCollection("blog", ({ data }) => {
+    return !data.draft && data.publishDate < new Date();
+  })
+)
+  .sort(function (a, b) {
+    return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
+  })
+  .slice(0, 2);
+---
+
+<div class="mx-auto max-w-7xl px-6 lg:px-8">
+  <div class="mx-auto max-w-2xl lg:max-w-none">
+    <div class="max-w-3xl" style="opacity: 1; transform: none;">
+      <h2
+        class="block font-display tracking-tight [text-wrap:balance] text-2xl font-semibold text-neutral-950">
+        {t("fromBlog.title")}
+      </h2>
+      <div class="mt-6 text-xl text-neutral-600">
+        <p>
+          {t("fromBlog.description")}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mx-auto max-w-7xl px-6 lg:px-8 mt-24">
+  <div class="mx-auto max-w-2xl lg:max-w-none">
+    <div class="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
+      <article>
+        <div
+          class="relative flex flex-col items-start pl-8 before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
+          <h3 class="mt-6 text-base font-semibold text-neutral-950">
+            {firstEntry.data.title}
+          </h3>
+          <time
+            datetime={firstEntry.data.publishDate.toISOString()}
+            class="order-first text-sm text-neutral-600">
+            {getFormattedDate(firstEntry.data.publishDate)}
+          </time>
+          <p class="mt-2.5 text-base text-neutral-600">
+            {firstEntry.data.snippet}
+          </p>
+          <a
+            class="mt-6 flex gap-x-3 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"
+            aria-label={firstEntry.data.title}
+            href={`/blog/${firstEntry.slug}`}>
+            {t("fromBlog.readMore")}
+            <svg
+              viewBox="0 0 24 6"
+              aria-hidden="true"
+              class="w-6 flex-none fill-current">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M24 3 18 .5v2H0v1h18v2L24 3Z"></path>
+            </svg>
+            <span class="absolute inset-0"></span>
+          </a>
+        </div>
+      </article>
+      <article>
+        <div
+          class="relative flex flex-col items-start pl-8 before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
+          <h3 class="mt-6 text-base font-semibold text-neutral-950">
+            {secondEntry.data.title}
+          </h3>
+          <time
+            datetime={secondEntry.data.publishDate.toISOString()}
+            class="order-first text-sm text-neutral-600">
+            {getFormattedDate(secondEntry.data.publishDate)}
+          </time>
+          <p class="mt-2.5 text-base text-neutral-600">
+            {secondEntry.data.snippet}
+          </p>
+          <a
+            class="mt-6 flex gap-x-3 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"
+            aria-label={secondEntry.data.title}
+            href={`/blog/${firstEntry.slug}`}>
+            Read more
+            <svg
+              viewBox="0 0 24 6"
+              aria-hidden="true"
+              class="w-6 flex-none fill-current">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M24 3 18 .5v2H0v1h18v2L24 3Z">
+              </path>
+            </svg>
+            <span class="absolute inset-0"></span>
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>

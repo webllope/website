@@ -1,0 +1,49 @@
+---
+import { getFormattedDate } from "@utils/all";
+import Layout from "./Layout.astro";
+import { getEntry } from "astro:content";
+
+import type { CollectionEntry } from "astro:content";
+import Background from "@components/background.astro";
+
+interface Props {
+  frontmatter: CollectionEntry<"blog">["data"];
+}
+
+const { frontmatter } = Astro.props;
+
+const author = await getEntry(frontmatter.author);
+---
+
+<Layout title={frontmatter.title}>
+  <main class="w-full flex-auto">
+    <article class="mx-auto max-w-7xl px-6 lg:px-8 mt-24 sm:mt-32 lg:mt-40">
+      <div class="mx-auto max-w-2xl lg:max-w-none">
+        <Background />
+        <header class="mx-auto flex max-w-5xl flex-col text-center">
+          <h1
+            class="mt-6 font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-6xl">
+            {frontmatter.title}
+          </h1>
+          <time
+            datetime={frontmatter.publishDate.toISOString()}
+            class="order-first text-sm text-neutral-950">
+            {getFormattedDate(frontmatter.publishDate)}
+          </time>
+          <p class="mt-6 text-sm font-semibold text-neutral-950">
+            by {author?.data.name}, {author?.data.title}
+          </p>
+        </header>
+
+        <div
+          class="[&>*]:mx-auto [&>*]:max-w-3xl [&>:first-child]:!mt-0 [&>:last-child]:!mb-0 mt-24 sm:mt-32 lg:mt-40">
+          <article
+            class="prose lg:prose-xl"
+            style="font-feature-settings: normal; font-variation-settings: normal;">
+            <slot />
+          </article>
+        </div>
+      </div>
+    </article>
+  </main>
+</Layout>
