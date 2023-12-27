@@ -34,7 +34,7 @@ Any static assets, like images, can be placed in the `public/` directory.
 
 ## 🧞 Commands
 
-All commands are run from the root of the project, from a terminal:
+The project relies on [pnpm](https://pnpm.io/) as package manager. All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
