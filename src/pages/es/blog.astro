@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from "@layouts/layout.astro";
 import Sectionhead from "@components/sectionhead.astro";
-import Entry from "../blog/entry.astro";
+import Entry from "@components/blog/entry.astro";
 import AboutYourProject from "@components/about-your-project.astro";
 
 const publishedBlogEntries = (
@@ -20,7 +20,7 @@ const publishedBlogEntries = (
   <Sectionhead
     section="Blog"
     title="Últimos artículos y noticias"
-    description="Estáte al día con las últimas novedades de la industria e interesantes y útiles artículos."
+    description="Estate al día con las últimas novedades de la industria e interesantes y útiles artículos."
   />
   <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-24 sm:mt-32 lg:mt-40">
     <div class="mx-auto max-w-2xl lg:max-w-none">

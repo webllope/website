@@ -31,4 +31,8 @@ export const ui = {
       placeholder: "Email address",
     },
   },
+  blog: {
+    author: "Author",
+  },
+  readMore: "Read more",
 };

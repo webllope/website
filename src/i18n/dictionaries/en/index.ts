@@ -1,4 +1,5 @@
+import errors from "./errors";
 import { ui } from "./ui";
 import { content } from "./content";
 
-export default { ...ui, ...content };
+export default { errors, ...ui, ...content };

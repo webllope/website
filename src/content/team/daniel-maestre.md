@@ -1,6 +1,6 @@
 ---
-draft: false
 id: 1
+draft: false
 name: "Daniel Maestre Yepes"
 title: "Co-Founder / CEO"
 roles: ["leadership"]

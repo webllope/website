@@ -1,6 +1,6 @@
 ---
-draft: false
 id: 2
+draft: false
 name: "Chema Martínez M."
 title: "Co-Founder / CTO"
 roles: ["leadership"]

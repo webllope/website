@@ -11,11 +11,8 @@ export function getLangFromUrl(url: URL) {
 }
 
 export function replaceLangFromUrl(url: URL, newLang: keyof typeof languages) {
-  const [, mayLang, rest] = url.pathname.split("/");
-  if (Object.keys(languages).includes(mayLang)) {
-    return getRelativeLocaleUrl(newLang, rest);
-  }
-  return getRelativeLocaleUrl(newLang, mayLang);
+  const [, , rest] = url.pathname.split("/");
+  return getRelativeLocaleUrl(newLang, rest);
 }
 
 export function useTranslations(lang: keyof typeof dictionaries) {

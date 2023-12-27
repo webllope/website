@@ -31,4 +31,8 @@ export const ui = {
       placeholder: "Correo electrónico",
     },
   },
+  blog: {
+    author: "Autor",
+  },
+  readMore: "Leer más",
 };
