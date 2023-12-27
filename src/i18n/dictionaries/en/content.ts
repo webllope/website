@@ -52,8 +52,14 @@ const cta = {
 
 const fromBlog = {
   title: "From the blog",
+  titleVariant: "More articles",
   description:
     "Our team of experienced designers and developers has just one thing on their mind; working on your ideas to draw a smile on the face of your users worldwide. From trivial problems to complex engineering solutions.",
+  readMore: "Read more",
+};
+
+const moreCaseStudies = {
+  title: "More case studies",
   readMore: "Read more",
 };
 
@@ -63,11 +69,19 @@ const aboutYourProject = {
   offices: "Our offices",
 };
 
+const tags = {
+  webdev: "Web development",
+  cms: "CMS",
+  blockchain: "Blockchain development",
+};
+
 export const content = {
   hero,
   features,
   logos,
   cta,
   fromBlog,
+  moreCaseStudies,
   aboutYourProject,
+  tags,
 };

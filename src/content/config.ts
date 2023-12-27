@@ -1,7 +1,5 @@
-// 1. Import utilities from `astro:content`
 import { reference, z, defineCollection } from "astro:content";
 
-// 2. Define your collection(s)
 const blogCollection = defineCollection({
   schema: z.object({
     draft: z.boolean(),
@@ -21,8 +19,8 @@ const blogCollection = defineCollection({
 const teamCollection = defineCollection({
   schema: ({ image }) =>
     z.object({
-      draft: z.boolean(),
       id: z.number(),
+      draft: z.boolean(),
       name: z.string(),
       title: z.string(),
       roles: z.array(z.string()),
@@ -34,9 +32,43 @@ const teamCollection = defineCollection({
     }),
 });
 
-// 3. Export a single `collections` object to register your collection(s)
-//    This key should match your collection directory name in "src/content"
+const clientsCollection = defineCollection({
+  schema: ({ image }) =>
+    z.object({
+      name: z.string(),
+      logos: z.object({
+        light: image(),
+        dark: image(),
+        markDark: image(),
+      }),
+    }),
+});
+
+const workCollection = defineCollection({
+  schema: ({ image }) =>
+    z.object({
+      draft: z.boolean(),
+      name: z.string(),
+      title: z.string(),
+      description: z.string(),
+      snippet: z.string(),
+      client: reference("clients"),
+      quote: z.object({
+        message: z.string(),
+        author: z.object({ name: z.string(), position: z.string() }),
+      }),
+      tags: z.array(z.enum(["webdev", "cms", "blockchain"])),
+      cover: z.object({
+        src: image(),
+        alt: z.string(),
+      }),
+      date: z.string().transform((str) => new Date(str)),
+    }),
+});
+
 export const collections = {
   blog: blogCollection,
   team: teamCollection,
+  clients: clientsCollection,
+  work: workCollection,
 };

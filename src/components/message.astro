@@ -1,0 +1,45 @@
+---
+import { Image } from "astro:assets";
+import Background from "./background.astro";
+
+interface Props {
+  content: string;
+  image: {
+    alt: string;
+    src: ImageMetadata;
+  };
+}
+
+const { content, image } = Astro.props;
+---
+
+<div
+  class="relative isolate bg-neutral-50 py-16 sm:py-28 md:py-32 mt-24 sm:mt-32 lg:mt-40">
+  <Background />
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:max-w-none">
+      <div style="opacity: 1; transform: none;">
+        <figure class="mx-auto max-w-4xl">
+          <blockquote
+            class="relative font-display text-3xl font-medium tracking-tight text-neutral-950 sm:text-4xl">
+            <p
+              class="before:content-['“'] after:content-['”'] sm:before:absolute sm:before:right-full">
+              {content}
+            </p>
+          </blockquote><figcaption class="mt-10">
+            <Image
+              alt={image.alt}
+              loading="lazy"
+              width="184"
+              height="36"
+              decoding="async"
+              data-nimg="1"
+              src={image.src}
+              style="color: transparent;"
+            />
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>

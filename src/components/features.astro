@@ -3,6 +3,7 @@
 import { Icon } from "astro-icon";
 import Container from "./ui/container.astro";
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import Sectionhead from "./sectionhead.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -41,17 +42,13 @@ const features = [
 ];
 ---
 
-<Container>
-  <div class="mt-16 md:mt-0">
-    <h2 class="text-4xl lg:text-5xl font-medium lg:tracking-tight">
-      {t("features.primary")}
-    </h2>
-    <p class="text-lg mt-4 text-slate-600">
-      {t("features.secondary")}
-    </p>
-  </div>
+<Sectionhead
+  title={t("features.primary")}
+  description={t("features.secondary")}
+/>
 
-  <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+<Container>
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-24 gap-16">
     {
       features.map((item) => (
         <div class="flex gap-4 items-start">

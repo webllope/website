@@ -1,6 +1,12 @@
 ---
 import Background from "./background.astro";
 
+interface Props {
+  title: string;
+  section?: string;
+  description?: string;
+}
+
 const { section, title, description } = Astro.props;
 ---
 
@@ -16,7 +22,6 @@ const { section, title, description } = Astro.props;
             </span>
           )
         }
-        <!-- <span class="sr-only"> -</span> -->
       </h1>
       <span
         class="mt-6 block max-w-5xl font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-6xl">

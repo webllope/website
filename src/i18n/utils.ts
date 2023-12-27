@@ -1,4 +1,4 @@
-import { defaultLang, languages } from "./i18n";
+import { defaultLang, languages, type Language } from "./i18n";
 import dictionaries from "./dictionaries";
 import { get } from "@utils/all";
 import type { NestedObjectKeys } from "@utils/types";

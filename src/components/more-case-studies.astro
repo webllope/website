@@ -8,20 +8,14 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 const [firstEntry, secondEntry] = (
-  await getCollection("blog", ({ data }) => {
-    return !data.draft && data.publishDate < new Date();
+  await getCollection("work", ({ data }) => {
+    return !data.draft && data.date < new Date();
   })
 )
   .sort(function (a, b) {
-    return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
+    return b.data.date.valueOf() - a.data.date.valueOf();
   })
   .slice(0, 2);
-
-interface Props {
-  variant: "primary" | "secondary";
-}
-
-const { variant = "primary" } = Astro.props;
 ---
 
 <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -29,15 +23,8 @@ const { variant = "primary" } = Astro.props;
     <div class="max-w-3xl" style="opacity: 1; transform: none;">
       <h2
         class="block font-display tracking-tight [text-wrap:balance] text-2xl font-semibold text-neutral-950">
-        {t(variant === "primary" ? "fromBlog.title" : "fromBlog.titleVariant")}
+        {t("moreCaseStudies.title")}
       </h2>
-      {
-        variant === "primary" && (
-          <div class="mt-6 text-xl text-neutral-600">
-            <p>{t("fromBlog.description")}</p>
-          </div>
-        )
-      }
     </div>
   </div>
 </div>
@@ -51,9 +38,9 @@ const { variant = "primary" } = Astro.props;
             {firstEntry.data.title}
           </h3>
           <time
-            datetime={firstEntry.data.publishDate.toISOString()}
+            datetime={firstEntry.data.date.toISOString()}
             class="order-first text-sm text-neutral-600">
-            {getFormattedDate(firstEntry.data.publishDate)}
+            {getFormattedDate(firstEntry.data.date)}
           </time>
           <p class="mt-2.5 text-base text-neutral-600">
             {firstEntry.data.snippet}
@@ -61,7 +48,7 @@ const { variant = "primary" } = Astro.props;
           <a
             class="mt-6 flex gap-x-3 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"
             aria-label={firstEntry.data.title}
-            href={`/blog/${firstEntry.slug}`}>
+            href={`/work/${firstEntry.slug}`}>
             {t("fromBlog.readMore")}
             <svg
               viewBox="0 0 24 6"
@@ -83,9 +70,9 @@ const { variant = "primary" } = Astro.props;
             {secondEntry.data.title}
           </h3>
           <time
-            datetime={secondEntry.data.publishDate.toISOString()}
+            datetime={secondEntry.data.date.toISOString()}
             class="order-first text-sm text-neutral-600">
-            {getFormattedDate(secondEntry.data.publishDate)}
+            {getFormattedDate(secondEntry.data.date)}
           </time>
           <p class="mt-2.5 text-base text-neutral-600">
             {secondEntry.data.snippet}
@@ -93,8 +80,8 @@ const { variant = "primary" } = Astro.props;
           <a
             class="mt-6 flex gap-x-3 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"
             aria-label={secondEntry.data.title}
-            href={`/blog/${firstEntry.slug}`}>
-            {t("fromBlog.readMore")}
+            href={`/work/${firstEntry.slug}`}>
+            {t("moreCaseStudies.readMore")}
             <svg
               viewBox="0 0 24 6"
               aria-hidden="true"

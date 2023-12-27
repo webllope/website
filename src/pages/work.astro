@@ -1,17 +1,39 @@
 ---
+import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
+
+import AboutYourProject from "@components/about-your-project.astro";
+
 import Sectionhead from "@components/sectionhead.astro";
-import Layout from "@layouts/Layout.astro";
-import FamilyFund from "@assets/logos/logomark-dark.4d2947be.svg";
-import Unseal from "@assets/logos/logomark-dark.73187f97.svg";
-import Phobia from "@assets/logos/logomark-dark.00d7d7b3.svg";
-import MailSmirkSmall from "@assets/logos/logo-dark.ac5d2e8d.svg";
-import PhobiaSmall from "@assets/logos/logo-dark.353d4760.svg";
-import FamilyFundSmall from "@assets/logos/logo-dark.7370ef3f.svg";
-import UnsealSmall from "@assets/logos/logo-dark.4785dd63.svg";
-import HomeWorkSmall from "@assets/logos/logo-dark.e87ae13a.svg";
-import GreenLifeSmall from "@assets/logos/logo-dark.645d638e.svg";
-import BrightPathSmall from "@assets/logos/logo-dark.1ff7dc9b.svg";
-import NorthAdventuresSmall from "@assets/logos/logo-dark.ad8a4f58.svg";
+import Layout from "@layouts/layout.astro";
+import MailSmirkSmall from "@assets/logos/logo-dark.mailsmirk.svg";
+import PhobiaSmall from "@assets/logos/logo-dark.phobia.svg";
+import FamilyFundSmall from "@assets/logos/logo-dark.familyfund.svg";
+import UnsealSmall from "@assets/logos/logo-dark.unseal.svg";
+import HomeWorkSmall from "@assets/logos/logo-dark.homework.svg";
+import GreenLifeSmall from "@assets/logos/logo-dark.greenlife.svg";
+import BrightPathSmall from "@assets/logos/logo-dark.brightpath.svg";
+import NorthAdventuresSmall from "@assets/logos/logo-dark.northadventures.svg";
+import Background from "@components/background.astro";
+
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const publishedWorkEntries = (
+  await getCollection("work", ({ data }) => {
+    return !data.draft && data.date < new Date();
+  })
+)
+  .sort(function (a, b) {
+    return b.data.date.valueOf() - a.data.date.valueOf();
+  })
+  .slice(0, 3);
+
+const clients = await getCollection("clients", ({ slug }) => {
+  return publishedWorkEntries.some((work) => work.data.client.slug == slug);
+});
 ---
 
 <Layout title="Our work">
@@ -27,265 +49,86 @@ import NorthAdventuresSmall from "@assets/logos/logo-dark.ad8a4f58.svg";
         <h2 class="font-display text-2xl font-semibold text-neutral-950">
           Case studies
         </h2>
-      </div><div class="mt-10 space-y-20 sm:space-y-24 lg:space-y-32">
-        <div style="opacity: 1; transform: none;">
-          <article>
-            <div
-              class="grid grid-cols-3 gap-x-8 gap-y-8 pt-16 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
-              <div
-                class="col-span-full sm:flex sm:items-center sm:justify-between sm:gap-x-8 lg:col-span-1 lg:block">
-                <div class="sm:flex sm:items-center sm:gap-x-6 lg:block">
-                  <img
-                    alt=""
-                    loading="lazy"
-                    width="36"
-                    height="36"
-                    decoding="async"
-                    data-nimg="1"
-                    class="h-16 w-16 flex-none"
-                    src={FamilyFund.src}
-                    style="color: transparent;"
-                  /><h3
-                    class="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
-                    FamilyFund
-                  </h3>
-                </div><div class="mt-1 flex gap-x-4 sm:mt-0 lg:block">
-                  <p
-                    class="text-sm tracking-tight text-neutral-950 after:ml-4 after:font-semibold after:text-neutral-300 after:content-['/'] lg:mt-2 lg:after:hidden">
-                    Web development, CMS
-                  </p><p class="text-sm text-neutral-950 lg:mt-2">
-                    <time datetime="2023-01">January 2023</time>
-                  </p>
-                </div>
-              </div><div class="col-span-full lg:col-span-2 lg:max-w-2xl">
-                <p class="font-display text-4xl font-medium text-neutral-950">
-                  <a href="/work/family-fund"
-                    >Skip the bank, borrow from those you trust</a
-                  >
-                </p><div class="mt-6 space-y-6 text-base text-neutral-600">
-                  <p>
-                    FamilyFund is a crowdfunding platform for friends and
-                    family. Allowing users to take personal loans from their
-                    network without a traditional financial institution.
-                  </p><p>
-                    We developed a custom CMS to power their blog with and
-                    optimised their site to rank higher for the keywords “Gary
-                    Vee” and “Tony Robbins”.
-                  </p>
-                </div><div class="mt-8 flex">
-                  <a
-                    class="inline-flex rounded-full px-4 py-1.5 text-sm font-semibold transition bg-neutral-950 text-white hover:bg-neutral-800"
-                    aria-label="Read case study: FamilyFund"
-                    href="/work/family-fund"
-                    ><span class="relative top-px">Read case study</span></a
-                  >
-                </div><div
-                  class="pl-8 mt-12 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
-                  <figure class="text-sm">
-                    <blockquote
-                      class="text-neutral-600 [&>*]:relative [&>:first-child]:before:absolute [&>:first-child]:before:right-full [&>:first-child]:before:content-['“'] [&>:last-child]:after:content-['”']">
-                      <p>
-                        Working with Studio, we felt more like a partner than a
-                        customer. They really resonated with our mission to
-                        change the way people convince their parents to cash out
-                        their pensions.
+      </div>
+      <div class="mt-10 space-y-20 sm:space-y-24 lg:space-y-32">
+        {
+          publishedWorkEntries.map((work) => {
+            const client = clients.find(
+              (client) => client.slug === work.data.client.slug,
+            )!;
+
+            return (
+              <article>
+                <div class="grid grid-cols-3 gap-x-8 gap-y-8 pt-16 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
+                  <div class="col-span-full sm:flex sm:items-center sm:justify-between sm:gap-x-8 lg:col-span-1 lg:block">
+                    <div class="sm:flex sm:items-center sm:gap-x-6 lg:block">
+                      <Image
+                        alt={client.data.name}
+                        loading="lazy"
+                        width="36"
+                        height="36"
+                        decoding="async"
+                        data-nimg="1"
+                        class="h-16 w-16 flex-none"
+                        src={client.data.logos.markDark}
+                        style="color: transparent;"
+                      />
+                      <h3 class="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
+                        {client.data.name}
+                      </h3>
+                    </div>
+                    <div class="mt-1 flex gap-x-4 sm:mt-0 lg:block">
+                      <p class="text-sm tracking-tight text-neutral-950 after:ml-4 after:font-semibold after:text-neutral-300 after:content-['/'] lg:mt-2 lg:after:hidden">
+                        {work.data.tags
+                          .map((tag) => t(`tags.${tag}`))
+                          .join(", ")}
                       </p>
-                    </blockquote><figcaption
-                      class="mt-6 font-semibold text-neutral-950">
-                      Debra Fiscal, CEO of FamilyFund
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-        <div style="opacity: 1; transform: none;">
-          <article>
-            <div
-              class="grid grid-cols-3 gap-x-8 gap-y-8 pt-16 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
-              <div
-                class="col-span-full sm:flex sm:items-center sm:justify-between sm:gap-x-8 lg:col-span-1 lg:block">
-                <div class="sm:flex sm:items-center sm:gap-x-6 lg:block">
-                  <img
-                    alt=""
-                    loading="lazy"
-                    width="36"
-                    height="36"
-                    decoding="async"
-                    data-nimg="1"
-                    class="h-16 w-16 flex-none"
-                    src={Unseal.src}
-                    style="color: transparent;"
-                  /><h3
-                    class="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
-                    Unseal
-                  </h3>
-                </div><div class="mt-1 flex gap-x-4 sm:mt-0 lg:block">
-                  <p
-                    class="text-sm tracking-tight text-neutral-950 after:ml-4 after:font-semibold after:text-neutral-300 after:content-['/'] lg:mt-2 lg:after:hidden">
-                    Blockchain development
-                  </p><p class="text-sm text-neutral-950 lg:mt-2">
-                    <time datetime="2022-10">October 2022</time>
-                  </p>
-                </div>
-              </div><div class="col-span-full lg:col-span-2 lg:max-w-2xl">
-                <p class="font-display text-4xl font-medium text-neutral-950">
-                  <a href="/work/unseal">Get a hodl of your health</a>
-                </p><div class="mt-6 space-y-6 text-base text-neutral-600">
-                  <p>
-                    Unseal is the first NFT platform where users can mint and
-                    trade NFTs of their own personal health records, allowing
-                    them to take control of their data.
-                  </p><p>
-                    We built out the blockchain infrastructure that supports
-                    Unseal. Unfortunately, we took a massive loss on this
-                    project when Unseal’s cryptocurrency, PlaceboCoin, went to
-                    zero.
-                  </p>
-                </div><div class="mt-8 flex">
-                  <a
-                    class="inline-flex rounded-full px-4 py-1.5 text-sm font-semibold transition bg-neutral-950 text-white hover:bg-neutral-800"
-                    aria-label="Read case study: Unseal"
-                    href="/work/unseal"
-                    ><span class="relative top-px">Read case study</span></a
-                  >
-                </div><div
-                  class="pl-8 mt-12 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
-                  <figure class="text-sm">
-                    <blockquote
-                      class="text-neutral-600 [&>*]:relative [&>:first-child]:before:absolute [&>:first-child]:before:right-full [&>:first-child]:before:content-['“'] [&>:last-child]:after:content-['”']">
-                      <p>
-                        Studio did an amazing job building out our core
-                        blockchain infrastructure and I’m sure once PlaceboCoin
-                        rallies they’ll be able to finish the project.
+                      <p class="text-sm text-neutral-950 lg:mt-2">
+                        <time datetime="2023-01">January 2023</time>
                       </p>
-                    </blockquote><figcaption
-                      class="mt-6 font-semibold text-neutral-950">
-                      Emily Selman, Head of Engineering at Unseal
-                    </figcaption>
-                  </figure>
+                    </div>
+                  </div>
+                  <div class="col-span-full lg:col-span-2 lg:max-w-2xl">
+                    <p class="font-display text-4xl font-medium text-neutral-950">
+                      <a href={`/work/${work.slug}`}>{work.data.title}</a>
+                    </p>
+                    <div class="mt-6 space-y-6 text-base text-neutral-600">
+                      <p>{work.data.description}</p>
+                      <p>{work.data.snippet}</p>
+                    </div>
+                    <div class="mt-8 flex">
+                      <a
+                        class="inline-flex rounded-full px-4 py-1.5 text-sm font-semibold transition bg-neutral-950 text-white hover:bg-neutral-800"
+                        aria-label="Read case study: FamilyFund"
+                        href={`/work/${work.slug}`}>
+                        <span class="relative top-px">Read case study</span>
+                      </a>
+                    </div>
+                    <div class="pl-8 mt-12 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
+                      <figure class="text-sm">
+                        <blockquote class="text-neutral-600 [&>*]:relative [&>:first-child]:before:absolute [&>:first-child]:before:right-full [&>:first-child]:before:content-['“'] [&>:last-child]:after:content-['”']">
+                          <p>{work.data.quote.message}</p>
+                        </blockquote>
+                        <figcaption class="mt-6 font-semibold text-neutral-950">
+                          {work.data.quote.author.name},{" "}
+                          {work.data.quote.author.position}
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </article>
-        </div><div style="opacity: 1; transform: none;">
-          <article>
-            <div
-              class="grid grid-cols-3 gap-x-8 gap-y-8 pt-16 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
-              <div
-                class="col-span-full sm:flex sm:items-center sm:justify-between sm:gap-x-8 lg:col-span-1 lg:block">
-                <div class="sm:flex sm:items-center sm:gap-x-6 lg:block">
-                  <img
-                    alt=""
-                    loading="lazy"
-                    width="36"
-                    height="36"
-                    decoding="async"
-                    data-nimg="1"
-                    class="h-16 w-16 flex-none"
-                    src={Phobia.src}
-                    style="color: transparent;"
-                  /><h3
-                    class="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
-                    Phobia
-                  </h3>
-                </div><div class="mt-1 flex gap-x-4 sm:mt-0 lg:block">
-                  <p
-                    class="text-sm tracking-tight text-neutral-950 after:ml-4 after:font-semibold after:text-neutral-300 after:content-['/'] lg:mt-2 lg:after:hidden">
-                    App development
-                  </p><p class="text-sm text-neutral-950 lg:mt-2">
-                    <time datetime="2022-06">June 2022</time>
-                  </p>
-                </div>
-              </div><div class="col-span-full lg:col-span-2 lg:max-w-2xl">
-                <p class="font-display text-4xl font-medium text-neutral-950">
-                  <a href="/work/phobia">Overcome your fears, find your match</a
-                  >
-                </p><div class="mt-6 space-y-6 text-base text-neutral-600">
-                  <p>
-                    Find love in the face of fear — Phobia is a dating app that
-                    matches users based on their mutual phobias so they can be
-                    scared together.
-                  </p><p>
-                    We worked with Phobia to develop a new onboarding flow. A
-                    user is shown pictures of common phobias and we use the
-                    microphone to detect which ones make them scream, feeding
-                    the results into the matching algorithm.
-                  </p>
-                </div><div class="mt-8 flex">
-                  <a
-                    class="inline-flex rounded-full px-4 py-1.5 text-sm font-semibold transition bg-neutral-950 text-white hover:bg-neutral-800"
-                    aria-label="Read case study: Phobia"
-                    href="/work/phobia"
-                    ><span class="relative top-px">Read case study</span></a
-                  >
-                </div><div
-                  class="pl-8 mt-12 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
-                  <figure class="text-sm">
-                    <blockquote
-                      class="text-neutral-600 [&>*]:relative [&>:first-child]:before:absolute [&>:first-child]:before:right-full [&>:first-child]:before:content-['“'] [&>:last-child]:after:content-['”']">
-                      <p>
-                        The team at Studio went above and beyond with our
-                        onboarding, even finding a way to access the user’s
-                        microphone without triggering one of those annoying
-                        permission dialogs.
-                      </p>
-                    </blockquote><figcaption
-                      class="mt-6 font-semibold text-neutral-950">
-                      Jenny Wilson, CPO of Phobia
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
+              </article>
+            );
+          })
+        }
       </div>
     </div>
   </div>
 
   <div
     class="relative isolate bg-neutral-50 py-16 sm:py-28 md:py-32 mt-24 sm:mt-32 lg:mt-40">
-    <svg
-      aria-hidden="true"
-      class="absolute inset-0 -z-10 h-full w-full fill-neutral-100 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_50%,transparent_60%)]"
-      ><rect width="100%" height="100%" fill="url(#:r24:)" stroke-width="0"
-      ></rect><svg x="50%" y="-256" stroke-width="0" class="overflow-visible"
-        ><path
-          transform="translate(64 160)"
-          d="M45.119 4.5a11.5 11.5 0 0 0-11.277 9.245l-25.6 128C6.82 148.861 12.262 155.5 19.52 155.5h63.366a11.5 11.5 0 0 0 11.277-9.245l25.6-128c1.423-7.116-4.02-13.755-11.277-13.755H45.119Z"
-        ></path><path
-          transform="translate(128 320)"
-          d="M45.119 4.5a11.5 11.5 0 0 0-11.277 9.245l-25.6 128C6.82 148.861 12.262 155.5 19.52 155.5h63.366a11.5 11.5 0 0 0 11.277-9.245l25.6-128c1.423-7.116-4.02-13.755-11.277-13.755H45.119Z"
-        ></path><path
-          transform="translate(288 480)"
-          d="M45.119 4.5a11.5 11.5 0 0 0-11.277 9.245l-25.6 128C6.82 148.861 12.262 155.5 19.52 155.5h63.366a11.5 11.5 0 0 0 11.277-9.245l25.6-128c1.423-7.116-4.02-13.755-11.277-13.755H45.119Z"
-        ></path><path
-          transform="translate(512 320)"
-          d="M45.119 4.5a11.5 11.5 0 0 0-11.277 9.245l-25.6 128C6.82 148.861 12.262 155.5 19.52 155.5h63.366a11.5 11.5 0 0 0 11.277-9.245l25.6-128c1.423-7.116-4.02-13.755-11.277-13.755H45.119Z"
-        ></path><path
-          transform="translate(544 640)"
-          d="M45.119 4.5a11.5 11.5 0 0 0-11.277 9.245l-25.6 128C6.82 148.861 12.262 155.5 19.52 155.5h63.366a11.5 11.5 0 0 0 11.277-9.245l25.6-128c1.423-7.116-4.02-13.755-11.277-13.755H45.119Z"
-        ></path><path
-          transform="translate(320 800)"
-          d="M45.119 4.5a11.5 11.5 0 0 0-11.277 9.245l-25.6 128C6.82 148.861 12.262 155.5 19.52 155.5h63.366a11.5 11.5 0 0 0 11.277-9.245l25.6-128c1.423-7.116-4.02-13.755-11.277-13.755H45.119Z"
-        ></path></svg
-      ><defs
-        ><pattern
-          id=":r24:"
-          width="96"
-          height="480"
-          x="50%"
-          patternUnits="userSpaceOnUse"
-          patternTransform="translate(0 -256)"
-          fill="none"
-          ><path
-            d="M128 0 98.572 147.138A16 16 0 0 1 82.883 160H13.117a16 16 0 0 0-15.69 12.862l-26.855 134.276A16 16 0 0 1-45.117 320H-116M64-160 34.572-12.862A16 16 0 0 1 18.883 0h-69.766a16 16 0 0 0-15.69 12.862l-26.855 134.276A16 16 0 0 1-109.117 160H-180M192 160l-29.428 147.138A15.999 15.999 0 0 1 146.883 320H77.117a16 16 0 0 0-15.69 12.862L34.573 467.138A16 16 0 0 1 18.883 480H-52M-136 480h58.883a16 16 0 0 0 15.69-12.862l26.855-134.276A16 16 0 0 1-18.883 320h69.766a16 16 0 0 0 15.69-12.862l26.855-134.276A16 16 0 0 1 109.117 160H192M-72 640h58.883a16 16 0 0 0 15.69-12.862l26.855-134.276A16 16 0 0 1 45.117 480h69.766a15.999 15.999 0 0 0 15.689-12.862l26.856-134.276A15.999 15.999 0 0 1 173.117 320H256M-200 320h58.883a15.999 15.999 0 0 0 15.689-12.862l26.856-134.276A16 16 0 0 1-82.883 160h69.766a16 16 0 0 0 15.69-12.862L29.427 12.862A16 16 0 0 1 45.117 0H128"
-          ></path></pattern
-        ></defs
-      ></svg
-    ><div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <Background />
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:max-w-none">
         <div style="opacity: 1; transform: none;">
           <figure class="mx-auto max-w-4xl">
@@ -457,43 +300,7 @@ import NorthAdventuresSmall from "@assets/logos/logo-dark.ad8a4f58.svg";
         </ul>
       </div>
     </div>
-  </div><div class="mx-auto max-w-7xl px-6 lg:px-8 mt-24 sm:mt-32 lg:mt-40">
-    <div class="mx-auto max-w-2xl lg:max-w-none">
-      <div
-        class="-mx-6 rounded-4xl bg-neutral-950 px-6 py-20 sm:mx-0 sm:py-32 md:px-12"
-        style="opacity: 1; transform: none;">
-        <div class="mx-auto max-w-4xl">
-          <div class="max-w-xl">
-            <h2
-              class="font-display text-3xl font-medium text-white [text-wrap:balance] sm:text-4xl">
-              Tell us about your project
-            </h2><div class="mt-6 flex">
-              <a
-                class="inline-flex rounded-full px-4 py-1.5 text-sm font-semibold transition bg-white text-neutral-950 hover:bg-neutral-200"
-                href="/contact"><span class="relative top-px">Say Hej</span></a
-              >
-            </div><div class="mt-10 border-t border-white/10 pt-10">
-              <h3 class="font-display text-base font-semibold text-white">
-                Our offices
-              </h3><ul
-                role="list"
-                class="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
-                <li>
-                  <address class="text-sm not-italic text-neutral-300">
-                    <strong class="text-white">Copenhagen</strong><br />1
-                    Carlsberg Gate<br />1260, København, Denmark
-                  </address>
-                </li><li>
-                  <address class="text-sm not-italic text-neutral-300">
-                    <strong class="text-white">Billund</strong><br />24 Lego
-                    Allé<br />7190, Billund, Denmark
-                  </address>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
+
+  <AboutYourProject />
 </Layout>

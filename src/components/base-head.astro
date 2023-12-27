@@ -6,7 +6,7 @@ import "@styles/fonts.css";
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
 const resolvedImageWithDomain = new URL(
-  "/opengraph.jpg",
+  "/opengraph.svg",
   Astro.site,
 ).toString();
 
@@ -17,29 +17,40 @@ const makeTitle = title ? title + " | " + "Webllope" : "Webllope";
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <meta name="generator" content={Astro.generator} />
 
-<link rel="preload" href="/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<!-- <link rel="icon" type="image/svg+xml" href="/favicon.ico" /> -->
+<link rel="manifest" href="/site.webmanifest">
+
+<link
+  rel="preload"
+  href="/fonts/Mona-Sans.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
 
 <SEO
   title={makeTitle}
-  description="Astroship is a starter website template for Astro built with TailwindCSS."
+  description="Webllope is a passionate team of engineers that brings technology to small businesses."
   canonical={canonicalURL}
   twitter={{
-    creator: "@surjithctly",
-    site: "@web3templates",
+    creator: "@webllope",
+    site: "@webllope",
     card: "summary_large_image",
   }}
   openGraph={{
     basic: {
       url: canonicalURL,
       type: "website",
-      title: `Astroship - Starter Template for Astro`,
+      title: `Webllope - The website for your business`,
       image: resolvedImageWithDomain,
     },
     image: {
-      alt: "Astroship Homepage Screenshot",
+      alt: "Webllope core",
     },
   }}
 />

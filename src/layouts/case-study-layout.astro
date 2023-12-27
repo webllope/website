@@ -1,0 +1,170 @@
+---
+import Layout from "./layout.astro";
+
+import { Image } from "astro:assets";
+import { getEntry, type CollectionEntry } from "astro:content";
+import Background from "@components/background.astro";
+
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import MoreCaseStudies from "@components/more-case-studies.astro";
+import AboutYourProject from "@components/about-your-project.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+interface Props {
+  frontmatter: CollectionEntry<"work">["data"];
+}
+
+const { frontmatter } = Astro.props;
+const date = new Date(frontmatter.date);
+
+const client = await getEntry(frontmatter.client);
+---
+
+<Layout title={frontmatter.title}>
+  <Background />
+  <main class="w-full flex-auto">
+    <article class="mt-24 sm:mt-32 lg:mt-40">
+      <header>
+        <div
+          class="mx-auto max-w-7xl px-6 lg:px-8 mt-24 sm:mt-32 lg:mt-40 text-center">
+          <div class="mx-auto max-w-2xl lg:max-w-none">
+            <div style="opacity: 1; transform: none;">
+              <h1>
+                <span
+                  class="block font-display text-base font-semibold text-neutral-950">
+                  Case Study
+                </span>
+
+                <span
+                  class="mt-6 block max-w-5xl font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-6xl mx-auto">
+                  {frontmatter.title}
+                </span>
+              </h1>
+              <p class="mt-6 max-w-3xl text-xl text-neutral-600 mx-auto">
+                {frontmatter.description}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-24 border-t border-neutral-200 bg-white/50 sm:mt-32 lg:mt-40">
+          <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl lg:max-w-none">
+              <div class="mx-auto max-w-5xl">
+                <dl
+                  class="-mx-6 grid grid-cols-1 text-sm text-neutral-950 sm:mx-0 sm:grid-cols-3">
+                  <div
+                    class="border-t border-neutral-200 px-6 py-4 first:border-t-0 sm:border-l sm:border-t-0">
+                    <dt class="font-semibold">Client</dt>
+                    <dd>{client.data.name}</dd>
+                  </div>
+                  <div
+                    class="border-t border-neutral-200 px-6 py-4 first:border-t-0 sm:border-l sm:border-t-0">
+                    <dt class="font-semibold">Year</dt>
+                    <dd>
+                      <time datetime={date.getFullYear().toString()}>
+                        {date.getFullYear()}
+                      </time>
+                    </dd>
+                  </div>
+                  <div
+                    class="border-t border-neutral-200 px-6 py-4 first:border-t-0 sm:border-l sm:border-t-0">
+                    <dt class="font-semibold">Service</dt>
+                    <dd>
+                      {
+                        frontmatter.tags
+                          .map((tag) => t(`tags.${tag}`))
+                          .join(", ")
+                      }
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="border-y border-neutral-200 bg-neutral-100">
+            <div class="-my-px mx-auto max-w-[76rem] bg-neutral-200">
+              <div class="group relative">
+                <Image
+                  alt={frontmatter.cover.alt}
+                  fetchpriority="high"
+                  width="3648"
+                  height="3117"
+                  decoding="async"
+                  data-nimg="1"
+                  class="w-full"
+                  sizes="(min-width: 1216px) 76rem, 100vw"
+                  src={frontmatter.cover.src}
+                  style="color: transparent; filter: grayscale(1);"
+                />
+                <div
+                  class="pointer-events-none absolute left-0 top-0 w-full opacity-0 transition duration-300 group-hover:opacity-100"
+                  aria-hidden="true">
+                  <Image
+                    alt={frontmatter.cover.alt}
+                    fetchpriority="high"
+                    width="3648"
+                    height="3117"
+                    decoding="async"
+                    data-nimg="1"
+                    class="w-full"
+                    sizes="(min-width: 1216px) 76rem, 100vw"
+                    src={frontmatter.cover.src}
+                    style="color: transparent;"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-24 sm:mt-32 lg:mt-40">
+        <div class="mx-auto max-w-2xl lg:max-w-none">
+          <div
+            class="[&>*]:mx-auto [&>*]:max-w-3xl [&>:first-child]:!mt-0 [&>:last-child]:!mb-0 mt-24 sm:mt-32 lg:mt-40">
+            <article
+              class="prose lg:prose-xl"
+              style="font-feature-settings: normal; font-variation-settings: normal;">
+              <slot />
+            </article>
+            <ul role="list" class="my-6 flex flex-wrap gap-4">
+              {
+                frontmatter.tags.map((tag) => (
+                  <li class="rounded-full bg-neutral-100 px-4 py-1.5 text-base text-neutral-600">
+                    {t(`tags.${tag}`)}
+                  </li>
+                ))
+              }
+            </ul>
+
+            <div
+              class="pl-8 mt-12 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
+              <figure class="text-lg">
+                <blockquote
+                  class="text-neutral-600 [&>*]:relative [&>:first-child]:before:absolute [&>:first-child]:before:right-full [&>:first-child]:before:content-['“'] [&>:last-child]:after:content-['”']">
+                  <p>{frontmatter.quote.message}</p>
+                </blockquote>
+                <figcaption class="mt-6 font-semibold text-neutral-950">
+                  {frontmatter.quote.author.name},{" "}
+                  {frontmatter.quote.author.position}
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <div class="relative pt-24 sm:pt-32 lg:pt-40 mt-24 sm:mt-32 lg:mt-40">
+    <div
+      class="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-gradient-to-b from-neutral-50">
+      <Background />
+    </div>
+    <MoreCaseStudies />
+
+    <AboutYourProject />
+  </div>
+</Layout>
