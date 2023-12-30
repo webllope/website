@@ -73,6 +73,9 @@ const tags = {
   webdev: "Desarrolo web",
   cms: "CMS",
   blockchain: "Desarrollo Blockchain",
+  web3: "Web3",
+  frontend: "Frontend",
+  backend: "Backend",
 };
 
 export const content = {
