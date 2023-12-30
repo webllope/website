@@ -19,6 +19,7 @@ const teamCollection = defineCollection({
 const blogCollection = defineCollection({
   schema: z.object({
     draft: z.boolean(),
+    lang: z.enum(["es", "en"]),
     title: z.string(),
     snippet: z.string(),
     image: z.object({
@@ -27,7 +28,6 @@ const blogCollection = defineCollection({
     }),
     publishDate: z.string().transform((str) => new Date(str)),
     author: reference("team"),
-    category: z.string(),
     tags: z.array(z.string()),
   }),
 });

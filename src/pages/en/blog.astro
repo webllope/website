@@ -5,9 +5,13 @@ import Sectionhead from "@components/sectionhead.astro";
 import Entry from "@components/blog/entry.astro";
 import AboutYourProject from "@components/about-your-project.astro";
 
+import { getLangFromUrl } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+
 const publishedBlogEntries = (
   await getCollection("blog", ({ data }) => {
-    return !data.draft && data.publishDate < new Date();
+    return !data.draft && data.lang === lang && data.publishDate < new Date();
   })
 )
   .sort(function (a, b) {

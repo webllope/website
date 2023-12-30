@@ -2,7 +2,7 @@
 import { getEntry } from "astro:content";
 import { Image } from "astro:assets";
 
-import { getFormattedDate } from "@utils/all";
+import { formatDate } from "@i18n/utils";
 
 import type { CollectionEntry } from "astro:content";
 import { getLangFromUrl, useTranslations} from "@i18n/utils";
@@ -17,6 +17,8 @@ const author = await getEntry(blog.data.author);
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+const getFormattedDate = (date) => formatDate(lang, date);
 
 const url = getRelativeLocaleUrl(lang, `/blog/${blog.slug}`);
 ---

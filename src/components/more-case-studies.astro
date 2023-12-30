@@ -1,11 +1,14 @@
 ---
-import { getFormattedDate } from "@utils/all";
+import { formatDate } from "@i18n/utils";
+
 import { getCollection } from "astro:content";
 
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+const getFormattedDate = (date) => formatDate(lang, date);
 
 const [firstEntry, secondEntry] = (
   await getCollection("work", ({ data }) => {

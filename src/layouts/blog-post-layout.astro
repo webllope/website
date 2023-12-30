@@ -1,5 +1,5 @@
 ---
-import { getFormattedDate } from "@utils/all";
+import { formatDate, getLangFromUrl, useTranslations } from "@i18n/utils";
 import Layout from "./layout.astro";
 import { getEntry } from "astro:content";
 
@@ -11,6 +11,11 @@ import AboutYourProject from "@components/about-your-project.astro";
 interface Props {
   frontmatter: CollectionEntry<"blog">["data"];
 }
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const getFormattedDate = (date) => formatDate(lang, date);
 
 const { frontmatter } = Astro.props;
 

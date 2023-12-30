@@ -2,6 +2,7 @@
 import { social } from "../data";
 import Logo from "./logo.astro";
 
+import { getRelativeLocaleUrl } from "astro:i18n";
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
@@ -53,7 +54,9 @@ const items = {
                   ))
                 }
                 <li class="mt-4">
-                  <a class="transition hover:text-neutral-950" href="/work">
+                  <a
+                    class="transition hover:text-neutral-950"
+                    href={getRelativeLocaleUrl(lang, "work")}>
                     {t("footer.seeAll")}
                     <span aria-hidden="true">→</span>
                   </a>
