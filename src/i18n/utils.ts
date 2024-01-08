@@ -20,8 +20,16 @@ export function replaceLangFromUrl(url: URL, newLang: keyof typeof languages) {
 export function useTranslations(lang: keyof typeof dictionaries) {
   return function t(
     key: NestedObjectKeys<(typeof dictionaries)[typeof defaultLang]>,
+    options?: { html?: boolean },
   ) {
-    return get(dictionaries[lang], key) || get(dictionaries[defaultLang], key);
+    const translation =
+      get(dictionaries[lang], key) || get(dictionaries[defaultLang], key);
+
+    if (options?.html && translation) {
+      return { __html: translation }; // Return an object with __html property for HTML content
+    }
+
+    return translation;
   };
 }
 

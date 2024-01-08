@@ -1,29 +1,30 @@
 ---
 import MailSmirkSmall from "@assets/logos/logo-light.mailsmirk.svg";
-import PhobiaSmall from "@assets/logos/logo-light.phobia.svg";
-import FamilyFundSmall from "@assets/logos/logo-light.familyfund.svg";
-import UnsealSmall from "@assets/logos/logo-light.unseal.svg";
 import HomeWorkSmall from "@assets/logos/logo-light.homework.svg";
 import GreenLifeSmall from "@assets/logos/logo-light.greenlife.svg";
 import BrightPathSmall from "@assets/logos/logo-light.brightpath.svg";
 import NorthAdventuresSmall from "@assets/logos/logo-light.northadventures.svg";
+import JaimaPuertoLogo from "@assets/logos/JaimaPuertoLogo.webp";
+import SalonChickLogo from "@assets/logos/SalonChickLogo.png";
+import DettagliLogo from "@assets/logos/DettagliLogo.png";
+import NeoaestheticLogo from "@assets/logos/NeoaestheticLogo.webp";
 
 const clients = [
   {
-    name: "Phobia",
-    img: PhobiaSmall.src,
+    name: "Jaima Puerto",
+    img: JaimaPuertoLogo.src,
   },
   {
-    name: "Family Fund",
-    img: FamilyFundSmall.src,
+    name: "Salon Chick",
+    img: SalonChickLogo.src,
   },
   {
-    name: "Unseal",
-    img: UnsealSmall.src,
+    name: "Dettagli",
+    img: DettagliLogo.src,
   },
   {
-    name: "Mail Smirk",
-    img: MailSmirkSmall.src,
+    name: "Neoaesthetic",
+    img: NeoaestheticLogo.src,
   },
   {
     name: "Home Work",
@@ -52,12 +53,11 @@ const clients = [
           <img
             alt={client.name}
             loading="lazy"
-            width="184"
-            height="36"
             decoding="async"
             data-nimg="1"
             src={client.img}
             style="color: transparent;"
+            class="object-contain w-[185px] h-[60px]"
           />
         </div>
       </li>

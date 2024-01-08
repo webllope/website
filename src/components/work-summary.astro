@@ -1,92 +1,44 @@
 ---
-import { Image } from "astro:assets";
+import Link from "./ui/link.astro";
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
-import { getCollection } from "astro:content";
+import officeImage from "@assets/office2.jpg";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-
-const publishedWorkEntries = (
-  await getCollection("work", ({ data }) => {
-    return !data.draft && data.date < new Date();
-  })
-)
-  .sort(function (a, b) {
-    return b.data.date.valueOf() - a.data.date.valueOf();
-  })
-  .slice(0, 3);
-
-const clients = await getCollection("clients", ({ slug }) => {
-  return publishedWorkEntries.some((work) => work.data.client.slug == slug);
-});
 ---
 
 <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-24 sm:mt-32 lg:mt-40">
-  <div class="mx-auto max-w-2xl lg:max-w-none">
-    <div class="max-w-2xl" style="opacity: 1; transform: none;">
-      <h2>
-        <span
-          class="block font-display tracking-tight [text-wrap:balance] text-4xl font-medium sm:text-5xl text-neutral-950"
-          >Harnessing technology for a brighter future</span
-        >
-      </h2><div class="mt-6 text-xl text-neutral-600">
-        <p>
-          We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
-          catch 22 situation.
-        </p>
+  <div class="flex flex-col lg:flex-row mx-auto max-w-2xl lg:max-w-none">
+    <div class="mx-auto max-w-2xl lg:max-w-none">
+      <div class="max-w-2xl" style="opacity: 1; transform: none;">
+        <h2>
+          <span class="block font-display tracking-tight [text-wrap:balance] text-4xl font-medium sm:text-5xl text-neutral-950">
+            {t("briefAboutUs.title")}
+          </span>
+        </h2>
+        <div class="mt-6 text-xl text-neutral-600">
+          <p>
+            {t("briefAboutUs.firstP")}
+          </p>
+        </div>
+        <div class="mt-6 text-xl text-neutral-600">
+          <p>
+            {t("briefAboutUs.secondP")}
+          </p>
+        </div>
+        <div class="mt-6 text-xl text-neutral-600">
+          <div class="flex mt-10">
+            <Link href="">{t("briefAboutUs.cta")}</Link>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
-<div class="mx-auto max-w-7xl px-6 lg:px-8 mt-16">
-  <div class="mx-auto max-w-2xl lg:max-w-none">
-    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
-      {
-        publishedWorkEntries.map((work) => {
-          const client = clients.find(
-            (client) => client.slug === work.data.client.slug,
-          )!;
-
-          return (
-            <article class="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8">
-              <h3>
-                <a href={`/work/${work.slug}`}>
-                  <span class="absolute inset-0 rounded-3xl" />
-                  <Image
-                    alt={work.data.name}
-                    loading="lazy"
-                    width="36"
-                    height="36"
-                    decoding="async"
-                    data-nimg="1"
-                    class="h-16 w-16"
-                    src={client.data.logos.markDark}
-                    style="color: transparent;"
-                  />
-                </a>
-              </h3>
-              <p class="mt-6 flex gap-x-2 text-sm text-neutral-950">
-                <time datetime="2023" class="font-semibold">
-                  2023
-                </time>
-                <span class="text-neutral-300" aria-hidden="true">
-                  /
-                </span>
-                <span>Case study</span>
-              </p>
-              <p class="mt-6 font-display text-2xl font-semibold text-neutral-950">
-                {work.data.title}
-              </p>
-
-              <p class="mt-4 text-base text-neutral-600">
-                {work.data.description}
-              </p>
-            </article>
-          );
-        })
-      }
+    <div class="lg:w-1/2 sm:mt-6 lg:mt-0 lg:ml-6 mt-6">
+      <img
+        src={officeImage.src}
+        alt="Imagen en oficina"
+        class="max-w-full h-auto"
+      />
     </div>
   </div>
 </div>

@@ -1,0 +1,27 @@
+---
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import WorkedWith from "@components/worked-with.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<div class="mt-24 rounded-4xl bg-neutral-950 py-20 sm:py-32 mb-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:max-w-none">
+          <div
+            class="flex items-center gap-x-8"
+            style="opacity: 1; transform: none;">
+            <h2
+              class="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
+              {t('clients.title')}
+            </h2><div class="h-px flex-auto bg-neutral-800"></div>
+          </div>
+          <div>
+            <WorkedWith />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

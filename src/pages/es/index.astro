@@ -9,12 +9,18 @@ import WorkedWith from "@components/worked-with.astro";
 import Message from "@components/message.astro";
 import WorkSummary from "@components/work-summary.astro";
 
-import PhobiaLogo from "@assets/logos/logo-dark.phobia.svg";
+import JaimaPuertoLogo from "@assets/logos/JaimaPuertoLogo.webp";
+
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <Layout title="">
   <Background />
   <Hero />
+  <Features />
   <div class="mt-24 rounded-4xl bg-neutral-950 py-20 sm:py-32 mb-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -24,7 +30,7 @@ import PhobiaLogo from "@assets/logos/logo-dark.phobia.svg";
             style="opacity: 1; transform: none;">
             <h2
               class="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-              Hemos trabajado con cientos de personas increíbles
+              Hemos trabajado con clientes increíbles
             </h2><div class="h-px flex-auto bg-neutral-800"></div>
           </div>
           <div>
@@ -36,13 +42,12 @@ import PhobiaLogo from "@assets/logos/logo-dark.phobia.svg";
   </div>
   <WorkSummary />
   <Message
-    content="El equipo de Studio se esforzó al máximo durante el onboard, preocupándose en todo momento por las necesidades y experencia del usuario final."
+    content={t("opinions.jaimapuerto.message")}
     image={{
       alt: "Phobia",
-      src: PhobiaLogo,
+      src: JaimaPuertoLogo,
     }}
   />
-  <Features />
   <Logos />
   <Cta />
 </Layout>
