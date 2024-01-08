@@ -1,7 +1,8 @@
 ---
 import Link from "./ui/link.astro";
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
-import officeImage from "@assets/office2.jpg";
+import officeImage from "@assets/office2.webp";
+import { getRelativeLocaleUrl } from "astro:i18n";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -11,24 +12,24 @@ const t = useTranslations(lang);
   <div class="flex flex-col lg:flex-row mx-auto max-w-2xl lg:max-w-none">
     <div class="mx-auto max-w-2xl lg:max-w-none">
       <div class="max-w-2xl" style="opacity: 1; transform: none;">
-        <h2>
-          <span class="block font-display tracking-tight [text-wrap:balance] text-4xl font-medium sm:text-5xl text-neutral-950">
+        <div
+          class="block font-display tracking-tight [text-wrap:balance] text-4xl font-medium sm:text-5xl text-neutral-950">
+          <h2>
             {t("briefAboutUs.title")}
-          </span>
-        </h2>
-        <div class="mt-6 text-xl text-neutral-600">
-          <p>
-            {t("briefAboutUs.firstP")}
-          </p>
+          </h2>
         </div>
         <div class="mt-6 text-xl text-neutral-600">
-          <p>
-            {t("briefAboutUs.secondP")}
+          <p set:html={t("briefAboutUs.firstP")} />
+        </div>
+        <div class="mt-6 text-xl text-neutral-600">
+          <p set:html={t("briefAboutUs.secondP")}>
           </p>
         </div>
         <div class="mt-6 text-xl text-neutral-600">
           <div class="flex mt-10">
-            <Link href="">{t("briefAboutUs.cta")}</Link>
+            <Link href={getRelativeLocaleUrl(lang, "/contact")}>
+              {t("briefAboutUs.cta")}
+            </Link>
           </div>
         </div>
       </div>

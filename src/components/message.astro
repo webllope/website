@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import Background from "./background.astro";
 
 interface Props {
+  title: string;
   content: string;
   image: {
     alt: string;
@@ -10,7 +11,7 @@ interface Props {
   };
 }
 
-const { content, image } = Astro.props;
+const { content, image, title } = Astro.props;
 ---
 
 <div
@@ -20,8 +21,11 @@ const { content, image } = Astro.props;
     <div class="mx-auto max-w-2xl lg:max-w-none">
       <div style="opacity: 1; transform: none;">
         <figure class="mx-auto max-w-4xl">
+          <div class="font-semibold text-4xl">
+            <h3>{title}</h3>
+          </div>
           <blockquote
-            class="relative font-display text-3xl font-medium tracking-tight text-neutral-950 sm:text-4xl">
+            class="relative font-display text-xl font-medium tracking-tight text-neutral-950 sm:text-2xl mt-8">
             <p
               class="before:content-['“'] after:content-['”'] sm:before:absolute sm:before:right-full">
               {content}

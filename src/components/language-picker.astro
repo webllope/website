@@ -20,7 +20,7 @@ const { variant = "normal" } = Astro.props;
         <Icon class="text-black" size={20} name="ic:baseline-translate" />
         {
           variant != "small" && (
-            <h1 class="font-normal mr-2">{languages[lang]}</h1>
+            <span class="font-normal mr-2">{languages[lang]}</span>
           )
         }
       </div>

@@ -2,6 +2,7 @@
 import Link from "./ui/link.astro";
 
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import { getRelativeLocaleUrl } from "astro:i18n";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -16,6 +17,6 @@ const t = useTranslations(lang);
     {t("cta.secondary")}
   </p>
   <div class="flex mt-10">
-    <Link href="#" style="inverted">{t("cta.button")}</Link>
+    <Link href={getRelativeLocaleUrl(lang, '/services')} style="inverted">{t("cta.button")}</Link>
   </div>
 </div>

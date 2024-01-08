@@ -1,0 +1,44 @@
+---
+import Link from "./ui/link.astro";
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import seoImage from "@assets/seo-image.webp";
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<div class="mx-auto max-w-7xl px-6 lg:px-8 mt-24 sm:mt-32 lg:mt-40">
+  <div class="flex flex-col lg:flex-row mx-auto max-w-2xl lg:max-w-none">
+    <div class="lg:w-1/2 sm:mt-6 lg:mt-0 lg:mr-6 mt-6">
+      <img
+        src={seoImage.src}
+        alt="Imagen en oficina"
+        class="max-w-full h-auto"
+      />
+    </div>
+    <div class="mx-auto max-w-2xl lg:max-w-none">
+      <div class="max-w-2xl" style="opacity: 1; transform: none;">
+        <div
+          class="block font-display tracking-tight [text-wrap:balance] text-4xl font-medium sm:text-5xl text-neutral-950">
+          <h2>
+            {t("briefSeoInfo.title")}
+          </h2>
+        </div>
+        <div class="mt-6 text-xl text-neutral-600">
+          <p set:html={t("briefSeoInfo.firstP")} />
+        </div>
+        <div class="mt-6 text-xl text-neutral-600">
+          <p set:html={t("briefSeoInfo.secondP")} />
+        </div>
+        <div class="mt-6 text-xl text-neutral-600">
+          <div class="flex mt-10">
+            <Link href={getRelativeLocaleUrl(lang, "/contact")}>
+              {t("briefSeoInfo.cta")}
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
