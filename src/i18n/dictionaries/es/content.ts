@@ -58,8 +58,39 @@ const briefSeoInfo = {
   firstP:
     "No somos una <strong>empresa de diseño web</strong> común y corriente, nuestros fundadores Daniel Maestre y Jose María Martínez son Ingenieros de Software con un amplio conocimiento del SEO y SEM. Estás en el lugar correcto si necesitas una <strong>página web para tu negocio</strong> llamativa y al mismo tiempo optimizada de forma que salga en las búsquedas en Google de los usuarios y potenciales clientes.",
   secondP:
-    "El <strong>posicionamiento seo y sem</strong> es el proceso en el que los creadores de páginas webs optimizan el contenido de la página web para que esta aparezca en las primeras posiciones de Google. Se consigue con una buena estructura de la página web y un buen contenido, aumentando así el número de visitas y de clientes potenciales de tu <strong>diseño web corporativo</strong>.",
+    "El SEO o posicionamiento en google es el proceso en el que los creadores de páginas webs optimizan el contenido de la página web para que esta aparezca en las primeras posiciones de Google. Se consigue con una buena estructura de la página web y un buen contenido, aumentando así el número de visitas y de clientes potenciales de tu <strong>diseño web corporativo</strong>.",
   cta: "Contacta con nosotros",
+};
+
+const roadmap = {
+  first: {
+    paragraph1:
+      "Analizamos tus objetivos, a la competencia y la clientela o <i>target</i> a quienes queremos atraer.",
+    paragraph2:
+      "Hecho el análisis procedemos a preparar unos diseños para tu página web empresarial que mostraremos y discutiremos y ajustaremos hasta su perfección.",
+  },
+  second: {
+    paragraph1:
+      "Nuestro equipo procede con la <strong>creación de la página web</strong> en base a los diseños y especificaciones acordadas previamente.",
+    paragraph2:
+      "Una vez los desarrolladores han terminado la parte visual de la misma, se te proporciona un enlace para que puedas ver tu sitio web con cualquier dispositivo y probar que todo esté correcto.",
+  },
+  third: {
+    paragraph1:
+      "Confirmado el aspecto visual deseado, en el caso de que se desee implementar SEO (Posicionamiento web) en la página, en este siguiente paso nuestro equipo procede con el estudio de palabras clave o <i>keywords</i> y la configuración para que Google rastree la página y la indexe en los resultados de búsqueda.",
+  },
+  fourth: {
+    paragraph1:
+      "Por último, nuestro equipo procede con las pruebas de calidad, de rendimiento, y de seguridad.",
+    paragraph2:
+      "Cuando cada prueba se haya realizado satisfactoriamente, se procede con el lanzamiento de la página web en el domino que se haya elegido (nombredeempresa.es, por ejemplo)",
+  },
+  fifth: {
+    paragraph1:
+      "¡Enhorabuena! Ya está tu sitio web publicado, esto es solo el comienzo, desde este momento estamos a tu disposición por si se quiere hacer algún cambio ligero en la página, como añadir fotos diferentes, nuevos productos...",
+    paragraph2:
+      "También actualizamos todos los plugin para mantenerlos al día para evitar problemas de seguridad y rendimiento, en caso de haberse hecho SEO, haremos un seguimiento mensual para comprobar que la página no pierda puestos de posicionamiento en Google.",
+  },
 };
 
 const opinions = {
@@ -122,4 +153,5 @@ export const content = {
   opinions,
   clients,
   briefSeoInfo,
+  roadmap,
 };

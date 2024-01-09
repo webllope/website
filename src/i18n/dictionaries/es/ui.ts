@@ -27,7 +27,7 @@ export const ui = {
     newsletter: {
       primary: "Regístrate para nuestra newsletter",
       secondary:
-        "Suscríbete para recibir nuestras últiams noticias sobre diseño, artículos, recursos e inspiración.",
+        "Suscríbete para recibir nuestras últimas noticias sobre diseño, artículos, recursos e inspiración.",
       placeholder: "Correo electrónico",
     },
   },

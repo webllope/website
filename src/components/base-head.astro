@@ -3,7 +3,16 @@ import { SEO } from "astro-seo";
 
 import "@styles/fonts.css";
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
+let canonicalURL;
+
+if (Astro.site) {
+  canonicalURL = new URL(Astro.site);
+  canonicalURL.pathname = "/";
+} else {
+  canonicalURL = new URL(Astro.url.pathname, Astro.site);
+}
+
+const canonicalURLString = canonicalURL.toString();
 
 const resolvedImageWithDomain = new URL(
   "/opengraph.svg",
@@ -19,11 +28,11 @@ const makeTitle = title ? title : "Webllope";
 <meta name="viewport" content="width=device-width" />
 <meta name="generator" content={Astro.generator} />
 
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 <!-- <link rel="icon" type="image/svg+xml" href="/favicon.ico" /> -->
-<link rel="manifest" href="/site.webmanifest">
+<link rel="manifest" href="/site.webmanifest" />
 
 <link
   rel="preload"
@@ -36,7 +45,7 @@ const makeTitle = title ? title : "Webllope";
 <SEO
   title={makeTitle}
   description="Webllope is a passionate team of engineers that brings technology to small businesses."
-  canonical={canonicalURL}
+  canonical={canonicalURLString}
   twitter={{
     creator: "@webllope",
     site: "@webllope",
@@ -44,7 +53,7 @@ const makeTitle = title ? title : "Webllope";
   }}
   openGraph={{
     basic: {
-      url: canonicalURL,
+      url: canonicalURLString,
       type: "website",
       title: `Webllope - The website for your business`,
       image: resolvedImageWithDomain,

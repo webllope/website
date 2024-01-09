@@ -9,6 +9,8 @@ import Message from "@components/message.astro";
 import BriefAboutUs from "@components/brief-about-us.astro";
 import BriefSeoInfo from "@components/brief-seo-info.astro";
 import Clients from "@components/clients.astro";
+import ServiceRoadmap from "@components/ServiceRoadmap/service-roadmap.astro";
+
 import JaimaPuertoLogo from "@assets/logos/JaimaPuertoLogo.webp";
 
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
@@ -32,6 +34,7 @@ const t = useTranslations(lang);
     }}
   />
   <BriefSeoInfo />
+  <ServiceRoadmap />
   <Logos />
   <Cta />
 </Layout>
