@@ -67,17 +67,17 @@ const roadmap = {
     paragraph1:
       "Analizamos tus objetivos, a la competencia y la clientela o <i>target</i> a quienes queremos atraer.",
     paragraph2:
-      "Hecho el análisis procedemos a preparar unos diseños para tu página web empresarial que mostraremos y discutiremos y ajustaremos hasta su perfección.",
+      "Hecho el análisis prepararemos unos diseños para tu página web empresarial que mostraremos y discutiremos y ajustaremos hasta su perfección.",
   },
   second: {
     paragraph1:
-      "Nuestro equipo procede con la <strong>creación de la página web</strong> en base a los diseños y especificaciones acordadas previamente.",
+      "Nuestro equipo procede con la <strong>creación de página web</strong> en base a los diseños y especificaciones acordadas previamente.",
     paragraph2:
       "Una vez los desarrolladores han terminado la parte visual de la misma, se te proporciona un enlace para que puedas ver tu sitio web con cualquier dispositivo y probar que todo esté correcto.",
   },
   third: {
     paragraph1:
-      "Confirmado el aspecto visual deseado, en el caso de que se desee implementar SEO (Posicionamiento web) en la página, en este siguiente paso nuestro equipo procede con el estudio de palabras clave o <i>keywords</i> y la configuración para que Google rastree la página y la indexe en los resultados de búsqueda.",
+      "Se habla la posibilidad de que se implementae SEO (Posicionamiento web) en la página. En caso afirmativo, el siguiente paso nuestro equipo procede con el estudio de palabras clave o <i>keywords</i> y la configuración para que Google rastree la página y la indexe en los resultados de búsqueda.",
   },
   fourth: {
     paragraph1:
@@ -87,9 +87,9 @@ const roadmap = {
   },
   fifth: {
     paragraph1:
-      "¡Enhorabuena! Ya está tu sitio web publicado, esto es solo el comienzo, desde este momento estamos a tu disposición por si se quiere hacer algún cambio ligero en la página, como añadir fotos diferentes, nuevos productos...",
+      "¡Enhorabuena! Ya está tu sitio web publicado. Esto es solo el comienzo, desde este momento estamos a tu disposición por si se quiere hacer algún cambio ligero en la página, como añadir fotos diferentes, nuevos productos o servicios, etc.",
     paragraph2:
-      "También actualizamos todos los plugin para mantenerlos al día para evitar problemas de seguridad y rendimiento, en caso de haberse hecho SEO, haremos un seguimiento mensual para comprobar que la página no pierda puestos de posicionamiento en Google.",
+      "Actualizaremos recurrentement todos los plugin para mantenerlos al día para evitar problemas de seguridad y rendimiento. En caso de haberse hecho SEO, haremos un seguimiento mensual para comprobar que la página no pierda puestos de posicionamiento en Google.",
   },
 };
 
