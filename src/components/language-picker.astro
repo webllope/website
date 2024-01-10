@@ -17,7 +17,7 @@ const { variant = "normal" } = Astro.props;
     <DropdownContainer class="group">
       <button
         class="flex items-center gap-1 w-full lg:w-auto lg:px-3 py-2 text-gray-600 hover:text-gray-900"
-        aria-label="Language">
+        aria-label={languages[lang]}>
         <div class="flex items-center gap-4">
           <Icon class="text-black" size={20} name="ic:baseline-translate" />
           {

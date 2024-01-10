@@ -1,7 +1,7 @@
 ---
 import JaimaPuertoLogo from "@assets/logos/JaimaPuertoLogo.webp";
-import SalonChickLogo from "@assets/logos/SalonChickLogo.png";
-import DettagliLogo from "@assets/logos/DettagliLogo.png";
+import SalonChickLogo from "@assets/logos/SalonChickLogo.webp";
+import DettagliLogo from "@assets/logos/DettagliLogo.webp";
 import NeoaestheticLogo from "@assets/logos/NeoaestheticLogo.webp";
 
 const clients = [
@@ -36,6 +36,7 @@ const clients = [
             data-nimg="1"
             src={client.img}
             style="color: transparent;"
+            // @TODO: We have to make this images have the correct size originally, avoiding changing it with css which causes bad performance (cuando sepamos los logos y tal lo haremos)
             class="object-contain w-[185px] h-[60px]"
           />
         </div>
