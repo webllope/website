@@ -15,7 +15,7 @@ if (Astro.site) {
 const canonicalURLString = canonicalURL.toString();
 
 const resolvedImageWithDomain = new URL(
-  "/opengraph.svg",
+  "/SocialMediaSharedImage.png",
   Astro.site,
 ).toString();
 
@@ -44,7 +44,7 @@ const makeTitle = title ? title : "Webllope";
 
 <SEO
   title={makeTitle}
-  description="Webllope is a passionate team of engineers that brings technology to small businesses."
+  description="Diseño web en Murcia | Posicionamiento web en Murcia | Creamos tu página web y te hacemos visible en internet."
   canonical={canonicalURLString}
   twitter={{
     creator: "@webllope",
@@ -55,7 +55,7 @@ const makeTitle = title ? title : "Webllope";
     basic: {
       url: canonicalURLString,
       type: "website",
-      title: `Webllope - The website for your business`,
+      title: makeTitle,
       image: resolvedImageWithDomain,
     },
     image: {

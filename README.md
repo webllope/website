@@ -6,7 +6,7 @@
 
 > 🧑‍🚀 **Seasoned astronaut?** Ingore this file. Have fun!
 
-![webllope](/public/opengraph.svg)
+![webllope](/public/SocialMediaSharedImage.png)
 
 ## 🚀 Project Structure
 
