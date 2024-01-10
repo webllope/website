@@ -1,6 +1,7 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "Webllope Diseño Web Murcia",
+  "short_name": "Webllope",
+  "start_url": "/?utm_source=homescreen",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

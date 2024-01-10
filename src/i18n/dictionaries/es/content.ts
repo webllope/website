@@ -16,7 +16,7 @@ const features = {
   presence: {
     title: "Mejor Presencia",
     description:
-      "Mejoramos la presencia de tu negocio en línea, haciendo que este se posicione por encima de la competencia en las búsquedas de los usuarios.",
+      "Mejoramos la presencia de tu negocio en línea, haciendo que este se posicione por encima de la competencia en las búsquedas de los usuarios. Todo gracias a nuestro conocimiento en marketing online.",
   },
   audience: {
     title: "Amplia Experiencia",
@@ -31,7 +31,7 @@ const features = {
   onlineSolutions: {
     title: "Soluciones Online",
     description:
-      "Facilitamos al cliente acciones como reservas, consultas, pasarelas de pago…",
+      "Facilitamos al cliente acciones como reservas, consultas, pasarelas de pago, comprar en una tienda online...",
   },
   differentiation: {
     title: "Diferencia de la Competencia",
@@ -58,7 +58,7 @@ const briefSeoInfo = {
   firstP:
     "No somos una <strong>empresa de diseño web</strong> común y corriente, nuestros fundadores Daniel Maestre y Jose María Martínez son Ingenieros de Software con un amplio conocimiento del SEO y SEM. Estás en el lugar correcto si necesitas una <strong>página web para tu negocio</strong> llamativa y al mismo tiempo optimizada de forma que salga en las búsquedas en Google de los usuarios y potenciales clientes.",
   secondP:
-    "El SEO o posicionamiento en google es el proceso en el que los creadores de páginas webs optimizan el contenido de la página web para que esta aparezca en las primeras posiciones de Google. Se consigue con una buena estructura de la página web y un buen contenido, aumentando así el número de visitas y de clientes potenciales de tu <strong>diseño web corporativo</strong>.",
+    "El SEO o posicionamiento en google es el proceso en el que los creadores de páginas webs optimizan el contenido de la página web para que esta aparezca en las primeras posiciones en los motores de búsqueda de Google. Se consigue con una buena estructura de la página web y un buen contenido, aumentando así el número de visitas y de clientes potenciales de tu <strong>diseño web corporativo</strong>.",
   cta: "Contacta con nosotros",
 };
 
@@ -98,7 +98,7 @@ const opinions = {
     name: "Jaima Puerto",
     role: "Fundador de Jaima Puerto",
     message:
-      "Los chicos de webllope fueron increíblemente amables y atentos con todos mis deseos para la página web. Se preocuparon en todo momento por cumplir nuestros deseos y añadiendo varias sugerencias para mejorar nuestro marketing",
+      "Los chicos de webllope fueron increíblemente amables y atentos con todos mis deseos para la página web. Se preocuparon en todo momento por cumplir nuestros deseos y añadiendo varias sugerencias para mejorar nuestro marketing digital.",
   },
 };
 
