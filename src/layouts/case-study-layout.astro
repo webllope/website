@@ -6,7 +6,7 @@ import { getEntry, type CollectionEntry } from "astro:content";
 import Background from "@components/background.astro";
 
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
-import MoreCaseStudies from "@components/more-case-studies.astro";
+import MoreJobs from "@components/more-jobs.astro";
 import AboutYourProject from "@components/about-your-project.astro";
 import WebsiteReview from "@components/website-review.astro";
 
@@ -15,9 +15,16 @@ const t = useTranslations(lang);
 
 interface Props {
   frontmatter: CollectionEntry<"work">["data"];
+  websiteName: string;
+  imagesAmount: number;
 }
 
-const { frontmatter } = Astro.props;
+const { frontmatter, websiteName, imagesAmount } = Astro.props;
+
+const imagesPaths = Array.from({ length: imagesAmount }, (_, i) => {
+  return `/src/assets/${websiteName}${i + 1}.png`;
+});
+
 const date = new Date(frontmatter.date);
 
 const client = await getEntry(frontmatter.client);
@@ -33,11 +40,6 @@ const client = await getEntry(frontmatter.client);
           <div class="mx-auto max-w-2xl lg:max-w-none">
             <div style="opacity: 1; transform: none;">
               <h1>
-                <span
-                  class="block font-display text-base font-semibold text-neutral-950">
-                  Case Study
-                </span>
-
                 <span
                   class="mt-6 block max-w-5xl font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-6xl mx-auto">
                   {frontmatter.title}
@@ -130,7 +132,7 @@ const client = await getEntry(frontmatter.client);
               style="font-feature-settings: normal; font-variation-settings: normal;">
               <slot />
             </article>
-            <WebsiteReview />
+            <WebsiteReview paths={imagesPaths} alt="Neoaesthetic Image" />
           </div>
         </div>
       </div>
@@ -142,7 +144,7 @@ const client = await getEntry(frontmatter.client);
       class="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-gradient-to-b from-neutral-50">
       <Background />
     </div>
-    <MoreCaseStudies />
+    <MoreJobs />
 
     <AboutYourProject />
   </div>

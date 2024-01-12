@@ -12,7 +12,7 @@ const getFormattedDate = (date) => formatDate(lang, date);
 
 const [firstEntry, secondEntry] = (
   await getCollection("work", ({ data }) => {
-    return !data.draft && data.date < new Date();
+    return data.lang === lang && !data.draft && data.date < new Date();
   })
 )
   .sort(function (a, b) {
@@ -26,7 +26,7 @@ const [firstEntry, secondEntry] = (
     <div class="max-w-3xl" style="opacity: 1; transform: none;">
       <h2
         class="block font-display tracking-tight [text-wrap:balance] text-2xl font-semibold text-neutral-950">
-        {t("moreCaseStudies.title")}
+        {t("moreJobs.title")}
       </h2>
     </div>
   </div>
@@ -84,7 +84,7 @@ const [firstEntry, secondEntry] = (
             class="mt-6 flex gap-x-3 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"
             aria-label={secondEntry.data.title}
             href={`/work/${firstEntry.slug}`}>
-            {t("moreCaseStudies.readMore")}
+            {t("moreJobs.readMore")}
             <svg
               viewBox="0 0 24 6"
               aria-hidden="true"

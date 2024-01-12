@@ -14,6 +14,7 @@ tags: [webdev, cms]
 cover: { src: "@logos/SalonChickLogo.webp", alt: "Web de SalonChick" }
 date: "2023-07-06 17:00"
 lang: "es"
+imagesAmount: 4
 ---
 
 ### Diseño y creación de página web

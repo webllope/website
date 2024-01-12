@@ -14,6 +14,7 @@ tags: [webdev, cms]
 cover: { src: "@logos/NeoaestheticLogo.webp", alt: "Web de Neoaesthetic" }
 date: "2023-07-06 17:00"
 lang: "es"
+imagesAmount: 4
 ---
 
 ### Trabajo de diseño y desarrollo de página web

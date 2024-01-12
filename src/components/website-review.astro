@@ -1,8 +1,29 @@
 ---
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
 
+interface Props {
+  paths: string[];
+  alt: string;
+}
+
+const { paths, alt } = Astro.props;
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/*.{jpeg,jpg,png,webp}",
+);
+console.log(paths);
+console.log(images);
 ---
 
-<div
-  class="mx-auto max-w-7xl px-6 lg:px-8">
-  <!-- @TODO: aqui estoy haciendo para poner fotos de las websites que vayamos haciendo, pero hago commit ya para que tengas todo updated -->
+<div class="mx-auto max-w-7xl mt-6 flex flex-col gap-6">
+  {
+    paths.map((path) => (
+      <Image
+        src={images[path]()}
+        alt={alt}
+        class="w-full h-full object-cover object-center rounded-lg shadow-md"
+      />
+    ))
+  }
 </div>

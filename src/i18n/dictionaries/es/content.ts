@@ -132,8 +132,8 @@ const fromBlog = {
   readMore: "Leer más",
 };
 
-const moreCaseStudies = {
-  title: "Más casos de estudio",
+const moreJobs = {
+  title: "Más trabajos",
   readMore: "Leer más",
 };
 
@@ -230,6 +230,26 @@ const nuestroTrabajo = {
     "Estás en buenas manos, todas estas empresas no pueden estar equivocadas.",
 };
 
+const contacto = {
+  sectionHead: {
+    title: "Contáctanos",
+    subtitle: "Trabajemos juntos",
+    description: "Hagámos tu idea una <strong>realidad</strong>",
+  },
+  title: "Contacto",
+  pageTitle: "Contacto",
+  ourOffices: "Nuestras oficinas",
+  ourOfficesText:
+    "¿Prefieres hacer las cosas en persona? Nosotros no, pero por razones legales tenemos que poner alguna dirección.",
+  sendEmail: "Mándanos un email",
+};
+
+const informacion = "Información";
+
+const soporte = "Soporte";
+
+const followUs = "Síguenos";
+
 const readMore = "Leer más";
 
 export const content = {
@@ -238,7 +258,7 @@ export const content = {
   logos,
   cta,
   fromBlog,
-  moreCaseStudies,
+  moreJobs,
   aboutYourProject,
   tags,
   briefAboutUs,
@@ -251,4 +271,8 @@ export const content = {
   shopServices,
   nuestroTrabajo,
   readMore,
+  contacto,
+  informacion,
+  soporte,
+  followUs,
 };

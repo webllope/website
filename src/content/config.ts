@@ -64,6 +64,7 @@ const workCollection = defineCollection({
       }),
       date: z.string().transform((str) => new Date(str)),
       lang: z.string(),
+      imagesAmount: z.number(),
     }),
 });
 
