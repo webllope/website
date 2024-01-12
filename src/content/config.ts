@@ -63,6 +63,7 @@ const workCollection = defineCollection({
         alt: z.string(),
       }),
       date: z.string().transform((str) => new Date(str)),
+      lang: z.string(),
     }),
 });
 

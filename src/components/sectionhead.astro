@@ -5,32 +5,31 @@ interface Props {
   title: string;
   section?: string;
   description?: string;
+  inverted?: boolean;
 }
 
-const { section, title, description } = Astro.props;
+const { section, title, description, inverted } = Astro.props;
 ---
 
 <Background />
 <div class="mx-auto max-w-7xl px-6 lg:px-8">
   <div class="mx-auto max-w-2xl lg:max-w-none">
-    <div style="opacity: 1; transform: none;">
+    <div
+      style="opacity: 1; transform: none;"
+      class=`mt-12 flex flex-col ${inverted ? 'items-end' : 'items-stretch'}`>
       {
         section && (
-          <h1>
-            <span class="block font-display text-base font-bold text-neutral-950">
-              {section}
-            </span>
-          </h1>
+          <span class="block font-display text-base font-bold text-neutral-950 text-5xl sm:text-6xl">
+            <h1>{section}</h1>
+          </span>
         )
       }
       <div
-        class="mt-6 block max-w-5xl font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-6xl">
+        class="mt-6 block max-w-5xl font-display text-3xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-4xl">
         <h2>{title}</h2>
       </div>
-      <div class="mt-6 max-w-3xl text-xl text-neutral-600">
-        <p>
-          {description}
-        </p>
+      <div class=`mt-6 max-w-3xl text-xl text-neutral-600 ${inverted ? 'text-right' : 'text-left'}`>
+        <p set:html={description} />
         <slot />
       </div>
     </div>

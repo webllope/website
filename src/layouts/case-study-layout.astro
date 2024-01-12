@@ -8,6 +8,7 @@ import Background from "@components/background.astro";
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
 import MoreCaseStudies from "@components/more-case-studies.astro";
 import AboutYourProject from "@components/about-your-project.astro";
+import WebsiteReview from "@components/website-review.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -129,29 +130,7 @@ const client = await getEntry(frontmatter.client);
               style="font-feature-settings: normal; font-variation-settings: normal;">
               <slot />
             </article>
-            <ul role="list" class="my-6 flex flex-wrap gap-4">
-              {
-                frontmatter.tags.map((tag) => (
-                  <li class="rounded-full bg-neutral-100 px-4 py-1.5 text-base text-neutral-600">
-                    {t(`tags.${tag}`)}
-                  </li>
-                ))
-              }
-            </ul>
-
-            <div
-              class="pl-8 mt-12 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
-              <figure class="text-lg">
-                <blockquote
-                  class="text-neutral-600 [&>*]:relative [&>:first-child]:before:absolute [&>:first-child]:before:right-full [&>:first-child]:before:content-['“'] [&>:last-child]:after:content-['”']">
-                  <p>{frontmatter.quote.message}</p>
-                </blockquote>
-                <figcaption class="mt-6 font-semibold text-neutral-950">
-                  {frontmatter.quote.author.name},{" "}
-                  {frontmatter.quote.author.position}
-                </figcaption>
-              </figure>
-            </div>
+            <WebsiteReview />
           </div>
         </div>
       </div>

@@ -100,6 +100,18 @@ const opinions = {
     message:
       "Los chicos de webllope fueron increíblemente amables y atentos con todos mis deseos para la página web. Se preocuparon en todo momento por cumplir nuestros deseos y añadiendo varias sugerencias para mejorar nuestro marketing digital.",
   },
+  salonchick: {
+    name: "Salon Chick",
+    role: "Fundadora de Salon Chick",
+    message:
+      "Nuestra página web ha sido un éxito gracias a Webllope. Nos han ayudado a posicionarnos en Google y atraer a más clientes a nuestro negocio. ¡Gracias!",
+  },
+  neoaesthetic: {
+    name: "Neoaesthetic",
+    role: "Fundadora de Neoaesthetic",
+    message:
+      "Webllope ha sido una gran ayuda para nuestro negocio. Nos han ayudado a crear una página web profesional y atraer a más clientes a nuestro centro de estética.",
+  },
 };
 
 const logos = {
@@ -132,13 +144,93 @@ const aboutYourProject = {
 };
 
 const tags = {
-  webdev: "Desarrolo web",
+  webdev: "Desarrollo web",
   cms: "CMS",
   blockchain: "Desarrollo Blockchain",
   web3: "Web3",
   frontend: "Frontend",
   backend: "Backend",
 };
+
+const webServices = {
+  first: {
+    title: "Desarrollo web",
+    description:
+      "Nos especializamos en crear hermosas páginas web de alta calidad",
+  },
+  second: {
+    title: "Diseño web a medida",
+    description:
+      "Nuestro equipo de diseñadores web profesionales se encargará de crear una página web única y personalizada para tu negocio",
+  },
+  third: {
+    title: "Estructura corporativa",
+    description:
+      "Diseñamos tu página web corporativa con una estructura sólida dándole a tu marca profesionalidad y confianza",
+  },
+  fourth: {
+    title: "Seguridad y mantenimiento web",
+    description:
+      "Nos encargamos de mantener tu página web segura y actualizada para que no tengas que preocuparte por nada más que por tu negocio",
+  },
+};
+
+const seoServices = {
+  first: {
+    title: "Expertos en SEO",
+    description:
+      "Contamos con amplia experiencia en el sector no solo del desarrollo web si no también en el posicionamiento web en Google, lo que nos permite crear páginas web optimizadas para el SEO y SEM.",
+  },
+  second: {
+    title: "Gratuito",
+    description:
+      "Con la creación de tu sitio web corporativo incluimos servicios de SEO básicos de forma gratuita, vuestra página posicionará en navegadores como Google o Bing, y aparecerá en los resultados de búsqueda de los usuarios.",
+  },
+  third: {
+    title: "Mejor SEO",
+    description:
+      "Ofrecemos servicios de posicionamiento avanzado en los que no basta con hacer un análisis del mercado básico y hay que trabajar más en profundidad para conseguir un mejor posicionamiento en Google, intentando que tu página web aparezca en las primeras posiciones de los resultados de búsqueda para palabras clave relacionadas con tu negocio.",
+  },
+  fourth: {
+    title: "Marketing Digital",
+    description:
+      "El <strong>Marketing Digital en Murcia</strong> es un concepto que engloba varias disciplinas, como el SEO previamente mencionado pero siempre se puede ir más allá y preparar campañas de publicidad en Google Ads, Facebook Ads, Instagram Ads, etc. para conseguir más clientes potenciales, asímismo como que nuestro equipo maneje vuestras redes sociales para que no tengáis que preocuparos por nada más que por vuestro negocio.",
+  },
+};
+
+const shopServices = {
+  first: {
+    title: "e-Commerce",
+    description:
+      "Crearemos tu propio <strong>comercio electrónico</strong> para que puedas vender tus productos o servicios en internet.",
+  },
+  second: {
+    title: "Personalización absoluta",
+    description:
+      "Montaremos la tienda desde 0, y la personalizaremos para que se adapte a tu negocio y a tus necesidades mientras que mantenemos una conversación fluida contigo para que todo esté a tu gusto, manteniendo por supuesto las buenas prácticas que nosotros como desarrolladores web profesionales consideramos necesarias para que tu tienda online sea un éxito.",
+  },
+  third: {
+    title: "Mantenimiento Web Gratuito",
+    description:
+      "Tu <strong>tienda online</strong> siempre estará actualizada y nosotros añadiremos los productos que nos pidas sin coste adicional hasta un año de forma gratuita.",
+  },
+};
+
+const nuestroTrabajo = {
+  sectionHead: {
+    title: "Nuestro trabajo",
+    subtitle:
+      "Soluciones de diseño web, marketing digital y adaptadas a empresas de cualquier tamaño",
+    description:
+      "Creemos en la eficiencia y maximización de nuestro recursos para dar el mejor valor a nuestros clientes. Somos un equipo y trabajamos como tal para conseguir los mejores resultados y posicionar a nuestros clientes en el mercado en línea.",
+  },
+  title: "Últimos trabajos",
+  pageTitle: "Nuestro trabajo",
+  goodHands:
+    "Estás en buenas manos, todas estas empresas no pueden estar equivocadas.",
+};
+
+const readMore = "Leer más";
 
 export const content = {
   hero,
@@ -154,4 +246,9 @@ export const content = {
   clients,
   briefSeoInfo,
   roadmap,
+  seoServices,
+  webServices,
+  shopServices,
+  nuestroTrabajo,
+  readMore,
 };

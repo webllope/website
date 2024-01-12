@@ -9,6 +9,7 @@
       "@components/*": ["components/*"],
       "@layouts/*": ["layouts/*"],
       "@assets/*": ["assets/*"],
+      "@logos/*": ["assets/logos/*"],
       "@pages/*": ["pages/*"],
       "@i18n/*": ["i18n/*"],
       "@styles/*": ["styles/*"]
