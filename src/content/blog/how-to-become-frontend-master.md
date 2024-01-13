@@ -10,7 +10,7 @@ image:
   }
 publishDate: "2022-11-07 15:39"
 category: "Tutorials"
-author: "acme"
+author: "laura-maldonado"
 tags: [astro, tailwindcss, frontend]
 ---
 

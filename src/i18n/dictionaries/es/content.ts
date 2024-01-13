@@ -128,7 +128,7 @@ const fromBlog = {
   title: "Nuestro blog",
   titleVariant: "Más artículos",
   description:
-    "Solo hay una cosa en la mente de nuestro experimentado equipo de diseñadores y desarrolladores, trabajar en tus ideas para conseguir una sonrisa en la cara de los usuarios a nivel mundial. Desde problemas triviales hasta complejas soluciones de ingeniería.",
+    "¿Qué sucede cuando las mentes creativas detrás de las mejores websites deciden dar rienda suelta a sus pensamientos tecnológicos y no tecnológicos? Bienvenidos a nuestro blog. ¡Descubre el lado innovador de nuestro equipo y déjate inspirar más allá de la pantalla!.",
   readMore: "Leer más",
 };
 
@@ -138,7 +138,7 @@ const moreJobs = {
 };
 
 const aboutYourProject = {
-  title: "Cuéntanos sobre tu proyecto",
+  title: "Cuéntanos tu idea",
   button: "Dí Hola",
   offices: "Nuestras oficinas",
 };
@@ -244,6 +244,45 @@ const contacto = {
   sendEmail: "Mándanos un email",
 };
 
+const sobreNosotros = {
+  sectionHead: {
+    title: "Sobre nosotros",
+    subtitle: "Nuestro punto fuerte es la colaboración",
+    description:
+      "Somos un equipo pequeño y apasionado. Creemos que nuestra fortaleza se debe a nuestro enfoque colaborativo, poniendo a los clientes en el centro de lo que hacemos.",
+  },
+  title: "Sobre nosotros",
+  pageTitle: "Sobre nosotros",
+  paragraphs: [
+    "Webllope nace por dos amigos que se conocieron en la carrera de Ingeniería Informática y años más tarde tras ambos trabajar como desarrolladores web y de software se dieron cuenta del potencial de crecimiento que la tecnología puede dar a los negocios de todos los tamaños. El principal problema de estos negocios es la falta de consciencia acerca de cómo soluciones adaptadas a su modelo de negocio pueden ayudarlos, y lo eficaz que es tener contenido digital en internet accesible por todos que promocione su negocio.",
+    "En Webllope somos más que compañeros — somos una familia. Dimos nuestros primeros pasos en la ingeniería informática juntos, durante nuestro paso por la universidad. Desde entonces y hasta ahora, intentado mejorar el mundo con la tecnología como medio.",
+  ],
+  years: "Años",
+  satisfiedClients: "Clientes satisfechos",
+  techUsed: "Tecnologías usadas",
+  culture: {
+    title: "Nuestra cultura",
+    subtitle: "Nuestro equipo se rige por la triple 'c'",
+    cultureData: [
+      {
+        label: "Comunicación",
+        description:
+          "La comunicación es la clave para el éxito de cualquier proyecto, por lo que nos aseguramos de que el equipo mantenga una comunicación fluida contigo haciéndote sentir en todo momento parte de la creación de tu idea web.",
+      },
+      {
+        label: "Calidad",
+        description:
+          "Nos preocupamos mucho por la calidad de nuestro trabajo, por lo que ponemos todo nuestro esfuerzo en crear software fiable y robusto ya que confiamos en que un excelente servicio es el mejor marketing.",
+      },
+      {
+        label: "Creatividad",
+        description:
+          "La creatividad es crucial en la programación para encontrar soluciones innovadoras a los desafíos. Un equipo creativo puede pensar fuera de la caja y proponer ideas frescas.",
+      },
+    ],
+  },
+};
+
 const informacion = "Información";
 
 const soporte = "Soporte";
@@ -275,4 +314,5 @@ export const content = {
   informacion,
   soporte,
   followUs,
+  sobreNosotros,
 };
