@@ -11,7 +11,7 @@ const getFormattedDate = (date) => formatDate(lang, date);
 
 const [firstEntry, secondEntry] = (
   await getCollection("blog", ({ data }) => {
-    return !data.draft && data.publishDate < new Date();
+    return data.lang === lang && !data.draft && data.publishDate < new Date();
   })
 )
   .sort(function (a, b) {

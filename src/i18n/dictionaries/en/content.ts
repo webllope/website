@@ -78,67 +78,84 @@ const tags = {
   backend: "Backend",
 };
 
-const webServices = {
-  first: {
-    title: "Web development",
+const services = {
+  sectionHead: {
+    title: "Web design services",
+    subtitle: "Web Development Murcia",
     description:
-      "We specialize in creating beautiful high-quality web pages",
+      "We are experienced web developers who will cover all your needs thanks to our extensive knowledge of web technology, we will not limit ourselves to selling prefabricated web designs that do not have the essence of your business.",
   },
-  second: {
-    title: "Custom web design",
+  sectionHead2: {
+    subtitle: "SEO positioning",
     description:
-      "Our team of professional web designers will create a unique and personalized website for your business",
+      "With years of experience both in web positioning and <strong>seo consultants in Murcia</strong>",
   },
-  third: {
-    title: "Corporate structure",
+  sectionHead3: {
+    subtitle: "Online shop development Murcia",
     description:
-      "We design your corporate website with a solid structure giving your brand professionalism and confidence",
+      "Set up your own online store and start selling your products on the internet.",
   },
-  fourth: {
-    title: "Security and web maintenance",
-    description:
-      "We take care of keeping your website safe and updated so you don't have to worry about anything other than your business",
-  },
-};
-
-const seoServices = {
-  first: {
-    title: "SEO experts",
-    description:
-      "We have extensive experience in the sector not only in web development but also in web positioning in Google, which allows us to create web pages optimized for SEO and SEM.",
-  },
-  second: {
-    title: "Free",
-    description:
-      "With the creation of your corporate website we include basic SEO services for free, your page will rank in browsers like Google or Bing, and will appear in the search results of users.",
-  },
-  third: {
-    title: "Better SEO",
-    description:
-      "We offer advanced positioning services in which it is not enough to do a basic market analysis and you have to work more in depth to achieve a better positioning in Google, trying to make your website appear in the first positions of the search results for keywords related to your business.",
-  },
-  fourth: {
-    title: "Digital Marketing",
-    description:
-      "Digital Marketing in Murcia is a concept that encompasses several disciplines, such as the SEO previously mentioned but you can always go further and prepare advertising campaigns in Google Ads, Facebook Ads, Instagram Ads, etc. to get more potential customers, as well as having our team manage your social networks so that you don't have to worry about anything other than your business.",
-  },
-};
-
-const shopServices = {
-  first: {
-    title: "e-Commerce",
-    description:
-      "We will create your own e-commerce so you can sell your products or services on the internet.",
-  },
-  second: {
-    title: "Absolute customization",
-    description:
-      "We will set up the store from 0, and customize it to suit your business and your needs while maintaining a fluid conversation with you so that everything is to your liking, maintaining of course the good practices that we as professional web developers consider necessary for your online store to be a success.",
-  },
-  third: {
-    title: "Free Web Maintenance",
-    description: "Your online store will always be updated and we will add the products you ask us for at no additional cost for up to a year for free.",
-  },
+  pageTitle: "Services",
+  webServices: [
+    {
+      title: "Web development",
+      description: "We specialize in creating beautiful high-quality web pages",
+    },
+    {
+      title: "Custom web design",
+      description:
+        "Our team of professional web designers will create a unique and personalized website for your business",
+    },
+    {
+      title: "Corporate structure",
+      description:
+        "We design your corporate website with a solid structure giving your brand professionalism and confidence",
+    },
+    {
+      title: "Security and web maintenance",
+      description:
+        "We take care of keeping your website safe and updated so you don't have to worry about anything other than your business",
+    },
+  ],
+  seoServices: [
+    {
+      title: "SEO experts",
+      description:
+        "We have extensive experience in the sector not only in web development but also in web positioning in Google, which allows us to create web pages optimized for SEO and SEM.",
+    },
+    {
+      title: "Free",
+      description:
+        "With the creation of your corporate website we include basic SEO services for free, your page will rank in browsers like Google or Bing, and will appear in the search results of users.",
+    },
+    {
+      title: "Better SEO",
+      description:
+        "We offer advanced positioning services in which it is not enough to do a basic market analysis and you have to work more in depth to achieve a better positioning in Google, trying to make your website appear in the first positions of the search results for keywords related to your business.",
+    },
+    {
+      title: "Digital Marketing",
+      description:
+        "Digital Marketing in Murcia is a concept that encompasses several disciplines, such as the SEO previously mentioned but you can always go further and prepare advertising campaigns in Google Ads, Facebook Ads, Instagram Ads, etc. to get more potential customers, as well as having our team manage your social networks so that you don't have to worry about anything other than your business.",
+    },
+  ],
+  shopServices: [
+    {
+      title: "e-Commerce",
+      description:
+        "We will create your own e-commerce so you can sell your products or services on the internet.",
+    },
+    {
+      title: "Absolute customization",
+      description:
+        "We will set up the store from 0, and customize it to suit your business and your needs while maintaining a fluid conversation with you so that everything is to your liking, maintaining of course the good practices that we as professional web developers consider necessary for your online store to be a success.",
+    },
+    {
+      title: "Free Web Maintenance",
+      description:
+        "Your online store will always be updated and we will add the products you ask us for at no additional cost for up to a year for free.",
+    },
+  ],
 };
 
 const clients = {
@@ -217,8 +234,5 @@ export const content = {
   clients,
   briefSeoInfo,
   roadmap,
-  seoServices,
-  webServices,
-  shopServices,
+  services,
 };
-
