@@ -2,24 +2,22 @@
 import { social } from "../data";
 import Logo from "./logo.astro";
 
-import { getRelativeLocaleUrl } from "astro:i18n";
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import { getRelativeLocaleUrl } from "astro:i18n";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 const items = {
-  // work: [
-  //   { name: "FamilyFund", path: "/work/family-fund" },
-  //   { name: "Unseal", path: "/work/unseal" },
-  //   { name: "Phobia", path: "/work/phobia" },
-  // ],
+  work: [
+    { name: "SalonChick", path: getRelativeLocaleUrl(lang, "work/salonchick")},
+    { name: "Neoaesthetic", path: getRelativeLocaleUrl(lang, "work/neoaesthetic")},
+  ],
   company: [
-    { name: t("footer.company.about"), path: "/about" },
-    { name: t("footer.company.process"), path: "/process" },
-    // @TODO: in progress
-    // { name: t("footer.company.blog"), path: "/blog" },
-    { name: t("footer.company.contact"), path: "/contacto" },
+    { name: t("footer.company.about"), path: getRelativeLocaleUrl(lang, "sobre-nosotros")},
+    { name: t("footer.company.services"), path: getRelativeLocaleUrl(lang, "servicios")},
+    { name: t("footer.company.blog"), path: getRelativeLocaleUrl(lang, "blog")},
+    { name: t("footer.company.contact"), path: getRelativeLocaleUrl(lang, "contacto")},
   ],
   connect: [
     { name: "Facebook", url: social.facebook },
@@ -36,8 +34,7 @@ const items = {
       <div class="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
         <nav>
           <ul role="list" class="grid grid-cols-2 gap-8 sm:grid-cols-3">
-            <!-- @TODO: This column is at the moment pointless but could be filled with something else in future -->
-            <!-- <li>
+            <li>
               <div
                 class="font-display text-sm font-semibold tracking-wider text-neutral-950">
                 {t("footer.work.title")}
@@ -57,13 +54,13 @@ const items = {
                 <li class="mt-4">
                   <a
                     class="transition hover:text-neutral-950"
-                    href={getRelativeLocaleUrl(lang, "work")}>
+                    href={getRelativeLocaleUrl(lang, "nuestro-trabajo")}>
                     {t("footer.seeAll")}
                     <span aria-hidden="true">→</span>
                   </a>
                 </li>
               </ul>
-            </li> -->
+            </li>
             <li>
               <div
                 class="font-display text-sm font-semibold tracking-wider text-neutral-950">

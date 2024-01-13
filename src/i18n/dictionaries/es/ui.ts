@@ -16,7 +16,7 @@ export const ui = {
     company: {
       title: "Compañía",
       about: "Sobre nosotros",
-      process: "Proceso",
+      services: "Servicios",
       blog: "Blog",
       contact: "Contacto",
     },

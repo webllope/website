@@ -19,17 +19,18 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<Layout title="Diseño web Murcia | Posicionamiento web ">
+<Layout title={t('index.pageTitle')}>
   <Background />
   <Hero />
   <BriefAboutUs />
   <Clients />
   <Features />
+  <!-- @TODO aquí habría que hacer un componente común de opiniones que sea un carrusel de opiniones y que las opiniones las coja de un markdown como hace con los blog posts y los works -->
   <Message
-    title="Casos de éxito"
+    title={t('index.message.title')}
     content={t("opinions.jaimapuerto.message")}
     image={{
-      alt: "Phobia",
+      alt: "Jaima Puerto Imagen",
       src: JaimaPuertoLogo,
     }}
   />

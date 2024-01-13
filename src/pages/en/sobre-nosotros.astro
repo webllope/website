@@ -8,54 +8,34 @@ import Background from "@components/background.astro";
 import FromBlog from "@components/from-blog.astro";
 import AboutYourProject from "@components/about-your-project.astro";
 
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 // Filter team entries with 'draft: false' & date before current date
 const publishedTeamMembers = await getCollection("team", ({ data }) => {
   return !data.draft && data.publishDate < new Date();
 });
 
 const recordsData = [
-  { description: "Years old", value: 1 },
-  { description: "Satisfied clients", value: 5 },
-  { description: "Completed projects", value: 10 },
+  { description: t("sobreNosotros.years"), value: 2 },
+  { description: t("sobreNosotros.satisfiedClients"), value: 12 },
+  { description: t("sobreNosotros.techUsed"), value: 9 },
 ];
 
-const cultureData = [
-  {
-    label: "Loyalty",
-    description:
-      "Our team has been with us since the beginning sharing common goals.",
-  },
-  {
-    label: "Trust",
-    description:
-      "We don't care when our team works just as long as they get work done while having a positive work-life balance.",
-  },
-  {
-    label: "Quality",
-    description:
-      "We really care about our work quality so we put all our effort on crafting realiable and robust software.",
-  },
-];
+const cultureData = t("sobreNosotros.culture.cultureData");
+
+const paragraphs = t("sobreNosotros.paragraphs");
 ---
 
-<Layout title="About">
+<Layout title={t("sobreNosotros.pageTitle")}>
   <Sectionhead
-    section="About us"
-    title="Our strength is collaboration"
-    description="We are a small passionate team. We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.">
+    section={t("sobreNosotros.sectionHead.title")}
+    title={t("sobreNosotros.sectionHead.subtitle")}
+    description={t("sobreNosotros.sectionHead.description")}>
     <div class="mt-10 max-w-2xl space-y-6 text-base">
-      <p>
-        Webllope was started by two friends who realized the growth potential
-        that technology could bring to small businesses. The main problem of
-        those businesses is the lack of awareness about how custom solutions
-        adapted to their business model could help them.
-      </p>
-      <p>
-        At Webllope, we're more than just colleagues — we're a family. We took
-        our first steps in the field of computers engineering together in the
-        university. Since then and up to today, we've looking to improve the
-        world through technology.
-      </p>
+      {paragraphs.map((p) => <p>{p}</p>)}
     </div>
   </Sectionhead>
 
@@ -74,16 +54,14 @@ const cultureData = [
           <h2>
             <span
               class="mb-6 block font-display text-base font-semibold text-white">
-              Our culture
+              {t("sobreNosotros.culture.title")}
             </span>
             <span
               class="block font-display tracking-tight [text-wrap:balance] text-4xl font-medium sm:text-5xl text-white">
-              Balance your passion with your passion for life.
+              {t("sobreNosotros.culture.subtitle")}
             </span>
           </h2>
-          <p class="mt-6 text-xl text-neutral-300">
-            We are a group of like-minded people who share the same core values.
-          </p>
+          <p class="mt-6 text-xl text-neutral-300"></p>
         </div>
       </div>
     </div>
@@ -123,7 +101,7 @@ const cultureData = [
             class="grid grid-cols-1 gap-6 pt-12 sm:pt-16 lg:grid-cols-4 xl:gap-8">
             <div style="opacity: 1; transform: none;">
               <h2 class="font-display text-2xl font-semibold text-neutral-950">
-                Leadership
+                {t("sobreNosotros.leadership")}
               </h2>
             </div>
             <div class="lg:col-span-3">
@@ -165,7 +143,9 @@ const cultureData = [
               </ul>
             </div>
           </div>
-        </div><div>
+        </div>
+        <!-- @TODO hacer que esto tb salga en inglés lo de diseñadora, designer, cofundador, cofounder-->
+        <div>
           <div
             class="relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px"
             style="opacity: 1; transform: none;">
@@ -173,7 +153,7 @@ const cultureData = [
             class="grid grid-cols-1 gap-6 pt-12 sm:pt-16 lg:grid-cols-4 xl:gap-8">
             <div style="opacity: 1; transform: none;">
               <h2 class="font-display text-2xl font-semibold text-neutral-950">
-                Team
+                {t("sobreNosotros.team")}
               </h2>
             </div>
             <div class="lg:col-span-3">
@@ -225,6 +205,7 @@ const cultureData = [
       <Background />
     </div>
     <FromBlog />
+
     <AboutYourProject />
   </div>
 </Layout>

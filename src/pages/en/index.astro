@@ -9,6 +9,8 @@ import Message from "@components/message.astro";
 import BriefAboutUs from "@components/brief-about-us.astro";
 import BriefSeoInfo from "@components/brief-seo-info.astro";
 import Clients from "@components/clients.astro";
+import ServiceRoadmap from "@components/ServiceRoadmap/service-roadmap.astro";
+
 import JaimaPuertoLogo from "@assets/logos/JaimaPuertoLogo.webp";
 
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
@@ -17,21 +19,23 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<Layout title="Murcia Web Design | Web SEO ">
+<Layout title={t('index.pageTitle')}>
   <Background />
   <Hero />
   <BriefAboutUs />
   <Clients />
   <Features />
+  <!-- @TODO aquí habría que hacer un componente común de opiniones que sea un carrusel de opiniones y que las opiniones las coja de un markdown como hace con los blog posts y los works -->
   <Message
-    title="Casos de éxito"
+    title={t('index.message.title')}
     content={t("opinions.jaimapuerto.message")}
     image={{
-      alt: "Phobia",
+      alt: "Jaima Puerto Imagen",
       src: JaimaPuertoLogo,
     }}
   />
   <BriefSeoInfo />
+  <ServiceRoadmap />
   <Logos />
   <Cta />
 </Layout>

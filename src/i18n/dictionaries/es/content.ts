@@ -8,36 +8,38 @@ const features = {
   primary: "Beneficios de hacer tu página web con nosotros",
   secondary:
     "Desbloquea el potencial de tu negocio con Webllope. Nos especializamos en resolver desafíos digitales complejos, para que puedas centrarte en hacer crecer tu negocio.",
-  visibility: {
-    title: "Mayor Visibilidad",
-    description:
-      "Desarrollamos sitios web aptos para móviles que no solo atraen, sino que retienen a los visitantes convirtiéndolos en clientes.",
-  },
-  presence: {
-    title: "Mejor Presencia",
-    description:
-      "Mejoramos la presencia de tu negocio en línea, haciendo que este se posicione por encima de la competencia en las búsquedas de los usuarios. Todo gracias a nuestro conocimiento en marketing online.",
-  },
-  audience: {
-    title: "Amplia Experiencia",
-    description:
-      "Durante 5 años como <strong>desarrolladores de páginas web</strong> hemos visto como <strong>agencias de creación de páginas web en Murcia</strong> desaparecían. Sin embargo nuestros métodos nos mantienen en la cima.",
-  },
-  instantInfo: {
-    title: "Información Instantánea",
-    description:
-      "Los usuarios obtienen información instantánea sobre tu negocio sin tiempo de espera, aumentando así la conversión de visitante a cliente.",
-  },
-  onlineSolutions: {
-    title: "Soluciones Online",
-    description:
-      "Facilitamos al cliente acciones como reservas, consultas, pasarelas de pago, comprar en una tienda online...",
-  },
-  differentiation: {
-    title: "Diferencia de la Competencia",
-    description:
-      "Destaca entre la competencia local al tener una presencia en línea profesional y completa gracias a un diseño web apto para móviles y un buen <strong>posicionamiento SEO y SEM</strong>.",
-  },
+  features: [
+    {
+      title: "Mayor Visibilidad",
+      description:
+        "Desarrollamos sitios web aptos para móviles que no solo atraen, sino que retienen a los visitantes convirtiéndolos en clientes.",
+    },
+    {
+      title: "Mejor Presencia",
+      description:
+        "Mejoramos la presencia de tu negocio en línea, haciendo que este se posicione por encima de la competencia en las búsquedas de los usuarios. Todo gracias a nuestro conocimiento en marketing online.",
+    },
+    {
+      title: "Amplia Experiencia",
+      description:
+        "Durante 5 años como <strong>desarrolladores de páginas web</strong> hemos visto como <strong>agencias de creación de páginas web en Murcia</strong> desaparecían. Sin embargo nuestros métodos nos mantienen en la cima.",
+    },
+    {
+      title: "Información Instantánea",
+      description:
+        "Los usuarios obtienen información instantánea sobre tu negocio sin tiempo de espera, aumentando así la conversión de visitante a cliente.",
+    },
+    {
+      title: "Soluciones Online",
+      description:
+        "Facilitamos al cliente acciones como reservas, consultas, pasarelas de pago, comprar en una tienda online...",
+    },
+    {
+      title: "Diferencia de la Competencia",
+      description:
+        "Destaca entre la competencia local al tener una presencia en línea profesional y completa gracias a un diseño web apto para móviles y un buen <strong>posicionamiento SEO y SEM</strong>.",
+    },
+  ],
 };
 
 const clients = {
@@ -233,6 +235,17 @@ const services = {
   ],
 };
 
+const blog = {
+  sectionHead: {
+    title: "Blog",
+    subtitle: "Últimos artículos y noticias",
+    description:
+      "Estate al día con las últimas novedades de la industria e interesantes y útiles artículos.",
+  },
+  pageTitle: "Blog",
+};
+
+
 const nuestroTrabajo = {
   sectionHead: {
     title: "Nuestro trabajo",
@@ -253,13 +266,20 @@ const contacto = {
     subtitle: "Trabajemos juntos",
     description: "Hagámos tu idea una <strong>realidad</strong>",
   },
-  title: "Contacto",
   pageTitle: "Contacto",
   ourOffices: "Nuestras oficinas",
   ourOfficesText:
     "¿Prefieres hacer las cosas en persona? Nosotros no, pero por razones legales tenemos que poner alguna dirección.",
   sendEmail: "Mándanos un email",
 };
+
+const index = {
+  pageTitle: "Diseño web Murcia | Posicionamiento web",
+  message: {
+    title: "Casos de éxito",
+  }
+};
+
 
 const sobreNosotros = {
   sectionHead: {
@@ -277,6 +297,8 @@ const sobreNosotros = {
   years: "Años",
   satisfiedClients: "Clientes satisfechos",
   techUsed: "Tecnologías usadas",
+  leadership: "Liderazgo",
+  team: "Equipo",
   culture: {
     title: "Nuestra cultura",
     subtitle: "Nuestro equipo se rige por la triple 'c'",
@@ -330,4 +352,6 @@ export const content = {
   followUs,
   sobreNosotros,
   services,
+  blog,
+  index,
 };

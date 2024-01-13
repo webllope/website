@@ -1,5 +1,5 @@
 const hero = {
-  primary: "Create your website at a minimal cost.",
+  primary: "Murcia web design",
   secondary:
     "Would you like your local business to stand out on the internet? We offer you a professional in web design and development to turn your idea into an amazing and functional website.",
 };
@@ -8,36 +8,38 @@ const features = {
   primary: "What benefits will having your own website provide you?",
   secondary:
     " Unlock the potential of your business with Webllope. We specialize in solving complex digital challenges, so you can focus on growing your business.",
-  visibility: {
-    title: "Greater Visibility",
-    description:
-      "We develop mobile-friendly websites that not only attract but also retain visitors, turning them into real customers for your business.",
-  },
-  presence: {
-    title: "Enhanced Presence",
-    description:
-      "We improve your online business presence, positioning it above others in user searches.",
-  },
-  audience: {
-    title: "Expand Audience",
-    description:
-      "Extensive experience in language translation, attracting foreign audiences to your business by providing their languages on your website.",
-  },
-  instantInfo: {
-    title: "Instant Information",
-    description:
-      "Users get instant information about your business with no waiting time, thereby increasing visitor-to-customer conversion.",
-  },
-  onlineSolutions: {
-    title: "Online Solutions",
-    description:
-      "We facilitate actions for customers such as reservations, inquiries, payment gateways, etc.",
-  },
-  differentiation: {
-    title: "Competitive Advantage",
-    description:
-      "Stand out from local competition by having a professional and comprehensive online presence.",
-  },
+  features: [
+    {
+      title: "Greater Visibility",
+      description:
+        "We develop mobile-friendly websites that not only attract but also retain visitors, turning them into real customers for your business.",
+    },
+    {
+      title: "Enhanced Presence",
+      description:
+        "We improve your online business presence, positioning it above others in user searches.",
+    },
+    {
+      title: "Expand Audience",
+      description:
+        "Extensive experience in language translation, attracting foreign audiences to your business by providing their languages on your website.",
+    },
+    {
+      title: "Instant Information",
+      description:
+        "Users get instant information about your business with no waiting time, thereby increasing visitor-to-customer conversion.",
+    },
+    {
+      title: "Online Solutions",
+      description:
+        "We facilitate actions for customers such as reservations, inquiries, payment gateways, etc.",
+    },
+    {
+      title: "Competitive Advantage",
+      description:
+        "Stand out from local competition by having a professional and comprehensive online presence.",
+    },
+  ],
 };
 
 const logos = {
@@ -158,6 +160,90 @@ const services = {
   ],
 };
 
+const blog = {
+  sectionHead: {
+    title: "Blog",
+    subtitle: "Latest news and articles",
+    description:
+      "Stay up to date with the latest industry news and interesting and useful articles.",
+  },
+  pageTitle: "Blog",
+};
+
+const nuestroTrabajo = {
+  sectionHead: {
+    title: "Our Work",
+    subtitle:
+      "Web design solutions, digital marketing and adapted to companies of any size",
+    description:
+      "We believe in efficiency and maximization of our resources to give the best value to our clients. We are a team and we work as such to achieve the best results and position our clients in the online market.",
+  },
+  title: "Latest Work",
+  pageTitle: "Our Work",
+  goodHands2: "You are in good hands, all these companies can't be wrong.",
+};
+
+const contacto = {
+  sectionHead: {
+    title: "Contact us",
+    subtitle: "Let's work together",
+    description: "Let's make your idea a <strong>reality</strong>",
+  },
+  pageTitle: "Contact",
+  ourOffices: "Nuestras oficinas",
+  ourOfficesText:
+    "¿Prefieres hacer las cosas en persona? Nosotros no, pero por razones legales tenemos que poner alguna dirección.",
+  sendEmail: "Mándanos un email",
+};
+
+const index = {
+  pageTitle: "Diseño web Murcia | Posicionamiento web",
+  message: {
+    title: "Success stories",
+  },
+};
+
+const sobreNosotros = {
+  sectionHead: {
+    title: "About us",
+    subtitle: "Our strong point is collaboration",
+    description:
+      "We are a small and passionate team. We believe our strength lies in our collaborative approach, putting customers at the center of what we do.",
+  },
+  title: "About us",
+  pageTitle: "About us",
+  paragraphs: [
+    "Webllope was born from two friends who met in the Computer Engineering degree and years later after both working as web and software developers they realized the growth potential that technology can give to businesses of all sizes. The main problem of these businesses is the lack of awareness about how solutions adapted to their business model can help them, and how effective it is to have digital content on the internet accessible to everyone that promotes their business.",
+    "At Webllope we are more than colleagues - we are a family. We took our first steps in computer engineering together, during our time at university. Since then and until now, trying to improve the world with technology as a means.",
+  ],
+  years: "Years",
+  satisfiedClients: "Satisfied clients",
+  techUsed: "Tech used",
+  leadership: "Leadership",
+  team: "Team",
+  culture: {
+    title: "Our culture",
+    subtitle: "Our team is governed by the triple 'c'",
+    cultureData: [
+      {
+        label: "Communication",
+        description:
+          "Communication is the key to the success of any project, so we make sure that the team maintains a fluid communication with you making you feel at all times part of the creation of your web idea.",
+      },
+      {
+        label: "Quality",
+        description:
+          "We care a lot about the quality of our work, so we put all our effort into creating reliable and robust software as we trust that an excellent service is the best marketing.",
+      },
+      {
+        label: "Creativity",
+        description:
+          "Creativity is crucial in programming to find innovative solutions to challenges. A creative team can think outside the box and come up with fresh ideas.",
+      },
+    ],
+  },
+};
+
 const clients = {
   title: "We have worked with amazing clients",
 };
@@ -235,4 +321,9 @@ export const content = {
   briefSeoInfo,
   roadmap,
   services,
+  blog,
+  contacto,
+  index,
+  nuestroTrabajo,
+  sobreNosotros,
 };

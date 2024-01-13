@@ -8,43 +8,22 @@ import Sectionhead from "./sectionhead.astro";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const features = [
-  {
-    title: t("features.visibility.title"),
-    description: t("features.visibility.description"),
-    icon: "mdi:eye",
-  },
-  {
-    title: t("features.presence.title"),
-    description: t("features.presence.description"),
-    icon: "bx:bxs-star",
-  },
-  {
-    title: t("features.audience.title"),
-    description: t("features.audience.description"),
-    icon: "fluent:people-20-filled",
-  },
-  {
-    title: t("features.instantInfo.title"),
-    description: t("features.instantInfo.description"),
-    icon: "bi:info",
-  },
-  {
-    title: t("features.onlineSolutions.title"),
-    description: t("features.onlineSolutions.description"),
-    icon: "ion:card",
-  },
-  {
-    title: t("features.differentiation.title"),
-    description: t("features.differentiation.description"),
-    icon: "uil:user-exclamation",
-  },
+const icons = [
+  "mdi:eye",
+  "bx:bxs-star",
+  "fluent:people-20-filled",
+  "bi:info",
+  "ion:card",
+  "uil:user-exclamation",
 ];
+
+const features = t("features.features").map((feature, index) => ({
+  ...feature,
+  icon: icons[index],
+}));
 ---
 
-<Sectionhead
-  title={t("features.primary")}
-/>
+<Sectionhead title={t("features.primary")} />
 
 <Container>
   <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-24 gap-16">
@@ -56,8 +35,9 @@ const features = [
           </div>
           <div>
             <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
-            <p class="text-slate-500 mt-2 leading-relaxed" set:html={item.description}>
-            </p>
+            <p
+              class="text-slate-500 mt-2 leading-relaxed"
+              set:html={item.description}></p>
           </div>
         </div>
       ))

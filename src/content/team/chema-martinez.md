@@ -2,7 +2,7 @@
 id: 2
 draft: false
 name: "Chema Martínez M."
-title: "Co-Founder / CTO"
+title: "Co-fundador / CTO"
 roles: ["leadership"]
 avatar:
   { src: "./photos/chema-martinez.jpg", alt: "Chema Martínez Manzanares" }
