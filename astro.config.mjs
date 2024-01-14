@@ -9,9 +9,6 @@ export default defineConfig({
   site: "https://webllope.es",
   integrations: [tailwind(), mdx(), sitemap()],
   adapter: vercel({
-    speedInsights: {
-      enabled: true,
-    },
     webAnalytics: {
       enabled: true,
     },
