@@ -95,6 +95,27 @@ const roadmap = {
   },
 };
 
+const opinions = {
+  jaimapuerto: {
+    name: "Jaima Puerto",
+    role: "Fundador de Jaima Puerto",
+    message:
+      "Los chicos de webllope fueron increíblemente amables y atentos con todos mis deseos para la página web. Se preocuparon en todo momento por cumplir nuestros deseos y añadiendo varias sugerencias para mejorar nuestro marketing digital.",
+  },
+  salonchick: {
+    name: "Salon Chick",
+    role: "Fundadora de Salon Chick",
+    message:
+      "Nuestra página web ha sido un éxito gracias a Webllope. Nos han ayudado a posicionarnos en Google y atraer a más clientes a nuestro negocio. ¡Gracias!",
+  },
+  neoaesthetic: {
+    name: "Neoaesthetic",
+    role: "Fundadora de Neoaesthetic",
+    message:
+      "Webllope ha sido una gran ayuda para nuestro negocio. Nos han ayudado a crear una página web profesional y atraer a más clientes a nuestro centro de estética.",
+  },
+};
+
 const logos = {
   bestTechTools: "Trabajamos con las mejores tecnologías.",
 };
@@ -224,7 +245,8 @@ const blog = {
   pageTitle: "Blog",
 };
 
-const ourWork = {
+
+const nuestroTrabajo = {
   sectionHead: {
     title: "Nuestro trabajo",
     subtitle:
@@ -238,7 +260,7 @@ const ourWork = {
     "Estás en buenas manos, todas estas empresas no pueden estar equivocadas.",
 };
 
-const contact = {
+const contacto = {
   sectionHead: {
     title: "Contáctanos",
     subtitle: "Trabajemos juntos",
@@ -255,10 +277,11 @@ const index = {
   pageTitle: "Diseño web Murcia | Posicionamiento web",
   message: {
     title: "Casos de éxito",
-  },
+  }
 };
 
-const aboutUs = {
+
+const sobreNosotros = {
   sectionHead: {
     title: "Sobre nosotros",
     subtitle: "Nuestro punto fuerte es la colaboración",
@@ -299,16 +322,15 @@ const aboutUs = {
   },
 };
 
-const misc = {
-  information: "Información",
-  support: "Soporte",
-  followUs: "Síguenos",
-  readMore: "Leer más",
-  successCases: "Casos de éxito",
-};
+const informacion = "Información";
+
+const soporte = "Soporte";
+
+const followUs = "Síguenos";
+
+const readMore = "Leer más";
 
 export const content = {
-  ...misc,
   hero,
   features,
   logos,
@@ -318,12 +340,17 @@ export const content = {
   aboutYourProject,
   tags,
   briefAboutUs,
+  opinions,
   clients,
   briefSeoInfo,
   roadmap,
-  ourWork,
-  contact,
-  aboutUs,
+  nuestroTrabajo,
+  readMore,
+  contacto,
+  informacion,
+  soporte,
+  followUs,
+  sobreNosotros,
   services,
   blog,
   index,

@@ -170,7 +170,7 @@ const blog = {
   pageTitle: "Blog",
 };
 
-const ourWork = {
+const nuestroTrabajo = {
   sectionHead: {
     title: "Our Work",
     subtitle:
@@ -183,7 +183,7 @@ const ourWork = {
   goodHands2: "You are in good hands, all these companies can't be wrong.",
 };
 
-const contact = {
+const contacto = {
   sectionHead: {
     title: "Contact us",
     subtitle: "Let's work together",
@@ -203,7 +203,7 @@ const index = {
   },
 };
 
-const aboutUs = {
+const sobreNosotros = {
   sectionHead: {
     title: "About us",
     subtitle: "Our strong point is collaboration",
@@ -297,16 +297,16 @@ const roadmap = {
   },
 };
 
-const misc = {
-  information: "Information",
-  support: "Support",
-  followUs: "Follow us",
-  readMore: "Read more",
-  successCases: "Success cases"
+const opinions = {
+  jaimapuerto: {
+    name: "Jaima Puerto",
+    role: "Founder of Jaima Puerto",
+    message:
+      "The guys from webllope were incredibly kind and attentive to all my wishes for the website. They were concerned at all times to fulfill our wishes and adding several suggestions to improve our digital marketing.",
+  },
 };
 
 export const content = {
-  ...misc,
   hero,
   features,
   logos,
@@ -316,13 +316,14 @@ export const content = {
   aboutYourProject,
   tags,
   briefAboutUs,
+  opinions,
   clients,
   briefSeoInfo,
   roadmap,
   services,
   blog,
-  contact,
+  contacto,
   index,
-  ourWork,
-  aboutUs,
+  nuestroTrabajo,
+  sobreNosotros,
 };

@@ -1,14 +1,33 @@
 ---
+import JaimaPuertoLogo from "@assets/logos/JaimaPuertoLogo.webp";
+import SalonChickLogo from "@assets/logos/SalonChickLogo.webp";
+import DettagliLogo from "@assets/logos/DettagliLogo.webp";
+import NeoaestheticLogo from "@assets/logos/NeoaestheticLogo.webp";
+
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
-import { getCollection } from "astro:content";
-import { Image } from "astro:assets";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const clients = await getCollection("clients")
-
-// TODO: we have to make this images have the correct size originally, avoiding changing it with css which causes bad performance (cuando sepamos los logos y tal lo haremos)
+// @TODO: This is used twice also at worked-with, maybe we should have a file to import this const from.
+const clients = [
+  {
+    name: "Jaima Puerto",
+    img: JaimaPuertoLogo.src,
+  },
+  {
+    name: "Salon Chick",
+    img: SalonChickLogo.src,
+  },
+  {
+    name: "Dettagli",
+    img: DettagliLogo.src,
+  },
+  {
+    name: "Neoaesthetic",
+    img: NeoaestheticLogo.src,
+  },
+];
 ---
 
 <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-24 sm:mt-32 lg:mt-40">
@@ -28,22 +47,25 @@ const clients = await getCollection("clients")
         {clients.map
           (client => (
             <li class="group">
-              <div class="overflow-hidden" style="opacity: 1; transform: none;">
-                <div
-                  class="pt-12 group-[&:nth-child(-n+2)]:-mt-px sm:group-[&:nth-child(3)]:-mt-px lg:group-[&:nth-child(4)]:-mt-px relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
-                  <Image
-                    alt={client.data.name + 'Image'}
-                    loading="lazy"
-                    width="184"
-                    height="36"
-                    src={client.data.logos.light}
-                    class="object-contain w-[185px] h-[60px]"
-                    style="color: transparent;"
-                  />
-                </div>
-              </div>
-            </li>
-          ))}
+          <div class="overflow-hidden" style="opacity: 1; transform: none;">
+            <div
+              class="pt-12 group-[&:nth-child(-n+2)]:-mt-px sm:group-[&:nth-child(3)]:-mt-px lg:group-[&:nth-child(4)]:-mt-px relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
+              <img
+                alt={client.name + 'Imagen'}
+                loading="lazy"
+                width="184"
+                height="36"
+                src={client.img}
+                // @TODO: We have to make this images have the correct size originally, avoiding changing it with css which causes bad performance (cuando sepamos los logos y tal lo haremos)
+                class="object-contain w-[185px] h-[60px]"
+                style="color: transparent;"
+              />
+            </div>
+          </div>
+        </li>
+          ))
+     
+     }
       </ul>
     </div>
   </div>

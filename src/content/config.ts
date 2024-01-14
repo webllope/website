@@ -41,18 +41,6 @@ const clientsCollection = defineCollection({
         dark: image(),
         markDark: image(),
       }),
-      reviews: z.array(
-        z.object({
-          en: z.object({
-            role: z.string(),
-            content: z.string(),
-          }),
-          es: z.object({
-            role: z.string(),
-            content: z.string(),
-          }),
-        }),
-      ),
     }),
 });
 

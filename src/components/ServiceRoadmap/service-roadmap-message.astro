@@ -8,12 +8,12 @@ const { paragraphs, number } = Astro.props;
 ---
 
 <div class="flex-1 border-l-2 lg:border-l-0 lg:border-t-2 border-black flex flex-row lg:flex-col">
-  <div class="my-auto lg:mb-2 lg:mt-4 ml-6 lg:mx-auto text-xl font-semibold">{number + "."}</div>
+  <div class="my-auto lg:my-px ml-2 lg:mx-auto text-xl font-semibold">{number + "."}</div>
   <hr class="lg:mx-auto my-auto lg:my-px lg:rotate-90 w-10 lg:w-6 border-black ml-2 lg:mt-4" />
   <div class="border-t-2 border-black mt-6 mx-6 py-2 lg:px-2 lg:py-0">
     {
       paragraphs.map((paragraph) => (
-        <p class="text-md mt-6 mb-2" set:html={paragraph} />
+        <p class="text-sm mb-2" set:html={paragraph} />
       ))
     }
   </div>
