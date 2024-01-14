@@ -1,6 +1,5 @@
 ---
 import Background from "../background.astro";
-import ServiceRoadmapMessage from "./service-roadmap-message.astro";
 
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
 
@@ -12,27 +11,32 @@ const paragraphs = [
   [t("roadmap.second.paragraph1"), t("roadmap.second.paragraph2")],
   [t("roadmap.third.paragraph1")],
   [t("roadmap.fourth.paragraph1"), t("roadmap.fourth.paragraph2")],
-  [t("roadmap.fifth.paragraph1"), t("roadmap.fifth.paragraph2")]
+  [t("roadmap.fifth.paragraph1"), t("roadmap.fifth.paragraph2")],
 ];
 ---
-
 <div
   class="relative isolate bg-neutral-50 py-16 sm:py-28 md:py-32 mt-24 sm:mt-32 lg:mt-40">
   <Background />
   <div class="mx-auto max-w-[90rem] px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:max-w-none">
-      <div style="opacity: 1; transform: none;">
-        <div class="flex flex-col lg:flex-row">
-          {
-            paragraphs.map((paragraph, index) => (
-              <ServiceRoadmapMessage
-                paragraphs={paragraph}
-                number={index + 1}
-              />
-            ))
-          }
-        </div>
-      </div>
-    </div>
+    <ol class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 justify-center gap-y-10">
+      {
+        paragraphs.map((paragraph, index) => (
+          <li class="relative mb-6 sm:mb-0 pr-2">
+            <div class="flex items-center gap-2">
+              <div class="z-10 flex items-center justify-center w-8 h-8 bg-black rounded-full  text-white shrink-0">
+                <strong>{index + 1}</strong>
+              </div>
+              <div class="flex w-full bg-gray-200 h-0.5 dark:bg-gray-700" />
+            </div>
+            <div class="mt-6 sm:pe-8 flex flex-col gap-4">
+              <!-- <h3 class="text-lg font-semibold text-gray-900 mt-4 mb-2">
+                Flowbite Library v1.0.0
+              </h3> -->
+              {paragraph.map(nested => <p class="text-base font-normal text-gray-500" set:html={nested} />)}
+            </div>
+          </li>
+        ))
+      }
+    </ol>
   </div>
 </div>

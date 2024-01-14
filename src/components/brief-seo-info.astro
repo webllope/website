@@ -5,12 +5,48 @@ import seoImage from "@assets/seo-image.webp";
 import { getRelativeLocaleUrl } from "astro:i18n";
 
 import { Image } from "astro:assets";
+import Sectionhead from "./sectionhead.astro";
+import Container from "./ui/container.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<div class="mx-auto max-w-7xl px-6 lg:px-8 mt-24 sm:mt-32 lg:mt-40">
+<Sectionhead title={t("briefSeoInfo.title")} />
+
+<Container>
+  <div
+    class="flex flex-col lg:flex-row justify-between mx-auto max-w-2xl lg:max-w-none gap-12 mt-8">
+    <Image
+      alt="Imagen en oficina"
+      width={400}
+      height={300}
+      class="rounded-xl"
+      src={seoImage}
+    />
+    <div class="max-w-2xl">
+      <div class="mt-6 text-xl text-neutral-600">
+        <!-- <p>
+          We believe technology is the answer to the world’s greatest
+          challenges. It’s also the cause, so we find ourselves in bit of a
+          catch 22 situation.
+        </p> -->
+        <div class="flex flex-col gap-3.5">
+          <span set:html={t("briefSeoInfo.firstP")} />
+          <span set:html={t("briefSeoInfo.secondP")} />
+        </div>
+
+        <div class="flex mt-10">
+          <Link href={getRelativeLocaleUrl(lang, "/contacto")}>
+            {t("briefSeoInfo.cta")}
+          </Link>
+        </div>
+      </div>
+    </div>
+  </div>
+</Container>
+
+<!-- <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-24 sm:mt-32 lg:mt-40">
   <div class="flex flex-col lg:flex-row mx-auto max-w-2xl lg:max-w-none">
     <div class="lg:w-1/2 sm:mt-6 lg:mt-0 lg:mr-6 mt-6">
       <Image
@@ -47,4 +83,4 @@ const t = useTranslations(lang);
       </div>
     </div>
   </div>
-</div>
+</div> -->
