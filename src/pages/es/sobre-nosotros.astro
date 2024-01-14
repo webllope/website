@@ -19,21 +19,21 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 });
 
 const recordsData = [
-  { description: t("sobreNosotros.years"), value: 2 },
-  { description: t("sobreNosotros.satisfiedClients"), value: 12 },
-  { description: t("sobreNosotros.techUsed"), value: 9 },
+  { description: t("aboutUs.years"), value: 2 },
+  { description: t("aboutUs.satisfiedClients"), value: 12 },
+  { description: t("aboutUs.techUsed"), value: 9 },
 ];
 
-const cultureData = t("sobreNosotros.culture.cultureData");
+const cultureData = t("aboutUs.culture.cultureData");
 
-const paragraphs = t("sobreNosotros.paragraphs");
+const paragraphs = t("aboutUs.paragraphs");
 ---
 
-<Layout title={t("sobreNosotros.pageTitle")}>
+<Layout title={t("aboutUs.pageTitle")}>
   <Sectionhead
-    section={t("sobreNosotros.sectionHead.title")}
-    title={t("sobreNosotros.sectionHead.subtitle")}
-    description={t("sobreNosotros.sectionHead.description")}>
+    section={t("aboutUs.sectionHead.title")}
+    title={t("aboutUs.sectionHead.subtitle")}
+    description={t("aboutUs.sectionHead.description")}>
     <div class="mt-10 max-w-2xl space-y-6 text-base">
       {paragraphs.map((p) => <p>{p}</p>)}
     </div>
@@ -54,11 +54,11 @@ const paragraphs = t("sobreNosotros.paragraphs");
           <h2>
             <span
               class="mb-6 block font-display text-base font-semibold text-white">
-              {t("sobreNosotros.culture.title")}
+              {t("aboutUs.culture.title")}
             </span>
             <span
               class="block font-display tracking-tight [text-wrap:balance] text-4xl font-medium sm:text-5xl text-white">
-              {t("sobreNosotros.culture.subtitle")}
+              {t("aboutUs.culture.subtitle")}
             </span>
           </h2>
           <p class="mt-6 text-xl text-neutral-300"></p>
@@ -101,7 +101,7 @@ const paragraphs = t("sobreNosotros.paragraphs");
             class="grid grid-cols-1 gap-6 pt-12 sm:pt-16 lg:grid-cols-4 xl:gap-8">
             <div style="opacity: 1; transform: none;">
               <h2 class="font-display text-2xl font-semibold text-neutral-950">
-                {t('sobreNosotros.leadership')}
+                {t('aboutUs.leadership')}
               </h2>
             </div>
             <div class="lg:col-span-3">
@@ -151,7 +151,7 @@ const paragraphs = t("sobreNosotros.paragraphs");
             class="grid grid-cols-1 gap-6 pt-12 sm:pt-16 lg:grid-cols-4 xl:gap-8">
             <div style="opacity: 1; transform: none;">
               <h2 class="font-display text-2xl font-semibold text-neutral-950">
-                {t('sobreNosotros.team')}
+                {t('aboutUs.team')}
               </h2>
             </div>
             <div class="lg:col-span-3">

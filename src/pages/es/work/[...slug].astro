@@ -3,7 +3,9 @@ import { getCollection } from "astro:content";
 import Layout from "@layouts/case-study-layout.astro";
 
 export async function getStaticPaths() {
-  const workEntries = await getCollection("work");
+  const workEntries = await getCollection("work", ({ id }) =>
+    id.startsWith("es/"),
+  );
   return workEntries.map((entry) => ({
     params: { slug: entry.slug },
     props: { entry },
@@ -12,8 +14,13 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+
+const websiteName = entry.slug.split("/")[1];
 ---
 
-<Layout frontmatter={entry.data} websiteName={entry.slug} imagesAmount={entry.data.imagesAmount}>
+<Layout
+  frontmatter={entry.data}
+  websiteName={websiteName}
+  imagesAmount={entry.data.imagesAmount}>
   <Content />
 </Layout>
