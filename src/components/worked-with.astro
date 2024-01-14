@@ -20,8 +20,10 @@ const clients = [
   {
     name: "Neoaesthetic",
     img: NeoaestheticLogo.src,
-  }
+  },
 ];
+
+// TODO: we have to make this images have the correct size originally, avoiding changing it with css which causes bad performance (cuando sepamos los logos y tal lo haremos)
 ---
 
 <ul role="list" class="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4">
@@ -36,7 +38,6 @@ const clients = [
             data-nimg="1"
             src={client.img}
             style="color: transparent;"
-            // @TODO: We have to make this images have the correct size originally, avoiding changing it with css which causes bad performance (cuando sepamos los logos y tal lo haremos)
             class="object-contain w-[185px] h-[60px]"
           />
         </div>
