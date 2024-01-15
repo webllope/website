@@ -12,7 +12,7 @@ const { section, title, description, inverted = false} = Astro.props;
 ---
 
 <Background />
-<div class="mx-auto max-w-7xl px-6 lg:px-8">
+<div class="mx-auto max-w-7xl px-2 lg:px-5">
   <div class="mx-auto max-w-2xl lg:max-w-none">
     <div
       style="opacity: 1; transform: none;"
@@ -24,8 +24,9 @@ const { section, title, description, inverted = false} = Astro.props;
           </span>
         )
       }
+      <!-- @TODO: Aquí en la pantalla principal en el briefseoinfo el title se queda en medio de la nada. -->
       <div
-        class="mt-6 block max-w-5xl font-display text-3xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-4xl">
+        class="mt-6 max-w-5xl font-display text-3xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-4xl">
         <h2>{title}</h2>
       </div>
       <div class='mt-6 max-w-3xl text-xl text-neutral-600' class={inverted ? 'text-right' : 'text-left'}>
