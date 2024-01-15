@@ -47,12 +47,11 @@ const url = getRelativeLocaleUrl(lang, `/blog/${blog.slug}`);
                 <Image
                   alt={author?.data.name}
                   loading="lazy"
-                  width="1800"
-                  height="1800"
+                  width="48"
+                  height="48"
                   decoding="async"
                   data-nimg="1"
-                  class="h-12 w-12 object-cover grayscale"
-                  src={author?.data.avatar.src}
+                  src={author?.data.avatar.iconSrc}
                   style="color: transparent;"
                 />
               </div><div class="text-sm text-neutral-950">
@@ -69,7 +68,7 @@ const url = getRelativeLocaleUrl(lang, `/blog/${blog.slug}`);
           </p>
           <a
             class="mt-8 inline-flex rounded-full px-4 py-1.5 text-sm font-semibold transition bg-neutral-950 text-white hover:bg-neutral-800"
-            aria-label=`Read more: ${blog.data.title}`
+            aria-label={t("readMore")}
             href={url}>
             <span class="relative top-px">{t("readMore")}</span>
             </a

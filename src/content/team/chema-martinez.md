@@ -5,6 +5,10 @@ name: "Chema Martínez M."
 title: "Co-fundador / CTO"
 roles: ["leadership"]
 avatar:
-  { src: "./photos/chema-martinez.jpg", alt: "Chema Martínez Manzanares" }
+  {
+    src: "./photos/chema-martinez.jpg",
+    iconSrc: "./photos/icon-chema-martinez.jpg",
+    alt: "Chema Martínez Manzanares",
+  }
 publishDate: "2022-11-09 15:39"
 ---

@@ -6,7 +6,8 @@ title: "Diseñadora UI/UX"
 roles: ["team"]
 avatar:
   {
-    src: "./photos/diseñadora.png",
+    src: "./photos/laura-maldonado.webp",
+    iconSrc: "./photos/icon-laura-maldonado.webp",
     alt: "Laura Maldonado Imagen",
   }
 publishDate: "2022-11-09 15:39"

@@ -10,6 +10,7 @@ const teamCollection = defineCollection({
       roles: z.array(z.string()),
       avatar: z.object({
         src: image(),
+        iconSrc: image(),
         alt: z.string(),
       }),
       publishDate: z.string().transform((str) => new Date(str)),

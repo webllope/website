@@ -168,6 +168,7 @@ const blog = {
       "Stay up to date with the latest industry news and interesting and useful articles.",
   },
   pageTitle: "Blog",
+  author: "By",
 };
 
 const ourWork = {
@@ -301,7 +302,7 @@ const misc = {
   support: "Support",
   followUs: "Follow us",
   readMore: "Read more",
-  successCases: "Success cases"
+  successCases: "Success cases",
 };
 
 export const content = {

@@ -223,6 +223,7 @@ const blog = {
       "Estate al día con las últimas novedades de la industria e interesantes y útiles artículos.",
   },
   pageTitle: "Blog",
+  author: "Por",
 };
 
 const ourWork = {
