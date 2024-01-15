@@ -62,7 +62,7 @@ const { variant = "primary" } = Astro.props;
           </p>
           <a
             class="mt-6 flex gap-x-3 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"
-            aria-label={firstEntry.data.title}
+            aria-label={t("fromBlog.readMore")}
             href={`/blog/${firstEntry.slug}`}>
             {t("fromBlog.readMore")}
             <svg
@@ -94,7 +94,7 @@ const { variant = "primary" } = Astro.props;
           </p>
           <a
             class="mt-6 flex gap-x-3 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"
-            aria-label={secondEntry.data.title}
+            aria-label={t("fromBlog.readMore")}
             href={`/blog/${firstEntry.slug}`}>
             {t("fromBlog.readMore")}
             <svg
