@@ -20,7 +20,10 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
       <Image
         src={images[path]()}
         alt={alt}
-        class="w-full h-full object-cover object-center rounded-lg shadow-md"
+        class="rounded-lg shadow-md"
+        width="800"
+        height="450"
+        loading="lazy"
       />
     ))
   }

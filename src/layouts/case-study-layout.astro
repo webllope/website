@@ -22,7 +22,7 @@ interface Props {
 const { frontmatter, websiteName, imagesAmount } = Astro.props;
 
 const imagesPaths = Array.from({ length: imagesAmount }, (_, i) => {
-  return `/src/assets/${websiteName}${i + 1}.png`;
+  return `/src/assets/${websiteName}${i + 1}.webp`;
 });
 
 const date = new Date(frontmatter.date);
@@ -93,31 +93,15 @@ const client = await getEntry(frontmatter.client);
                 <Image
                   alt={frontmatter.cover.alt}
                   fetchpriority="high"
-                  width="3648"
-                  height="3117"
+                  width="1300"
+                  height="720"
                   decoding="async"
                   data-nimg="1"
-                  class="w-full"
-                  sizes="(min-width: 1216px) 76rem, 100vw"
+                  class="w-full grayscale transition duration-300 hover:grayscale-0"
                   src={frontmatter.cover.src}
-                  style="color: transparent; filter: grayscale(1);"
+                  style="color: transparent;"
+                  loading="eager"
                 />
-                <div
-                  class="pointer-events-none absolute left-0 top-0 w-full opacity-0 transition duration-300 group-hover:opacity-100"
-                  aria-hidden="true">
-                  <Image
-                    alt={frontmatter.cover.alt}
-                    fetchpriority="high"
-                    width="3648"
-                    height="3117"
-                    decoding="async"
-                    data-nimg="1"
-                    class="w-full"
-                    sizes="(min-width: 1216px) 76rem, 100vw"
-                    src={frontmatter.cover.src}
-                    style="color: transparent;"
-                  />
-                </div>
               </div>
             </div>
           </div>

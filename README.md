@@ -6,7 +6,7 @@
 
 > 🧑‍🚀 **Seasoned astronaut?** Ingore this file. Have fun!
 
-![webllope](/public/SocialMediaSharedImage.png)
+![webllope](/public/SocialMediaSharedImage.webp)
 
 ## 🚀 Project Structure
 

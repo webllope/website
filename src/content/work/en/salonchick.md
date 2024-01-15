@@ -11,7 +11,7 @@ quote:
     author: { name: "X", position: "Fundadora de SalonChick" },
   }
 tags: [webdev, cms]
-cover: { src: "@logos/SalonChickLogo.webp", alt: "SalonChick's website" }
+cover: { src: "@assets/businessCovers/SalonChick.webp", alt: "SalonChick's website" }
 date: "2023-07-06 17:00"
 lang: "en"
 imagesAmount: 4

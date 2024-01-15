@@ -11,7 +11,7 @@ quote:
     author: { name: "Alicia", position: "Fundadora de Neoaesthetic" },
   }
 tags: [webdev, cms]
-cover: { src: "@logos/NeoaestheticLogo.webp", alt: "Web de Neoaesthetic" }
+cover: { src: "@assets/businessCovers/Neoaesthetic.webp", alt: "Web de Neoaesthetic" }
 date: "2023-07-06 17:00"
 lang: "es"
 imagesAmount: 4
