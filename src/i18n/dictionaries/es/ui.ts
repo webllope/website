@@ -23,6 +23,7 @@ export const ui = {
     connect: {
       title: "Conectar",
     },
+    comingSoon: "Próximamente",
     seeAll: "Ver todos",
     newsletter: {
       primary: "Regístrate para nuestra newsletter",

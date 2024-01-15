@@ -23,6 +23,7 @@ export const ui = {
     connect: {
       title: "Connect",
     },
+    comingSoon: "Coming soon",
     seeAll: "See all",
     newsletter: {
       primary: "Sign up for our newsletter",

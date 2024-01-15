@@ -1,7 +1,7 @@
 ---
 import Link from "./ui/link.astro";
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
-import seoImage from "@assets/seo-image.webp";
+import seoImage from "@assets/seo-imagee.png";
 import { getRelativeLocaleUrl } from "astro:i18n";
 
 import { Image } from "astro:assets";
@@ -19,18 +19,13 @@ const t = useTranslations(lang);
     class="flex flex-col lg:flex-row justify-between mx-auto max-w-2xl lg:max-w-none gap-12 mt-8">
     <Image
       alt="Imagen en oficina"
-      width={400}
-      height={300}
-      class="rounded-xl"
       src={seoImage}
+      width="220"
+      height="443"
+      class="h-full mx-auto mt-6"
     />
     <div class="max-w-2xl">
       <div class="mt-6 text-xl text-neutral-600">
-        <!-- <p>
-          We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
-          catch 22 situation.
-        </p> -->
         <div class="flex flex-col gap-3.5">
           <span set:html={t("briefSeoInfo.firstP")} />
           <span set:html={t("briefSeoInfo.secondP")} />
