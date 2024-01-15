@@ -25,6 +25,7 @@ const t = useTranslations(lang);
     image={{
       alt: "Diseño Web Imagen",
       src: officeImage,
+      loading: "eager",
     }}
     services={t("services.webServices")}
   />
@@ -40,6 +41,7 @@ const t = useTranslations(lang);
     image={{
       alt: "Posicionamiento SEO Imagen",
       src: seoImage,
+      loading: "lazy",
     }}
     services={t("services.seoServices")}
   />
@@ -53,6 +55,7 @@ const t = useTranslations(lang);
     image={{
       alt: "Tienda Online Imagen",
       src: tiendaOnlineImage,
+      loading: "lazy",
     }}
     services={t("services.shopServices")}
   />

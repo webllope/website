@@ -5,6 +5,7 @@ interface Props {
   image: {
     alt: string;
     src: ImageMetadata;
+    loading?: "lazy" | "eager";
   };
   services: Array<{
     title: string;
@@ -40,6 +41,7 @@ const { image, services, reversed = false } = Astro.props;
                       class="w-full bg-neutral-100 object-cover"
                       style="color: transparent; aspect-ratio: 655 / 680;"
                       src={image.src}
+                      loading={image.loading || "lazy"}
                     />
                   </foreignObject>
                 </g>
