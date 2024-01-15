@@ -31,7 +31,7 @@ const clients = await getCollection("clients", ({ slug }) => {
   return publishedWorkEntries.some((work) => work.data.client.slug == slug);
 });
 
-const client = clients.find((client) => client.id === "salonchick.md")!;
+const client = clients.find((client) => client.id === "neoaesthetic.md")!;
 
 // TODO: We have to make this images have the correct size originally, avoiding changing it with css which causes bad performance (cuando sepamos los logos y tal lo haremos)
 ---
@@ -70,9 +70,8 @@ const client = clients.find((client) => client.id === "salonchick.md")!;
                         decoding="async"
                         data-nimg="1"
                         class="flex-none"
-                        width="36"
-                        height="36"
-                        class="object-contain w-[185px] h-[60px]"
+                        height="125"
+                        width={client.data.logos.markDark.width}
                         src={client.data.logos.markDark}
                         style="color: transparent;"
                       />
@@ -138,8 +137,6 @@ const client = clients.find((client) => client.id === "salonchick.md")!;
       src: client.data.logos.light,
     }}
   />
-
-  <GoodHands />
 
   <AboutYourProject />
 </Layout>

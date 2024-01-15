@@ -43,7 +43,8 @@ const features = {
 };
 
 const clients = {
-  title: "Hemos trabajado con clientes increíbles",
+  title:
+    "Estás en buenas manos, todas estas empresas no pueden estar equivocadas.",
 };
 
 const briefAboutUs = {
@@ -234,8 +235,6 @@ const ourWork = {
   },
   title: "Últimos trabajos",
   pageTitle: "Nuestro trabajo",
-  goodHands:
-    "Estás en buenas manos, todas estas empresas no pueden estar equivocadas.",
 };
 
 const contact = {

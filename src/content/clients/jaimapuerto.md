@@ -2,9 +2,9 @@
 name: "Jaima Puerto"
 logos:
   {
-    light: "../../assets/logos/JaimaPuertoLogo.webp",
-    dark: "../../assets/logos/JaimaPuertoLogo.webp",
-    markDark: "../../assets/logos/JaimaPuertoLogo.webp",
+    light: "../../assets/logos/JaimaPuertoLogo125.webp",
+    dark: "../../assets/logos/JaimaPuertoLogo125.webp",
+    markDark: "../../assets/logos/JaimaPuertoLogo125.webp",
   }
 reviews:
   [

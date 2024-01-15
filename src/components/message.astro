@@ -34,8 +34,8 @@ const { content, image, title } = Astro.props;
             <Image
               alt={image.alt}
               loading="lazy"
-              width="184"
-              height="36"
+              width={image.src.width}
+              height="125"
               decoding="async"
               data-nimg="1"
               src={image.src}

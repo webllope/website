@@ -17,7 +17,7 @@ import { getEntry } from "astro:content";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const client = await getEntry("clients", "jaimapuerto");
+const client = await getEntry("clients", "salonchick");
 
 // TODO aquí habría que hacer un componente común de opiniones que sea un carrusel de opiniones y que las opiniones las coja de un markdown como hace con los blog posts y los works
 ---

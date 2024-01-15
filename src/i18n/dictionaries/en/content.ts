@@ -180,7 +180,6 @@ const ourWork = {
   },
   title: "Latest Work",
   pageTitle: "Our Work",
-  goodHands2: "You are in good hands, all these companies can't be wrong.",
 };
 
 const contact = {
@@ -245,7 +244,7 @@ const aboutUs = {
 };
 
 const clients = {
-  title: "We have worked with amazing clients",
+  title: "You are in good hands, all these companies can't be wrong.",
 };
 
 const briefAboutUs = {
