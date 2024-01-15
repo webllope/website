@@ -8,18 +8,22 @@ const clients = [
   {
     name: "Jaima Puerto",
     img: JaimaPuertoLogo.src,
+    width: JaimaPuertoLogo.width,
   },
   {
     name: "Salon Chick",
     img: SalonChickLogo.src,
+    width: SalonChickLogo.width,
   },
   {
     name: "Dettagli",
     img: DettagliLogo.src,
+    width: DettagliLogo.width,
   },
   {
     name: "Neoaesthetic",
     img: NeoaestheticLogo.src,
+    width: NeoaestheticLogo.width,
   },
 ];
 
@@ -40,6 +44,7 @@ const clients = [
             style="color: transparent;"
             class="rounded-xl mx-auto"
             height="125"
+            width={client.width}
           />
         </div>
       </li>
