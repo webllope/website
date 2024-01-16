@@ -128,7 +128,7 @@ const client = await getEntry(frontmatter.client);
       class="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-gradient-to-b from-neutral-50">
       <Background />
     </div>
-    <MoreJobs />
+    <MoreJobs currentClientSlug={client.slug}/>
 
     <AboutYourProject />
   </div>

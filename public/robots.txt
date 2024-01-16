@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://webllope.es/sitemap-index.xml
+Sitemap: https://webllope.es/sitemap-index.xml
