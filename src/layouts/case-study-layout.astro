@@ -39,12 +39,12 @@ const client = await getEntry(frontmatter.client);
           class="mx-auto max-w-7xl px-6 lg:px-8 mt-24 sm:mt-32 lg:mt-40 text-center">
           <div class="mx-auto max-w-2xl lg:max-w-none">
             <div style="opacity: 1; transform: none;">
-              <h1>
-                <span
-                  class="mt-6 block max-w-5xl font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-6xl mx-auto">
+              <span
+                class="mt-6 block max-w-5xl font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-6xl mx-auto">
+                <h1>
                   {frontmatter.title}
-                </span>
-              </h1>
+                </h1>
+              </span>
               <p class="mt-6 max-w-3xl text-xl text-neutral-600 mx-auto">
                 {frontmatter.description}
               </p>
@@ -60,12 +60,12 @@ const client = await getEntry(frontmatter.client);
                   class="-mx-6 grid grid-cols-1 text-sm text-neutral-950 sm:mx-0 sm:grid-cols-3">
                   <div
                     class="border-t border-neutral-200 px-6 py-4 first:border-t-0 sm:border-l sm:border-t-0">
-                    <dt class="font-semibold">Client</dt>
+                    <dt class="font-semibold">{t("ourWork.work.client")}</dt>
                     <dd>{client.data.name}</dd>
                   </div>
                   <div
                     class="border-t border-neutral-200 px-6 py-4 first:border-t-0 sm:border-l sm:border-t-0">
-                    <dt class="font-semibold">Year</dt>
+                    <dt class="font-semibold">{t("ourWork.work.year")}</dt>
                     <dd>
                       <time datetime={date.getFullYear().toString()}>
                         {date.getFullYear()}
@@ -74,7 +74,7 @@ const client = await getEntry(frontmatter.client);
                   </div>
                   <div
                     class="border-t border-neutral-200 px-6 py-4 first:border-t-0 sm:border-l sm:border-t-0">
-                    <dt class="font-semibold">Service</dt>
+                    <dt class="font-semibold">{t("ourWork.work.service")}</dt>
                     <dd>
                       {
                         frontmatter.tags

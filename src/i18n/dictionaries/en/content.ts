@@ -184,6 +184,11 @@ const ourWork = {
   },
   title: "Latest Work",
   pageTitle: "Our Work",
+  work: {
+    client: "Client",
+    year: "Year",
+    service: "Service",
+  },
 };
 
 const contact = {

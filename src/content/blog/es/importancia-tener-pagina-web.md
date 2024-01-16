@@ -32,7 +32,7 @@ Cualquier actividad cotidiana es buscada en internet previamente, y si tu **nego
 
 Hoy en día los pequeños negocios suelen disponer de [landing pages](https://www.rdstation.com/blog/es/landing-page/), ya que aportan increíbles ventajas y son increíblemente asequibles, desde 200€ puedes conseguirla.
 
-<a href="https://webllope.es/es/" class="w-full flex">
+<a href="/." class="w-full flex">
 <span class="mx-auto mt-10 inline-flex rounded-full px-5 py-3 text-lg font-semibold transition bg-neutral-950 text-white hover:bg-neutral-800">Crea tu página web desde 200€</span>
 </a>
 
@@ -60,6 +60,6 @@ Estoy seguro de que estamos de acuerdo en que los beneficios son numerosos y el 
 
 En caso de querer continuar adelante con la creación de tu página web personalizada, no dudes en contactarnos sin compromiso y expresarnos con total libertad tu idea para tu negocio y la haremos realidad. 
 **Haznos saber que vienes de este artículo y disfruta de un descuento**.
-<a href="https://webllope.es/es/contacto/" class="w-full flex">
+<a href="/es/contacto/" class="w-full flex">
 <span class="mx-auto mt-10 inline-flex rounded-full px-5 py-3 text-lg font-semibold transition bg-neutral-950 text-white hover:bg-neutral-800">Contacta con nosotros y disfruta de un descuento</span>
 </a>

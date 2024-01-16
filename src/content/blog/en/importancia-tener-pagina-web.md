@@ -32,7 +32,7 @@ Any daily activity is searched online beforehand, and if your **business has a r
 
 These days, small businesses tend to have [landing pages](https://www.rdstation.com/blog/es/landing-page/), as they offer incredible advantages and are incredibly affordable; you can get one starting from €200.
 
-<a href="https://webllope.es/es/" class="w-full flex">
+<a href="/." class="w-full flex">
 <span class="mx-auto mt-10 inline-flex rounded-full px-5 py-3 text-lg font-semibold transition bg-neutral-950 text-white hover:bg-neutral-800">Create your website from €200</span>
 </a>
 
@@ -60,6 +60,6 @@ I'm sure we agree that the benefits are numerous, and the cost is much lower tha
 
 If you want to proceed with creating your custom website, feel free to contact us without any commitment and express your idea for your business freely, and we'll make it a reality.
 **Let us know that you come from this article and enjoy a discount**.
-<a href="https://webllope.es/es/contacto/" class="w-full flex">
+<a href="/es/contacto/" class="w-full flex">
 <span class="mx-auto mt-10 inline-flex rounded-full px-5 py-3 text-lg font-semibold transition bg-neutral-950 text-white hover:bg-neutral-800">Contact us and enjoy a discount</span>
 </a>

@@ -5,7 +5,7 @@ import { Image } from "astro:assets";
 import { formatDate } from "@i18n/utils";
 
 import type { CollectionEntry } from "astro:content";
-import { getLangFromUrl, useTranslations} from "@i18n/utils";
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
 import { getRelativeLocaleUrl } from "astro:i18n";
 
 interface Props {
@@ -29,11 +29,11 @@ const url = getRelativeLocaleUrl(lang, `/blog/${blog.slug}`);
       class="pt-16 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
       <div class="relative lg:-mx-4 lg:flex lg:justify-end">
         <div class="pt-10 lg:w-2/3 lg:flex-none lg:px-4 lg:pt-0">
-          <h2 class="font-display text-2xl font-semibold text-neutral-950">
-            <a href={url}>
+          <a href={url}>
+            <h2 class="font-display text-2xl font-semibold text-neutral-950">
               {blog.data.title}
-            </a>
-          </h2>
+            </h2>
+          </a>
           <dl class="lg:absolute lg:left-0 lg:top-0 lg:w-1/3 lg:px-4">
             <dd
               class="absolute left-0 top-0 text-sm text-neutral-950 lg:static">
@@ -71,8 +71,7 @@ const url = getRelativeLocaleUrl(lang, `/blog/${blog.slug}`);
             aria-label={t("readMore")}
             href={url}>
             <span class="relative top-px">{t("readMore")}</span>
-            </a
-          >
+          </a>
         </div>
       </div>
     </div>

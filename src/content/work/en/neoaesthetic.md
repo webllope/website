@@ -17,11 +17,11 @@ lang: "en"
 imagesAmount: 4
 ---
 
-### Web Design and Development Work
+## Web Design and Development Work
 
 Neoaesthetic is a beauty center in Aguadulce, Almeria that offers a wide range of services, going beyond the basics of a beauty center. They provide complex services such as HIMT, Cavitation, and Radiofrequency.
 
 The collaboration involved the design and development of their website using **WordPress** and implementing basic SEO so that when someone searches for keywords related to their sector in their location, their page appears among the first to users.
 
 Neoaesthetic already had a good foundation and managed their social media on their own, with 100 Google reviews and a 4.5-star rating. However, they had an outdated website with a domain they had paid for a long time ago, which we had to migrate to our premium host, significantly improving the website's response speed and completely enhancing its content. [Final result](https://neoaesthetic.com)
-### Design
+## Design
