@@ -132,6 +132,8 @@ const tags = {
   web3: "Web3",
   frontend: "Frontend",
   backend: "Backend",
+  businesses: "Negocios",
+  webdesign: "Diseño web",
 };
 
 const services = {
@@ -224,6 +226,7 @@ const blog = {
   },
   pageTitle: "Blog",
   author: "Por",
+  readingTime: "Lectura de",
 };
 
 const ourWork = {

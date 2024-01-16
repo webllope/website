@@ -2,6 +2,7 @@
 draft: false
 lang: "es"
 title: "Desarrollo Web: Construyendo una Fuerte Presencia Online"
+timeNeeded: "2 minutos"
 snippet: "Explora los principios fundamentales del desarrollo web, descubre cómo mejorar tu seguridad en línea y sumérgete en el fascinante mundo de la tecnología Web3, todo en una guía completa."
 image:
   {
@@ -10,7 +11,7 @@ image:
   }
 publishDate: "2022-11-08 11:39"
 author: "daniel-maestre"
-tags: [webdev, frontend, backend, web3]
+tags: [webdev]
 ---
 
 ## Introducción

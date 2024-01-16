@@ -38,7 +38,10 @@ const author = await getEntry(frontmatter.author);
             {getFormattedDate(frontmatter.publishDate)}
           </time>
           <p class="mt-6 text-sm font-semibold text-neutral-950">
-            by {author?.data.name}, {author?.data.title}
+            {t("blog.author")}
+            {author?.data.name}, {author?.data.title} | <span class="font-normal"
+              >{t("blog.readingTime")} {frontmatter.timeNeeded}</span
+            >
           </p>
         </header>
 

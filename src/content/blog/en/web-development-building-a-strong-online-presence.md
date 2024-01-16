@@ -2,6 +2,7 @@
 draft: false
 lang: "en"
 title: "Web Development: Building a Strong Online Presence"
+timeNeeded: "2 minutos"
 snippet: "Explore the core principles of web development, learn how to enhance your online security, and dive into the fascinating realm of Web3 technology, all in one comprehensive guide."
 image:
   {
@@ -10,7 +11,7 @@ image:
   }
 publishDate: "2022-11-08 11:39"
 author: "daniel-maestre"
-tags: [webdev, frontend, backend, web3]
+tags: [webdev]
 ---
 
 ## Introduction
