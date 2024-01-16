@@ -35,7 +35,9 @@ const client = clients.find((client) => client.id === "neoaesthetic.md")!;
 // TODO: We have to make this images have the correct size originally, avoiding changing it with css which causes bad performance (cuando sepamos los logos y tal lo haremos)
 ---
 
-<Layout title={t("ourWork.pageTitle")}>
+<Layout
+  title={t("seo.ourWork.title")}
+  description={t("seo.ourWork.description")}>
   <Sectionhead
     section={t("ourWork.sectionHead.title")}
     title={t("ourWork.sectionHead.subtitle")}
@@ -104,9 +106,7 @@ const client = clients.find((client) => client.id === "neoaesthetic.md")!;
                         class="inline-flex rounded-full px-4 py-1.5 text-sm font-semibold transition bg-neutral-950 text-white hover:bg-neutral-800"
                         aria-labelledby={t("readMore")}
                         href={url}>
-                        <span class="relative top-px">
-                          {t("readMore")}
-                        </span>
+                        <span class="relative top-px">{t("readMore")}</span>
                       </a>
                     </div>
                     <div class="pl-8 mt-12 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">

@@ -99,7 +99,6 @@ const services = {
     description:
       "Set up your own online store and start selling your products on the internet.",
   },
-  pageTitle: "Services",
   webServices: [
     {
       title: "Web development",
@@ -164,12 +163,11 @@ const services = {
 
 const blog = {
   sectionHead: {
-    title: "Blog",
+    title: "Blog about web development and SEO",
     subtitle: "Latest news and articles",
     description:
       "Stay up to date with the latest industry news and interesting and useful articles.",
   },
-  pageTitle: "Blog",
   author: "By",
   readingTime: "Read",
 };
@@ -183,7 +181,6 @@ const ourWork = {
       "We believe in efficiency and maximization of our resources to give the best value to our clients. We are a team and we work as such to achieve the best results and position our clients in the online market.",
   },
   title: "Latest Work",
-  pageTitle: "Our Work",
   work: {
     client: "Client",
     year: "Year",
@@ -197,7 +194,6 @@ const contact = {
     subtitle: "Let's work together",
     description: "Let's make your idea a <strong>reality</strong>",
   },
-  pageTitle: "Contact",
   ourOffices: "Nuestras oficinas",
   ourOfficesText:
     "¿Prefieres hacer las cosas en persona? Nosotros no, pero por razones legales tenemos que poner alguna dirección.",
@@ -205,7 +201,6 @@ const contact = {
 };
 
 const index = {
-  pageTitle: "Diseño web Murcia | Posicionamiento web",
   message: {
     title: "Success stories",
   },
@@ -219,7 +214,6 @@ const aboutUs = {
       "We are a small and passionate team. We believe our strength lies in our collaborative approach, putting customers at the center of what we do.",
   },
   title: "About us",
-  pageTitle: "About us",
   paragraphs: [
     "Webllope was born from two friends who met in the Computer Engineering degree and years later after both working as web and software developers they realized the growth potential that technology can give to businesses of all sizes. The main problem of these businesses is the lack of awareness about how solutions adapted to their business model can help them, and how effective it is to have digital content on the internet accessible to everyone that promotes their business.",
     "At Webllope we are more than colleagues - we are a family. We took our first steps in computer engineering together, during our time at university. Since then and until now, trying to improve the world with technology as a means.",
@@ -313,6 +307,34 @@ const misc = {
   successCases: "Success cases",
 };
 
+const seo = {
+  services: {
+    title: "Posicionamiento web en Murcia",
+    description: "Test servicios",
+  },
+  main: {
+    title: "Diseño web Murcia | Posicionamiento web",
+    description:
+      "Diseño web en Murcia | Posicionamiento web en Murcia | Creamos tu página web y te hacemos visible en internet.",
+  },
+  aboutUs: {
+    title: "test about us title",
+    description: "test about us description",
+  },
+  contact: {
+    title: "test contact title",
+    description: "test contact description",
+  },
+  blog: {
+    title: "test blog title",
+    description: "test blog description",
+  },
+  ourWork: {
+    title: "test our work title",
+    description: "test our work description",
+  },
+};
+
 export const content = {
   ...misc,
   hero,
@@ -333,4 +355,5 @@ export const content = {
   index,
   ourWork,
   aboutUs,
+  seo,
 };

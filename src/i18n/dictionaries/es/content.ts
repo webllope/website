@@ -153,7 +153,6 @@ const services = {
     description:
       "Monta ya tu propia tienda online y empieza a vender tus productos en internet.",
   },
-  pageTitle: "Servicios",
   webServices: [
     {
       title: "Desarrollo web",
@@ -219,12 +218,11 @@ const services = {
 
 const blog = {
   sectionHead: {
-    title: "Blog",
+    title: "Blog sobre desarrollo web y SEO",
     subtitle: "Últimos artículos y noticias",
     description:
       "Estate al día con las últimas novedades de la industria e interesantes y útiles artículos.",
   },
-  pageTitle: "Blog",
   author: "Por",
   readingTime: "Lectura de",
 };
@@ -238,12 +236,11 @@ const ourWork = {
       "Creemos en la eficiencia y maximización de nuestro recursos para dar el mejor valor a nuestros clientes. Somos un equipo y trabajamos como tal para conseguir los mejores resultados y posicionar a nuestros clientes en el mercado en línea.",
   },
   title: "Últimos trabajos",
-  pageTitle: "Nuestro trabajo",
   work: {
     client: "Cliente",
     year: "Año",
     service: "Servicio",
-  }
+  },
 };
 
 const contact = {
@@ -252,7 +249,6 @@ const contact = {
     subtitle: "Trabajemos juntos",
     description: "Hagámos tu idea una <strong>realidad</strong>",
   },
-  pageTitle: "Contacto",
   ourOffices: "Nuestras oficinas",
   ourOfficesText:
     "¿Prefieres hacer las cosas en persona? Nosotros no, pero por razones legales tenemos que poner alguna dirección.",
@@ -260,7 +256,6 @@ const contact = {
 };
 
 const index = {
-  pageTitle: "Diseño web Murcia | Posicionamiento web",
   message: {
     title: "Casos de éxito",
   },
@@ -274,7 +269,6 @@ const aboutUs = {
       "Somos un equipo pequeño y apasionado. Creemos que nuestra fortaleza se debe a nuestro enfoque colaborativo, poniendo a los clientes en el centro de lo que hacemos.",
   },
   title: "Sobre nosotros",
-  pageTitle: "Sobre nosotros",
   paragraphs: [
     "Webllope nace por dos amigos que se conocieron en la carrera de Ingeniería Informática y años más tarde tras ambos trabajar como desarrolladores web y de software se dieron cuenta del potencial de crecimiento que la tecnología puede dar a los negocios de todos los tamaños. El principal problema de estos negocios es la falta de consciencia acerca de cómo soluciones adaptadas a su modelo de negocio pueden ayudarlos, y lo eficaz que es tener contenido digital en internet accesible por todos que promocione su negocio.",
     "En Webllope somos más que compañeros — somos una familia. Dimos nuestros primeros pasos en la ingeniería informática juntos, durante nuestro paso por la universidad. Desde entonces y hasta ahora, intentado mejorar el mundo con la tecnología como medio.",
@@ -315,6 +309,34 @@ const misc = {
   successCases: "Casos de éxito",
 };
 
+const seo = {
+  services: {
+    title: "Posicionamiento web en Murcia",
+    description: "Test servicios",
+  },
+  main: {
+    title: "Diseño web Murcia | Posicionamiento web",
+    description:
+      "Diseño web en Murcia | Posicionamiento web en Murcia | Creamos tu página web y te hacemos visible en internet.",
+  },
+  aboutUs: {
+    title: "test about us title",
+    description: "test about us description",
+  },
+  contact: {
+    title: "test contact title",
+    description: "test contact description",
+  },
+  blog: {
+    title: "test blog title",
+    description: "test blog description",
+  },
+  ourWork: {
+    title: "test our work title",
+    description: "test our work description",
+  },
+};
+
 export const content = {
   ...misc,
   hero,
@@ -335,4 +357,5 @@ export const content = {
   services,
   blog,
   index,
+  seo,
 };

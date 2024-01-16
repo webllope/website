@@ -3,6 +3,7 @@ draft: false
 lang: "es"
 title: "Desarrollo Web: Construyendo una Fuerte Presencia Online"
 timeNeeded: "2 minutos"
+description: "SEO Explora los principios fundamentales del desarrollo web, descubre cómo mejorar tu seguridad en línea y sumérgete en el fascinante mundo de la tecnología Web3, todo en una guía completa."
 snippet: "Explora los principios fundamentales del desarrollo web, descubre cómo mejorar tu seguridad en línea y sumérgete en el fascinante mundo de la tecnología Web3, todo en una guía completa."
 image:
   {

@@ -29,7 +29,9 @@ const cultureData = t("aboutUs.culture.cultureData");
 const paragraphs = t("aboutUs.paragraphs");
 ---
 
-<Layout title={t("aboutUs.pageTitle")}>
+<Layout
+  title={t("seo.aboutUs.title")}
+  description={t("seo.aboutUs.description")}>
   <Sectionhead
     section={t("aboutUs.sectionHead.title")}
     title={t("aboutUs.sectionHead.subtitle")}
@@ -76,9 +78,7 @@ const paragraphs = t("aboutUs.paragraphs");
                 <li class="text-base text-neutral-300 before:bg-white after:bg-white/10">
                   <div style="opacity: 1; transform: none;">
                     <div class="pl-8 relative before:absolute after:absolute before:bg-white after:bg-white/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
-                      <h3 class="font-semibold text-white">
-                        {item.label}
-                      </h3>
+                      <h3 class="font-semibold text-white">{item.label}</h3>
                       <p>{item.description}</p>
                     </div>
                   </div>

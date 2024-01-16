@@ -30,7 +30,7 @@ const date = new Date(frontmatter.date);
 const client = await getEntry(frontmatter.client);
 ---
 
-<Layout title={frontmatter.title}>
+<Layout title={frontmatter.title} description={frontmatter.seoDescription}>
   <Background />
   <main class="w-full flex-auto">
     <article class="mt-24 sm:mt-32 lg:mt-40">

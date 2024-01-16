@@ -3,6 +3,7 @@ draft: false
 lang: "es"
 title: "¿Cuál es la importancia de tener una página web?"
 timeNeeded: "2 minutos"
+description: "SEO En la era digital actual, la presencia en línea se ha convertido en un factor crítico para el éxito de cualquier empresa. Descubre la relevancia y los beneficios de tener una página web para tu negocio."
 snippet: "En la era digital actual, la presencia en línea se ha convertido en un factor crítico para el éxito de cualquier empresa. Descubre la relevancia y los beneficios de tener una página web para tu negocio."
 image:
   {

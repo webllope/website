@@ -3,6 +3,7 @@ draft: false
 lang: "en"
 title: "What is the Importance of Having a Website?"
 timeNeeded: "2 minutes"
+description: "SEO In today's digital era, online presence has become a critical factor for the success of any business. Discover the relevance and benefits of having a website for your business."
 snippet: "In today's digital era, online presence has become a critical factor for the success of any business. Discover the relevance and benefits of having a website for your business."
 image:
   {

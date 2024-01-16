@@ -22,6 +22,7 @@ const blogCollection = defineCollection({
     draft: z.boolean(),
     lang: z.enum(["es", "en"]),
     title: z.string(),
+    description: z.string(),
     timeNeeded: z.string(),
     snippet: z.string(),
     image: z.object({
@@ -65,6 +66,7 @@ const workCollection = defineCollection({
       name: z.string(),
       title: z.string(),
       description: z.string(),
+      seoDescription: z.string(),
       snippet: z.string(),
       client: reference("clients"),
       quote: z.object({
