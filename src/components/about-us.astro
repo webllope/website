@@ -51,16 +51,16 @@ const paragraphs = t("aboutUs.paragraphs");
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:max-w-none">
         <div class="max-w-2xl" style="opacity: 1; transform: none;">
-          <h2>
-            <span
-              class="mb-6 block font-display text-base font-semibold text-white">
+          <span
+            class="mb-6 block font-display text-base font-semibold text-white">
+            <h2>
               {t("aboutUs.culture.title")}
-            </span>
-            <span
-              class="block font-display tracking-tight [text-wrap:balance] text-4xl font-medium sm:text-5xl text-white">
-              {t("aboutUs.culture.subtitle")}
-            </span>
-          </h2>
+            </h2>
+          </span>
+          <span
+            class="block font-display tracking-tight [text-wrap:balance] text-4xl font-medium sm:text-5xl text-white">
+            {t("aboutUs.culture.subtitle")}
+          </span>
           <p class="mt-6 text-xl text-neutral-300"></p>
         </div>
       </div>
@@ -76,10 +76,10 @@ const paragraphs = t("aboutUs.paragraphs");
                 <li class="text-base text-neutral-300 before:bg-white after:bg-white/10">
                   <div style="opacity: 1; transform: none;">
                     <div class="pl-8 relative before:absolute after:absolute before:bg-white after:bg-white/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
-                      <strong class="font-semibold text-white">
-                        {item.label}.
-                      </strong>{" "}
-                      {item.description}
+                      <h3 class="font-semibold text-white">
+                        {item.label}
+                      </h3>
+                      <p>{item.description}</p>
                     </div>
                   </div>
                 </li>
@@ -199,7 +199,8 @@ const paragraphs = t("aboutUs.paragraphs");
       </div>
     </div>
   </div>
-  <div class="font-display relative pt-24 sm:pt-32 lg:pt-40 mt-24 sm:mt-32 lg:mt-40">
+  <div
+    class="font-display relative pt-24 sm:pt-32 lg:pt-40 mt-24 sm:mt-32 lg:mt-40">
     <div
       class="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-gradient-to-b from-neutral-50">
       <Background />

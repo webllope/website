@@ -4,6 +4,7 @@ import { formatDate } from "@i18n/utils";
 import { getCollection } from "astro:content";
 
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import { getRelativeLocaleUrl } from "astro:i18n";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -51,7 +52,7 @@ const [firstEntry, secondEntry] = (
           <a
             class="mt-6 flex gap-x-3 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"
             aria-label={firstEntry.data.title}
-            href={`/work/${firstEntry.slug}`}>
+            href={getRelativeLocaleUrl(lang, `/work/${firstEntry.slug}`)}>
             {t("fromBlog.readMore")}
             <svg
               viewBox="0 0 24 6"
@@ -83,7 +84,7 @@ const [firstEntry, secondEntry] = (
           <a
             class="mt-6 flex gap-x-3 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"
             aria-label={secondEntry.data.title}
-            href={`/work/${firstEntry.slug}`}>
+            href={getRelativeLocaleUrl(lang, `/work/${secondEntry.slug}`)}>
             {t("moreJobs.readMore")}
             <svg
               viewBox="0 0 24 6"
