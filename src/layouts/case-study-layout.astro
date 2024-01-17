@@ -14,7 +14,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 interface Props {
-  frontmatter: CollectionEntry<"work">["data"];
+  frontmatter: CollectionEntry<"trabajo">["data"];
   websiteName: string;
   imagesAmount: number;
 }

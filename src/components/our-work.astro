@@ -17,7 +17,7 @@ const t = useTranslations(lang);
 const getFormattedDate = (date) => formatShortDate(lang, date);
 
 const publishedWorkEntries = (
-  await getCollection("work", ({ data }) => {
+  await getCollection("trabajo", ({ data }) => {
     return data.lang === lang && !data.draft && data.date < new Date();
   })
 )
@@ -57,8 +57,7 @@ const client = clients.find((client) => client.id === "neoaesthetic.md")!;
             const client = clients.find(
               (client) => client.slug === work.data.client.slug,
             )!;
-
-            const url = getRelativeLocaleUrl(lang, `/work/${work.slug}`);
+            const url = getRelativeLocaleUrl(lang, `/trabajo/${work.slug}`);
 
             return (
               <article>

@@ -18,7 +18,7 @@ const { currentClientSlug } = Astro.props;
 const getFormattedDate = (date) => formatDate(lang, date);
 
 const entries = (
-  await getCollection("work", ({ data }) => {
+  await getCollection("trabajo", ({ data }) => {
     return !data.client.slug.includes(currentClientSlug) && data.lang === lang && !data.draft && data.date < new Date();
   })
 )
@@ -58,7 +58,7 @@ const entries = (
             <a
               class="mt-6 flex gap-x-3 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"
               aria-label={entry.data.title}
-              href={getRelativeLocaleUrl(lang, `/work/${entry.slug}`)}>
+              href={getRelativeLocaleUrl(lang, `/trabajo/${entry.slug}`)}>
               {t("moreJobs.readMore")}
               <svg
                 viewBox="0 0 24 6"

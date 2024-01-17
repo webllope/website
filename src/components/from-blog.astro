@@ -32,62 +32,62 @@ const entries = (
   .slice(0, 2);
 ---
 
-<div class="mx-auto max-w-7xl px-6 lg:px-8">
-  <div class="mx-auto max-w-2xl lg:max-w-none">
-    <div class="max-w-3xl" style="opacity: 1; transform: none;">
-      <h2
-        class="block font-display tracking-tight [text-wrap:balance] text-2xl font-semibold text-neutral-950">
-        {t(variant === "primary" ? "fromBlog.title" : "fromBlog.titleVariant")}
-      </h2>
-      {
-        variant === "primary" && (
-          <div class="mt-6 text-xl text-neutral-600">
-            <p>{t("fromBlog.description")}</p>
+{
+  entries.length > 0 ??
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:max-w-none">
+          <div class="max-w-3xl" style="opacity: 1; transform: none;">
+            <h2 class="block font-display tracking-tight [text-wrap:balance] text-2xl font-semibold text-neutral-950">
+              {t(
+                variant === "primary"
+                  ? "fromBlog.title"
+                  : "fromBlog.titleVariant",
+              )}
+            </h2>
+            {variant === "primary" && (
+              <div class="mt-6 text-xl text-neutral-600">
+                <p>{t("fromBlog.description")}</p>
+              </div>
+            )}
           </div>
-        )
-      }
-    </div>
-  </div>
-</div>
-<div class="mx-auto max-w-7xl px-6 lg:px-8 mt-24">
-  <div class="mx-auto max-w-2xl lg:max-w-none">
-    <div class="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
-      {
-        entries.map((entry) => (
-          <article>
-            <div class="relative flex flex-col items-start pl-8 before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
-              <h3 class="mt-6 text-base font-semibold text-neutral-950">
-                {entry.data.title}
-              </h3>
-              <time
-                datetime={entry.data.publishDate.toISOString()}
-                class="order-first text-sm text-neutral-600">
-                {getFormattedDate(entry.data.publishDate)}
-              </time>
-              <p class="mt-2.5 text-base text-neutral-600">
-                {entry.data.snippet}
-              </p>
-              <a
-                class="mt-6 flex gap-x-3 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"
-                aria-label={t("fromBlog.readMore")}
-                href={getRelativeLocaleUrl(lang, `/blog/${entry.slug}`)}>
-                {t("fromBlog.readMore")}
-                <svg
-                  viewBox="0 0 24 6"
-                  aria-hidden="true"
-                  class="w-6 flex-none fill-current">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M24 3 18 .5v2H0v1h18v2L24 3Z"
-                  />
-                </svg>
-                <span class="absolute inset-0" />
-              </a>
-            </div>
-          </article>
-        ))
-      }
-    </div>
-  </div>
-</div>
+        </div>
+        <div class="mx-auto max-w-2xl lg:max-w-none mt-24">
+          <div class="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
+            {entries.map((entry) => (
+              <article>
+                <div class="relative flex flex-col items-start pl-8 before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
+                  <h3 class="mt-6 text-base font-semibold text-neutral-950">
+                    {entry.data.title}
+                  </h3>
+                  <time
+                    datetime={entry.data.publishDate.toISOString()}
+                    class="order-first text-sm text-neutral-600">
+                    {getFormattedDate(entry.data.publishDate)}
+                  </time>
+                  <p class="mt-2.5 text-base text-neutral-600">
+                    {entry.data.snippet}
+                  </p>
+                  <a
+                    class="mt-6 flex gap-x-3 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"
+                    aria-label={t("fromBlog.readMore")}
+                    href={getRelativeLocaleUrl(lang, `/blog/${entry.slug}`)}>
+                    {t("fromBlog.readMore")}
+                    <svg
+                      viewBox="0 0 24 6"
+                      aria-hidden="true"
+                      class="w-6 flex-none fill-current">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M24 3 18 .5v2H0v1h18v2L24 3Z"
+                      />
+                    </svg>
+                    <span class="absolute inset-0" />
+                  </a>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </div>
+}

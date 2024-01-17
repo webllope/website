@@ -8,7 +8,6 @@ interface Props {
 }
 
 const { paths, alt } = Astro.props;
-
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/*.{jpeg,jpg,png,webp}",
 );
@@ -16,10 +15,10 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
 
 <div class="mx-auto max-w-7xl mt-6 flex flex-col gap-6">
   {
-    paths.map((path) => (
+    paths.map((path, index) => (
       <Image
         src={images[path]()}
-        alt={alt}
+        alt={alt + (index + 1)}
         class="rounded-lg shadow-md"
         width="800"
         height="450"

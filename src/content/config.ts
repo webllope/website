@@ -88,5 +88,5 @@ export const collections = {
   team: teamCollection,
   blog: blogCollection,
   clients: clientsCollection,
-  work: workCollection,
+  trabajo: workCollection,
 };
