@@ -311,29 +311,33 @@ const misc = {
 
 const seo = {
   services: {
-    title: "Posicionamiento web en Murcia",
-    description: "Test servicios",
+    title: "Servicios de diseño web en Murcia | Webllope",
+    description:
+      "En Webllope ofrecemos servicios de diseño web, posicionamiento SEO y SEM, diseño de tiendas online, y marketing digital en Murcia.",
   },
   main: {
-    title: "Diseño web Murcia | Posicionamiento web",
+    title: "Diseño Web Murcia | La Mejor Agencia SEO",
     description:
-      "Diseño web en Murcia | Posicionamiento web en Murcia | Creamos tu página web y te hacemos visible en internet.",
+      "Tu agencia de diseño web en Murcia. Un equipo de desarrolladores web se encargará del diseño y posicionamiento web de tu página web, visible en internet.",
   },
   aboutUs: {
-    title: "test about us title",
-    description: "test about us description",
+    title: "Conoce Nuestro Equipo | Webllope",
+    description:
+      "En Webllope no somos simples diseñadores, somos ingenieros de software reputados que llevarán tu presencia en internet a otro nivel.",
   },
   contact: {
-    title: "test contact title",
-    description: "test contact description",
+    title: "Contacta con la mejor agencia de diseño web en Murcia | Webllope",
+    description: "Contacta sin compromiso con nosotros para cualquier duda o consulta y recibe tu presupuesto en menos de 24 horas.",
   },
   blog: {
-    title: "test blog title",
-    description: "test blog description",
+    title: "Nuestro blog sobre el diseño web actual",
+    description:
+      "En nuestro blog de desarrollo web encontrarás información detallada: desde tecnologías complejas actuales hasta lo básico del diseño web.",
   },
   ourWork: {
-    title: "test our work title",
-    description: "test our work description",
+    title: "Nuestras páginas web en Murcia más recientes",
+    description:
+      "Como creadores de páginas web exhibimos los sitios web que elevaron a nuestros clientes al siguiente nivel digital en internet.",
   },
 };
 

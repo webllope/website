@@ -309,31 +309,36 @@ const misc = {
 
 const seo = {
   services: {
-    title: "Posicionamiento web en Murcia",
-    description: "Test servicios",
+    title: "Web design services in Murcia | Webllope",
+    description:
+      "At Webllope we offer web design, SEO and SEM positioning services, online store design, and digital marketing in Murcia.",
   },
   main: {
-    title: "Diseño web Murcia | Posicionamiento web",
+    title: "Web design Murcia | The Best SEO Agency",
     description:
-      "Diseño web en Murcia | Posicionamiento web en Murcia | Creamos tu página web y te hacemos visible en internet.",
+      "Your web design agency in Murcia. A team of web developers will take care of the design and SEO positioning of your website, visible on the internet.",
   },
   aboutUs: {
-    title: "test about us title",
-    description: "test about us description",
+    title: "Our Team | Webllope",
+    description:
+      "At Webllope we are not simple designers, we are reputed software engineers who will take your internet presence to another level.",
   },
   contact: {
-    title: "test contact title",
-    description: "test contact description",
+    title: "Contact the best web design agency in Murcia | Webllope",
+    description: "Contact us without obligation for any questions or queries and receive your quote in less than 24 hours.",
   },
   blog: {
-    title: "test blog title",
-    description: "test blog description",
+    title: "Our blog about current web design",
+    description:
+      "In our web development blog you will find detailed information: from current complex technologies to the basics of web design.",
   },
   ourWork: {
-    title: "test our work title",
-    description: "test our work description",
+    title: "Our most recent websites in Murcia",
+    description:
+      "As creators of websites we exhibit the websites that took our clients to the next digital level on the internet.",
   },
 };
+
 
 export const content = {
   ...misc,
