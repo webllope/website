@@ -3,7 +3,7 @@ draft: false
 lang: "es"
 title: "¿Cuál es la importancia de tener una página web?"
 timeNeeded: "2 minutos"
-description: "Tener una página web es necesario porque la presencia en línea se ha vuelto indespensable, son muchas las ventajas que te aporta tener un sitio web."
+description: "Tener una página web es necesario porque la presencia en línea se ha vuelto imprescindible, son muchas las ventajas que te aporta tener un sitio web."
 snippet: "En la era digital actual, la presencia en línea se ha convertido en un factor crítico para el éxito de cualquier empresa. Descubre la relevancia y los beneficios de tener una página web para tu negocio."
 image:
   {
@@ -17,9 +17,9 @@ tags: [webdesign, businesses]
 
 ## Introducción
 
-En la era digital actual, tener una fuerte **presencia en línea** es esencial tanto para individuos como para empresas. Ya seas un ingeniero, un emprendedor o cualquier persona que quiera tener un impacto en la web, el desarrollo web desempeña un papel crucial. En este artículo, explicaremos brevemente los motivos por los que **es necesario tener una página web**, sus [numerosas ventajas](#5-ventajas-de-tener-una-página-web) y cómo construir y mejorar tu presencia en línea.
+En la era digital actual, tener una fuerte **presencia en línea** es esencial tanto para individuos como para empresas. Ya seas un ingeniero, un emprendedor o cualquier persona que quiera tener un impacto en la web, el desarrollo web desempeña un papel crucial. En este artículo, explicaremos brevemente los motivos por los que **es necesario tener una página web**, sus [numerosas ventajas](#5-ventajas-de-tener-una-pagina-web) y cómo construir y mejorar tu presencia en línea.
 
-<img src="/src/assets/seoImage.webp" title="Website Importance Article Image" alt="Website Importance Article Image" width="1084" height="772" loading="lazy/>
+<img src="/src/assets/seoImage.webp" title="Website Importance Article Image" alt="Website Importance Article Image" width="1084" height="772" loading="lazy"/>
 
 ## Importancia de tener página web de empresa
 
@@ -33,7 +33,7 @@ Cualquier actividad cotidiana es buscada en internet previamente, y si tu **nego
 
 Hoy en día los pequeños negocios suelen disponer de [landing pages](https://www.rdstation.com/blog/es/landing-page/), ya que aportan increíbles ventajas y son increíblemente asequibles, desde 200€ puedes conseguirla.
 
-<a href="/" class="w-full flex">
+<a href="/es" class="w-full flex">
 <span class="mx-auto mt-10 inline-flex rounded-full px-5 py-3 text-lg font-semibold transition bg-neutral-950 text-white hover:bg-neutral-800">Crea tu página web desde 200€</span>
 </a>
 
@@ -41,7 +41,7 @@ Hoy en día los pequeños negocios suelen disponer de [landing pages](https://ww
 
 Tener un sitio web es indispensable, en este apartado veremos detalladamente las **ventajas y utilidades de tener una página web**
 
-### 5 ventajas de tener una página web
+<h3 id="5-ventajas-de-tener-una-pagina-web">5 ventajas de tener una página web</h3>
 
 1. **Visibilidad y Alcance Global**: Un sitio web te permite alcanzar a clientes potenciales no solo a nivel local, sino en todo el mundo. Aumenta la visibilidad de tu marca y amplía tu alcance de manera significativa.<br/><br/>Por ejemplo, Juan es de Valencia y quiere ir a comer carne a un asador, saca el móvil de su bolsillo y busca en Google "Asadores en Valencia", si tu negocio no está ahí en su pantalla tras esa búsqueda habrás perdido un cliente.<br/><br/>Según [Google](https://www.thinkwithgoogle.com/marketing-strategies/app-and-mobile/mobile-shoppers-consumer-decision-journey/), el 82% de las personas consulta su móvil antes de ir a hacer una compra física, y esto influye a todos los negocios que vendan productos u ofrezcan un servicios.
 

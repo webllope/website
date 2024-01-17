@@ -3,6 +3,7 @@ draft: false
 name: "SalonChick"
 title: "SalonChick, multidisciplinary beauty salon in Roquetas del Mar"
 description: "SalonChick is a place where variety meets the skill of experts to highlight your beauty and enhance your authentic essence."
+seoTitle: "Web design for beauty center SalonChick"
 seoDescription: "We showcase the web design for SalonChick, who trusted us to create a website that matches their extensive popularity on social media."
 snippet: "Our work focused on creating a website that elegantly, informatively, and structurally compiled all the services that this salon offered. Due to its extensive range, a website was needed to list them in a simple way so that clients and users always have them readily available."
 client: "salonchick"

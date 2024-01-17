@@ -3,6 +3,7 @@ draft: false
 name: "Neoaesthetic"
 title: "Neoaesthetic, tu centro de estética en Almería."
 description: "En Neoaesthetic, no solo se preocupan por tu apariencia, sino también por tu bienestar general. Es centro de estética con más de una década de experiencia y con infinidad de servicios."
+seoTitle: "Diseño web para el centro de estética Neoaesthetic"
 seoDescription: "Mostramos el diseño web para Neoaesthetic, el centro de estética de moda en Almería con más de una década de experiencia y con infinidad de servicios."
 snippet: "Confiaron en Webllope para crear una página web sencilla que represente su marca y ayude a la gente local a ver sus servicios y sus precios, al mismo tiempo que les facilita el contacto inminente para reservar una cita."
 client: "neoaesthetic"

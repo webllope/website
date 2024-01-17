@@ -319,7 +319,7 @@ const seo = {
       "Your web design agency in Murcia. A team of web developers will take care of the design and SEO positioning of your website, visible on the internet.",
   },
   aboutUs: {
-    title: "Our Team | Webllope",
+    title: "Meet Our Team | Webllope",
     description:
       "At Webllope we are not simple designers, we are reputed software engineers who will take your internet presence to another level.",
   },

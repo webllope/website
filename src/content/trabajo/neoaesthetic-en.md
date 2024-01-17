@@ -3,6 +3,7 @@ draft: false
 name: "Neoaesthetic"
 title: "Neoaesthetic, your beauty center in Almeria."
 description: "At Neoaesthetic, they not only care about your appearance but also your overall well-being. It is a beauty center with over a decade of experience and a wide range of services."
+seoTitle: "Web design for beauty center Neoaesthetic"
 seoDescription: "We present the web design for Neoaesthetic, the trendy beauty center in Almeria with over a decade of experience and a wide range of services."
 snippet: "They trusted Webllope to create a simple website that represents their brand and helps local people see their services and prices while facilitating immediate contact to book an appointment."
 client: "neoaesthetic"

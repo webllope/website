@@ -65,6 +65,7 @@ const workCollection = defineCollection({
       draft: z.boolean(),
       name: z.string(),
       title: z.string(),
+      seoTitle: z.string(),
       description: z.string(),
       seoDescription: z.string(),
       snippet: z.string(),
