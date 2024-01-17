@@ -7,7 +7,17 @@ import vercel from "@astrojs/vercel/static";
 // https://astro.build/config
 export default defineConfig({
   site: "https://webllope.es",
-  integrations: [tailwind(), mdx(), sitemap()],
+  integrations: [
+    tailwind(),
+    mdx(),
+    sitemap({
+      filter: (page) =>
+        page !==
+          "https://www.webllope.es/en/blog/importancia-tener-pagina-web/" &&
+        page !==
+          "https://www.webllope.es/es/blog/is-it-important-to-have-a-website/",
+    }),
+  ],
   adapter: vercel({
     webAnalytics: {
       enabled: true,
