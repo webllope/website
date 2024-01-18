@@ -13,9 +13,9 @@ export default defineConfig({
     sitemap({
       filter: (page) =>
         page !==
-          "https://www.webllope.es/en/blog/importancia-tener-pagina-web/" &&
+          "https://webllope.es/en/blog/importancia-tener-pagina-web/" &&
         page !==
-          "https://www.webllope.es/es/blog/is-it-important-to-have-a-website/",
+          "https://webllope.es/es/blog/is-it-important-to-have-a-website/",
     }),
   ],
   adapter: vercel({
