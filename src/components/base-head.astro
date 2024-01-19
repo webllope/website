@@ -6,10 +6,11 @@ import { replaceLangFromUrl } from "@i18n/utils";
 import type { Language } from "@i18n/i18n";
 import { languages } from "@i18n/i18n";
 
-// Now we want to map over all object entries and then get an array of all urls with the lang in it.
+const domainURL = Astro.url.origin; 
+
 const absoluteURLS = Object.entries(languages).map(([lang, _]) => {
   return {
-    url: replaceLangFromUrl(Astro.url, lang as Language),
+    url: domainURL + replaceLangFromUrl(Astro.url, lang as Language),
     lang,
   };
 });
@@ -19,11 +20,10 @@ import "@styles/fonts.css";
 // We were using Astro.site before but it would not add the www and some seo checkers warn about it some others dont.
 const canonicalURLString = new URL(
   Astro.url.pathname,
-  `https://www.webllope.es/`,
+  domainURL,
 ).toString();
 
 const { title, description } = Astro.props;
-console.log(absoluteURLS);
 const makeTitle = title ? title : "Webllope";
 ---
 
