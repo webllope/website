@@ -11,11 +11,26 @@ export default defineConfig({
     tailwind(),
     mdx(),
     sitemap({
-      filter: (page) =>
-        page !==
-          "https://webllope.es/en/blog/importancia-tener-pagina-web/" &&
-        page !==
+      ffilter: (page) => {
+        // Exclude specific URLs from modification
+        const excludedUrls = [
+          "https://webllope.es/en/blog/importancia-tener-pagina-web/",
           "https://webllope.es/es/blog/is-it-important-to-have-a-website/",
+        ];
+
+        if (excludedUrls.includes(page)) {
+          return page;
+        }
+
+        // Modify URLs to include "www" if the hostname is not already "www.webllope.es"
+        const modifiedUrl = new URL(page);
+        if (modifiedUrl.hostname === "webllope.es") {
+          modifiedUrl.hostname = "www.webllope.es";
+        }
+
+        // Construct the modified URL
+        return modifiedUrl.toString();
+      },
     }),
   ],
   adapter: vercel({
