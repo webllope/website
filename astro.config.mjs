@@ -11,7 +11,7 @@ export default defineConfig({
     tailwind(),
     mdx(),
     sitemap({
-      ffilter: (page) => {
+      filter: (page) => {
         // Exclude specific URLs from modification
         const excludedUrls = [
           "https://webllope.es/en/blog/importancia-tener-pagina-web/",
