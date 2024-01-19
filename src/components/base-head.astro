@@ -20,7 +20,7 @@ import "@styles/fonts.css";
 // We were using Astro.site before but it would not add the www and some seo checkers warn about it some others dont.
 const canonicalURLString = new URL(
   Astro.url.pathname,
-  domainURL,
+  Astro.site,
 ).toString();
 
 const { title, description } = Astro.props;
