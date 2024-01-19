@@ -3,7 +3,7 @@ draft: false
 name: "SalonChick"
 title: "SalonChick, salón de belleza multidisciplinar en Roquetas del Mar"
 description: "SalonChick es un lugar donde la variedad se encuentra con la destreza de expertos para resaltar tu belleza y realzar tu auténtica esencia"
-seoTitle: "Diseño web para el centro de estética Neoaesthetic"
+seoTitle: "Diseño web para el centro de estética SalonChick"
 seoDescription: "Mostramos el diseño web para SalonChick, quienes confiaron en nosotros para crear una página web equiparable a su amplia popularidad en redes."
 snippet: "Nuestro trabajo se centró en crear una web que recopilase de forma elegante, informativa y estructurada todos los servicios que este salón ofrecía, debido a su enorme variedad era necesaria una página web que los listase de forma sencilla para que los clientes y usuarios la tengan siempre disponible."
 client: "salonchick"

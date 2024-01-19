@@ -22,6 +22,7 @@ const blogCollection = defineCollection({
     draft: z.boolean(),
     lang: z.enum(["es", "en"]),
     title: z.string(),
+    seoTitle: z.string(),
     description: z.string(),
     timeNeeded: z.string(),
     snippet: z.string(),

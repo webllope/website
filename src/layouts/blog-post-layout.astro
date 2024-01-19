@@ -21,7 +21,7 @@ const { frontmatter } = Astro.props;
 const author = await getEntry(frontmatter.author);
 ---
 
-<Layout title={frontmatter.title} description={frontmatter.description}>
+<Layout title={frontmatter.seoTitle} description={frontmatter.description}>
   <main class="w-full flex-auto">
     <article class="mx-auto max-w-7xl px-6 lg:px-8 mt-24 sm:mt-32 lg:mt-40">
       <div class="mx-auto max-w-2xl lg:max-w-none">
