@@ -80,6 +80,8 @@ const tags = {
   backend: "Backend",
   businesses: "Businesses",
   webdesign: "Web design",
+  seo: "SEO",
+  javascript: "JavaScript",
 };
 
 const services = {

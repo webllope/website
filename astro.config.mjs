@@ -7,7 +7,9 @@ import vercel from "@astrojs/vercel/static";
 function filterOutPages(page) {
   return (
     page !== "https://webllope.es/en/blog/importancia-tener-pagina-web/" &&
-    page !== "https://webllope.es/es/blog/is-it-important-to-have-a-website/"
+    page !== "https://webllope.es/es/blog/is-it-important-to-have-a-website/" &&
+    page !== "https://webllope.es/en/blog/astro-framework-de-javascript/" &&
+    page !== "https://webllope.es/es/blog/astro-framework-de-javascript/"
   );
 }
 // https://astro.build/config

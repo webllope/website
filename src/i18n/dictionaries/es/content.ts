@@ -134,6 +134,8 @@ const tags = {
   backend: "Backend",
   businesses: "Negocios",
   webdesign: "Diseño web",
+  seo: "SEO",
+  javascript: "JavaScript",
 };
 
 const services = {
