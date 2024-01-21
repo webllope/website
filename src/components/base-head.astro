@@ -18,17 +18,17 @@ const absoluteURLS = Object.entries(languages).map(([lang, _]) => {
 import "@styles/fonts.css";
 
 // We were using Astro.site before but it would not add the www and some seo checkers warn about it some others dont.
-const canonicalURLString = new URL(
-  Astro.url.pathname,
-  domainURL,
-).toString();
+const canonicalURLString = new URL(Astro.url.pathname, domainURL).toString();
 
 const { title, description } = Astro.props;
 const makeTitle = title ? title : "Webllope";
 ---
 
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0, minimum-scale=1"
+/>
 <meta name="generator" content={Astro.generator} />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -40,7 +40,7 @@ const makeTitle = title ? title : "Webllope";
     <link rel="alternate" href={url} hreflang={lang} />
   ))
 }
-<link rel="alternate" href={canonicalURLString} hreflang="x-default">
+<link rel="alternate" href={canonicalURLString} hreflang="x-default" />
 <link rel="manifest" href="/site.webmanifest" />
 <link rel="sitemap" href="/sitemap-index.xml" />
 <link
@@ -70,6 +70,9 @@ const makeTitle = title ? title : "Webllope";
       type: "website",
       title: makeTitle,
       image: SocialMediaSharedImage.src,
+    },
+    optional: {
+      description: description,
     },
     image: {
       alt: "Webllope core",
