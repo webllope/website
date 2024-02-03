@@ -20,7 +20,10 @@ tags: [javascript, webdesign]
 
 En el vertiginoso mundo del desarrollo web, la elección de herramientas y frameworks puede ser abrumadora. En este artículo, exploraremos en detalle un framework relativamente nuevo y emocionante llamado Astro. A través de este análisis técnico y exhaustivo, descubriremos sus características clave, ventajas y cómo se compara con otras alternativas del mercado.
 
+<figure>
 <img src="/blogImages/astroImage.webp" title="Astro Framework De Javascript" alt="Astro Framework De Javascript Image" width="1200" height="700" loading="lazy"/>
+<figcaption class="text-center">Astro es uno de los mejores framework de Javascript<figcaption>
+</figure>
 
 ## Astro: Un Vistazo Profundo
 

@@ -20,7 +20,10 @@ tags: [webdesign, businesses]
 
 In today's digital era, having a strong **online presence** is essential for both individuals and businesses. Whether you're an engineer, an entrepreneur, or anyone looking to make an impact on the web, web development plays a crucial role. In this article, we'll briefly explain why **having a website is necessary**, its [numerous advantages](#5-advantages-of-having-a-website), and how to build and enhance your online presence.
 
+<figure>
 <img src="/blogImages/seoImage.webp" title="Website Importance" alt="Website Importance Image" width="1084" height="772" loading="lazy"/>
+<figcaption class="text-center">Importance of having your own website<figcaption>
+</figure>
 
 ## Importance of having a business website
 

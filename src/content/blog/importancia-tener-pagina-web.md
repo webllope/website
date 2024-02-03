@@ -20,7 +20,10 @@ tags: [webdesign, businesses]
 
 En la era digital actual, tener una fuerte **presencia en línea** es esencial tanto para individuos como para empresas. Ya seas un ingeniero, un emprendedor o cualquier persona que quiera tener un impacto en la web, el desarrollo web desempeña un papel crucial. En este artículo, explicaremos brevemente los motivos por los que **es necesario tener una página web**, sus [numerosas ventajas](#5-ventajas-de-tener-una-pagina-web) y cómo construir y mejorar tu presencia en línea.
 
+<figure>
 <img src="/blogImages/seoImage.webp" title="Importancia Página Web" alt="Importancia Página Web Image" width="1084" height="772" loading="lazy"/>
+<figcaption class="text-center">Necesidad de tener sitio web<figcaption>
+</figure>
 
 ## Importancia de tener página web de empresa
 
@@ -60,7 +63,7 @@ Tener un sitio web es indispensable, en este apartado veremos detalladamente las
 
 Estoy seguro de que estamos de acuerdo en que los beneficios son numerosos y el costo es mucho menor del que los negocios piensan generalmente.
 
-En caso de querer continuar adelante con la creación de tu página web personalizada, no dudes en contactarnos sin compromiso y expresarnos con total libertad tu idea para tu negocio y la haremos realidad. 
+En caso de querer continuar adelante con la creación de tu página web personalizada, no dudes en contactarnos sin compromiso y expresarnos con total libertad tu idea para tu negocio y la haremos realidad.
 **Haznos saber que vienes de este artículo y disfruta de un descuento**.
 <a href="/es/contacto/" class="w-full flex">
 <span class="mx-auto mt-10 inline-flex rounded-full px-5 py-3 text-lg font-semibold transition bg-neutral-950 text-white hover:bg-neutral-800">Contacta con nosotros y disfruta de un descuento</span>
