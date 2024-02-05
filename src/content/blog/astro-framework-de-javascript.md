@@ -16,8 +16,6 @@ author: "chema-martinez"
 tags: [javascript, webdesign]
 ---
 
-## Introducción
-
 En el vertiginoso mundo del desarrollo web, la elección de herramientas y frameworks puede ser abrumadora. En este artículo, exploraremos en detalle un framework relativamente nuevo y emocionante llamado Astro. A través de este análisis técnico y exhaustivo, descubriremos sus características clave, ventajas y cómo se compara con otras alternativas del mercado.
 
 <figure>

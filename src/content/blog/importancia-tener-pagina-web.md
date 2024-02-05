@@ -16,8 +16,6 @@ author: "daniel-maestre"
 tags: [webdesign, businesses]
 ---
 
-## Introducción
-
 En la era digital actual, tener una fuerte **presencia en línea** es esencial tanto para individuos como para empresas. Ya seas un ingeniero, un emprendedor o cualquier persona que quiera tener un impacto en la web, el desarrollo web desempeña un papel crucial. En este artículo, explicaremos brevemente los motivos por los que **es necesario tener una página web**, sus [numerosas ventajas](#5-ventajas-de-tener-una-pagina-web) y cómo construir y mejorar tu presencia en línea.
 
 <figure>
