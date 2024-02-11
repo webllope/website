@@ -14,12 +14,10 @@ const t = useTranslations(lang);
     <div
       class="flex flex-col lg:flex-row mx-auto max-w-2xl lg:max-w-none gap-12">
       <div class="mx-auto max-w-2xl lg:max-w-none">
-        <div style="opacity: 1; transform: none;">
-          <h1
-            class="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            {t("hero.primary")}
-          </h1>
-        </div>
+        <h1
+          class="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
+          {t("hero.primary")}
+        </h1>
         <div class="font-display mt-6 max-w-3xl text-xl text-neutral-600">
           <p>
             {t("hero.secondary")}
@@ -28,12 +26,12 @@ const t = useTranslations(lang);
         </div>
       </div>
       <Image
-        src={heroImage}
         alt="Webllope Image"
         class="transform scale-x-[-1] drop-shadow-xl"
-        width={400}
-        height={250}
         loading="eager"
+        width={400}
+        src={heroImage}
+        densities={[1.5, 2]}
       />
     </div>
   </div>

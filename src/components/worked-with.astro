@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 import GrandGambitLogo from "@assets/logos/GrandGambitLogo125.webp";
 import SalonChickLogo from "@assets/logos/SalonChickLogo125.webp";
 import DettagliLogo from "@assets/logos/DettagliLogo125.webp";
@@ -7,44 +9,44 @@ import NeoaestheticLogo from "@assets/logos/NeoaestheticLogo125.webp";
 const clients = [
   {
     name: "SalonChick Logo",
-    img: SalonChickLogo.src,
+    img: SalonChickLogo,
     width: SalonChickLogo.width,
   },
   {
     name: "Dettagli Logo",
-    img: DettagliLogo.src,
+    img: DettagliLogo,
     width: DettagliLogo.width,
   },
   {
     name: "Neoaesthetic Logo",
-    img: NeoaestheticLogo.src,
+    img: NeoaestheticLogo,
     width: NeoaestheticLogo.width,
   },
   {
     // Pongo Gambit no Grand Gambit en el alt porque no quiero que nadie de Ergo encuentre por casualidades del SEO webllope.
     name: "Gambit Logo",
-    img: GrandGambitLogo.src,
-    width: GrandGambitLogo.width,
+    img: GrandGambitLogo,
+    // width: GrandGambitLogo.width,
+    width: 264
   },
 ];
 ---
+
 <ul role="list" class="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4">
   {
     clients.map((client) => (
-      <li>
-        <div style="opacity: 1; transform: none;">
-          <img
-            alt={client.name}
-            loading="lazy"
-            decoding="async"
-            data-nimg="1"
-            src={client.img}
-            style="color: transparent;"
-            class="rounded-xl mx-auto"
-            height="125"
-            width={client.width}
-          />
-        </div>
+      <li class="flex items-center">
+        <Image
+          alt={client.name}
+          loading="lazy"
+          decoding="async"
+          data-nimg="1"
+          src={client.img}
+          style="color: transparent;"
+          class="rounded-xl"
+          // height={125}
+          width={client.width}
+        />
       </li>
     ))
   }

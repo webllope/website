@@ -1,6 +1,7 @@
 ---
 import { getLangFromUrl } from "@i18n/utils";
 import { getRelativeLocaleUrl } from "astro:i18n";
+import { Image } from "astro:assets";
 
 import webllopeLogo from "@assets/webllope-bigger-logo.webp";
 const lang = getLangFromUrl(Astro.url);
@@ -12,12 +13,12 @@ interface Props {
 const { parent } = Astro.props;
 ---
 
-<a aria-label="Home" href={getRelativeLocaleUrl(lang, "")} class="text-2xl">
-  <img
-    src={webllopeLogo.src}
+<a aria-label="Home" href={getRelativeLocaleUrl(lang, "")}>
+  <Image
     alt=`Webllope Logo ${parent} Image`
-    width="160"
-    height="45"
     loading={parent === "footer" ? "lazy" : "eager"}
+    width={140}
+    src={webllopeLogo}
+    densities={[1.5, 2]}
   />
 </a>
