@@ -1,6 +1,15 @@
 {
   "headers": [
     {
+      "source": "/_vercel/speed-insights/script.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    },
+    {
       "source": "/(.*)",
       "headers": [
         {
@@ -28,15 +37,6 @@
           "value": "1; mode=block"
         }
       ]
-    },
-    {
-        "source": "/(.*)speed-insights/script.js",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "public, max-age=3600"
-          }
-        ]
     }
   ],
   "redirects": [
