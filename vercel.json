@@ -28,6 +28,15 @@
           "value": "1; mode=block"
         }
       ]
+    },
+    {
+        "source": "_vercel/(.*)/script.js",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=3600, must-revalidate"
+          }
+        ]
     }
   ],
   "redirects": [
