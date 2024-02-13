@@ -253,9 +253,9 @@ const clients = {
 };
 
 const briefAboutUs = {
-  title: "Professional web development company",
+  title: "Professional web design agency in Murcia",
   firstP:
-    "We are a <strong>web design and SEO agency in Murcia</strong>. Specialized in creating <strong>corporate websites</strong> with personality, making a previous study of the market and competitors. We multiply the visits to your business on the internet in a short period of time.",
+    "We are a <strong>web development and SEO agency</strong>. Specialized in creating <strong>corporate websites</strong> with personality, making a previous study of the market and competitors. We multiply the visits to your business on the internet in a short period of time.",
   secondP:
     "If you trust us, not only will you have an excellent business website but also at an incredibly reduced price. We consider that the market has been very inconsiderate with <strong>websites for SMEs</strong> and we want to change that by offering the best <strong>web development in Murcia</strong> and at the best possible price.",
   cta: "Contact us",
@@ -316,9 +316,9 @@ const seo = {
       "At Webllope we offer web design, SEO and SEM positioning services, online store design, and digital marketing in Murcia.",
   },
   main: {
-    title: "Web design Murcia | The Best SEO Agency",
+    title: "Website design Murcia | The Best SEO Agency",
     description:
-      "Your web design agency in Murcia. A team of web developers will take care of the design and SEO positioning of your website, visible on the internet.",
+      "Your web design agency in Murcia. A team of developers will take care of the design and SEO positioning of your website, become visible on the internet.",
   },
   aboutUs: {
     title: "Meet Our Team | Webllope",
