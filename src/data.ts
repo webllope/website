@@ -10,7 +10,7 @@ const social = {
 const contact = {
   email: {
     info: "info@webllope.es",
-    support: "support@webllope.es",
+    support: "business@webllope.es",
   },
   phone: "+34 722 10 99 24"
 };

@@ -14,7 +14,7 @@ const contactForm = {
       other: "Other",
     },
   },
-  sendBtn: "Let's work together",
+  sendBtn: "Send",
 };
 
 export default contactForm;
