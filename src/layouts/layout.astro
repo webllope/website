@@ -1,11 +1,12 @@
 ---
 // @ts-ignore
-import  SpeedInsights  from "@vercel/speed-insights/astro"
+import SpeedInsights from "@vercel/speed-insights/astro";
 
 import BaseHead from "@components/base-head.astro";
 import Footer from "@components/footer.astro";
 import Banner from "@components/ui/banner.astro";
 import Navbar from "@components/navbar.astro";
+import Whatsapp from "@components/whatsapp.astro";
 
 import "@fontsource-variable/inter/index.css";
 import "@styles/global.css";
@@ -33,6 +34,7 @@ const { ...head } = Astro.props;
     <Banner />
     <Navbar />
     <slot />
+    <Whatsapp />
     <Footer />
     <style is:global>
       /* Improve Page speed */

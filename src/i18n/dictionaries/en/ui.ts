@@ -36,4 +36,5 @@ export const ui = {
     author: "Author",
   },
   readMore: "Read more",
+  sendUsMessage: "Send us a message",
 };

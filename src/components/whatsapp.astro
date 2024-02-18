@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+
+import whatsappIcon from "@assets/icons/whatsapp.svg";
+
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<a
+  href="https://wa.me/34722109924"
+  id="notification"
+  class="fixed bottom-4 right-4 bg-green-500 flex py-3 px-3 rounded-xl justify-between gap-2">
+  <Image
+    alt="Whatsapp"
+    loading="eager"
+    decoding="async"
+    src={whatsappIcon}
+    width="24"
+    height="24"
+  />
+  <p id="notification-text" class="hidden lg:block text-white bg-green-500 rounded-md">
+    {t("sendUsMessage")}
+  </p>
+</a>
