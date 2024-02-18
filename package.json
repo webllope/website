@@ -17,6 +17,7 @@
     "@astrojs/vercel": "^6.1.0",
     "@fontsource-variable/inter": "^5.0.5",
     "@iconify-json/devicon": "^1.1.33",
+    "@sendgrid/mail": "^8.1.1",
     "@tailwindcss/typography": "^0.5.9",
     "@vercel/speed-insights": "^1.0.3",
     "astro": "^4.0.6",
