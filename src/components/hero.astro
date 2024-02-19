@@ -19,9 +19,7 @@ const t = useTranslations(lang);
           {t("hero.primary")}
         </h1>
         <div class="font-display mt-6 max-w-3xl text-xl text-neutral-600">
-          <p>
-            {t("hero.secondary")}
-          </p>
+          <p set:html={t("hero.secondary")} />
           <slot />
         </div>
       </div>

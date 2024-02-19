@@ -1,7 +1,7 @@
 const hero = {
-  primary: "Murcia web design",
+  primary: "Website design Murcia",
   secondary:
-    "Would you like your local business to stand out on the internet? We offer you a professional in web design and development to turn your idea into an amazing and functional website.",
+    "Would you like your local business to stand out on the internet? We offer you a professional <b>web design</b> and development to turn your idea into an amazing and functional website.",
 };
 
 const features = {
@@ -275,7 +275,7 @@ const roadmap = {
     paragraph1:
       "We analyze your objectives, the competition and the clients or <i>target</i> we want to attract.",
     paragraph2:
-      "Once the analysis is done, we will prepare some designs for your corporate website that we will show and discuss and adjust until it is perfect.",
+      "Once the analysis is done, we will prepare some website designs for your <b>corporate website</b> that we will show and discuss and adjust until it is perfect.",
   },
   second: {
     paragraph1:
@@ -285,7 +285,7 @@ const roadmap = {
   },
   third: {
     paragraph1:
-      "The possibility of implementing SEO (Web Positioning) on the page is discussed. If so, the next step our team proceeds with the study of keywords or <i>keywords</i> and the configuration so that Google crawls the page and indexes it in the search results.",
+      "The possibility of implementing SEO (Web Positioning) on the page is discussed. If so, our team proceeds with the study of <i>keywords</i> and the configuration so that Google crawls the page and indexes it in the search results.",
   },
   fourth: {
     paragraph1:
