@@ -46,7 +46,7 @@ const entries = (
             </h2>
             {variant === "primary" && (
               <div class="mt-6 text-xl text-neutral-600">
-                <p>{t("fromBlog.description")}</p>
+                <p set:html={t("fromBlog.description")}></p>
               </div>
             )}
           </div>

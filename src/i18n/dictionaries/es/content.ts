@@ -110,7 +110,7 @@ const fromBlog = {
   title: "Nuestro blog",
   titleVariant: "Más artículos",
   description:
-    "¿Qué sucede cuando las mentes creativas detrás de las mejores websites deciden dar rienda suelta a sus pensamientos tecnológicos y no tecnológicos? Bienvenidos a nuestro blog. ¡Descubre el lado innovador de nuestro equipo y déjate inspirar más allá de la pantalla!.",
+    "¿Qué sucede cuando las mentes creativas detrás de las mejores <a href='https://www.webllope.es/es/'>páginas web de Murcia</a> deciden dar rienda suelta a sus pensamientos tecnológicos y no tecnológicos? Bienvenidos a nuestro blog. ¡Descubre el lado innovador de nuestro equipo y déjate inspirar más allá de la pantalla!.",
   readMore: "Leer más",
 };
 
@@ -141,14 +141,14 @@ const tags = {
 const services = {
   sectionHead: {
     title: "Servicios de diseño web",
-    subtitle: "Desarrollo Web Murcia",
+    subtitle: "<a href='https://www.webllope.es/es/'>Diseño Web Murcia</a>",
     description:
       "Somos desarrolladores web experimentados que cubrirán todas tus necesidades gracias a nuestro amplio conocimiento de la tecnología web, no nos limitaremos a vender diseños webs prefabricados que no poseen la esencia de tu negocio.",
   },
   sectionHead2: {
     subtitle: "Posicionamiento SEO",
     description:
-      "Con años de experiencia tanto en el posicionamiento web como <strong>consultores seo en Murcia</strong>",
+      "Con años de experiencia tanto en el posicionamiento web como <a href='https://www.webllope.es/es/'>consultores seo en Murcia</a>",
   },
   sectionHead3: {
     subtitle: "Diseño de tienda online en Murcia",
@@ -329,7 +329,8 @@ const seo = {
   },
   contact: {
     title: "Contacta con la mejor agencia de diseño web en Murcia | Webllope",
-    description: "Contacta sin compromiso con nosotros para cualquier duda o consulta y recibe tu presupuesto en menos de 24 horas.",
+    description:
+      "Contacta sin compromiso con nosotros para cualquier duda o consulta y recibe tu presupuesto en menos de 24 horas.",
   },
   blog: {
     title: "Nuestro blog sobre el diseño web actual",

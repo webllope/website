@@ -77,7 +77,7 @@ const { image, services, reversed = false } = Astro.props;
                     <strong class="font-semibold text-neutral-950">
                       {service.title}.
                     </strong>
-                    <p>{service.description}</p>
+                    <p set:html={service.description} />
                   </div>
                 </div>
               </li>
