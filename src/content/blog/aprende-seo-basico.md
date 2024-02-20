@@ -1,7 +1,7 @@
 ---
 draft: false
 lang: "es"
-title: "Aprende los fundamentos del SEO"
+title: "Aprende un nivel de SEO básico"
 seoTitle: "Aprende SEO básico"
 timeNeeded: "3 minutos"
 description: "Los conceptos del SEO básicos y fundamentales siempre serán los mismos, tu página web no triunfará sin trabajar en indexación, rastreo, posicionamiento y optimización."
@@ -16,7 +16,7 @@ author: "daniel-maestre"
 tags: [webdesign, seo]
 ---
 
-Más del 94% de las búsquedas en internet pasan por Google. Es decir, si en los primeros resultados de estas búsquedas no aparece tu negocio, significa que algo se está haciendo mal o no se está haciendo. SEO significaría en español optimización de los motores de búsqueda, que vendría a ser la optimización que añadas a tu página para que esta se posicione en las búsquedas de Google. Es esencial tanto para individuos como para empresas y a pesar de que suene como algo complejo y técnico, en este artículo mostraremos los conceptos más básicos e **importantes** del SEO, estas pequeñas acciones podrían cambiar por completo los resultados que obtenga tu página web. ¡Bienvenido a este **curso de SEO básico gratis**
+Más del 94% de las búsquedas en internet pasan por Google. Es decir, si en los primeros resultados de estas búsquedas no aparece tu negocio, significa que algo se está haciendo mal o directamente no se está haciendo. SEO significaría en español optimización de los motores de búsqueda, que vendría a ser la optimización que añadas a tu página para que esta se posicione en las búsquedas de Google. Es esencial tanto para individuos como para empresas y a pesar de que suene como algo complejo y técnico, en este artículo mostraremos los conceptos más importantes y **básicos del SEO**, estas pequeñas acciones podrían cambiar por completo los resultados que obtenga tu **página web**. ¡Bienvenido a este **curso de SEO básico gratis**
 
 <figure>
 <img src="/blogImages/seoImage.webp" title="SEO de tu página web" alt="SEO de tu página web imagen" width="1084" height="772" loading="lazy"/>
@@ -25,13 +25,13 @@ Más del 94% de las búsquedas en internet pasan por Google. Es decir, si en los
 
 ## ¿Qué es el SEO?
 
-SEO se refiere al conjunto de prácticas y estrategias destinadas a mejorar la visibilidad y la clasificación de un sitio web en los resultados de búsqueda orgánicos de motores como Google, Bing y Yahoo. Entender completamente qué es el SEO y cómo puede beneficiar tu presencia en línea es crucial para el éxito de tu página web.
+SEO se refiere al conjunto de prácticas y estrategias destinadas a mejorar la visibilidad y la clasificación de un sitio web en los resultados de búsqueda orgánicos de motores como Google, Bing y Yahoo. Entender completamente qué es el SEO y cómo puede beneficiar tu presencia en línea es crucial para el **éxito de tu página web**.
 
 Este artículo que estás leyendo ha tenido un análisis SEO previo a su creación y es por eso que ha llegado a ti, asimismo conocer sus conceptos fundamentales hará que tu página llegue a otros usuarios antes que otras, el mundo de internet es competitivo y el que no se adapta desaparece.
 
 ## Aprender posicionamiento SEO
 
-El último paso antes de comenzar con el SEO es entender la diferencia entre SEO on-page y SEO off-page
+El último paso antes de comenzar con el SEO es entender la diferencia entre **SEO on-page** y **SEO off-page**
 
 ### SEO On Page o SEO Off Page
 
@@ -49,7 +49,7 @@ En esta **guía para principiantes sobre optimización en buscadores** encontrar
 
 ### Palabras clave
 
-Sin lugar a dudas, lo más importante son las palabras clave. Esto se refiere a los términos que los usuarios ingresan en el buscador en búsqueda de resultados. Comprender las "keywords" relevantes para tu contenido es crucial. La mejor forma de realizar esta investigación de forma gratuita es ir al [Google Keyword Planner](https://ads.google.com/aw/keywordplanner/home) y tras hacer clic en "Descubre nuevas palabras clave" escribir las palabras que crees que los usuarios buscarían antes de encontrar con tu negocio.
+Sin lugar a dudas, lo más importante son las **palabras clave**. Esto se refiere a los términos que los usuarios ingresan en el buscador en búsqueda de resultados. Comprender las "keywords" relevantes para tu contenido es crucial. La mejor forma de realizar esta investigación de forma gratuita es ir al [Google Keyword Planner](https://ads.google.com/aw/keywordplanner/home) y tras hacer clic en "Descubre nuevas palabras clave" escribir las palabras que crees que los usuarios buscarían antes de encontrar con tu negocio.
 
 <figure>
 <img src="/blogImages/Google-Keyword-Planner1.webp" title="Descubre nuevas palabras clave" alt="Descubre nuevas palabras clave Imagen" width="1084" height="772" loading="lazy"/>
@@ -117,7 +117,7 @@ No es algo extraño encontrarme con usuarios solicitando ayuda porque tienen un 
 
 ## ¿Quieres más ayuda con el SEO de tu página?
 
-¡Enhorabuena!, ya tienes el suficiente conocimiento sobre SEO y posicionamiento web como para abordar tu primera página web y posicionarla en los buscadores. Y deseo de todo corazón que lo intentes ya que estos pequeos cambios podrían causar un gran impacto en la repercusión en línea que tenga tu negocio.
+¡Enhorabuena!, ya tienes el suficiente conocimiento sobre **SEO básico** y posicionamiento web como para abordar tu primera página web y posicionarla en los buscadores. Y deseo de todo corazón que lo intentes ya que estos pequeos cambios podrían causar un gran impacto en la repercusión en línea que tenga tu negocio.
 
 En caso de querer continuar adelante con la ayuda de profesionales del diseño web y del posicionamiento SEO como nosotros, no dudes en contactarnos. También puedes contactarnos para preguntarnos por alguna duda y la responderemos encantados.
 
