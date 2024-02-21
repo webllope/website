@@ -1,7 +1,7 @@
 const social = {
   instagram: "https://instagram.com/webllope",
   facebook: "https://facebook.com/webllope",
-  twitter: "https://twitter.com/webllope",
+  twitter: "https://x.com/webllope?s=20",
   tiktok: "",
   linkedin: "",
   github: "https://github.com/webllope",
