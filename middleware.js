@@ -8,7 +8,7 @@ export default function middleware(request) {
   // FIXME: this is a ñapa to avoid not found page on "/" when deployed to Vercel
   //   https://docs.astro.build/en/guides/integrations-guide/vercel/#vercel-edge-middleware
   if (url.pathname === "/") {
-    url.pathname = "/es";
+    url.pathname = "/es/";
   }
   return Response.redirect(url);
 }
