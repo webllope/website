@@ -65,32 +65,3 @@ const makeTitle = title ? title : "Webllope";
   type="font/woff2"
   crossorigin
 />
-
-<SEO
-  title={makeTitle}
-  description={description}
-  canonical={canonicalURLString}
-  twitter={{
-    creator: "@webllope",
-    site: "@webllope",
-    description:
-      "Subimos nuestros pensamientos y éxitos a twitter para compartirlos con vosotros.",
-    card: "summary",
-    title: "Webllope's Twitter account",
-    image: "/src/assets/logos/webllopeLogo250.webp",
-  }}
-  openGraph={{
-    basic: {
-      url: canonicalURLString,
-      type: "website",
-      title: makeTitle,
-      image: SocialMediaSharedImage.src,
-    },
-    optional: {
-      description: description,
-    },
-    image: {
-      alt: "Webllope core",
-    },
-  }}
-/>
