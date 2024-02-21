@@ -46,22 +46,31 @@ const makeTitle = title ? title : "Webllope";
 <meta name="generator" content={Astro.generator} />
 <meta name="theme-color" content="#FFFFFF" />
 
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-<!-- <link rel="icon" type="image/svg+xml" href="/favicon.ico" /> -->
-{
-  absoluteURLS.map(({ url, lang }) => (
-    <link rel="alternate" href={url} hreflang={lang} />
-  ))
-}
-<link rel="alternate" href={canonicalURLString} hreflang="x-default" />
-<link rel="manifest" href="/site.webmanifest" />
-<link rel="sitemap" href="/sitemap-index.xml" />
-<link
-  rel="preload"
-  href="/fonts/Mona-Sans.woff2"
-  as="font"
-  type="font/woff2"
-  crossorigin
+<SEO
+  title={makeTitle}
+  description={description}
+  canonical={canonicalURLString}
+  twitter={{
+    creator: "@webllope",
+    site: "@webllope",
+    description:
+      "Subimos nuestros pensamientos y éxitos a twitter para compartirlos con vosotros.",
+    card: "summary",
+    title: "Webllope's Twitter account",
+    image: "/src/assets/logos/webllopeLogo250.webp",
+  }}
+  openGraph={{
+    basic: {
+      url: canonicalURLString,
+      type: "website",
+      title: makeTitle,
+      image: SocialMediaSharedImage.src,
+    },
+    optional: {
+      description: description,
+    },
+    image: {
+      alt: "Webllope core",
+    },
+  }}
 />
