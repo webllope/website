@@ -77,7 +77,7 @@ Una vez nuestra página web se posicione y gane autoridad dentro de búsquedas l
 
 Las URLs desempeñan un papel crucial en la optimización de motores de búsqueda y en la experiencia del usuario. Una URL bien estructurada no solo facilita la comprensión del contenido para los motores de búsqueda, sino que también mejora la navegación y la usabilidad para los usuarios.
 
-Sigamos con el ejemplo del local hostelero en Lorca, queremos que el link de la página sea orientativo, si tenemos una página que muestra nuestras hamburguesas su enlace podría ser www.milocal.com/las-mejores-hamburguesas, si por el contrario fuese www.milocal.com/doc_html.html esto sería gravemente penalizado por el motor de búsqueda de Google.
+Sigamos con el ejemplo del local hostelero en Lorca, queremos que el link de la página sea orientativo, si tenemos una página que muestra nuestras hamburguesas su enlace podría ser `www.milocal.com/las-mejores-hamburguesas`, si por el contrario fuese `www.milocal.com/doc_html.html` esto sería gravemente penalizado por el motor de búsqueda de Google.
 
 ### Imágenes optimizadas
 

@@ -178,7 +178,7 @@ const ourWork = {
   sectionHead: {
     title: "Our Work",
     subtitle:
-      "Web design solutions, digital marketing and adapted to companies of any size",
+      "Web design and digital marketing adapted to companies of any size",
     description:
       "We believe in efficiency and maximization of our resources to give the best value to our clients. We are a team and we work as such to achieve the best results and position our clients in the online market.",
   },
@@ -311,12 +311,12 @@ const misc = {
 
 const seo = {
   services: {
-    title: "Web design services in Murcia | Webllope",
+    title: "Web Design Services in Murcia | Webllope",
     description:
       "At Webllope we offer web design, SEO and SEM positioning services, online store design, and digital marketing in Murcia.",
   },
   main: {
-    title: "Website design Murcia | The Best SEO Agency",
+    title: "Website Design Murcia | The Best SEO Agency",
     description:
       "Your web design agency in Murcia. A team of developers will take care of the design and SEO positioning of your website, become visible on the internet.",
   },
@@ -326,16 +326,16 @@ const seo = {
       "At Webllope we are not simple designers, we are reputed software engineers who will take your internet presence to another level.",
   },
   contact: {
-    title: "Contact the best web design agency in Murcia | Webllope",
+    title: "Contact Us | Webllope",
     description: "Contact us without obligation for any questions or queries and receive your quote in less than 24 hours.",
   },
   blog: {
-    title: "Our blog about current web design",
+    title: "Our Blog About Web Design and Tech | Webllope",
     description:
       "In our web development blog you will find detailed information: from current complex technologies to the basics of web design.",
   },
   ourWork: {
-    title: "Our most recent websites in Murcia",
+    title: "Our Most Recent Websites | Webllope",
     description:
       "As creators of websites we exhibit the websites that took our clients to the next digital level on the internet.",
   },

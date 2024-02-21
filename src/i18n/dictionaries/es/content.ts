@@ -44,11 +44,11 @@ const features = {
 
 const clients = {
   title:
-    "Estás en buenas manos, todas estas empresas no pueden estar equivocadas.",
+    "Estás en buenas manos, todas estas empresas no pueden estar equivocadas",
 };
 
 const briefAboutUs = {
-  title: "Empresa de desarrollo web profesional",
+  title: "Agencia de diseño web profesional",
   firstP:
     "Somos una agencia de <strong>creación de páginas webs</strong> y <strong>SEO en Murcia</strong>. Especializados en crear <strong>páginas web corporativas</strong> con personalidad, haciendo un estudio previo del mercado y de los competidores. Multiplicamos las visitas a tu negocio en internet en un corto periodo de tiempo.",
   secondP:
@@ -233,7 +233,7 @@ const ourWork = {
   sectionHead: {
     title: "Nuestro trabajo",
     subtitle:
-      "Soluciones de diseño web, marketing digital y adaptadas a empresas de cualquier tamaño",
+      "Diseño web y marketing digital adaptado a empresas de cualquier tamaño",
     description:
       "Creemos en la eficiencia y maximización de nuestro recursos para dar el mejor valor a nuestros clientes. Somos un equipo y trabajamos como tal para conseguir los mejores resultados y posicionar a nuestros clientes en el mercado en línea.",
   },
@@ -313,12 +313,12 @@ const misc = {
 
 const seo = {
   services: {
-    title: "Servicios de diseño web en Murcia | Webllope",
+    title: "Servicios de Diseño Web en Murcia | Webllope",
     description:
       "En Webllope ofrecemos servicios de diseño web, posicionamiento SEO y SEM, diseño de tiendas online, y marketing digital en Murcia.",
   },
   main: {
-    title: "Diseño Web Murcia. Agencia de diseño páginas web",
+    title: "Diseño Web Murcia. Agencia de Diseño Páginas Web",
     description:
       "Tu agencia de diseño web en Murcia. Un equipo de desarrolladores se encargará del diseño y SEO de tu página web, hazte visible en internet con nosotros.",
   },
@@ -328,17 +328,17 @@ const seo = {
       "En Webllope no somos simples diseñadores, somos ingenieros de software reputados que llevarán tu presencia en internet a otro nivel.",
   },
   contact: {
-    title: "Contacta con la mejor agencia de diseño web en Murcia | Webllope",
+    title: "Contacta Con Nosotros | Webllope",
     description:
       "Contacta sin compromiso con nosotros para cualquier duda o consulta y recibe tu presupuesto en menos de 24 horas.",
   },
   blog: {
-    title: "Nuestro blog sobre el diseño web actual",
+    title: "Nuestro Blog Sobre el Diseño Web Actual",
     description:
       "En nuestro blog de desarrollo web encontrarás información detallada: desde tecnologías complejas actuales hasta lo básico del diseño web.",
   },
   ourWork: {
-    title: "Nuestras páginas web en Murcia más recientes",
+    title: "Nuestras Páginas Web en Murcia más recientes",
     description:
       "Como creadores de páginas web exhibimos los sitios web que elevaron a nuestros clientes al siguiente nivel digital en internet.",
   },
