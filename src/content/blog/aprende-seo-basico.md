@@ -2,9 +2,9 @@
 draft: false
 lang: "es"
 title: "Aprende un nivel de SEO básico"
-seoTitle: "Aprende SEO básico"
+seoTitle: "Aprende SEO Básico. Guía Perfecta para Principiantes"
 timeNeeded: "3 minutos"
-description: "Los conceptos del SEO básicos y fundamentales siempre serán los mismos, tu página web no triunfará sin trabajar en indexación, rastreo, posicionamiento y optimización."
+description: "Los conceptos del SEO básicos son fundamentales, tu página web no triunfará sin trabajar en indexación, rastreo, posicionamiento y optimización."
 snippet: "¿Alguna vez te preguntaste cuales son los principios del SEO para hacer que una página web se posicione en la parte alta de las búsquedas?"
 image:
   {

@@ -2,9 +2,9 @@
 draft: false
 lang: "es"
 title: "Explorando el Ecosistema de Frameworks JavaScript: Enfoque en Astro"
-seoTitle: "Mejores Frameworks de Javascript"
+seoTitle: "Mejores Frameworks de Javascript. Analizando Astro"
 timeNeeded: "3 minutos"
-description: "Si tuviésemos que elegir un mejor framework de JavaScript primero tendríamos que observar ventajas y desventajas de cada framework, y posteriormente decidir."
+description: "¿Realmente existe un mejor framework de Astro? Observamos ventajas y desventajas de cada framework comparadas con Astro."
 snippet: "Decenas de opciones a elegir entre Frameworks de Javascript para el desarrollo de tu web, ¿Cuál usar?"
 image:
   {
