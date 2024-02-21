@@ -19,7 +19,7 @@ lang: "en"
 imagesAmount: 4
 ---
 
-## Overview
+## Web Design and Development Work
 
 Annoyed that his wife’s gynaecologist would not disclose the results of her pap smear, Unseal’s founder Kevin came up with the idea of using the block chain to store individual health records.
 
@@ -27,4 +27,4 @@ Unseal approached us early in their development, having just raised funds throug
 
 After reaching a high of $12k, PlaceboCoin went to zero in a matter of hours. Because we took payment in PlaceboCoin but our subcontractors insisted on being paid in USD we have taken a huge financial loss on this project.
 
-## What we did
+## Design

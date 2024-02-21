@@ -26,4 +26,4 @@ Neoaesthetic es un centro estético en Aguadulce, Almería que ofrece una numero
 El trabajo con ellos fue de diseño y desarrollo de su sitio web usando **Wordpress** y aplicando un SEO básico de forma que si alguien busca palabras clave referentes a su sector en su localización su página aparezca de las primeras a los usuarios.
 
 Neoaesthetic ya tenía una buena base y se movían por las redes sociales por si mismos, tenían 100 reseñas en Google con 4.5 estrellas pero tenían una página anticuada con un dominio pagado por ellos hace tiempo que tuvimos que migrar a nuestro host premium aumentando así la velocidad de respuesta de la web a parte de cambiar por completo y mejorar su contenido. [Resultado final](https://neoaesthetic.com)
-## Diseño
+### Diseño
