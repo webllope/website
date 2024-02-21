@@ -2,18 +2,32 @@
 import { SEO } from "astro-seo";
 import SocialMediaSharedImage from "@assets/SocialMediaSharedImage.webp";
 
-import { replaceLangFromUrl } from "@i18n/utils";
+import { replaceLangFromUrl, getLangFromUrl } from "@i18n/utils";
 import type { Language } from "@i18n/i18n";
 import { languages } from "@i18n/i18n";
 
 const domainURL = "https://www.webllope.es";
+const currentLang = getLangFromUrl(Astro.url);
 
-const absoluteURLS = Object.entries(languages).map(([lang, _]) => {
-  return {
-    url: domainURL + replaceLangFromUrl(Astro.url, lang as Language),
-    lang,
-  };
-});
+const urlPathMatchBlogOrWorkPost = /\/blog\/.+/.test(Astro.url.pathname) || /\/trabajo\/.+/.test(Astro.url.pathname); 
+
+let absoluteURLS;
+
+if (urlPathMatchBlogOrWorkPost) {
+  absoluteURLS = [
+    {
+      url: domainURL + Astro.url.pathname,
+      lang: currentLang,
+    },
+  ];
+} else {
+  absoluteURLS = Object.entries(languages).map(([lang, _]) => {
+    return {
+      url: domainURL + replaceLangFromUrl(Astro.url, lang as Language),
+      lang,
+    };
+  });
+}
 
 import "@styles/fonts.css";
 
@@ -31,17 +45,6 @@ const makeTitle = title ? title : "Webllope";
 />
 <meta name="generator" content={Astro.generator} />
 <meta name="theme-color" content="#FFFFFF" />
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11329577421"
-></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag("js", new Date());
-  gtag("config", "AW-11329577421");
-</script>
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
