@@ -56,8 +56,17 @@ const briefAboutUs = {
   cta: "Contacta con nosotros",
 };
 
+const briefEcommerceInfo = {
+  title: "Diseño Tienda Online Murcia",
+  firstP:
+    "Tenemos amplios conocimientos de ingeniería web y por supuesto el desarrollo y <strong>diseño de tiendas online</strong> no es ningún misterio para nosotros. Montamos tu <strong>ecommerce</strong> usando tecnologías punteras y herramientas prestigiosas de mucha calidad ",
+  secondP:
+    "Asegurando una <strong>página web eficiente</strong> y lo más importante, eficaz (que consiga ventas). Construimos tiendas diseñadas para hacer el proceso de compra online al cliente lo más intuitivo y sencillo que puedas imaginar. ¡Obtén tu <strong>tienda de Murcia online</strong> ahora!.",
+  cta: "Contacta sin compromiso",
+};
+
 const briefSeoInfo = {
-  title: "Posicionamiento web en Murcia",
+  title: "Posicionamiento Web en Murcia",
   firstP:
     "No somos una <strong>empresa de diseño web</strong> común y corriente, nuestros fundadores Daniel Maestre y Jose María Martínez son Ingenieros de Software con un amplio conocimiento del SEO y SEM. Estás en el lugar correcto si necesitas una <strong>página web para tu negocio</strong> llamativa y al mismo tiempo optimizada de forma que salga en las búsquedas en Google de los usuarios y potenciales clientes.",
   secondP:
@@ -357,6 +366,7 @@ export const content = {
   briefAboutUs,
   clients,
   briefSeoInfo,
+  briefEcommerceInfo,
   roadmap,
   ourWork,
   contact,

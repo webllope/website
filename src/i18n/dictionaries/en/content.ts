@@ -261,6 +261,15 @@ const briefAboutUs = {
   cta: "Contact us",
 };
 
+const briefEcommerceInfo = {
+  title: "Ecommerce Design Murcia",
+  firstP:
+    "We have extensive knowledge of web engineering and of course the development and <strong>design of online stores</strong> is no mystery to us. We set up your <strong>ecommerce</strong> using cutting-edge technologies and prestigious tools of very high quality.",
+  secondP:
+    "Ensuring an <strong>efficient website</strong> and most importantly, effective (that achieves sales). We build stores designed to make the online purchase process for the customer as intuitive and simple as you can imagine. Get your <strong>online store in Murcia</strong> now!.",
+  cta: "Feel free to ask us anything",
+};
+
 const briefSeoInfo = {
   title: "Web positioning in Murcia",
   firstP:
@@ -353,6 +362,7 @@ export const content = {
   aboutYourProject,
   tags,
   briefAboutUs,
+  briefEcommerceInfo,
   clients,
   briefSeoInfo,
   roadmap,

@@ -8,6 +8,7 @@ import Background from "@components/background.astro";
 import Message from "@components/message.astro";
 import BriefAboutUs from "@components/brief-about-us.astro";
 import BriefSeoInfo from "@components/brief-seo-info.astro";
+import BriefEcommerceInfo from "@components/brief-ecommerce-info.astro";
 import Clients from "@components/clients.astro";
 import ServiceRoadmap from "@components/service-roadmap/service-roadmap.astro";
 
@@ -27,6 +28,9 @@ const client = await getEntry("clients", "salonchick");
   <Hero />
   <BriefAboutUs />
   <Clients />
+  <BriefSeoInfo />
+  <ServiceRoadmap />
+  <BriefEcommerceInfo />
   <Features />
   <Message
     title={t("index.message.title")}
@@ -36,8 +40,6 @@ const client = await getEntry("clients", "salonchick");
       src: client.data.logos.light,
     }}
   />
-  <BriefSeoInfo />
-  <ServiceRoadmap />
   <Logos />
   <Cta />
 </Layout>
