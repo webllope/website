@@ -48,7 +48,7 @@ const clients = {
 };
 
 const briefAboutUs = {
-  title: "Agencia de diseño web profesional",
+  title: "Páginas web profesionales en Murcia",
   firstP:
     "Somos una agencia de <strong>creación de páginas webs</strong> y <strong>SEO en Murcia</strong>. Especializados en crear <strong>páginas web corporativas</strong> con personalidad, haciendo un estudio previo del mercado y de los competidores. Multiplicamos las visitas a tu negocio en internet en un corto periodo de tiempo.",
   secondP:
@@ -329,7 +329,7 @@ const seo = {
   main: {
     title: "Diseño Web Murcia. Agencia de Diseño Páginas Web",
     description:
-      "Tu agencia de diseño web en Murcia. Un equipo de desarrolladores se encargará del diseño y SEO de tu página web, hazte visible en internet con nosotros.",
+      "Tu agencia de diseño web en Murcia. Expertos crearán increíbles páginas web con posicionamiento web SEO, hazte visible en internet con nosotros.",
   },
   aboutUs: {
     title: "Conoce Nuestro Equipo | Webllope",
