@@ -24,4 +24,6 @@ imagesAmount: 4
 **SalonChick** es un salón de belleza con una reputación previa a nuestro trabajo juntos increíble. Contando con más de 25.000 seguidores en sus redes sociales, X había conseguido construir desde 0 un salón profesional en Microblading/Micropigmentación que cuenta con más de 40 servicios realizados al más alto nivel.
 
 El trabajo con SalonChick se basó en unir información y servicios ofrecidos por el salón y por su negocio de tatuajes, Dettagli Ink. La cantidad de servicios ofrecidos era abrumadora y había que listarlos todos en un mismo sitio web de forma simple para conseguir una fácil comprensión por parte de los clientes asiduos y los nuevos.
+<a href="https://centroesteticasalonchick.com" rel="nofollow">Resultado final</a>
+
 ### Diseño

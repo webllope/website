@@ -26,5 +26,6 @@ Annoyed that his wife’s gynaecologist would not disclose the results of her pa
 Unseal approached us early in their development, having just raised funds through an ICO of their cryptocurrency PlaceboCoin. Having never worked on a web3 product we decided to farm the project out to an agency in Kyiv and skim profits off the top. Despite frequent complaints about missile strikes and power outages, the Ukrainians delivered the brief ahead of schedule.
 
 After reaching a high of $12k, PlaceboCoin went to zero in a matter of hours. Because we took payment in PlaceboCoin but our subcontractors insisted on being paid in USD we have taken a huge financial loss on this project.
+<a href="https://centroesteticasalonchick.es" rel="nofollow">Final Result</a>
 
 ## Design

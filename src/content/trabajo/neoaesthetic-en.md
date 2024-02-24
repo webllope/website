@@ -10,10 +10,14 @@ client: "neoaesthetic"
 quote:
   {
     message: "Webllope has been a great help to our business. They have helped us create a professional website and attract more clients to our beauty center.",
-    author: { name: "Alicia", position: "Founder of Neoaesthetic" }
+    author: { name: "Alicia", position: "Founder of Neoaesthetic" },
   }
 tags: [webdev, cms]
-cover: { src: "@assets/businessCovers/Neoaesthetic.webp", alt: "Neoaesthetic's website" }
+cover:
+  {
+    src: "@assets/businessCovers/Neoaesthetic.webp",
+    alt: "Neoaesthetic's website",
+  }
 date: "2023-07-06 17:00"
 lang: "en"
 imagesAmount: 4
@@ -25,5 +29,7 @@ Neoaesthetic is a beauty center in Aguadulce, Almeria that offers a wide range o
 
 The collaboration involved the design and development of their website using **WordPress** and implementing basic SEO so that when someone searches for keywords related to their sector in their location, their page appears among the first to users.
 
-Neoaesthetic already had a good foundation and managed their social media on their own, with 100 Google reviews and a 4.5-star rating. However, they had an outdated website with a domain they had paid for a long time ago, which we had to migrate to our premium host, significantly improving the website's response speed and completely enhancing its content. [Final result](https://neoaesthetic.com)
+Neoaesthetic already had a good foundation and managed their social media on their own, with 100 Google reviews and a 4.5-star rating. However, they had an outdated website with a domain they had paid for a long time ago, which we had to migrate to our premium host, significantly improving the website's response speed and completely enhancing its content. 
+<a href="https://neoaesthetic.com" rel="nofollow">Final Result</a>
+
 ### Design
