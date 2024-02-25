@@ -1,43 +1,7 @@
 ---
-import { freeform } from "config";
-
 import type { HTMLInputTypeAttribute } from "@utils/types";
 
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
-
-// import sendGrid from "@sendgrid/mail";
-// sendGrid.setApiKey(
-//   "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",
-// );
-
-// if (Astro.request.method === "POST") {
-//   try {
-//     // Getting posted data from our contact form
-//     const data = await Astro.request.formData();
-//     const name = data.get("name");
-//     const email = data.get("email");
-//     const message = data.get("message");
-//     const company = data.get("company");
-//     const phone = data.get("phone");
-
-//     const msg = {
-//       to: "info@webllope.es",
-//       from: "info@webllope.es",
-//       subject: "Formulario de contacto de webllope.es",
-//       text: `Nombre: ${name}\nEmail: ${email}\nCompañía: ${company}\nTeléfono: ${phone}\nMensaje: ${message}`,
-//     };
-
-//     await sendGrid.send(msg);
-//     // .then(() => {
-//     //   console.log("Email sent");
-//     // })
-//     // .catch((error) => {
-//     //   console.error(error);
-//     // });
-//   } catch (error) {
-//     console.error(error);
-//   }
-// }
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -88,7 +52,8 @@ const fields: Array<{
 // TODO: validate project fieldset (selection is required)
 ---
 
-<form action={freeform.endpoint} method="POST" id="form">
+<!-- <form action={freeform.endpoint} method="POST" id="form"> -->
+<form id="form">
   <h2 class="font-display text-base font-semibold text-neutral-950">
     {t("contactForm.title")}
   </h2>
@@ -144,3 +109,20 @@ const fields: Array<{
     </span>
   </button>
 </form>
+<script>
+  const form = document.getElementById("form") as HTMLFormElement;
+
+  form?.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target as HTMLFormElement);
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      body: formData,
+    });
+
+    // console.log({ response });
+    if (response.ok) {
+      form.reset()
+    }
+  });
+</script>
