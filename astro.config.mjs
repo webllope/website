@@ -36,7 +36,7 @@ export default defineConfig({
       enabled: true,
     },
   }),
-  output: 'hybrid',
+  output: 'server',
   i18n: {
     defaultLocale: "es",
     locales: ["en", "es"],
