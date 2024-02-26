@@ -108,6 +108,9 @@ const fields: Array<{
       {t("contactForm.sendBtn")}
     </span>
   </button>
+  <p id="success-msg" class="mt-6 text-green-800">
+    {t("contactForm.successMsg")}
+  </p>
 </form>
 <script>
   const form = document.getElementById("form") as HTMLFormElement;
@@ -120,9 +123,16 @@ const fields: Array<{
       body: formData,
     });
 
-    // console.log({ response });
     if (response.ok) {
-      form.reset()
+      const successMsg = document.getElementById("success-msg");
+      console.log(successMsg);
+      if (successMsg) {
+        successMsg.hidden = false;
+        // NOTE: not sure to include it, le voy a echar un pensamiento
+        // setTimeout(() => (successMsg.hidden = true), 5000);
+      }
+
+      form.reset();
     }
   });
 </script>
