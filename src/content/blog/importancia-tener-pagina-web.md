@@ -6,11 +6,6 @@ seoTitle: "¿Cuál es la importancia de tener una página web?"
 timeNeeded: "2 minutos"
 description: "Tener una página web es necesario porque la presencia en línea se ha vuelto imprescindible, son muchas las ventajas que te aporta tener un sitio web."
 snippet: "En la era digital actual, la presencia en línea se ha convertido en un factor crítico para el éxito de cualquier empresa. Descubre la relevancia y los beneficios de tener una página web para tu negocio."
-image:
-  {
-    src: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?&fit=crop&w=430&h=240",
-    alt: "Web development",
-  }
 publishDate: "2024-01-08 11:39"
 author: "daniel-maestre"
 tags: [webdesign, businesses]
@@ -61,7 +56,7 @@ Tener un sitio web es indispensable, en este apartado veremos detalladamente las
 
 Estoy seguro de que estamos de acuerdo en que los beneficios son numerosos y el costo es mucho menor del que los negocios piensan generalmente.
 
-En caso de querer continuar adelante con la creación de tu página web personalizada, no dudes en contactarnos sin compromiso y expresarnos con total libertad tu idea para tu negocio y la haremos realidad.
+En caso de querer continuar adelante con la creación de tu página web personalizada, no dudes en contactarnos sin compromiso y expresarnos con total libertad tu idea para tu negocio y la haremos realidad. Somos una agencia experta en el desarrollo de [páginas web profesionales](/es/blog/diseño-web-profesional-murcia/) y nos preocupamos genuinamente por el éxito de nuestros clientes
 **Haznos saber que vienes de este artículo y disfruta de un descuento**.
 <a href="/es/contacto/" class="w-full flex">
 <span class="mx-auto mt-10 inline-flex rounded-full px-5 py-3 text-lg font-semibold transition bg-neutral-950 text-white hover:bg-neutral-800">Contacta con nosotros y disfruta de un descuento</span>

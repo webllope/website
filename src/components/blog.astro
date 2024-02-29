@@ -14,11 +14,9 @@ const publishedBlogEntries = (
   await getCollection("blog", ({ data }) => {
     return !data.draft && data.lang === lang && data.publishDate < new Date();
   })
-)
-  .sort(function (a, b) {
-    return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
-  })
-  .slice(0, 3);
+).sort(function (a, b) {
+  return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
+});
 ---
 
 <Layout title={t("seo.blog.title")} description={t("seo.blog.description")}>

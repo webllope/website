@@ -26,10 +26,6 @@ const blogCollection = defineCollection({
     description: z.string(),
     timeNeeded: z.string(),
     snippet: z.string(),
-    image: z.object({
-      src: z.string(),
-      alt: z.string(),
-    }),
     publishDate: z.string().transform((str) => new Date(str)),
     author: reference("team"),
     tags: z.array(z.string()),

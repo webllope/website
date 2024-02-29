@@ -6,11 +6,6 @@ seoTitle: "Mejores Frameworks de Javascript. Analizando Astro"
 timeNeeded: "3 minutos"
 description: "¿Realmente existe un mejor framework de Astro? Observamos ventajas y desventajas de cada framework comparadas con Astro."
 snippet: "Decenas de opciones a elegir entre Frameworks de Javascript para el desarrollo de tu web, ¿Cuál usar?"
-image:
-  {
-    src: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?&fit=crop&w=430&h=240",
-    alt: "Web development",
-  }
 publishDate: "2024-01-19 11:39"
 author: "chema-martinez"
 tags: [javascript, webdesign]

@@ -6,11 +6,6 @@ seoTitle: "What is the Importance of Having a Website?"
 title: "Is it really necessary to have a website?"
 description: "Having a website is necessary because online presence has become essential; there are many advantages that having a website provides."
 snippet: "In today's digital era, online presence has become a critical factor for the success of any business. Discover the relevance and benefits of having a website for your business."
-image:
-  {
-    src: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?&fit=crop&w=430&h=240",
-    alt: "Web development",
-  }
 publishDate: "2024-01-08 11:39"
 author: "daniel-maestre"
 tags: [webdesign, businesses]
