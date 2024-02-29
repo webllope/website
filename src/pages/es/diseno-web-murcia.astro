@@ -7,15 +7,12 @@ import Layout from "@layouts/layout.astro";
 import Background from "@components/background.astro";
 import Message from "@components/message.astro";
 import TextLeftSection from "@components/text-left-section.astro";
-import TextRightSection from "@components/text-right-section.astro";
 import Clients from "@components/clients.astro";
 import ServiceRoadmap from "@components/service-roadmap/service-roadmap.astro";
+import ContactForm from "@components/contact-form.astro";
 
-import officeImage from "@assets/office2.webp";
-import ecommerceImage from "@assets/imagen-tienda-online-murcia.webp";
-import seoImage from "@assets/seoImage2.webp";
-import heroImage from "@assets/heroImage.webp";
 import { Image } from "astro:assets";
+import officeImage from "@assets/office2.webp";
 
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
 import { getEntry } from "astro:content";
@@ -31,23 +28,12 @@ const client = await getEntry("clients", "salonchick");
 <Layout title={t("seo.main.title")} description={t("seo.main.description")}>
   <Background />
   <Hero
-    primaryText={t("landing.hero.primary")}
-    secondaryText={t("landing.hero.secondary")}
-    tertiaryText={t("landing.hero.tertiary")}
-    quaternaryText={t("landing.hero.quaternary")}
-    cta={{
-      link: "/contacto",
-      text: t("landing.hero.cta"),
-    }}>
-    <Image
-      alt="Webllope Image"
-      class="transform scale-x-[-1] drop-shadow-xl"
-      loading="eager"
-      width={400}
-      src={heroImage}
-      densities={[1.5, 2]}
-    />
+    primaryText={t("disenowebmurcia.hero.primary")}
+    secondaryText={t("disenowebmurcia.hero.secondary")}
+    tertiaryText={t("disenowebmurcia.hero.tertiary")}>
+    <ContactForm />
   </Hero>
+  <Clients />
   <TextLeftSection
     title={t("briefAboutUs.title")}
     firstP={t("briefAboutUs.firstP")}
@@ -64,41 +50,7 @@ const client = await getEntry("clients", "salonchick");
       src={officeImage}
     />
   </TextLeftSection>
-  <Clients />
-  <TextRightSection
-    title={t("briefSeoInfo.title")}
-    firstP={t("briefSeoInfo.firstP")}
-    secondP={t("briefSeoInfo.secondP")}
-    cta={{
-      link: "/servicios",
-      text: t("briefSeoInfo.cta"),
-    }}>
-    <Image
-      alt="Imagen de SEO"
-      src={seoImage}
-      width="220"
-      height="443"
-      class="h-full mx-auto mt-6"
-    />
-  </TextRightSection>
   <ServiceRoadmap />
-  <TextLeftSection
-    title={t("briefEcommerceInfo.title")}
-    firstP={t("briefEcommerceInfo.firstP")}
-    secondP={t("briefEcommerceInfo.secondP")}
-    cta={{
-      link: "/contacto",
-      text: t("briefEcommerceInfo.cta"),
-    }}>
-    <Image
-      alt="Tienda Online Murcia Imagen"
-      width={450}
-      height={400}
-      loading="lazy"
-      class="rounded-xl"
-      src={ecommerceImage}
-    />
-  </TextLeftSection>
   <Features />
   <Message
     title={t("index.message.title")}

@@ -1,5 +1,5 @@
 const contactForm = {
-  title: "Cuéntanos más",
+  title: "Consulta sin compromiso",
   fields: {
     name: "Nombre",
     email: "Correo electrónico",
@@ -14,7 +14,8 @@ const contactForm = {
       other: "Otros",
     },
   },
-  successMsg: "Formulario enviado correctamente. Nos pondremos en contacto contigo lo antes posible.",
+  successMsg:
+    "Formulario enviado correctamente. Nos pondremos en contacto contigo lo antes posible.",
   sendBtn: "Enviar",
 };
 

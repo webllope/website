@@ -1,7 +1,21 @@
-const hero = {
-  primary: "Website design Murcia",
-  secondary:
-    "Would you like your local business to stand out on the internet? We offer you a professional <b>web design</b> and development to turn your idea into an amazing and functional website.",
+const landing = {
+  hero: {
+    primary: "Website design Murcia",
+    secondary:
+      "Would you like your local business to stand out on the internet? We offer you a professional <b>web design</b> and development to turn your idea into an amazing and functional website",
+    tertiary: 
+      "We are <strong>website designers</strong> and also experts in <strong>SEO</strong> and <strong>web positioning Murcia</strong>",
+    quaternary: "We are committed to making your business stand out on the internet at an unbeatable price (from 150€)",
+    ctaEnglish: "Inquire now!",
+  },
+};
+
+const disenowebmurcia = {
+  hero: {
+    primary: "Website Design Murcia",
+    secondary:
+      "¿Te gustaría que tu negocio local destacara en internet? Te ofrecemos un <b>diseño web</b> profesional y desarrollo para convertir tu idea en una web increíble y funcional.",
+  },
 };
 
 const features = {
@@ -336,7 +350,8 @@ const seo = {
   },
   contact: {
     title: "Contact Us, We Will Build Your Dream | Webllope",
-    description: "Contact us without obligation for any questions or queries and receive your quote in less than 24 hours.",
+    description:
+      "Contact us without obligation for any questions or queries and receive your quote in less than 24 hours.",
   },
   blog: {
     title: "Our Blog About Web Design and Tech | Webllope",
@@ -350,10 +365,10 @@ const seo = {
   },
 };
 
-
 export const content = {
   ...misc,
-  hero,
+  landing,
+  disenowebmurcia,
   features,
   logos,
   cta,

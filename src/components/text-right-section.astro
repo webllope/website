@@ -1,41 +1,51 @@
 ---
 import Link from "./ui/link.astro";
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
-import seoImage from "@assets/seoImage2.webp";
 import { getRelativeLocaleUrl } from "astro:i18n";
 
-import { Image } from "astro:assets";
 import Sectionhead from "./sectionhead.astro";
 import Container from "./ui/container.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+interface Props {
+  title: string;
+  firstP: string;
+  secondP?: string;
+  cta?: {
+    text: string;
+    link: string;
+  };
+}
+
+const { title, firstP, secondP, cta } = Astro.props;
 ---
 
-<Sectionhead title={t("briefSeoInfo.title")} />
-
-<Container>
+<Container class="px-6">
   <div
     class="flex flex-col lg:flex-row justify-between mx-auto max-w-2xl lg:max-w-none gap-12 mt-8">
-    <Image
-      alt="Imagen de SEO"
-      src={seoImage}
-      width="220"
-      height="443"
-      class="h-full mx-auto mt-6"
-    />
+    <slot />
     <div class="max-w-2xl">
+      <div
+        class="mt-6 block max-w-5xl font-display text-3xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-4xl">
+        <h2>{title}</h2>
+      </div>
       <div class="mt-6 text-xl text-neutral-600">
         <div class="flex flex-col gap-3.5">
-          <span set:html={t("briefSeoInfo.firstP")} />
-          <span set:html={t("briefSeoInfo.secondP")} />
+          <span set:html={firstP} />
+          {secondP && <span set:html={secondP} />}
         </div>
 
-        <div class="flex mt-10">
-          <Link href={getRelativeLocaleUrl(lang, "/servicios")}>
-            {t("briefSeoInfo.cta")}
-          </Link>
-        </div>
+        {
+          cta && (
+            <div class="flex mt-10">
+              <Link href={getRelativeLocaleUrl(lang, cta?.link)}>
+                {cta?.text}
+              </Link>
+            </div>
+          )
+        }
       </div>
     </div>
   </div>

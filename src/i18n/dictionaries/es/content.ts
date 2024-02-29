@@ -1,7 +1,23 @@
-const hero = {
-  primary: "Diseño web en Murcia",
-  secondary:
-    "Páginas web profesionales para empresas de todos los tamaños y autónomos.",
+const landing = {
+  hero: {
+    primary: "Diseño Web Murcia",
+    secondary:
+      "Diseño de <strong>páginas web profesionales</strong> para empresas de todos los tamaños y autónomos",
+    tertiary:
+      "Somos <strong>diseñadores web</strong> y además expertos en <strong>SEO</strong> y <strong>posicionamiento web Murcia</strong>",
+    quaternary: "Nos comprometemos a hacer que tu negocio destaque en internet a un precio inmejorable (desde 150€)",
+    cta: "Consulta sin compromiso",
+  },
+};
+
+const disenowebmurcia = {
+  hero: {
+    primary: "Diseño Web Murcia",
+    secondary:
+      "Diseño de <strong>páginas web</strong> elegantes y eficaces que consiguen clientes, resultados garantizados. Somos diseñadores web de confianza, experimentados y nos preocupamos de verdad por conseguir que tu negocio mejore",
+    tertiary:
+      "No solo es un diseño web, también llevamos a cabo optimización <strong>SEO y posicionamiento web</strong>. De nada sirve una página web si esta no sale en los primeros resultados de Google, llevaremos tu visibilidad online al siguiente nivel a un <strong>precio inmejorable</strong>",
+  },
 };
 
 const features = {
@@ -66,7 +82,7 @@ const briefEcommerceInfo = {
 };
 
 const briefSeoInfo = {
-  title: "Posicionamiento Web en Murcia",
+  title: "SEO en Murcia",
   firstP:
     "No somos una <strong>empresa de diseño web</strong> común y corriente, nuestros fundadores Daniel Maestre y Jose María Martínez son Ingenieros de Software con un amplio conocimiento del SEO y SEM. Estás en el lugar correcto si necesitas una <strong>página web para tu negocio</strong> llamativa y al mismo tiempo optimizada de forma que salga en las búsquedas en Google de los usuarios y potenciales clientes.",
   secondP:
@@ -355,7 +371,8 @@ const seo = {
 
 export const content = {
   ...misc,
-  hero,
+  landing,
+  disenowebmurcia,
   features,
   logos,
   cta,
