@@ -3,6 +3,7 @@ export const ui = {
   nav: {
     home: "Inicio",
     services: "Servicios",
+    disenoweb: "Diseño Web",
     work: "Nuestro trabajo",
     blog: "Blog",
     aboutUs: "Sobre nosotros",

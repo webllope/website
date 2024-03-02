@@ -1,7 +1,14 @@
 ---
 import Container from "@components/ui/container.astro";
-import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import {
+  Astronav,
+  MenuItems,
+  MenuIcon,
+  Dropdown as DropdownContainer,
+  DropdownItems,
+} from "astro-navbar";
 import Logo from "@components/logo.astro";
+import NavMenuItem from "@components/nav-menu-item.astro";
 
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
 import LanguagePicker from "@components/language-picker.astro";
@@ -10,10 +17,21 @@ import { getRelativeLocaleUrl } from "astro:i18n";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const menuitems: Array<{ title: string; path: string; badge?: boolean }> = [
+const menuitems: Array<{
+  title: string;
+  path: string;
+  subItems?: Array<{ title: string; path: string }>;
+  badge?: boolean;
+}> = [
   {
     title: t("nav.services"),
     path: "/servicios",
+    subItems: [
+      {
+        title: t("nav.disenoweb"),
+        path: getRelativeLocaleUrl(lang, "/diseno-web-murcia"),
+      },
+    ],
   },
   {
     title: t("nav.work"),
@@ -49,18 +67,10 @@ const menuitems: Array<{ title: string; path: string; badge?: boolean }> = [
         <ul class="flex flex-col lg:flex-row lg:gap-3">
           {
             menuitems.map((item, index) => (
-              <li>
-                <a
-                  href={getRelativeLocaleUrl(lang, item.path)}
-                  class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900">
-                  <span> {item.title}</span>
-                  {item.badge && (
-                    <span class="ml-1 px-2 py-0.5 text-[10px] animate-pulse font-semibold uppercase text-white bg-indigo-600 rounded-full">
-                      New
-                    </span>
-                  )}
-                </a>
-              </li>
+              <NavMenuItem
+                item={item}
+                hrefUrl={getRelativeLocaleUrl(lang, item.path)}
+              />
             ))
           }
         </ul>
