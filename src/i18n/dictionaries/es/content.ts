@@ -4,8 +4,9 @@ const landing = {
     secondary:
       "Diseño de <strong>páginas web profesionales</strong> para empresas de todos los tamaños y autónomos",
     tertiary:
-      "Somos <strong>diseñadores web</strong> y además expertos en <strong>SEO</strong> y <strong>posicionamiento web Murcia</strong>",
-    quaternary: "Nos comprometemos a hacer que tu negocio destaque en internet a un precio inmejorable (desde 150€)",
+      "Somos <strong class='animate-text'>diseñadores web</strong> y además expertos en <strong>SEO</strong> y <strong>posicionamiento web Murcia</strong>",
+    quaternary:
+      "Nos comprometemos a hacer que tu negocio destaque en internet a un precio inmejorable (desde 150€)",
     cta: "Consulta sin compromiso",
   },
 };
@@ -17,6 +18,29 @@ const disenowebmurcia = {
       "Diseño de <strong>páginas web</strong> elegantes y eficaces que consiguen clientes, resultados garantizados. Somos diseñadores web de confianza, experimentados y nos preocupamos de verdad por conseguir que tu negocio mejore",
     tertiary:
       "No solo es un diseño web, también llevamos a cabo optimización <strong>SEO y posicionamiento web</strong>. De nada sirve una página web si esta no sale en los primeros resultados de Google, llevaremos tu visibilidad online al siguiente nivel a un <strong>precio inmejorable</strong>",
+  },
+  textLeft: {
+    title: "Páginas Web en Murcia",
+    primary:
+      "Somos una agencia de <strong class='animate-text'>diseño de páginas web</strong> situada en Murcia, conocemos todos los lugares de la región y alrededores, y tenemos experiencia trabajando con negocios locales de todos los tamaños",
+    secondary:
+      "En el actual escenario digital de Murcia, encontrar la agencia adecuada para el <strong>diseño y desarrollo de páginas web</strong> puede marcar la diferencia. En lo que <strong>creación de páginas web</strong> respecta, Webllope puede orgullosamente decir que es una empresa de máxima calidad, no solo producimos resultados excepcionales sino que nos preocupamos realmente porque nuestros clientes triunfen",
+  },
+  textRight: {
+    title: "Empresa de Diseño Web en Murcia",
+    primary:
+      "Si te interesa <strong>contratar un diseño web en Murcia</strong> estás en el sitio correcto, y si has llegado hasta esta página es porque hemos debido hacer un posicionamiento web efectivo. Nosotros mismos hemos hecho el SEO de esta página, por lo que si has llegado hasta aquí es porque sabemos lo que hacemos.",
+    secondary:
+      "Para conocer el <strong>presupuesto de una página web</strong>, no dudes en contactar con nosotros, te haremos un presupuesto a medida. No te preocupes, no te vamos a cobrar un precio desorbitado, somos una empresa de <strong>diseño web para pymes</strong> y queremos que tu negocio crezca junto a nosotros.",
+    cta: "Contacta con nosotros",
+  },
+  textOnly: {
+    title: "Contratar Diseño Web Profesional",
+    primary:
+      "Si buscas una <strong class='animate-text'>empresa de diseño web en Murcia</strong> que te ofrezca un servicio completo, has llegado al lugar correcto. En Webllope no solo nos encargamos de la creación de páginas web, si no que también nos preocupamos por el posicionamiento web y el SEO de tu página.",
+    secondary:
+      "Si necesitas una <strong>página web para tu negocio</strong> que sea atractiva y al mismo tiempo optimizada para que aparezca en los primeros resultados de Google, no dudes en contactar con nosotros. Estamos especializados en <strong>SEO en Murcia</strong> y en el <strong>diseño de tiendas online</strong>.",
+    cta: "Ver nuestros servicios",
   },
 };
 

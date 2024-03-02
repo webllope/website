@@ -6,7 +6,7 @@ const landing = {
     tertiary: 
       "We are <strong>website designers</strong> and also experts in <strong>SEO</strong> and <strong>web positioning Murcia</strong>",
     quaternary: "We are committed to making your business stand out on the internet at an unbeatable price (from 150€)",
-    ctaEnglish: "Inquire now!",
+    cta: "Inquire now!",
   },
 };
 
@@ -14,7 +14,32 @@ const disenowebmurcia = {
   hero: {
     primary: "Website Design Murcia",
     secondary:
-      "¿Te gustaría que tu negocio local destacara en internet? Te ofrecemos un <b>diseño web</b> profesional y desarrollo para convertir tu idea en una web increíble y funcional.",
+      "Elegant and effective <strong>web pages</strong> that attract customers, guaranteed results. We are reliable web designers, experienced and we really care about improving your business",
+    tertiary:
+      "It's not just web design, we also carry out <strong>SEO optimization and web positioning</strong>. There is no point in having a website if it does not appear in the first results of Google, we will take your online visibility to the next level at an <strong>unbeatable price</strong>",
+  },
+  textLeft: {
+    title: "Web Pages in Murcia",
+    primary:
+      "We are a <strong class='animate-text'>website design agency</strong> located in Murcia, we know all the places in the region and surroundings, and we have experience working with local businesses of all sizes",
+    secondary:
+      "In the current digital scenario of Murcia, finding the right agency for <strong>web design and development</strong> can make a difference. As far as <strong>web design</strong> is concerned, Webllope can proudly say that it is a company of the highest quality, not only do we produce exceptional results but we really care that our clients succeed",
+  },
+  textRight: {
+    title: "Web Design Company in Murcia",
+    primary:
+      "If you are interested in <strong>hiring web design in Murcia</strong> you are in the right place, and if you have come to this page it is because we must have done effective web positioning. We have done the SEO of this page ourselves, so if you have come here it is because we know what we are doing.",
+    secondary:
+      "To know the <strong>budget of a web page</strong>, do not hesitate to contact us, we will make a budget tailored to you. Do not worry, we are not going to charge you an exorbitant price, we are a <strong>web design company for SMEs</strong> and we want your business to grow with us.",
+    cta: "Contact us",
+  },
+  textOnly: {
+    title: "Professional Web Design Murcia",
+    primary:
+      "If you are looking for a <strong class='animate-text'>web design company in Murcia</strong> that offers you a complete service, you have come to the right place. At Webllope we not only take care of creating web pages, but we also take care of web positioning and SEO of your page.",
+    secondary:
+      "If you need a <strong>web page for your business</strong> that is attractive and at the same time optimized to appear in the first results of Google, do not hesitate to contact us. We specialize in <strong>SEO in Murcia</strong> and in the <strong>design of online stores</strong>.",
+    cta: "View our services",
   },
 };
 
