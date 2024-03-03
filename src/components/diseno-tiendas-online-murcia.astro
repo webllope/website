@@ -10,8 +10,8 @@ import Clients from "@components/clients.astro";
 import ContactForm from "@components/contact-form.astro";
 
 import { Image } from "astro:assets";
-import diseñoTiendaOnlineMurcia from "@assets/diseño-tienda-online-murcia.webp";
 import diseñoTiendasOnlineMurcia from "@assets/diseño-tiendas-online-murcia.png";
+import ecommerceImage from "@assets/imagen-tienda-online-murcia2.png";
 
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
 
@@ -39,7 +39,7 @@ const t = useTranslations(lang);
       class="rounded-xl h-fit my-auto"
       width={600}
       height={350}
-      src={diseñoTiendaOnlineMurcia}
+      src={ecommerceImage}
     />
   </TextLeftSection>
   <Clients />

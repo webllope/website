@@ -12,13 +12,13 @@ import Clients from "@components/clients.astro";
 import ServiceRoadmap from "@components/service-roadmap/service-roadmap.astro";
 
 import officeImage from "@assets/office2.webp";
-import ecommerceImage from "@assets/imagen-tienda-online-murcia.webp";
 import seoImage from "@assets/seoImage2.webp";
 import heroImage from "@assets/heroImage.webp";
 import { Image } from "astro:assets";
 
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
 import { getEntry } from "astro:content";
+import TextOnlySection from "./text-only-section.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -82,23 +82,14 @@ const client = await getEntry("clients", "salonchick");
     />
   </TextRightSection>
   <ServiceRoadmap />
-  <TextLeftSection
+  <TextOnlySection
     title={t("briefEcommerceInfo.title")}
     firstP={t("briefEcommerceInfo.firstP")}
     secondP={t("briefEcommerceInfo.secondP")}
     cta={{
       link: "/contacto",
       text: t("briefEcommerceInfo.cta"),
-    }}>
-    <Image
-      alt="Tienda Online Murcia Imagen"
-      width={450}
-      height={400}
-      loading="lazy"
-      class="rounded-xl"
-      src={ecommerceImage}
-    />
-  </TextLeftSection>
+    }}/>
   <Features />
   <Message
     title={t("index.message.title")}

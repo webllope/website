@@ -3,9 +3,10 @@ const landing = {
     primary: "Website design Murcia",
     secondary:
       "Would you like your local business to stand out on the internet? We offer you a professional <b>web design</b> and development to turn your idea into an amazing and functional website",
-    tertiary: 
+    tertiary:
       "We are <strong>website designers</strong> and also experts in <strong>SEO</strong> and <strong>web positioning Murcia</strong>",
-    quaternary: "We are committed to making your business stand out on the internet at an unbeatable price (from 150€)",
+    quaternary:
+      "We are committed to making your business stand out on the internet at an unbeatable price (from 150€)",
     cta: "Inquire now!",
   },
 };
@@ -334,12 +335,12 @@ const briefAboutUs = {
 };
 
 const briefEcommerceInfo = {
-  title: "Ecommerce Design Murcia",
+  title: "Website Design",
   firstP:
-    "We have extensive knowledge of web engineering and of course the development and <strong>design of online stores</strong> is no mystery to us. We set up your <strong>ecommerce</strong> using cutting-edge technologies and prestigious tools of very high quality.",
+    "We have extensive knowledge of web engineering and of course <strong class='animate-text'>web development</strong> is no mystery to us. We have built hundreds of websites, and we have helped many companies improve their online presence.",
   secondP:
-    "Ensuring an <strong>efficient website</strong> and most importantly, effective (that achieves sales). We build stores designed to make the online purchase process for the customer as intuitive and simple as you can imagine. Get your <strong>online store in Murcia</strong> now!.",
-  cta: "Feel free to ask us anything",
+    "Ensuring an efficient and most importantly, effective website (that generates sales). We build websites designed to make their use as simple as possible for the user. Get your <strong>website budget in Murcia</strong> now!",
+  cta: "Contact without obligation",
 };
 
 const briefSeoInfo = {

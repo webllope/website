@@ -48,7 +48,7 @@ Es de suma importancia que además se cuente con estrategias y campañas que com
 
 El diseño para ordenadores y aplicaciones móviles, aunque sea diferente visualmente, debe ser perfectamente funcional y a la vez igual aunque sean diferentes formatos. Después de todo lo que se busca es ser reconocible y establecer una identidad diferenciada de la competencia.
 
-Además tanto el *branding* como el mantenimiento, asesorías y constante feedback entre los desarrolladores y los mismos CEOs es vital para que un sitio web funcione, se mantenga actualizado, sea exitoso y, al final, sea el mejor diseño web en Murcia.
+Además tanto el *branding* como el mantenimiento, asesorías y constante feedback entre los desarrolladores y los mismos CEOs es vital para que un sitio web funcione, se mantenga actualizado, sea exitoso y, al final, sea el mejor [diseño web en Murcia](/es/diseno-web-murcia/).
 
 Cuando se trata de crecer en la era de la tecnología, con un diseño web profesional apuntas directamente al éxito. 
 
