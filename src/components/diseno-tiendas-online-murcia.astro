@@ -1,0 +1,66 @@
+---
+import Hero from "@components/hero.astro";
+import Logos from "@components/logos.astro";
+import Layout from "@layouts/layout.astro";
+import Background from "@components/background.astro";
+import TextLeftSection from "@components/text-left-section.astro";
+import TextRightSection from "@components/text-right-section.astro";
+import TextOnlySection from "@components/text-only-section.astro";
+import Clients from "@components/clients.astro";
+import ContactForm from "@components/contact-form.astro";
+
+import { Image } from "astro:assets";
+import diseñoTiendaOnlineMurcia from "@assets/diseño-tienda-online-murcia.webp";
+import diseñoTiendasOnlineMurcia from "@assets/diseño-tiendas-online-murcia.png";
+
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+---
+
+<Layout title={t("seo.disenoWebMurcia.title")} description={t("seo.disenoWebMurcia.description")}>
+  <Background />
+  <Hero
+    primaryText={t("disenoTiendasOnlineMurcia.hero.primary")}
+    secondaryText={t("disenoTiendasOnlineMurcia.hero.secondary")}
+    tertiaryText={t("disenoTiendasOnlineMurcia.hero.tertiary")}>
+    <ContactForm />
+  </Hero>
+  <TextLeftSection
+    title={t("disenoTiendasOnlineMurcia.textLeft.title")}
+    firstP={t("disenoTiendasOnlineMurcia.textLeft.primary")}
+    secondP={t("disenoTiendasOnlineMurcia.textLeft.secondary")}>
+    <Image
+      alt="Tiendas Online en Murcia"
+      class="rounded-xl h-fit my-auto"
+      width={600}
+      height={400}
+      src={diseñoTiendaOnlineMurcia}
+    />
+  </TextLeftSection>
+  <Clients />
+  <TextRightSection
+    title={t("disenoTiendasOnlineMurcia.textRight.title")}
+    firstP={t("disenoTiendasOnlineMurcia.textRight.primary")}
+    secondP={t("disenoTiendasOnlineMurcia.textRight.secondary")}
+    cta={{
+      text: t("disenoTiendasOnlineMurcia.textRight.cta"),
+      link: "/contacto",
+    }}>
+    <Image
+      alt="Diseño de Tiendas Online"
+      width={600}
+      height={400}
+      class="rounded-xl h-fit my-auto"
+      src={diseñoTiendasOnlineMurcia}
+    />
+  </TextRightSection>
+  <Logos />
+  <TextOnlySection
+    title={t("disenoTiendasOnlineMurcia.textOnly.title")}
+    firstP={t("disenoTiendasOnlineMurcia.textOnly.primary")}
+    secondP={t("disenoTiendasOnlineMurcia.textOnly.secondary")}
+  />
+</Layout>

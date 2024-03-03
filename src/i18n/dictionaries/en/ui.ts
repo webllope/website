@@ -4,6 +4,7 @@ export const ui = {
     home: "Home",
     services: "Services",
     disenoweb: "Web Design",
+    disenotiendasonline: "E-commerce website",
     work: "Our work",
     blog: "Blog",
     aboutUs: "About us",

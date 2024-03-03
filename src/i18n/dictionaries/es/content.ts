@@ -2,11 +2,11 @@ const landing = {
   hero: {
     primary: "Diseño Web Murcia",
     secondary:
-      "Diseño de <strong>páginas web profesionales</strong> para empresas de todos los tamaños y autónomos",
+      "Diseño de <strong>páginas web profesionales</strong> para empresas de todos los tamaños y autónomos.",
     tertiary:
-      "Somos <strong class='animate-text'>diseñadores web</strong> y además expertos en <strong>SEO</strong> y <strong>posicionamiento web Murcia</strong>",
+      "Somos <strong class='animate-text'>diseñadores web</strong> y además expertos en <strong>SEO</strong> y <strong>posicionamiento web Murcia</strong>.",
     quaternary:
-      "Nos comprometemos a hacer que tu negocio destaque en internet a un precio inmejorable (desde 150€)",
+      "Nos comprometemos a hacer que tu negocio destaque en internet a un precio inmejorable (desde 150€).",
     cta: "Consulta sin compromiso",
   },
 };
@@ -15,16 +15,16 @@ const disenowebmurcia = {
   hero: {
     primary: "Diseño Web Murcia",
     secondary:
-      "Diseño de <strong>páginas web</strong> elegantes y eficaces que consiguen clientes, resultados garantizados. Somos diseñadores web de confianza, experimentados y nos preocupamos de verdad por conseguir que tu negocio mejore",
+      "Diseño de <strong>páginas web</strong> elegantes y eficaces que consiguen clientes, resultados garantizados. Somos diseñadores web de confianza, experimentados y nos preocupamos de verdad por conseguir que tu negocio mejore.",
     tertiary:
-      "No solo es un diseño web, también llevamos a cabo optimización <strong>SEO y posicionamiento web</strong>. De nada sirve una página web si esta no sale en los primeros resultados de Google, llevaremos tu visibilidad online al siguiente nivel a un <strong>precio inmejorable</strong>",
+      "No solo es un diseño web, también llevamos a cabo optimización <strong>SEO y posicionamiento web</strong>. De nada sirve una página web si esta no sale en los primeros resultados de Google, llevaremos tu visibilidad online al siguiente nivel a un <strong>precio inmejorable</strong>.",
   },
   textLeft: {
     title: "Páginas Web en Murcia",
     primary:
-      "Somos una agencia de <strong class='animate-text'>diseño de páginas web</strong> situada en Murcia, conocemos todos los lugares de la región y alrededores, y tenemos experiencia trabajando con negocios locales de todos los tamaños",
+      "Somos una agencia de <strong class='animate-text'>diseño de páginas web</strong> situada en Murcia, conocemos todos los lugares de la región y alrededores, y tenemos experiencia trabajando con negocios locales de todos los tamaños.",
     secondary:
-      "En el actual escenario digital de Murcia, encontrar la agencia adecuada para el <strong>diseño y desarrollo de páginas web</strong> puede marcar la diferencia. En lo que <strong>creación de páginas web</strong> respecta, Webllope puede orgullosamente decir que es una empresa de máxima calidad, no solo producimos resultados excepcionales sino que nos preocupamos realmente porque nuestros clientes triunfen",
+      "En el actual escenario digital de Murcia, encontrar la agencia adecuada para el <strong>diseño y desarrollo de páginas web</strong> puede marcar la diferencia. En lo que <strong>creación de páginas web</strong> respecta, Webllope puede orgullosamente decir que es una empresa de máxima calidad, no solo producimos resultados excepcionales sino que nos preocupamos realmente porque nuestros clientes triunfen.",
   },
   textRight: {
     title: "Empresa de Diseño Web en Murcia",
@@ -41,6 +41,39 @@ const disenowebmurcia = {
     secondary:
       "Si necesitas una <strong>página web para tu negocio</strong> que sea atractiva y al mismo tiempo optimizada para que aparezca en los primeros resultados de Google, no dudes en contactar con nosotros. Estamos especializados en <strong>SEO en Murcia</strong> y en el <strong>diseño de tiendas online</strong>.",
     cta: "Ver nuestros servicios",
+  },
+};
+
+const disenoTiendasOnlineMurcia = {
+  hero: {
+    primary: "Diseño de Tiendas Online en Murcia",
+    secondary:
+      "Monta tu <strong>tienda online</strong> y empieza a vender tus productos en internet. Diseñamos tu tienda con las mejores tecnologías y herramientas de calidad.",
+    tertiary:
+      "Si necesitas un <i>e-commerce</i> que sea atractivo, consiga ventas y al mismo tiempo optimizada para que aparezca en los primeros resultados de Google, no dudes en contactar con nosotros. Estamos especializados en <strong>SEO en Murcia</strong> y en el <strong>diseño de tiendas online</strong>.",
+  },
+  textLeft: {
+    title: "Crear tienda online en Murcia",
+    primary:
+      "Si buscas <strong class='animate-text'>crear tu tienda online</strong> que te ofrezca un servicio completo, has llegado al lugar correcto. En Webllope no solo nos encargamos de la creación de tiendas online, si no que también nos preocupamos por el posicionamiento web y el SEO de tu tienda.",
+    secondary:
+      "Si necesitas una <strong>tienda online para tu negocio</strong>, nos comprometemos a cumplir tus expectativas e incluso superarlas.",
+  },
+  textRight: {
+    title: "Empresa de Diseño de Tiendas Online en Murcia",
+    primary:
+      "Si te interesa <strong>contratar un diseño de tiendas online en Murcia</strong> estás en el sitio correcto, y si has llegado hasta esta página es porque hemos debido hacer un posicionamiento web efectivo. Nosotros mismos hemos hecho el SEO de esta página, por lo que si has llegado hasta aquí es porque sabemos lo que hacemos.",
+    secondary:
+      "Para conocer el <strong>presupuesto de una tienda online</strong>, no dudes en contactar con nosotros, te haremos un presupuesto a medida. No te preocupes, no te vamos a cobrar un precio desorbitado, somos una empresa de <strong>diseño de tiendas online para pymes</strong> y queremos que tu negocio crezca junto a nosotros.",
+    cta: "Contacta con nosotros",
+  },
+  textOnly: {
+    title: "Desarrollo de Tiendas Online Profesionales",
+    primary:
+      "No te conformes con cualquier tipo de <strong>e-commerce</strong> para tu negocio, si buscas una tienda online que convierta visitas en ventas y que además esté optimizada para que aparezca en los primeros resultados de Google, has llegado al lugar correcto.",
+    secondary:
+      "Nos comprometemos a crear una <strong>página de ventas online</strong> que sea eficaz, el cliente no tendrá ninguna duda a la hora de su utilización ya que se podrá hacer compras de forma intuitiva y sencilla. No dudes en contactar, no pierdes nada por ello.",
+    cta: "Contacta sin compromiso",
   },
 };
 
@@ -101,12 +134,12 @@ const briefEcommerceInfo = {
   firstP:
     "Tenemos amplios conocimientos de ingeniería web y por supuesto el desarrollo y <strong>diseño de tiendas online</strong> no es ningún misterio para nosotros. Montamos tu <strong>ecommerce</strong> usando tecnologías punteras y herramientas prestigiosas de mucha calidad ",
   secondP:
-    "Asegurando una <strong>página web eficiente</strong> y lo más importante, eficaz (que consiga ventas). Construimos tiendas diseñadas para hacer el proceso de compra online al cliente lo más intuitivo y sencillo que puedas imaginar. ¡Obtén tu <strong>tienda de Murcia online</strong> ahora!.",
+    "Asegurando una <strong>página web eficiente</strong> y lo más importante, eficaz (que consiga ventas). Construimos tiendas diseñadas para hacer el proceso de compra online al cliente lo más intuitivo y sencillo que puedas imaginar. ¡Obtén tu <strong>tienda de Murcia online</strong> ahora!",
   cta: "Contacta sin compromiso",
 };
 
 const briefSeoInfo = {
-  title: "SEO en Murcia",
+  title: "Diseñador Web Murcia",
   firstP:
     "No somos una <strong>empresa de diseño web</strong> común y corriente, nuestros fundadores Daniel Maestre y Jose María Martínez son Ingenieros de Software con un amplio conocimiento del SEO y SEM. Estás en el lugar correcto si necesitas una <strong>página web para tu negocio</strong> llamativa y al mismo tiempo optimizada de forma que salga en las búsquedas en Google de los usuarios y potenciales clientes.",
   secondP:
@@ -391,12 +424,23 @@ const seo = {
     description:
       "Como creadores de páginas web exhibimos los sitios web que elevaron a nuestros clientes al siguiente nivel digital en internet.",
   },
+  disenoWebMurcia: {
+    title: "Diseño Web Murcia. Creamos tu Página Web Perfecta",
+    description:
+      "Somos diseñadores de páginas web con más de 5 años de experiencia. Creamos páginas web profesionales y nos preocupamos por tu éxito de verdad.",
+  },
+  disenoTiendasOnlineMurcia: {
+    title: "Diseño de Tiendas Online en Murcia. Crea tu e-commerce ahora",
+    description:
+      "Diseño de tienda online en Murcia. Creamos tu tienda con las mejores tecnologías y herramientas de calidad.",
+  },
 };
 
 export const content = {
   ...misc,
   landing,
   disenowebmurcia,
+  disenoTiendasOnlineMurcia,
   features,
   logos,
   cta,

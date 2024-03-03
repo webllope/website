@@ -43,6 +43,39 @@ const disenowebmurcia = {
   },
 };
 
+const disenoTiendasOnlineMurcia = {
+  hero: {
+    primary: "E-commerce Design Murcia",
+    secondary:
+      "Set up your own online store and start selling your products on the internet. We design your store with the best technologies and quality tools.",
+    tertiary:
+      "If you need an <i>e-commerce</i> that is attractive and at the same time optimized to appear in the first results of Google, do not hesitate to contact us. We specialize in <strong>SEO in Murcia</strong> and in the <strong>design of online stores</strong>.",
+  },
+  textLeft: {
+    title: "Create online store in Murcia",
+    primary:
+      "If you are looking for <strong class='animate-text'>creating your online store</strong> that offers you a complete service, you have come to the right place. At Webllope we not only take care of creating online stores, but we also take care of web positioning and SEO of your store.",
+    secondary:
+      "If you need an <strong>online store for your business</strong> that is attractive and at the same time optimized to appear in the first results of Google, do not hesitate to contact us. We specialize in <strong>SEO in Murcia</strong> and in the <strong>design of online stores</strong>.",
+  },
+  textRight: {
+    title: "Ecommerce Design Company in Murcia",
+    primary:
+      "If you are interested in <strong>hiring ecommerce design in Murcia</strong> you are in the right place, and if you have come to this page it is because we must have done effective web positioning. We have done the SEO of this page ourselves, so if you have come here it is because we know what we are doing.",
+    secondary:
+      "To know the <strong>budget of an online store</strong>, do not hesitate to contact us, we will make a budget tailored to you. Do not worry, we are not going to charge you an exorbitant price, we are an <strong>ecommerce design company for SMEs</strong> and we want your business to grow with us.",
+    cta: "Contact us",
+  },
+  textOnly: {
+    title: "Professional Online Store Development",
+    primary:
+      "Do not settle for any type of <strong>e-commerce</strong> for your business, if you are looking for an online store that converts visits into sales and that is also optimized to appear in the first results of Google, you have come to the right place.",
+    secondary:
+      "We are committed to creating an <strong>online sales page</strong> that is effective, the customer will have no doubt when using it as purchases can be made intuitively and simply. Do not hesitate to contact, you have nothing to lose.",
+    cta: "Contact us without obligation",
+  },
+};
+
 const features = {
   primary: "What benefits will having your own website provide you?",
   secondary:
@@ -310,7 +343,7 @@ const briefEcommerceInfo = {
 };
 
 const briefSeoInfo = {
-  title: "Web positioning in Murcia",
+  title: "Website Design Murcia",
   firstP:
     "We are not a common web design company, our founders Daniel Maestre and Jose María Martínez are Software Engineers with extensive knowledge of SEO and SEM. You are in the right place if you need a <strong>website for your business</strong> that is striking and at the same time optimized so that it appears in the Google searches of users and potential customers.",
   secondP:
@@ -388,12 +421,23 @@ const seo = {
     description:
       "As creators of websites we exhibit the websites that took our clients to the next digital level on the internet.",
   },
+  disenoWebMurcia: {
+    title: "Website Design Murcia. We Create Your Perfect Website",
+    description:
+      "We are website designers with more than 5 years of experience. We create professional websites and we really care about your success.",
+  },
+  disenoTiendasOnlineMurcia: {
+    title: "Online Store Design in Murcia. Create your e-commerce now",
+    description:
+      "Online store design in Murcia. We create your store with the best technologies and quality tools.",
+  },
 };
 
 export const content = {
   ...misc,
   landing,
   disenowebmurcia,
+  disenoTiendasOnlineMurcia,
   features,
   logos,
   cta,
