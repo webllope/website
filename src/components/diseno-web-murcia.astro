@@ -17,15 +17,17 @@ import { getLangFromUrl, useTranslations } from "@i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-
 ---
 
-<Layout title={t("seo.disenoWebMurcia.title")} description={t("seo.disenoWebMurcia.description")}>
+<Layout
+  title={t("seo.disenoWebMurcia.title")}
+  description={t("seo.disenoWebMurcia.description")}>
   <Background />
   <Hero
     primaryText={t("disenowebmurcia.hero.primary")}
     secondaryText={t("disenowebmurcia.hero.secondary")}
-    tertiaryText={t("disenowebmurcia.hero.tertiary")}>
+    tertiaryText={t("disenowebmurcia.hero.tertiary")}
+    slotClasses="w-4/12">
     <ContactForm />
   </Hero>
   <TextLeftSection
