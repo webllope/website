@@ -77,6 +77,40 @@ const disenoTiendasOnlineMurcia = {
   },
 };
 
+const posicionamientoWebMurcia = {
+  hero: {
+    primary: "Posicionamiento Web Murcia",
+    secondary: ".",
+    tertiary:
+      "Nos comprometemos a hacer que tu negocio destaque en internet a un precio inmejorable (desde 150€).",
+    cta: "Consulta sin compromiso",
+  },
+  textLeft: {
+    title: "Posicionamiento Web en Murcia",
+    primary:
+      "Si buscas una <strong class='animate-text'>empresa de posicionamiento web en Murcia</strong> que te ofrezca un servicio completo, has llegado al lugar correcto. En Webllope no solo nos encargamos de la creación de páginas web, si no que también nos preocupamos por el posicionamiento web y el SEO de tu página.",
+    secondary:
+      "Si necesitas una <strong>página web para tu negocio</strong> que sea atractiva esté optimizada de forma que salga en los primeros resultados de Google, no dudes en contactar con nosotros.",
+    cta: "Ver nuestros servicios",
+  },
+  textRight: {
+    title: "Empresa de Posicionamiento Web en Murcia",
+    primary:
+      "Si te interesa <strong>contratar un posicionamiento web en Murcia</strong> estás en el sitio correcto, y si has llegado hasta esta página es porque hemos debido hacer un posicionamiento web efectivo. Nosotros mismos hemos hecho el SEO de esta página, por lo que si has llegado hasta aquí es porque sabemos lo que hacemos.",
+    secondary:
+      "Para conocer el <strong>presupuesto de posicionamiento web</strong>, no dudes en contactar con nosotros, te haremos un presupuesto a medida. No te preocupes, no te vamos a cobrar un precio desorbitado, Webllope ofrece servicio de <strong>posicionamiento web para pymes</strong> y queremos que tu negocio crezca junto a nosotros.",
+    cta: "Contacta con nosotros",
+  },
+  textOnly: {
+    title: "Posicionamiento Web Profesional",
+    primary:
+      "Si buscas una <strong class='animate-text'>empresa de posicionamiento web en Murcia</strong> que te ofrezca un servicio completo, has llegado al lugar correcto. En Webllope no solo nos encargamos de la creación de páginas web, si no que también nos preocupamos por el posicionamiento web y el SEO de tu página.",
+    secondary:
+      "Si necesitas una <strong>página web para tu negocio</strong> que sea atractiva esté optimizada de forma que salga en los primeros resultados de Google, no dudes en contactar con nosotros.",
+    cta: "Ver nuestros servicios",
+  },
+};
+
 const features = {
   primary: "Beneficios de hacer tu página web con nosotros",
   secondary:
@@ -441,6 +475,7 @@ export const content = {
   landing,
   disenowebmurcia,
   disenoTiendasOnlineMurcia,
+  posicionamientoWebMurcia,
   features,
   logos,
   cta,
