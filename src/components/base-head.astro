@@ -36,6 +36,15 @@ const canonicalURLString = new URL(Astro.url.pathname, domainURL).toString();
 const { title, description } = Astro.props;
 const makeTitle = title ? title : "Webllope";
 ---
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YCK7JDEBWB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YCK7JDEBWB');
+</script>
 <meta charset="UTF-8" />
 <meta
   name="viewport"
