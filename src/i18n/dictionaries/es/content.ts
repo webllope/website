@@ -80,34 +80,65 @@ const disenoTiendasOnlineMurcia = {
 const posicionamientoWebMurcia = {
   hero: {
     primary: "Posicionamiento Web Murcia",
-    secondary: ".",
+    secondary:
+      "¡Optimiza tu <strong>presencia online</strong> en Murcia con nuestro Servicio de Posicionamiento Web!",
     tertiary:
-      "Nos comprometemos a hacer que tu negocio destaque en internet a un precio inmejorable (desde 150€).",
-    cta: "Consulta sin compromiso",
+      "Destaca en las búsquedas de la región y atrae a más <strong class='animate-text'>clientes potenciales</strong>. Gracias a este servicio, tu página web mejorará en visibilidad y saldrá en los resultados de Google.",
   },
   textLeft: {
-    title: "Posicionamiento Web en Murcia",
+    title: "Diseño web y Posicionamiento en Murcia",
     primary:
-      "Si buscas una <strong class='animate-text'>empresa de posicionamiento web en Murcia</strong> que te ofrezca un servicio completo, has llegado al lugar correcto. En Webllope no solo nos encargamos de la creación de páginas web, si no que también nos preocupamos por el posicionamiento web y el SEO de tu página.",
+      "Webllope es una <strong>empresa de posicionamiento web en Murcia</strong> que te ofrece un servicio completo, has llegado al lugar correcto. En Webllope no solo nos encargamos de la creación de páginas web, si no que también nos preocupamos por el posicionamiento web y el SEO de tu página.",
     secondary:
-      "Si necesitas una <strong>página web para tu negocio</strong> que sea atractiva esté optimizada de forma que salga en los primeros resultados de Google, no dudes en contactar con nosotros.",
-    cta: "Ver nuestros servicios",
+      "Ofrecemos un enfoque integral, combinando diseño web y <strong>estrategias de posicionamiento</strong> para potenciar tu presencia online en Murcia.",
   },
   textRight: {
     title: "Empresa de Posicionamiento Web en Murcia",
     primary:
-      "Si te interesa <strong>contratar un posicionamiento web en Murcia</strong> estás en el sitio correcto, y si has llegado hasta esta página es porque hemos debido hacer un posicionamiento web efectivo. Nosotros mismos hemos hecho el SEO de esta página, por lo que si has llegado hasta aquí es porque sabemos lo que hacemos.",
+      "En <strong class='animate-text'>Webllope</strong>, entendemos el mercado local en Murcia. Nuestro enfoque personalizado garantiza resultados efectivos en términos de posicionamiento web y diseño adaptado a las necesidades de tu negocio.",
     secondary:
       "Para conocer el <strong>presupuesto de posicionamiento web</strong>, no dudes en contactar con nosotros, te haremos un presupuesto a medida. No te preocupes, no te vamos a cobrar un precio desorbitado, Webllope ofrece servicio de <strong>posicionamiento web para pymes</strong> y queremos que tu negocio crezca junto a nosotros.",
     cta: "Contacta con nosotros",
   },
   textOnly: {
-    title: "Posicionamiento Web Profesional",
+    title: "Presupuesto del posicionamiento web en Murcia",
     primary:
-      "Si buscas una <strong class='animate-text'>empresa de posicionamiento web en Murcia</strong> que te ofrezca un servicio completo, has llegado al lugar correcto. En Webllope no solo nos encargamos de la creación de páginas web, si no que también nos preocupamos por el posicionamiento web y el SEO de tu página.",
+      "El presupuesto depende mayoritariamente del servicio que ofrezca tu negocio, ya que esto definirá la dificultad de posicionar tu página web en los primeros resultados de Google. No obstante, no te preocupes, te haremos un presupuesto a medida y será el más asequible del mercado.",
     secondary:
-      "Si necesitas una <strong>página web para tu negocio</strong> que sea atractiva esté optimizada de forma que salga en los primeros resultados de Google, no dudes en contactar con nosotros.",
-    cta: "Ver nuestros servicios",
+      "Obtén un presupuesto personalizado para tu estrategia de <strong>posicionamiento web en Murcia</strong>. Estamos aquí para ayudarte a alcanzar tus objetivos online.",
+  },
+};
+
+const seoMurcia = {
+  hero: {
+    primary: "SEO en Murcia",
+    secondary:
+      "Webllope es una <strong>agencia de SEO en Murcia</strong> y contamos con <strong>expertos</strong> en el equipo.",
+    tertiary:
+      "El SEO es el proceso de optimización de una página web para que esta aparezca en las primeras posiciones de la búsqueda de <strong>Google</strong>. Te ayudaremos a destacar en las búsquedas locales. Descubre cómo podemos llevar tu presencia online al siguiente nivel.",
+    quaternary:
+      "En todo momento sabrás qué trabajo hemos realizado, en que se ha invertido el dinero, y qué resultados hemos conseguido, el SEO es un proceso largo en el que ambas partes debemos mantener la comunicación para mantener un <strong>100% de transparencia</strong>.",
+  },
+  textLeft: {
+    title: "Consultor SEO en Murcia",
+    primary:
+      "Nuestros <strong class='animate-text'>expertos en SEO en Murcia</strong> analizarán y mejorarán tu posición en los motores de búsqueda. Contacta sin compromiso y envía tu petición, en menos de 24 horas tendrás un presupuesto a medida.",
+    secondary:
+      "En <strong>Webllope</strong>, entendemos la importancia de la optimización local en Murcia. Nuestro enfoque personalizado garantiza resultados tangibles y sostenibles en el tiempo, mejoraremos tu <strong>posicionamiento seo</strong> y por lo tanto tu cantidad de tráfico y ventas.",
+  },
+  textRight: {
+    title: "Tu empresa necesita SEO",
+    primary:
+      "La visibilidad online es clave para el éxito empresarial. ¿Quieres que tu empresa en Murcia destaque entre la competencia local? El SEO es la respuesta. Descubre cómo nuestras estrategias personalizadas pueden transformar tu presencia en línea y atraer <strong>clientes relevantes</strong>.",
+    secondary:
+      "Posicionarte como un referente en tu industria aumentará la <strong>confianza de los clientes locales</strong>. Al ver tu página web rápidamente entenderán vuestro compromiso y responsabilidad con el cliente.",
+    cta: "Contacta con nosotros",
+  },
+  textOnly: {
+    title: "Presupuesto del SEO en Murcia",
+    primary:
+      "Las estrategias de SEO bien ejecutadas generan resultados a largo plazo, ofreciendo un ROI (beneficios de tu inversión) significativo. Sin embargo la inversión inicial podría ser considerable dependiendo de la competencia que haya en el sector de tu negocio.",
+    secondary: "El <strong>posicionamiento seo en Murcia</strong> tiene sus particularidades, por lo que es importante que te pongas en manos de expertos. No dudes en contactar con nosotros sin compromiso, nos preocupamos genuinamente porque tu negocio crezca y tenga éxito.",
   },
 };
 
@@ -468,6 +499,16 @@ const seo = {
     description:
       "Diseño de tienda online en Murcia. Creamos tu tienda con las mejores tecnologías y herramientas de calidad.",
   },
+  posicionamientoWebMurcia: {
+    title: "Posicionamiento Web Murcia. Damos presupuesto sin compromiso",
+    description:
+      "Si quieres posicionar una página web en Murcia te haremos un presupuesto a medida y conseguiremos que tu página web destaque y consiga clientes.",
+  },
+  seoMurcia: {
+    title: "SEO en Murcia. Nuestra agencia SEO te hará destacar",
+    description:
+      "En Webllope no solo somos expertos en hacer páginas web, también hacemos el mejor SEO y nos preocupamos por el éxito de tu negocio.",
+  },
 };
 
 export const content = {
@@ -476,6 +517,7 @@ export const content = {
   disenowebmurcia,
   disenoTiendasOnlineMurcia,
   posicionamientoWebMurcia,
+  seoMurcia,
   features,
   logos,
   cta,

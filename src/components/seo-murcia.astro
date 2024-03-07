@@ -1,0 +1,69 @@
+---
+import Hero from "@components/hero.astro";
+import Logos from "@components/logos.astro";
+import Layout from "@layouts/layout.astro";
+import Background from "@components/background.astro";
+import TextLeftSection from "@components/text-left-section.astro";
+import TextRightSection from "@components/text-right-section.astro";
+import TextOnlySection from "@components/text-only-section.astro";
+import Clients from "@components/clients.astro";
+import ContactForm from "@components/contact-form.astro";
+
+import { Image } from "astro:assets";
+import seoImage1 from "@assets/seoImage2.webp";
+import seoImage2 from "@assets/seoImage.webp";
+
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout
+  title={t("seo.seoMurcia.title")}
+  description={t("seo.seoMurcia.description")}>
+  <Background />
+  <Hero
+    primaryText={t("seoMurcia.hero.primary")}
+    secondaryText={t("seoMurcia.hero.secondary")}
+    tertiaryText={t("seoMurcia.hero.tertiary")}
+    quaternaryText={t("seoMurcia.hero.quaternary")}
+    slotClasses="lg:w-4/12">
+    <ContactForm />
+  </Hero>
+  <TextLeftSection
+    title={t("seoMurcia.textLeft.title")}
+    firstP={t("seoMurcia.textLeft.primary")}
+    secondP={t("seoMurcia.textLeft.secondary")}>
+    <Image
+      alt="SEO en Murcia Imagen"
+      src={seoImage1}
+      width="220"
+      height="443"
+      class="h-full mx-auto mt-6"
+    />
+  </TextLeftSection>
+  <Clients />
+  <TextRightSection
+    title={t("seoMurcia.textRight.title")}
+    firstP={t("seoMurcia.textRight.primary")}
+    secondP={t("seoMurcia.textRight.secondary")}
+    cta={{
+      text: t("seoMurcia.textRight.cta"),
+      link: "/contacto",
+    }}>
+    <Image
+      alt="Posicionamiento SEO en Murcia Imagen"
+      class="rounded-xl h-fit my-auto"
+      width={600}
+      height={350}
+      src={seoImage2}
+    />
+  </TextRightSection>
+  <Logos />
+  <TextOnlySection
+    title={t("seoMurcia.textOnly.title")}
+    firstP={t("seoMurcia.textOnly.primary")}
+    secondP={t("seoMurcia.textOnly.secondary")}
+  />
+</Layout>

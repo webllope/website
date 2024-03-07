@@ -77,6 +77,72 @@ const disenoTiendasOnlineMurcia = {
   },
 };
 
+const posicionamientoWebMurcia = {
+  hero: {
+    primary: "Web Positioning Murcia",
+    secondary:
+      "Optimize your <strong>online presence</strong> in Murcia with our Web Positioning Service!",
+    tertiary:
+      "Stand out in the region's searches and attract more <strong>potential customers</strong>. Thanks to this service, your website will improve in visibility and appear in Google results.",
+  },
+  textLeft: {
+    title: "Web Design and Positioning in Murcia",
+    primary:
+      "Webllope is a <strong>web positioning company in Murcia</strong> that offers you a complete service, you have come to the right place. At Webllope we not only take care of creating web pages, but we also take care of web positioning and SEO of your page.",
+    secondary:
+      "We offer a comprehensive approach, combining web design and <strong>positioning strategies</strong> to enhance your online presence in Murcia.",
+  },
+  textRight: {
+    title: "Web Positioning Company in Murcia",
+    primary:
+      "At <strong class='animate-text'>Webllope</strong>, we understand the local market in Murcia. Our personalized approach guarantees effective results in terms of web positioning and design tailored to the needs of your business.",
+    secondary:
+      "To know the <strong>web positioning budget</strong>, do not hesitate to contact us, we will make a budget tailored to you. Do not worry, we are not going to charge you an exorbitant price, Webllope offers <strong>web positioning service for SMEs</strong> and we want your business to grow with us.",
+    cta: "Contact us",
+  },
+  textOnly: {
+    title: "Web positioning budget in Murcia",
+    primary:
+      "The budget depends mainly on the service offered by your business, as this will define the difficulty of positioning your website in the first results of Google. However, do not worry, we will make a budget tailored to you and it will be the most affordable on the market.",
+    secondary:
+      "Get a personalized budget for your <strong>web positioning strategy in Murcia</strong>. We are here to help you achieve your online goals.",
+  },
+};
+
+const seoMurcia = {
+  hero: {
+    primary: "SEO in Murcia",
+    secondary:
+      "Webllope is an <strong>SEO agency in Murcia</strong> and we have <strong>experts</strong> in the team.",
+    tertiary:
+      "SEO is the process of optimizing a web page so that it appears in the first positions of the <strong>Google</strong> search. We will help you stand out in local searches. Discover how we can take your online presence to the next level.",
+    quaternary:
+      "At all times you will know what work we have done, what the money has been invested in, and what results we have achieved, SEO is a long process in which both parties must maintain communication to maintain <strong>100% transparency</strong>.",
+  },
+  textLeft: {
+    title: "SEO Consultant in Murcia",
+    primary:
+      "Our <strong class='animate-text'>SEO experts in Murcia</strong> will analyze and improve your position in search engines. Contact us without obligation and send your request, in less than 24 hours you will have a budget tailored to you.",
+    secondary:
+      "At <strong>Webllope</strong>, we understand the importance of local optimization in Murcia. Our personalized approach guarantees tangible and sustainable results over time, we will improve your <strong>seo positioning</strong> and therefore your amount of traffic and sales.",
+  },
+  textRight: {
+    title: "Your company needs SEO",
+    primary:
+      "Online visibility is key to business success. Do you want your company in Murcia to stand out among local competition? SEO is the answer. Discover how our personalized strategies can transform your online presence and attract <strong>relevant customers</strong>.",
+    secondary:
+      "Positioning yourself as a reference in your industry will increase the <strong>trust of local customers</strong>. By quickly seeing your website, they will understand your commitment and responsibility to the customer.",
+    cta: "Contact us",
+  },
+  textOnly: {
+    title: "SEO budget in Murcia",
+    primary:
+      "Well-executed SEO strategies generate long-term results, offering a significant ROI (return on investment). However, the initial investment could be considerable depending on the competition in your business sector.",
+    secondary:
+      "<strong>SEO positioning in Murcia</strong> has its particularities, so it is important that you put yourself in the hands of experts. Do not hesitate to contact us without obligation, we genuinely care that your business grows and is successful.",
+  },
+};
+
 const features = {
   primary: "What benefits will having your own website provide you?",
   secondary:
@@ -432,6 +498,16 @@ const seo = {
     description:
       "Online store design in Murcia. We create your store with the best technologies and quality tools.",
   },
+  posicionamientoWebMurcia: {
+    title: "Web Positioning Murcia. We give a budget without obligation",
+    description:
+      "If you want to position a web page in Murcia we will make a budget tailored to you and we will get your web page to stand out and get customers.",
+  },
+  seoMurcia: {
+    title: "SEO in Murcia. Our SEO agency will make you stand out",
+    description:
+      "At Webllope we are not only experts in making websites, we also do the best SEO and we care about the success of your business.",
+  },
 };
 
 export const content = {
@@ -439,6 +515,8 @@ export const content = {
   landing,
   disenowebmurcia,
   disenoTiendasOnlineMurcia,
+  posicionamientoWebMurcia,
+  seoMurcia,
   features,
   logos,
   cta,
