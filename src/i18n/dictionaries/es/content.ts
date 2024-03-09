@@ -4,7 +4,7 @@ const landing = {
     secondary:
       "Diseño de <strong>páginas web profesionales</strong> para empresas de todos los tamaños y autónomos.",
     tertiary:
-      "Somos <strong class='animate-text'>diseñadores web</strong> y además expertos en <strong>SEO</strong> y <strong>posicionamiento web Murcia</strong>.",
+      "Somos <strong class='animate-text'>diseñadores web</strong> y además expertos en SEO y <strong>posicionamiento web Murcia</strong>.",
     quaternary:
       "Nos comprometemos a hacer que tu negocio destaque en internet a un precio inmejorable (desde 150€).",
     cta: "Consulta sin compromiso",
@@ -228,11 +228,11 @@ const roadmap = {
   },
   third: {
     paragraph1:
-      "Se habla la posibilidad de que se implementae SEO (Posicionamiento web) en la página. En caso afirmativo, el siguiente paso nuestro equipo procede con el estudio de palabras clave o <i>keywords</i> y la configuración para que Google rastree la página y la indexe en los resultados de búsqueda.",
+      "Se habla la posibilidad de que se implemente SEO (Posicionamiento web) en la página. En caso afirmativo, el siguiente paso nuestro equipo procede con el estudio de palabras clave o <i>keywords</i> y la configuración para que Google rastree la página y la indexe en los resultados de búsqueda.",
   },
   fourth: {
     paragraph1:
-      "Por último, nuestro equipo procede con las pruebas de calidad, de rendimiento, y de seguridad.",
+      "Por último, nuestro equipo de <strong>diseño web Murcia</strong> procede con las pruebas de calidad, de rendimiento, y de seguridad.",
     paragraph2:
       "Cuando cada prueba se haya realizado satisfactoriamente, se procede con el lanzamiento de la página web en el domino que se haya elegido (nombredeempresa.es, por ejemplo)",
   },

@@ -14,7 +14,7 @@ tags: [webdesign, seo]
 Más del 94% de las búsquedas en internet pasan por Google. Es decir, si en los primeros resultados de estas búsquedas no aparece tu negocio, significa que algo se está haciendo mal o directamente no se está haciendo. SEO significaría en español optimización de los motores de búsqueda, que vendría a ser la optimización que añadas a tu página para que esta se posicione en las búsquedas de Google. Es esencial tanto para individuos como para empresas y a pesar de que suene como algo complejo y técnico, en este artículo mostraremos los conceptos más importantes y **básicos del SEO**, estas pequeñas acciones podrían cambiar por completo los resultados que obtenga tu **página web**. ¡Bienvenido a este **curso de SEO básico gratis**
 
 <figure>
-<img src="/blogImages/seoImage.webp" title="SEO de tu página web" alt="SEO de tu página web imagen" width="1084" height="772" loading="lazy"/>
+<img src="/blogImages/agencia-seo-murcia.webp" title="SEO de tu página web" alt="SEO de tu página web imagen" width="1084" height="772" loading="lazy"/>
 <figcaption class="text-center">SEO en tu página web<figcaption>
 </figure>
 
