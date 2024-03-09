@@ -1,6 +1,5 @@
 ---
 // @ts-ignore
-import SpeedInsights from "@vercel/speed-insights/astro";
 
 import BaseHead from "@components/base-head.astro";
 import Footer from "@components/footer.astro";
@@ -27,7 +26,6 @@ const { ...head } = Astro.props;
 <html lang={lang}>
   <head>
     <BaseHead {...head} />
-    <SpeedInsights />
     <style is:global>
       /* Improve Page speed */
       /* https://css-tricks.com/almanac/properties/c/content-visibility/ */
