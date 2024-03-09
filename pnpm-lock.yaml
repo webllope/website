@@ -29,9 +29,6 @@ dependencies:
   '@tailwindcss/typography':
     specifier: ^0.5.9
     version: 0.5.10(tailwindcss@3.4.1)
-  '@vercel/speed-insights':
-    specifier: ^1.0.3
-    version: 1.0.3
   astro:
     specifier: ^4.0.6
     version: 4.1.2(@types/node@14.18.33)(typescript@4.9.5)
@@ -1294,11 +1291,6 @@ packages:
   /@vercel/ruby@2.0.4:
     resolution: {integrity: sha512-EpZyfF6wFGzFDmubFIh/EZtYpKindmXx/69xSfKEBTVU0afgljyOOICbyZePe5tvigfOEBLSLgrt/2nN+MlLtA==}
     dev: true
-
-  /@vercel/speed-insights@1.0.3:
-    resolution: {integrity: sha512-bKIt0HDdF6hP2bJZyS+za3k6sKeAXNRLSIUbwVwvyvKdsHBWS6ILBvmD1wXHZZyTqjU1TP7dTE/F6lHM6rBdKA==}
-    requiresBuild: true
-    dev: false
 
   /@vercel/static-build@2.0.17:
     resolution: {integrity: sha512-rSDHLMrSW56Zi+ReOm1B06e3Ltr27IGLhk/Gz3kLEo2RDYEi4MaiU5n4sJX1jN8zdrVwVjs7gd/rLSlbzeKf6g==}

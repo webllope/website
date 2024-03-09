@@ -19,7 +19,6 @@
     "@iconify-json/devicon": "^1.1.33",
     "@sendgrid/mail": "^8.1.1",
     "@tailwindcss/typography": "^0.5.9",
-    "@vercel/speed-insights": "^1.0.3",
     "astro": "^4.0.6",
     "astro-icon": "^0.8.1",
     "astro-navbar": "^2.0.1",
