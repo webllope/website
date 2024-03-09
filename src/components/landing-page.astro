@@ -13,7 +13,7 @@ import ServiceRoadmap from "@components/service-roadmap/service-roadmap.astro";
 
 import officeImage from "@assets/office2.webp";
 import seoImage from "@assets/seoImage2.webp";
-import heroImage from "@assets/heroImage.webp";
+import heroImage from "@assets/diseño-web-murcia.webp";
 import { Image } from "astro:assets";
 
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
@@ -40,7 +40,7 @@ const client = await getEntry("clients", "salonchick");
       text: t("landing.hero.cta"),
     }}>
     <Image
-      alt="Webllope Image"
+      alt="Diseño Web Murcia Image"
       class="transform scale-x-[-1] drop-shadow-xl"
       loading="eager"
       width={400}
@@ -57,7 +57,7 @@ const client = await getEntry("clients", "salonchick");
       text: t("briefAboutUs.cta"),
     }}>
     <Image
-      alt="Imagen en oficina"
+      alt="Páginas Web Profesionales Murcia Image"
       width={359}
       height={524}
       class="rounded-xl"
@@ -74,7 +74,7 @@ const client = await getEntry("clients", "salonchick");
       text: t("briefSeoInfo.cta"),
     }}>
     <Image
-      alt="Imagen de SEO"
+      alt="Diseñador Web Murcia Imagen"
       src={seoImage}
       width="220"
       height="443"
