@@ -313,6 +313,18 @@ const blog = {
   readingTime: "Read",
 };
 
+const authors = {
+  sectionHead: {
+    title: {
+      daniel: "Daniel's Articles on Web Design and SEO",
+      chema: "Chema's Articles on Web Design and SEO",
+    },
+    subtitle: "Latest news and articles",
+    description:
+      "Stay up to date with the latest industry news and interesting and useful articles.",
+  },
+};
+
 const ourWork = {
   sectionHead: {
     title: "Our Work",
@@ -483,6 +495,18 @@ const seo = {
     description:
       "In our web development blog you will find detailed information: from current complex technologies to the basics of web design.",
   },
+  author: {
+    daniel: {
+      title: "Daniel's Articles | Webllope",
+      description:
+        "In this blog about web design and varied technology you will fill yourself with knowledge and ideas for your next web project. Don't miss it!",
+    },
+    chema: {
+      title: "Chema's Articles | Webllope",
+      description:
+        "Chema's articles will help you understand the complexity of some technology in a simpler way. Don't miss them!",
+    },
+  },
   ourWork: {
     title: "Our Most Recent Websites | Webllope",
     description:
@@ -531,6 +555,7 @@ export const content = {
   roadmap,
   services,
   blog,
+  authors,
   contact,
   index,
   ourWork,

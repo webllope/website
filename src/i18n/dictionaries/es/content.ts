@@ -138,7 +138,8 @@ const seoMurcia = {
     title: "Presupuesto del SEO en Murcia",
     primary:
       "Las estrategias de SEO bien ejecutadas generan resultados a largo plazo, ofreciendo un ROI (beneficios de tu inversión) significativo. Sin embargo la inversión inicial podría ser considerable dependiendo de la competencia que haya en el sector de tu negocio.",
-    secondary: "El <strong>posicionamiento seo en Murcia</strong> tiene sus particularidades, por lo que es importante que te pongas en manos de expertos. No dudes en contactar con nosotros sin compromiso, nos preocupamos genuinamente porque tu negocio crezca y tenga éxito.",
+    secondary:
+      "El <strong>posicionamiento seo en Murcia</strong> tiene sus particularidades, por lo que es importante que te pongas en manos de expertos. No dudes en contactar con nosotros sin compromiso, nos preocupamos genuinamente porque tu negocio crezca y tenga éxito.",
   },
 };
 
@@ -376,6 +377,18 @@ const blog = {
   readingTime: "Lectura de",
 };
 
+const authors = {
+  sectionHead: {
+    title: {
+      daniel: "Artículos de Daniel sobre diseño web y SEO",
+      chema: "Artículos de Chema sobre diseño web y SEO",
+    },
+    subtitle: "Últimos artículos y noticias",
+    description:
+      "Estate al día con las últimas novedades de la industria e interesantes y útiles artículos.",
+  },
+};
+
 const ourWork = {
   sectionHead: {
     title: "Nuestro trabajo",
@@ -484,6 +497,18 @@ const seo = {
     description:
       "En nuestro blog de desarrollo web encontrarás información detallada: desde tecnologías complejas actuales hasta lo básico del diseño web.",
   },
+  author: {
+    daniel: {
+      title: "Artículos de Daniel | Webllope",
+      description:
+        "En este blog sobre diseño web y tecnología variada te llenarás de conocimiento e ideas para tu próximo proyecto web. ¡No te lo pierdas!",
+    },
+    chema: {
+      title: "Artículos de Chema | Webllope",
+      description:
+        "Los artículos de Chema te ayudarán a entender la complejidad de alguna tecnología de forma más sencilla. ¡No te los pierdas!",
+    },
+  },
   ourWork: {
     title: "Nuestras Páginas Web en Murcia más recientes",
     description:
@@ -535,6 +560,7 @@ export const content = {
   aboutUs,
   services,
   blog,
+  authors,
   index,
   seo,
 };

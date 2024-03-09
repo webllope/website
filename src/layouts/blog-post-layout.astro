@@ -8,6 +8,7 @@ import Background from "@components/background.astro";
 import FromBlog from "@components/from-blog.astro";
 import AboutYourProject from "@components/about-your-project.astro";
 
+import { getRelativeLocaleUrl } from "astro:i18n";
 interface Props {
   frontmatter: CollectionEntry<"blog">["data"];
 }
@@ -38,7 +39,9 @@ const author = await getEntry(frontmatter.author);
           </time>
           <p class="mt-6 text-sm font-semibold text-neutral-950">
             {t("blog.author")}
-            {author?.data.name}, {author?.data.title} | <span class="font-normal"
+            <a class="underline" href={getRelativeLocaleUrl(lang, author.slug)}
+              >{author?.data.name}</a
+            >, {author?.data.title} | <span class="font-normal"
               >{t("blog.readingTime")} {frontmatter.timeNeeded}</span
             >
           </p>
@@ -61,7 +64,7 @@ const author = await getEntry(frontmatter.author);
       class="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-gradient-to-b from-neutral-50">
       <Background />
     </div>
-    <FromBlog variant="secondary" currentPostTitle={frontmatter.title}/>
+    <FromBlog variant="secondary" currentPostTitle={frontmatter.title} />
     <AboutYourProject />
   </div>
 </Layout>
