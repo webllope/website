@@ -12,19 +12,24 @@ const t = useTranslations(lang);
 
 const socialItems = [
   {
-    label: "Facebook",
+    label: "Facebook Icon",
     name: "facebook",
     icon: "mdi:facebook",
   },
   {
-    label: "Instagram",
+    label: "Instagram Icon",
     name: "instagram",
     icon: "mdi:instagram",
   },
   {
-    label: "Twitter",
+    label: "Twitter Icon",
     name: "twitter",
     icon: "mdi:twitter",
+  },
+  {
+    label: "LinkedIn Icon",
+    name: "linkedin",
+    icon: "mdi:linkedin",
   },
 ];
 ---
@@ -107,7 +112,7 @@ const socialItems = [
                       class="transition hover:text-neutral-700"
                       href={social[item.name]}>
                       <Icon
-                        alt={item.label}
+                        title={item.label}
                         class="h-5 md:h-7"
                         name={item.icon}
                       />

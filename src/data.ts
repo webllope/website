@@ -3,7 +3,7 @@ const social = {
   facebook: "https://facebook.com/webllope",
   twitter: "https://x.com/webllope?s=20",
   tiktok: "",
-  linkedin: "",
+  linkedin: "https://www.linkedin.com/company/webllope/",
   github: "https://github.com/webllope",
 };
 
