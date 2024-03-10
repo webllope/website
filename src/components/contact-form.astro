@@ -12,12 +12,15 @@ const fields: Array<{
   type: HTMLInputTypeAttribute;
   label: string;
   autocomplete?: string;
+  pattern?: string;
+  maxlength?: number;
 }> = [
   {
     autocomplete: "name",
     placeholder: " ",
     type: "text",
     name: "name",
+    maxlength: 255,
     label: t("contactForm.fields.name"),
   },
   {
@@ -25,6 +28,7 @@ const fields: Array<{
     placeholder: " ",
     type: "email",
     name: "email",
+    maxlength: 255,
     label: t("contactForm.fields.email"),
   },
   {
@@ -32,13 +36,16 @@ const fields: Array<{
     placeholder: " ",
     type: "text",
     name: "company",
+    maxlength: 255,
     label: t("contactForm.fields.company"),
   },
   {
     autocomplete: "tel",
     placeholder: " ",
     type: "tel",
+    // pattern: "(?:([+]\d{1,4})[-.\s]?)?(?:[(](\d{1,3})[)][-.\s]?)?(\d{1,4})[-.\s]?(\d{1,4})[-.\s]?(\d{1,9})",
     name: "phone",
+    maxlength: 24,
     label: t("contactForm.fields.phone"),
   },
 ];
@@ -66,20 +73,19 @@ const fields: Array<{
         </div>
       ))
     }
-    <div class="group relative z-0 transition-all focus-within:z-10">
-      <textarea
-        required
-        id={`:S${fields.length}:`}
-        rows={3}
-        placeholder=" "
-        class="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-12 text-base/6 text-neutral-950 ring-4 ring-transparent transition focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5 group-first:rounded-t-2xl group-last:rounded-b-2xl"
-      />
-      <label
-        for={`:S${fields.length}:`}
-        class="pointer-events-none absolute left-6 top-10 -mt-3 origin-left text-base/6 text-neutral-500 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-neutral-950 peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-neutral-950">
-        {t("contactForm.fields.message")}
-      </label>
-    </div>
+  </div>
+  <h2 class="font-display text-sm font-semibold text-neutral-950 my-4">
+    {t("contactForm.fields.message")}
+  </h2>
+  <div class="group relative z-0 transition-all focus-within:z-10">
+    <textarea
+      required
+      id={`:S${fields.length}:`}
+      rows={4}
+      placeholder="Escribe tu mensaje..."
+      maxlength={1000}
+      class="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-4 text-base/6 text-neutral-950 ring-4 ring-transparent transition focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5 rounded-t-2xl rounded-b-2xl"
+    />
   </div>
   <button
     class="mt-10 inline-flex rounded-full px-8 py-4 text-sm font-semibold transition bg-neutral-950 text-white hover:bg-neutral-800"
@@ -98,6 +104,20 @@ const fields: Array<{
   form?.addEventListener("submit", async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target as HTMLFormElement);
+
+    const phone = formData.get("phone") as string;
+
+    const re = /^(?:([+]\d{1,4})[-.\s]?)?(?:[(](\d{1,3})[)][-.\s]?)?(\d{1,4})[-.\s]?(\d{1,4})[-.\s]?(\d{1,9})$/
+    
+    console.log("phone:", phone)
+    if (!re.test(phone)) {
+    console.log("invalid phone", phone)
+    } else {
+    console.log("valid phone", phone)
+    }
+
+    return
+
     const response = await fetch("/api/contact", {
       method: "POST",
       body: formData,
