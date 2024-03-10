@@ -14,7 +14,7 @@ tags: [webdesign, seo]
 Más del 94% de las búsquedas en internet pasan por Google. Es decir, si en los primeros resultados de estas búsquedas no aparece tu negocio, significa que algo se está haciendo mal o directamente no se está haciendo. SEO significaría en español optimización de los motores de búsqueda, que vendría a ser la optimización que añadas a tu página para que esta se posicione en las búsquedas de Google. Es esencial tanto para individuos como para empresas y a pesar de que suene como algo complejo y técnico, en este artículo mostraremos los conceptos más importantes y **básicos del SEO**, estas pequeñas acciones podrían cambiar por completo los resultados que obtenga tu **página web**. ¡Bienvenido a este **curso de SEO básico gratis**
 
 <figure>
-<img src="/blogImages/agencia-seo-murcia.webp" title="SEO de tu página web" alt="SEO de tu página web imagen" width="1084" height="772" loading="lazy"/>
+<img src="/blogImages/agencia-seo-murcia.webp" title="SEO de tu página web" alt="Guía de SEO básico" width="1084" height="772" loading="lazy"/>
 <figcaption class="text-center">SEO en tu página web<figcaption>
 </figure>
 
@@ -47,7 +47,7 @@ En esta **guía para principiantes sobre optimización en buscadores** encontrar
 Sin lugar a dudas, lo más importante son las **palabras clave**. Esto se refiere a los términos que los usuarios ingresan en el buscador en búsqueda de resultados. Comprender las "keywords" relevantes para tu contenido es crucial. La mejor forma de realizar esta investigación de forma gratuita es ir al [Google Keyword Planner](https://ads.google.com/aw/keywordplanner/home) y tras hacer clic en "Descubre nuevas palabras clave" escribir las palabras que crees que los usuarios buscarían antes de encontrar con tu negocio.
 
 <figure>
-<img src="/blogImages/Google-Keyword-Planner1.webp" title="Descubre nuevas palabras clave" alt="Descubre nuevas palabras clave Imagen" width="1084" height="772" loading="lazy"/>
+<img src="/blogImages/Google-Keyword-Planner1.webp" title="Descubre nuevas palabras clave" alt="SEO con Google Keyword Planner" width="1084" height="772" loading="lazy"/>
 <figcaption class="text-center">Descubre nuevas palabras clave<figcaption>
 </figure>
 
@@ -56,7 +56,7 @@ Por ejemplo: tengo un bar en Lorca, Murcia y mi producto estrella son las hambur
 Tras hacer la búsqueda obtendremos unos resultados que nos interesan ordenar por *Promedio de búsquedas mensuales* de forma que vemos primero los resultados con más búsquedas mensuales.
 
 <figure>
-<img src="/blogImages/Google-Keyword-Planner2.webp" title="Resultados del planificador de palabras clave" alt="Resultados del planificador de palabras clave Imagen" width="1084" height="772" loading="lazy"/>
+<img src="/blogImages/Google-Keyword-Planner2.webp" title="Resultados del planificador de palabras clave" alt="Resultados del planificador de palabras clave" width="1084" height="772" loading="lazy"/>
 <figcaption class="text-center">Resultados del planificador de palabras clave<figcaption>
 </figure>
 
@@ -95,7 +95,7 @@ Son muchos los sitios webs que se enfrentan a una alta tasa de desconexiones, es
 Os estaréis preguntando qué diferencias tienen estos denominados "meta-títulos" con los títulos que hemos estado mencionando previamente. Es un título y una descripción única para cada página web que será la que se muestre en los resultados de búsqueda de Google.
 
 <figure>
-<img src="/blogImages/Resultados-Busqueda-Google.webp" title="Resultado tras búsqueda en google" alt="Resultados búsqueda en google Imagen" width="1084" height="772" loading="lazy"/>
+<img src="/blogImages/Resultados-Busqueda-Google.webp" title="Resultado tras búsqueda en google" alt="Resultados búsqueda SEO en google" width="1084" height="772" loading="lazy"/>
 <figcaption class="text-center">Resultado tras búsqueda en google<figcaption>
 </figure>
 

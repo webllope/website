@@ -175,7 +175,7 @@ const features = {
     {
       title: "Soluciones Online",
       description:
-        "Facilitamos al cliente acciones como reservas, consultas, pasarelas de pago, comprar en una tienda online...",
+        "Facilitamos al cliente acciones como reservas, consultas, pasarelas de pago, <a href='/es/diseno-tiendas-online-murcia' class='underline'><strong>diseño de tiendas online</strong></a> etc.",
     },
     {
       title: "Diferencia de la Competencia",
@@ -193,7 +193,7 @@ const clients = {
 const briefAboutUs = {
   title: "Diseño de páginas web profesionales en Murcia",
   firstP:
-    "Somos una agencia de <strong>creación de páginas webs</strong> y <strong>SEO en Murcia</strong>. Especializados en crear <strong>páginas web corporativas</strong> con personalidad, haciendo un estudio previo del mercado y de los competidores. Multiplicamos las visitas a tu negocio en internet en un corto periodo de tiempo.",
+    "Somos una agencia de <strong>creación de páginas webs</strong> y <a class='underline' href='/es/seo-murcia'><strong>SEO en Murcia</strong></a>. Especializados en crear <strong>páginas web corporativas</strong> con personalidad, haciendo un estudio previo del mercado y de los competidores. Multiplicamos las visitas a tu negocio en internet en un corto periodo de tiempo.",
   secondP:
     "Si confías en nosotros, no solo tendrás una página web empresarial excelente si no que a un precio increíblemente reducido. Consideramos que el mercado ha sido muy desconsiderado con las <strong>páginas webs para pymes</strong> y queremos cambiar eso ofreciendo el mejor <strong>desarrollo de páginas webs en Murcia</strong> y al mejor precio posible.",
   cta: "Contacta con nosotros",
