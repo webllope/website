@@ -484,7 +484,7 @@ const seo = {
   main: {
     title: "Diseño Web Murcia. Agencia de Diseño Páginas Web",
     description:
-      "Diseño Web Murcia. Somos expertos diseñadores, crearemos una increíble página web con SEO y posicionamiento web. Haz tu negocio relevante en internet.",
+      "Diseño Web Murcia. Somos diseñadores expertos con 5+ años de experiencia, crearemos tu página web y haremos tu negocio relevante en internet.",
   },
   aboutUs: {
     title: "Conoce Nuestro Equipo | Webllope",
