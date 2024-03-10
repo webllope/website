@@ -3,7 +3,7 @@ draft: false
 lang: "es"
 title: "Aprende un nivel de SEO básico"
 seoTitle: "Aprende SEO Básico. Guía Perfecta para Principiantes"
-timeNeeded: "3 minutos"
+timeNeeded: "10 minutos"
 description: "Este artículo es una guía sobre los fundamentos del SEO básico. Son esenciales para que tu página web triunfe."
 snippet: "¿Alguna vez te preguntaste cuales son los principios del SEO para hacer que una página web se posicione en la parte alta de las búsquedas?"
 publishDate: "2024-02-04 13:20"
@@ -42,7 +42,7 @@ Una vez esto se entiende, ¡pasemos a ver lo más importante para tu página!.
 
 En esta **guía para principiantes sobre optimización en buscadores** encontrarás todo el conocimiento técnico necesario para optimizar tu página en unos pocos pasos.
 
-### Palabras clave
+### Búsqueda de palabras clave
 
 Sin lugar a dudas, lo más importante son las **palabras clave**. Esto se refiere a los términos que los usuarios ingresan en el buscador en búsqueda de resultados. Comprender las "keywords" relevantes para tu contenido es crucial. La mejor forma de realizar esta investigación de forma gratuita es ir al [Google Keyword Planner](https://ads.google.com/aw/keywordplanner/home) y tras hacer clic en "Descubre nuevas palabras clave" escribir las palabras que crees que los usuarios buscarían antes de encontrar con tu negocio.
 
@@ -88,6 +88,8 @@ Seguro que si has llegado hasta aquí ya eres capaz de obviar esto, como ya sabe
 
 Esto es, tu sitio web debe poder visualizarse en cualquier dispositivo inteligente como móvil, tablet u ordenador. Si para alguno de estos dispositivos no se muestra correctamente y dificulta su navegación, será gravemente penalizado.
 
+Son muchos los sitios webs que se enfrentan a una alta tasa de desconexiones, especialmente entre los usuarios móviles. Posteriormente tras la pérdida de mucho tráfico se descubre que la página no estaba optimizado para dispositivos móviles, lo que dificultaba la navegación y la finalización de compras de productos y servicios en dispositivos móviles. Tras solucionar estos problemas no solo **mejora el tráfico** que entra en la web al aparecer en resultados más altos en navegadores de móvil, sino que también las ventas al facilitar el proceso al usuario.
+
 ### Meta-títulos y meta-descripciones
 
 Os estaréis preguntando qué diferencias tienen estos denominados "meta-títulos" con los títulos que hemos estado mencionando previamente. Es un título y una descripción única para cada página web que será la que se muestre en los resultados de búsqueda de Google.
@@ -109,6 +111,33 @@ No es algo extraño encontrarme con usuarios solicitando ayuda porque tienen un 
 <img src="/blogImages/Google-Search-Console.webp" title="Google Search Console" alt="Google Search Console Imagen" width="1084" height="772" loading="lazy"/>
 <figcaption class="text-center">Google Search Console<figcaption>
 </figure>
+
+### Optimización de Enlaces Internos
+
+Un enlace interno es aquel enlace que se encuentra en una página de tu web como podría ser un artículo de un blog, que redirecciona al usuario hacia otra página de tu sitio web.
+
+Los enlaces internos son una herramienta poderosa en SEO, ya que ayudan a Google a **entender mejor la estructura de tu sitio web** y a distribuir el valor de enlace a través de tus páginas. Integrar estratégicamente enlaces internos en tu contenido, puede mejorar significativamente la visibilidad de tus páginas en los resultados de búsqueda de Google.
+
+### El poder de las Redes Sociales en el SEO
+
+Aunque el SEO se centra principalmente en mejorar tu posicionamiento en Google y otros motores de búsqueda, no se debe subestimar el impacto de las redes sociales en la captación de clientes potenciales. Las plataformas de redes sociales ofrecen una oportunidad única para **aumentar la visibilidad** de tu contenido y atraer tráfico hacia tu sitio web.
+
+No solo es útil para la captación de nuevos clientes, Google es omnipresente, por lo tanto Google sabe cuando un negocio está siendo activo en redes sociales lo cuál induce a pensar que es un negocio serio, que hace bien las cosas y que debe ser mostrado a nuevos usuarios. Y encima creando tus perfiles en redes sociales y poniendo el link a tu página consigues una referencia a tu página web desde plataformas sociales potentes.
+
+## Mejora de la velocidad de la página
+
+En nuestra agencia de seo, Webllope, implementamos varias mejoras en su sitio web para aumentar la velocidad de carga. Estas mejoras incluyeron la [compresión de imágenes](https://www.iloveimg.com/es/comprimir-imagen), la [minimización de CSS y JavaScript](https://www.hostinger.es/tutoriales/minificar-html), y la utilización de una red de distribución de contenido ([CDN](https://www.akamai.com/es/glossary/what-is-a-cdn)). 
+
+Como resultado, la velocidad de carga del sitio se redujo de 1.5 segundos a 1 segundos. Este cambio no solo mejoró la experiencia del usuario, sino que también provocó un aumento del 20% en el tráfico orgánico y una mejora significativa en las posiciones de búsqueda para sus principales palabras clave.
+
+## Utiliza herramientas útiles para SEO
+
+Aunque hay algunas herramientas útiles como [UberSuggest](https://neilpatel.com/es/ubersuggest/) gratuitas para obtener ideas sobre las palabras clave a utilizar, es una realidad que las dos herramientas para el SEO por excelencia, y las más potentes son [Ahrefs](https://ahrefs.com/) y [Semrush](https://www.semrush.com/).
+
+Ambas tienen usos gratuitos, aunque limitados a ciertas peticiones por día, nosotros recomendamos Semrush y los usos básicos para usar eficientemente esta herramienta de forma gratuita serían:
+- [Keyword Magic Tool](https://es.semrush.com/analytics/keywordmagic/start): Utilízala cuando ya hayas conseguido una base de palabras clave usando el Google Ads Keywords mencionado al principio, te ayudará a encontrar otras palabras clave de utilidad que se asemejen a las que ya has encontrado y te den nuevas posibilidades con menos dificultad de posicionamiento.
+- [Brecha de palabras clave](https://es.semrush.com/analytics/keywordgap/?db=es): Esta herramienta es clave para comparar que palabras clave te faltan por conseguir, palabras para las cuales tus competidores si están obteniendo tráfico.
+- [Brecha de backlinks](https://es.semrush.com/features/backlink-gap/): Muy útil para ver los backlinks que tienen tus competidores y que tu página no tiene y debería conseguir.
 
 ## ¿Quieres más ayuda con el SEO de tu página?
 

@@ -58,6 +58,8 @@ const disenoTiendasOnlineMurcia = {
       "If you are looking for <strong class='animate-text'>creating your online store</strong> that offers you a complete service, you have come to the right place. At Webllope we not only take care of creating online stores, but we also take care of web positioning and SEO of your store.",
     secondary:
       "If you need an <strong>online store for your business</strong> that is attractive and at the same time optimized to appear in the first results of Google, do not hesitate to contact us. We specialize in <strong>SEO in Murcia</strong> and in the <strong>design of online stores</strong>.",
+    tertiary:
+      "We have knowledge to use <strong>Prestashop, Woocommerce and Shopify</strong>. The three essential tools for developing an e-commerce page, we will use one or the other according to the specific needs of each page.",
   },
   textRight: {
     title: "Ecommerce Design Company in Murcia",
@@ -84,11 +86,13 @@ const posicionamientoWebMurcia = {
       "Optimize your <strong>online presence</strong> in Murcia with our Web Positioning Service!",
     tertiary:
       "Stand out in the region's searches and attract more <strong>potential customers</strong>. Thanks to this service, your website will improve in visibility and appear in Google results.",
+    quaternary:
+      "Webllope is a <strong>web positioning company in Murcia</strong> that offers you a complete service, you have come to the right place. At Webllope we not only take care of creating web pages, but we also take care of web positioning and SEO of your page.",
   },
   textLeft: {
     title: "Web Design and Positioning in Murcia",
     primary:
-      "Webllope is a <strong>web positioning company in Murcia</strong> that offers you a complete service, you have come to the right place. At Webllope we not only take care of creating web pages, but we also take care of web positioning and SEO of your page.",
+      "If you need an <strong>SEO consultant</strong> to improve the visibility that your company has on the internet, you are in luck. Contact now without obligation and enjoy having an SEO expert explain in detail what is necessary to achieve the best web positioning of your page and thus get more potential clients.",
     secondary:
       "We offer a comprehensive approach, combining web design and <strong>positioning strategies</strong> to enhance your online presence in Murcia.",
   },

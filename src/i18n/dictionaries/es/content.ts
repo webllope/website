@@ -50,7 +50,7 @@ const disenoTiendasOnlineMurcia = {
     secondary:
       "Monta tu <strong>tienda online</strong> y empieza a vender tus productos en internet. Diseñamos tu tienda con las mejores tecnologías y herramientas de calidad.",
     tertiary:
-      "Si necesitas un <i>e-commerce</i> que sea atractivo, consiga ventas y al mismo tiempo optimizada para que aparezca en los primeros resultados de Google, no dudes en contactar con nosotros. Estamos especializados en <strong>SEO en Murcia</strong> y en el <strong>diseño de tiendas online</strong>.",
+      "Si necesitas un <i>e-commerce</i> o comercio online que sea atractivo, consiga ventas y al mismo tiempo optimizada para que aparezca en los primeros resultados de Google, no dudes en contactar con nosotros. Estamos especializados en <strong>SEO en Murcia</strong> y en el <strong>diseño de tiendas online</strong> responsive.",
   },
   textLeft: {
     title: "Crear tienda online en Murcia",
@@ -58,19 +58,21 @@ const disenoTiendasOnlineMurcia = {
       "Si buscas <strong class='animate-text'>crear tu tienda online</strong> que te ofrezca un servicio completo, has llegado al lugar correcto. En Webllope no solo nos encargamos de la creación de tiendas online, si no que también nos preocupamos por el posicionamiento web y el SEO de tu tienda.",
     secondary:
       "¿Quieres una <strong>tienda online para tu negocio</strong>?. Estás de suerte, nos comprometemos a cumplir tus expectativas e incluso superarlas.",
+    tertiary:
+      "Tenemos conocimientos para usar <strong>Prestashop, Woocommerce y Shopify</strong>. Las tres herramientas por excelencia del desarrollo de una página de comercio electrónico, usaremos una u otra según las necesidades concretas de cada página.",
   },
   textRight: {
     title: "Empresa de Diseño de Tiendas Online en Murcia",
     primary:
       "Si te interesa <strong>contratar un diseño de tiendas online en Murcia</strong> estás en el sitio correcto, y si has llegado hasta esta página es porque hemos debido hacer un posicionamiento web efectivo. Nosotros mismos hemos hecho el SEO de esta página, por lo que si has llegado hasta aquí es porque sabemos lo que hacemos.",
     secondary:
-      "Para conocer el <strong>presupuesto de una tienda online</strong>, no dudes en contactar con nosotros, te haremos un presupuesto a medida. No te preocupes, no te vamos a cobrar un precio desorbitado, Webllope ofrece servicio de <strong>diseño de tiendas online para pymes</strong> y queremos que tu negocio crezca junto a nosotros.",
+      "Para conocer el <strong>presupuesto de una tienda online</strong> profesional, no dudes en contactar con nosotros, te haremos un presupuesto a medida. No te preocupes, no te vamos a cobrar un precio desorbitado, Webllope ofrece servicio de <strong>diseño de tiendas online para pymes</strong> y queremos que tu negocio crezca junto a nosotros.",
     cta: "Contacta con nosotros",
   },
   textOnly: {
     title: "Desarrollo de Tiendas Online Profesionales",
     primary:
-      "No te conformes con cualquier tipo de <strong>e-commerce</strong> para tu negocio, si buscas una tienda online que convierta visitas en ventas y que además esté optimizada para que aparezca en los primeros resultados de Google, has llegado al lugar correcto.",
+      "No te conformes con cualquier tipo de <strong>e-commerce</strong> para tu negocio, si buscas una tienda virtual que convierta visitas en ventas y que además esté optimizada para que aparezca en los primeros resultados de Google, has llegado al lugar correcto.",
     secondary:
       "Nos comprometemos a crear una <strong>página de ventas online</strong> que sea eficaz, el cliente no tendrá ninguna duda a la hora de su utilización ya que se podrá hacer compras de forma intuitiva y sencilla. No dudes en contactar, no pierdes nada por ello.",
     cta: "Contacta sin compromiso",
@@ -84,11 +86,13 @@ const posicionamientoWebMurcia = {
       "¡Optimiza tu <strong>presencia online</strong> en Murcia con nuestro Servicio de Posicionamiento Web!",
     tertiary:
       "Destaca en las búsquedas de la región y atrae a más <strong class='animate-text'>clientes potenciales</strong>. Gracias a este servicio, tu página web mejorará en visibilidad y saldrá en los resultados de Google.",
+    quaternary:
+      "Webllope es una <strong>empresa de posicionamiento web en Murcia</strong> que te ofrece un servicio completo. No solo nos encargamos de la creación de páginas web, si no que también nos preocupamos por el posicionamiento web y el SEO de tu página.",
   },
   textLeft: {
     title: "Diseño web y Posicionamiento en Murcia",
     primary:
-      "Webllope es una <strong>empresa de posicionamiento web en Murcia</strong> que te ofrece un servicio completo, has llegado al lugar correcto. En Webllope no solo nos encargamos de la creación de páginas web, si no que también nos preocupamos por el posicionamiento web y el SEO de tu página.",
+      "Si necesitas un <strong>consultor SEO</strong> para mejorar la visibilidad que tu empresa tiene en internet, estás de suerte. Contacta ahora sin compromiso y disfruta de que un experto en SEO te explique detalladamente lo necesario para conseguir el mejor posicionamiento web de tu página y así conseguir más clientes potenciales.",
     secondary:
       "Ofrecemos un enfoque integral, combinando diseño web y <strong>estrategias de posicionamiento</strong> para potenciar tu presencia online en Murcia.",
   },
@@ -103,15 +107,15 @@ const posicionamientoWebMurcia = {
   textOnly: {
     title: "Presupuesto del posicionamiento web en Murcia",
     primary:
-      "El presupuesto depende mayoritariamente del servicio que ofrezca tu negocio, ya que esto definirá la dificultad de posicionar tu página web en los primeros resultados de Google. No obstante, no te preocupes, te haremos un presupuesto a medida y será el más asequible del mercado.",
+      "El presupuesto depende mayoritariamente del servicio que ofrezca tu negocio, ya que esto definirá la dificultad de posicionar tu página web en los primeros resultados de Google. No obstante, no te preocupes, te haremos un presupuesto a medida y será la <strong>auditoría SEO</strong> más asequible del mercado.",
     secondary:
-      "Obtén un presupuesto personalizado para tu estrategia de <strong>posicionamiento web en Murcia</strong>. Estamos aquí para ayudarte a alcanzar tus objetivos online.",
+      "Obtén un presupuesto personalizado para tu estrategia de <strong>posicionamiento web seo en Murcia</strong>. Estamos aquí para ayudarte a alcanzar tus objetivos online.",
   },
 };
 
 const seoMurcia = {
   hero: {
-    primary: "SEO en Murcia",
+    primary: "SEO Murcia",
     secondary:
       "Webllope es una <strong>agencia de SEO en Murcia</strong> y contamos con <strong>expertos</strong> en el equipo.",
     tertiary:
@@ -122,7 +126,7 @@ const seoMurcia = {
   textLeft: {
     title: "Consultor SEO en Murcia",
     primary:
-      "Nuestros <strong class='animate-text'>expertos en SEO en Murcia</strong> analizarán y mejorarán tu posición en los motores de búsqueda. Contacta sin compromiso y envía tu petición, en menos de 24 horas tendrás un presupuesto a medida.",
+      "Nuestros <strong class='animate-text'>expertos en SEO</strong> analizarán y mejorarán tu posición en los motores de búsqueda. Contacta sin compromiso y envía tu petición, en menos de 24 horas tendrás un presupuesto a medida.",
     secondary:
       "En <strong>Webllope</strong>, entendemos la importancia de la optimización local en Murcia. Nuestro enfoque personalizado garantiza resultados tangibles y sostenibles en el tiempo, mejoraremos tu <strong>posicionamiento seo</strong> y por lo tanto tu cantidad de tráfico y ventas.",
   },
@@ -135,9 +139,9 @@ const seoMurcia = {
     cta: "Contacta con nosotros",
   },
   textOnly: {
-    title: "Presupuesto del SEO en Murcia",
+    title: "Presupuesto del SEO",
     primary:
-      "Las estrategias de SEO bien ejecutadas generan resultados a largo plazo, ofreciendo un ROI (beneficios de tu inversión) significativo. Sin embargo la inversión inicial podría ser considerable dependiendo de la competencia que haya en el sector de tu negocio.",
+      "Las estrategias de SEO bien ejecutadas generan resultados a largo plazo, ofreciendo un ROI (beneficios de tu inversión) significativo. Sin embargo la inversión inicial podría ser considerable o no dependiendo de la competencia que haya en el sector de tu negocio.",
     secondary:
       "El <strong>posicionamiento seo en Murcia</strong> tiene sus particularidades, por lo que es importante que te pongas en manos de expertos. No dudes en contactar con nosotros sin compromiso, nos preocupamos genuinamente porque tu negocio crezca y tenga éxito.",
   },
@@ -161,7 +165,7 @@ const features = {
     {
       title: "Amplia Experiencia",
       description:
-        "Durante 5 años como <strong>desarrolladores de páginas web</strong> hemos visto como <strong>agencias de creación de páginas web en Murcia</strong> desaparecían. Sin embargo nuestros métodos nos mantienen en la cima.",
+        "Durante 5 años como <strong>desarrolladores de páginas web</strong> hemos visto como agencias de diseño web en Murcia desaparecían. Sin embargo nuestros métodos nos mantienen en la cima.",
     },
     {
       title: "Información Instantánea",
@@ -187,7 +191,7 @@ const clients = {
 };
 
 const briefAboutUs = {
-  title: "Páginas web profesionales en Murcia",
+  title: "Diseño de páginas web profesionales en Murcia",
   firstP:
     "Somos una agencia de <strong>creación de páginas webs</strong> y <strong>SEO en Murcia</strong>. Especializados en crear <strong>páginas web corporativas</strong> con personalidad, haciendo un estudio previo del mercado y de los competidores. Multiplicamos las visitas a tu negocio en internet en un corto periodo de tiempo.",
   secondP:
@@ -200,7 +204,7 @@ const briefEcommerceInfo = {
   firstP:
     "Tenemos amplios conocimientos de ingeniería web y por supuesto el <strong class='animate-text'>desarrollo de páginas web</strong> no es ningún misterio para nosotros. Hemos construido cientos de sitios web, y hemos ayudado a muchas empresas a mejorar su presencia en internet.",
   secondP:
-    "Asegurando una <strong>página web eficiente</strong> y lo más importante, eficaz (que consiga ventas). Construimos páginas web diseñadas para hacer su uso lo más sencillo posible al usuario. ¡Obtén tu <strong> presupuesto de página web en Murcia</strong> ahora!",
+    "Asegurando un <strong>diseño de página web eficiente</strong> y lo más importante, eficaz (que consiga ventas). Construimos páginas web diseñadas para hacer su uso lo más sencillo posible al usuario. ¡Obtén tu <strong> presupuesto de página web en Murcia</strong> ahora!",
   cta: "Contacta sin compromiso",
 };
 
