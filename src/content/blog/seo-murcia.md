@@ -6,7 +6,7 @@ seoTitle: "Esto es lo que debes conocer acerca del SEO local en Murcia"
 timeNeeded: "5 minutos"
 description: "El SEO en Murcia o SEO local es el proceso de optimización de un sitio web para que este se muestre en las búsquedas de usuarios locales."
 snippet: "En este artículo tratamos el tema del SEO local, por qué es tan importante, como aplicarlo correctamente y por qué todo negocio de Murcia debería aplicarlo"
-publishDate: "2024-03-11 12:30"
+publishDate: "2024-03-10 12:30"
 author: "daniel-maestre"
 tags: [seo]
 ---
