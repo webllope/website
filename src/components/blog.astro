@@ -15,6 +15,8 @@ const publishedBlogEntries = (
     return !data.draft && data.lang === lang && data.publishDate < new Date();
   })
 ).sort(function (a, b) {
+  console.log(a.data.title);
+  console.log(b.data.title);
   return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
 });
 ---
