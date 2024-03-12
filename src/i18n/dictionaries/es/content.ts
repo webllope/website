@@ -211,7 +211,7 @@ const briefEcommerceInfo = {
 const briefSeoInfo = {
   title: "Diseñador Web Murcia",
   firstP:
-    "No somos una <strong>empresa de diseño web</strong> común y corriente, nuestros fundadores Daniel Maestre y Jose María Martínez son Ingenieros de Software con un amplio conocimiento del SEO y SEM. Estás en el lugar correcto si necesitas una <strong>página web para tu negocio</strong> llamativa y al mismo tiempo optimizada de forma que salga en las búsquedas en Google de los usuarios y potenciales clientes.",
+    "No somos una <strong>empresa de diseño web</strong> común y corriente, nuestros fundadores Daniel Maestre y Jose María Martínez son Ingenieros de Software con un amplio conocimiento del desarrollo web habiendo trabajado durante años como programadores en bancos y agencias de soluciones de software. Estás en el lugar correcto si necesitas una <strong>página web para tu negocio</strong> llamativa y al mismo tiempo optimizada de forma que Google entienda que es una página hecha al detalle y cuidando todos los detalles, y por ende, debe ser mostrada a los usuarios en los primeros resultados de sus búsquedas.",
   secondP:
     "El SEO o posicionamiento en google es el proceso en el que los creadores de páginas webs optimizan el contenido de la página web para que esta aparezca en las primeras posiciones en los motores de búsqueda de Google. Se consigue con una buena estructura de la página web y un buen contenido, aumentando así el número de visitas y de clientes potenciales de tu <strong>diseño web corporativo</strong>.",
   cta: "Ver nuestros servicios",
