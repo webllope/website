@@ -16,7 +16,7 @@ El SEO se refiere a “Search Engine Optimization” por sus siglas en inglés. 
 Con una buena estrategia de posicionamiento o SEO y gracias a palabras clave, tu página o perfil web puede escalar rápidamente en estos motores y así cualquier persona en cualquier parte del mundo tiene posibilidad de encontrar tu negocio o contenido de una manera más rápida y fácil.
 
 <figure>
-<img class="mx-auto" src="/src/assets/seo-murcia.webp" title="Seo en Murcia" alt="SEO en Murcia" width="220" height="440" loading="lazy"/>
+<img class="mx-auto" src="/blogImages/seo-murcia.webp" title="Seo en Murcia" alt="SEO en Murcia" width="220" height="440" loading="lazy"/>
 <figcaption class="text-center">Resultados SEO<figcaption>
 </figure>
 
