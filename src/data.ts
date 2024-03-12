@@ -12,7 +12,12 @@ const contact = {
     info: "info@webllope.es",
     support: "business@webllope.es",
   },
-  phone: "+34 722 10 99 24"
+  phone: "+34 722 10 99 24",
+  noPrefixPhone: "722 10 99 24",
+  address: "Pl. Circular, 30008 Murcia",
+  companyName: "Webllope",
+  GMBlink: "https://maps.app.goo.gl/vix2NTaZwNFfTzXd7",
+  whatsapp: "https://wa.me/34722109924",
 };
 
 const locations = [

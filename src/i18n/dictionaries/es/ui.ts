@@ -28,6 +28,10 @@ export const ui = {
     connect: {
       title: "Conectar",
     },
+    findUs: {
+      //El título es así porque debo meter la palabra Webllope en esta columna somewhere.
+      title: "Contacta",
+    },
     comingSoon: "Próximamente",
     seeAll: "Ver todos",
     newsletter: {

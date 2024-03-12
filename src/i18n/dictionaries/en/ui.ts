@@ -28,6 +28,9 @@ export const ui = {
     connect: {
       title: "Connect",
     },
+    findUs: {
+      title: "Contact",
+    },
     comingSoon: "Coming soon",
     seeAll: "See all",
     newsletter: {
