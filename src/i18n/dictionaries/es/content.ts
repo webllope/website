@@ -542,13 +542,10 @@ const seo = {
 
 const reviews = {
   title: "¿Qué opinan nuestros clientes sobre nosotros?",
-  GMBname: "Webllope | Diseño web",
+  GMBname: "Webllope",
   GMBscore: "5",
   GMBreviewsAmount: "Basado en 8 reseñas",
   reviewUs: "Valóranos en ",
-  description:
-    "Opiniones de nuestros clientes sobre nuestros servicios de diseño web, posicionamiento SEO y SEM, diseño de tiendas online, y marketing digital en Murcia.",
-  cta: "Ver más opiniones",
 };
 
 export const content = {
