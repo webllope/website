@@ -10,7 +10,7 @@ const t = useTranslations(lang);
 
 const getFormattedDate = (date) => formatDate(lang, date);
 interface Props {
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "secondary" | "landing-primary";
   currentPostTitle?: string;
 }
 
@@ -39,7 +39,7 @@ const entries = (
           <div class="max-w-3xl" style="opacity: 1; transform: none;">
             <h2 class="block font-display tracking-tight [text-wrap:balance] text-2xl font-semibold text-neutral-950">
               {t(
-                variant === "primary"
+                variant.includes("primary")
                   ? "fromBlog.title"
                   : "fromBlog.titleVariant",
               )}

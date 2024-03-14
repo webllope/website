@@ -351,6 +351,7 @@ const contact = {
     subtitle: "Let's work together",
     description: "Let's make your idea a <strong>reality</strong>",
   },
+  ourOfficesTitle: "We are located in the center of Murcia, although we prefer online management 😉",
   ourOffices: "Nuestras oficinas",
   ourOfficesText:
     "¿Prefieres hacer las cosas en persona? Nosotros no, pero por razones legales tenemos que poner alguna dirección.",

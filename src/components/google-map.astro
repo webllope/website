@@ -1,0 +1,92 @@
+---
+import Background from "./background.astro";
+import { contact, locations } from "data";
+import ContactForm from "@components/contact-form.astro";
+
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<div
+  class="relative isolate bg-neutral-50 py-16 sm:py-28 md:py-32 mt-24 sm:mt-32 lg:mt-40">
+  <Background />
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:max-w-none">
+      <div class="mx-auto max-w-2xl lg:max-w-none">
+        <div class="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
+          <div style="opacity: 1; transform: none;">
+            <h2
+              class="text-3xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-4xl">
+              {t("contact.ourOfficesTitle")}
+            </h2>
+            <h3
+              class="mt-10 font-display text-base font-semibold text-neutral-950 hidden lg:block">
+              {t("contact.ourOffices")}
+            </h3>
+            <ul
+              class="grid grid-cols-1 gap-8 sm:grid-cols-2 hidden lg:block">
+              {
+                locations.map((location) => (
+                  <li>
+                    <address class="text-sm not-italic text-neutral-600">
+                      <strong class="text-white">{location.city}</strong>
+                      <br />
+                      {location.address}
+                      <br />
+                      {location.zip}, {location.state}, {location.country}
+                    </address>
+                  </li>
+                ))
+              }
+            </ul>
+            <div
+              class="mt-16 pt-16 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
+              <h3 class="font-display text-base font-semibold text-neutral-950">
+                {t("contact.sendEmail")}
+              </h3>
+              <dl class="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
+                <div>
+                  <dt class="font-semibold text-neutral-950">
+                    {t("information")}
+                  </dt>
+                  <dd>
+                    <a
+                      class="text-neutral-600 hover:text-neutral-950"
+                      href={`mailto:${contact.email.info}`}>
+                      {contact.email.info}
+                    </a>
+                  </dd>
+                </div>
+                <div>
+                  <dt class="font-semibold text-neutral-950">{t("support")}</dt>
+                  <dd>
+                    <a
+                      class="text-neutral-600 hover:text-neutral-950"
+                      href={`mailto:${contact.email.support}`}>
+                      {contact.email.support}
+                    </a>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+          <div class="lg:order-last" style="opacity: 1; transform: none;">
+            <div class="relative lg:h-full" style="padding-bottom: 50%;">
+              <iframe
+                class="absolute inset-0 w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.3783451460754!2d-1.1323257229223642!3d37.9916346719314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6383e177f13f1d%3A0x922a58acaed88fe!2sWebllope%20%7C%20Dise%C3%B1o%20Web%20Murcia!5e0!3m2!1ses!2ses!4v1710427387805!5m2!1ses!2ses"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

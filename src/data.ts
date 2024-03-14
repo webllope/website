@@ -23,22 +23,12 @@ const contact = {
 const locations = [
   {
     precision: "zip",
-    latitude: 37.99185512427365,
-    longitude: -1.1301054740866519,
+    latitude: 37.991812235165426,
+    longitude: -1.1297400734654948,
     address: "Pl. Circular",
     city: "Murcia",
     state: "Murcia",
     zip: "30008",
-    country: "España",
-  },
-  {
-    precision: "zip",
-    latitude: 40.41674528882262,
-    longitude: -3.703817180987813,
-    address: "Prta del Sol, Centro.",
-    city: "Madrid",
-    state: "Madrid",
-    zip: "28013",
     country: "España",
   },
 ];
