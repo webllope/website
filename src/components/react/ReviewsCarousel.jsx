@@ -124,8 +124,8 @@ const ReviewsCarousel = () => {
           <a className="p-2 bg-neutral-950 relative flex flex-col gap-4 w-[50px] mx-auto"></a>
         </CarouselItem>
       </CarouselContent>
-      <CarouselPrevious className="bg-black" />
-      <CarouselNext className="bg-black" />
+      <CarouselPrevious />
+      <CarouselNext />
     </Carousel>
   );
 };
