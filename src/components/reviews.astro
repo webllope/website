@@ -1,0 +1,45 @@
+---
+import { Image } from "astro:assets";
+
+import Carousel from "./react/ReviewsCarousel.jsx";
+import FiveStars from "./five-stars.astro";
+
+import webllopeLogo from "@assets/logos/webllopeLogo250.webp";
+import google from "@assets/logos/google.webp";
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<div class="mt-10 flex flex-col lg:flex-row items-center w-full">
+  <div class="bg-white flex gap-4 p-2 h-[200px] w-[300px] rounded">
+    <div class="w-[50px] h-[50px]">
+      <Image
+        alt="Webllope Diseño Web"
+        class="rounded-full"
+        loading="lazy"
+        width="50"
+        height="50"
+        src={webllopeLogo}
+      />
+    </div>
+    <div class="flex flex-col gap-1 mt-1">
+      <span class="font-semibold text-sm">{t("reviews.GMBname")}</span>
+      <div class="flex items-center gap-1">
+        <span class="text-2xl font-bold text-amber-500"
+          >{t("reviews.GMBscore")}
+        </span>
+        <FiveStars />
+      </div>
+      <span class="text-sm">{t("reviews.GMBreviewsAmount")}</span>
+      <a
+        class="mt-4 md:mt-0 max-w-full w-fit rounded text-center transition focus-visible:ring-2 ring-offset px-2 py-1 bg-neutral-950 text-white hover:bg-blue-700"
+        href="https://g.page/r/Cf6I7cqKpSIJEB0/review"
+        >{t("reviews.reviewUs")}
+        <Image alt="Google" class="h-6 w-auto inline" src={google} />
+      </a>
+    </div>
+  </div>
+  <Carousel client:load />
+</div>

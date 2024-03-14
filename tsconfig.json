@@ -4,6 +4,7 @@
     "strictNullChecks": true,
     "baseUrl": "src",
     "paths": {
+      "@/*": ["*"],
       "@lib/*": ["lib/*"],
       "@utils/*": ["utils/*"],
       "@components/*": ["components/*"],

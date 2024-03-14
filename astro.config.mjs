@@ -3,7 +3,7 @@ import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import vercel from "@astrojs/vercel/serverless";
-
+import react from "@astrojs/react";
 function filterOutPages(page) {
   return (
     page !== "https://webllope.es/en/blog/importancia-tener-pagina-web/" &&
@@ -14,6 +14,7 @@ function filterOutPages(page) {
     page !== "https://webllope.es/en/blog/aprende-seo-basico/"
   );
 }
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://webllope.es",
@@ -28,17 +29,17 @@ export default defineConfig({
           modifiedUrl.hostname = "www.webllope.es";
           item.url = modifiedUrl.toString();
         }
-
         return item;
       },
     }),
+    react(),
   ],
   adapter: vercel({
     webAnalytics: {
       enabled: true,
     },
   }),
-  output: 'server',
+  output: "server",
   i18n: {
     defaultLocale: "es",
     locales: ["en", "es"],
