@@ -28,7 +28,7 @@ const t = useTranslations(lang);
     secondaryText={t("disenowebmurcia.hero.secondary")}
     tertiaryText={t("disenowebmurcia.hero.tertiary")}
     slotClasses="lg:w-4/12">
-    <ContactForm />
+    <ContactForm client:load url={Astro.url} />
   </Hero>
   <TextLeftSection
     title={t("disenowebmurcia.textLeft.title")}

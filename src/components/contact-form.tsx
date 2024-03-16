@@ -11,7 +11,11 @@ import {
 import { cn } from "@/utils/all";
 import { isValidPhone } from "@/lib/validator";
 
-export default function ContactForm({ url }) {
+interface ContactFormProps {
+  url: string;
+}
+
+export default function ContactForm({ url }: ContactFormProps) {
   const [errors, setErrors] = useState<{ phone?: string }>({});
 
   const lang = getLangFromUrl(url);

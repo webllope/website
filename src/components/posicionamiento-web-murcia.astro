@@ -29,7 +29,7 @@ const t = useTranslations(lang);
     tertiaryText={t("posicionamientoWebMurcia.hero.tertiary")}
     quaternaryText={t("posicionamientoWebMurcia.hero.quaternary")}
     slotClasses="lg:w-4/12">
-    <ContactForm />
+    <ContactForm client:load url={Astro.url} />
   </Hero>
   <TextLeftSection
     title={t("posicionamientoWebMurcia.textLeft.title")}
