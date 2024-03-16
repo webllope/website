@@ -12,7 +12,7 @@ import { cn } from "@/utils/all";
 import { isValidPhone } from "@/lib/validator";
 
 interface ContactFormProps {
-  url: string;
+  url: URL;
 }
 
 export default function ContactForm({ url }: ContactFormProps) {
@@ -108,7 +108,7 @@ export default function ContactForm({ url }: ContactFormProps) {
       return;
     }
 
-    const response = await fetch(`/api/contact?&lang=${lang}`, {
+    const response = await fetch(`/api/contact?lang=${lang}`, {
       method: "POST",
       body: JSON.stringify(data),
     });

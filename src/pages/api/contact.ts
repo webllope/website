@@ -5,13 +5,13 @@ import mailer, {
   type MailData,
   type MailError,
 } from "@/lib/mailer";
+import { URL } from "url";
+
 import type { Language } from "@/i18n/i18n";
 
 export const POST: APIRoute = async ({ request }) => {
-  const urlSearchParams = new URLSearchParams(request.url);
-  const lang = urlSearchParams.get("lang") as Language;
-
-  console.log({ url: request.url, urlSearchParams, lang });
+  const url = new URL(request.url);
+  const lang = url.searchParams.get("lang") as Language;
 
   try {
     const { name, email, message, company, phone } =
