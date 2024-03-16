@@ -16,6 +16,8 @@ const contactForm = {
   },
   successMsg:
     "Formulario enviado correctamente. Nos pondremos en contacto contigo lo antes posible.",
+  errorMsg:
+    "Ha ocurrido un error al enviar el formulario. ¡Vuelve a intentarlo!",
   sendBtn: "Enviar",
 };
 

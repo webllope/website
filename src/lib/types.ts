@@ -29,3 +29,11 @@ export type HTMLInputTypeAttribute =
   | "time"
   | "url"
   | "week";
+
+export type ContactFormData = {
+  name: string;
+  email: string;
+  company: string;
+  phone: string;
+  message: string;
+};

@@ -14,7 +14,9 @@ const contactForm = {
       other: "Other",
     },
   },
-  successMsg: "Form submitted successfully. We will contact you as soon as possible.",
+  successMsg:
+    "Form submitted successfully. We will contact you as soon as possible.",
+  errorMsg: "Error submitting form. Try again!",
   sendBtn: "Send",
 };
 
