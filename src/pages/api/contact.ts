@@ -11,6 +11,8 @@ export const POST: APIRoute = async ({ request }) => {
   const urlSearchParams = new URLSearchParams(request.url);
   const lang = urlSearchParams.get("lang") as Language;
 
+  console.log({ url: request.url, urlSearchParams, lang });
+
   try {
     const { name, email, message, company, phone } =
       (await request.json()) as ContactFormData;
