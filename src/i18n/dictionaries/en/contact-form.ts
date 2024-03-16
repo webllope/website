@@ -5,7 +5,7 @@ const contactForm = {
     email: "Email",
     company: "Company",
     phone: "Phone",
-    message: "Message",
+    message: "Tell us more about your project..",
     project: {
       title: "Project",
       web: "Web",
