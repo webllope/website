@@ -17,7 +17,8 @@ function send(message: MailData) {
     return Promise.resolve();
   }
 
-  sendGrid.setApiKey(import.meta.env.SENDGRID_API_KEY);
+  // takes sendgrid env variable from Vercel
+  sendGrid.setApiKey(process.env.SENDGRID_API_KEY as string);
   return sendGrid.send(message);
 }
 

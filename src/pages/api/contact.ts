@@ -51,6 +51,7 @@ export const POST: APIRoute = async ({ request }) => {
     } catch (error) {
       const { response } = error as MailError;
       console.error(response.body);
+      throw error;
     }
 
     return new Response(null, { status: 204 });
