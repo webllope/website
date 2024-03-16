@@ -1,7 +1,7 @@
 import { defaultLang, languages, type Language } from "./i18n";
 import dictionaries from "./dictionaries";
 import { get, getFormattedDate } from "@utils/all";
-import type { NestedObjectKeys } from "@utils/types";
+import type { NestedObjectKeys } from "@lib/types";
 
 // @ts-ignore
 import { getRelativeLocaleUrl } from "astro:i18n";

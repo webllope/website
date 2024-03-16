@@ -7,7 +7,7 @@ import TextLeftSection from "@components/text-left-section.astro";
 import TextRightSection from "@components/text-right-section.astro";
 import TextOnlySection from "@components/text-only-section.astro";
 import Clients from "@components/clients.astro";
-import ContactForm from "@components/contact-form.astro";
+import ContactForm from "@components/contact-form";
 
 import { Image } from "astro:assets";
 import diseñoTiendasOnlineMurcia from "@assets/diseño-tiendas-online-murcia.png";
@@ -28,7 +28,7 @@ const t = useTranslations(lang);
     secondaryText={t("disenoTiendasOnlineMurcia.hero.secondary")}
     tertiaryText={t("disenoTiendasOnlineMurcia.hero.tertiary")}
     slotClasses="lg:w-4/12">
-    <ContactForm />
+    <ContactForm client:load url={Astro.url} />
   </Hero>
   <TextLeftSection
     title={t("disenoTiendasOnlineMurcia.textLeft.title")}

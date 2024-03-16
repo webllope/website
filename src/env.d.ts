@@ -3,6 +3,7 @@
 
 interface ImportMetaEnv {
   DEV: boolean;
+  SENDGRID_API_KEY: string;
 }
 
 interface ImportMeta {
