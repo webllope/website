@@ -5,8 +5,12 @@ import mailer, {
   type MailData,
   type MailError,
 } from "@/lib/mailer";
+import type { Language } from "@/i18n/i18n";
 
 export const POST: APIRoute = async ({ request }) => {
+  const urlSearchParams = new URLSearchParams(request.url);
+  const lang = urlSearchParams.get("lang") as Language;
+
   try {
     const { name, email, message, company, phone } =
       (await request.json()) as ContactFormData;
@@ -22,7 +26,7 @@ export const POST: APIRoute = async ({ request }) => {
 
     const msgForWebllope = {
       from: webllopeSenderEmail,
-      to: "info@webllope.es",
+      to: webllopeSenderEmail,
       subject: "Formulario de contacto de webllope.es",
       text: `Nombre: ${name}\nEmail: ${email}\nCompañía: ${company}\nTeléfono: ${phone}\nMensaje: ${message}`,
     };
@@ -34,7 +38,7 @@ export const POST: APIRoute = async ({ request }) => {
         name: name,
         to: [{ email: email }],
       },
-      templateId: "d-26c30776e18b47c2b2d15a1a03209803",
+      templateId: templateIds[lang],
       asm: {
         groupId: 27970,
       },
@@ -59,4 +63,9 @@ export const POST: APIRoute = async ({ request }) => {
       { status: 500 },
     );
   }
+};
+
+const templateIds = {
+  es: "d-26c30776e18b47c2b2d15a1a03209803",
+  en: "d-b7f7344131d441a9aa04d1b5f2dff442",
 };

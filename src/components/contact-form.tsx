@@ -104,7 +104,7 @@ export default function ContactForm({ url }) {
       return;
     }
 
-    const response = await fetch("/api/contact", {
+    const response = await fetch(`/api/contact?&lang=${lang}`, {
       method: "POST",
       body: JSON.stringify(data),
     });

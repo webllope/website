@@ -9,7 +9,7 @@ export const webllopeSenderEmail = "info@webllope.es";
 function send(message: MailData) {
   const isDev = import.meta.env.DEV;
 
-  if (false) {
+  if (isDev) {
     console.group("#### [DEV] Sending email");
     console.log("Message:", message);
     console.groupEnd();
