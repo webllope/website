@@ -9,6 +9,36 @@ const landing = {
       "Nos comprometemos a hacer que tu negocio destaque en internet a un precio inmejorable (desde 150€).",
     cta: "Consulta sin compromiso",
   },
+  faq: {
+    title: "Preguntas frecuentes",
+    content: [
+      {
+        question: "¿Cuánto cuesta hacer una página web?",
+        answer:
+          "El precio de una página web depende de la complejidad de la misma. No obstante, usando diseños predefinidos (los cuales cumplen con las necesidades del 95% de los negocios) se hacen desde un mínimo de 150€, y si necesitas algo más personalizado, se hará un presupuesto a medida.",
+      },
+      {
+        question: "¿Para qué sirve una página web?",
+        answer:
+          "Una página web es la carta de presentación de tu negocio en internet. Es el lugar donde los clientes potenciales irán a buscar información sobre tu empresa, por lo que es importante que sea atractiva y esté optimizada para que aparezca en los primeros resultados de Google.",
+      },
+      {
+        question: "¿Cómo posicionar una página web?",
+        answer:
+          "El <a href='/es/posicionamiento-web-murcia/'><strong>posicionamiento web</strong></a> es un proceso largo en el que se optimiza el contenido de la página web para que esta aparezca en los primeros resultados de Google.<br/><br/>Para <strong>posicionar una página web</strong> necesitarás indexar tu página en Google Search Console como requisito primordial, y asegurarte de que el contenido de tu página sea interesante, único y previamente analizado para que incluya palabras clave que los usuario buscan.<br/><br/>Nosotros nos encargamos de hacer el SEO de tu página web para que aparezca en los primeros resultados de Google.",
+      },
+      {
+        question: "¿Vuestras páginas webs incluyen varios idiomas?",
+        answer:
+          "Si, por un pequeño extra añadimos los idiomas que se deseen a la página web, para traducción al inglés una persona del equipo cuenta con un nivel de C1 y ha sido profesor de inglés, para el resto de idiomas se usarán herramientas de traducción de pago.",
+      },
+      {
+        question: "¿Con qué realizáis vuestras páginas web, WordPress?",
+        answer:
+          "Dependiendo del presupuesto y necesidades del cliente, si es una página web común y corriente usamos <strong>WordPress</strong>, si es una <strong>tienda online</strong> usamos Prestashop, Woocommerce o Shopify, y si es una página web más compleja y con necesidades muy específicas usamos Astro y/o React lo cuál encarece el precio pero asegura que la página web tenga una optimización del 100% ante Google.",
+      },
+    ],
+  },
 };
 
 const disenowebmurcia = {
@@ -415,7 +445,8 @@ const contact = {
     subtitle: "Trabajemos juntos",
     description: "Hagámos tu idea una <strong>realidad</strong>",
   },
-  ourOfficesTitle: "Estamos localizados en el centro de Murcia, aunque nosotros preferimos la gestión online 😉",
+  ourOfficesTitle:
+    "Estamos localizados en el centro de Murcia, aunque nosotros preferimos la gestión online 😉",
   ourOffices: "Nuestras oficinas",
   ourOfficesText:
     "¿Prefieres hacer las cosas en persona? Nosotros no, pero por razones legales tenemos que poner alguna dirección.",

@@ -9,7 +9,9 @@ import { languages } from "@i18n/i18n";
 const domainURL = "https://www.webllope.es";
 const currentLang = getLangFromUrl(Astro.url);
 
-const urlPathMatchBlogOrWorkPost = /\/blog\/.+/.test(Astro.url.pathname) || /\/trabajo\/.+/.test(Astro.url.pathname); 
+const urlPathMatchBlogOrWorkPost =
+  /\/blog\/.+/.test(Astro.url.pathname) ||
+  /\/trabajo\/.+/.test(Astro.url.pathname);
 
 let absoluteURLS;
 
@@ -36,27 +38,31 @@ const canonicalURLString = new URL(Astro.url.pathname, domainURL).toString();
 const { title, description } = Astro.props;
 const makeTitle = title ? title : "Webllope";
 ---
+
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YCK7JDEBWB"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YCK7JDEBWB"
+></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
 
-  gtag('config', 'G-YCK7JDEBWB');
+  gtag("config", "G-YCK7JDEBWB");
 </script>
 
 <meta charset="UTF-8" />
 <meta
   name="viewport"
   content="width=device-width, initial-scale=1.0, minimum-scale=1"
-/> 
+/>
 <meta name="generator" content={Astro.generator} />
 <meta name="theme-color" content="#FFFFFF" />
-<meta name="ICBM" content="37.991635135055894,-1.1297545977219012">
-<meta name="geo.position" content="37.991635135055894;-1.1297545977219012">
-<meta name="geo.placename" content="Murcia, Spain">
-<meta name="geo.region" content="ES-MU">
+<meta name="ICBM" content="37.991635135055894,-1.1297545977219012" />
+<meta name="geo.position" content="37.991635135055894;-1.1297545977219012" />
+<meta name="geo.placename" content="Murcia, Spain" />
+<meta name="geo.region" content="ES-MU" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />

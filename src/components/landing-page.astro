@@ -11,6 +11,8 @@ import TextRightSection from "@components/text-right-section.astro";
 import Clients from "@components/clients-reviews.astro";
 import ServiceRoadmap from "@components/service-roadmap/service-roadmap.astro";
 import FromBlog from "@components/from-blog.astro";
+import Faq from "@components/faq.astro";
+import Schema from "@components/schemas/landing-schema.astro";
 
 import officeImage from "@assets/paginas-web-murcia.webp";
 import seoImage from "@assets/disenador web murcia.png";
@@ -18,18 +20,16 @@ import heroImage from "@assets/diseno-web-murcia.webp";
 import { Image } from "astro:assets";
 
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
-import { getEntry } from "astro:content";
 import TextOnlySection from "./text-only-section.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const client = await getEntry("clients", "salonchick");
-
 // TODO aquí habría que hacer un componente común de opiniones que sea un carrusel de opiniones y que las opiniones las coja de un markdown como hace con los blog posts y los works
 ---
 
 <Layout title={t("seo.main.title")} description={t("seo.main.description")}>
+  <Schema slot="schema" />
   <Background />
   <Hero
     primaryText={t("landing.hero.primary")}
@@ -99,5 +99,6 @@ const client = await getEntry("clients", "salonchick");
     <FromBlog variant="landing-primary" />
   </div>
   <Logos />
+  <Faq title={t("landing.faq.title")} questions={t("landing.faq.content")} />
   <Cta />
 </Layout>

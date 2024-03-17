@@ -9,6 +9,36 @@ const landing = {
       "We are committed to making your business stand out on the internet at an unbeatable price (from 150€)",
     cta: "Inquire now!",
   },
+  faq: {
+    title: "FAQ",
+    content: [
+      {
+        question: "How much does a website cost?",
+        answer:
+          "The price of a website depends on the complexity of it. However, using predefined designs (which meet the needs of 95% of businesses) they are made from a minimum of 150€, and if you need something more personalized, a custom budget will be made.",
+      },
+      {
+        question: "What is a website for?",
+        answer:
+          "A website is the presentation of your business on the internet. It is the place where potential customers will go to find information about your company, so it is important that it is attractive and optimized to appear in the first results of Google.",
+      },
+      {
+        question: "How to position a website?",
+        answer:
+          "Web positioning is a long process in which the content of the website is optimized so that it appears in the first results of Google.<br/><br/>To <strong>position a website</strong> you will need to index your page in Google Search Console as a primary requirement, and make sure that the content of your page is interesting, unique and previously analyzed to include keywords that users search for.<br/><br/>We take care of doing the SEO of your website so that it appears in the first results of Google.",
+      },
+      {
+        question: "Do your websites include multiple languages?",
+        answer:
+          "Yes, for a small extra we add the languages that are desired to the website, for translation into English a person from the team has a level of C1 and has been an English teacher, for the rest of the languages paid translation tools will be used.",
+      },
+      {
+        question: "What do you use to make your websites, WordPress?",
+        answer:
+          "Depending on the budget and needs of the client, if it is a common and ordinary website we use <strong>WordPress</strong>, if it is an <strong>online store</strong> we use Prestashop, Woocommerce or Shopify, and if it is a more complex website with very specific needs we use Astro and/or React which increases the price but ensures that the website is 100% optimized for Google.",
+      },
+    ],
+  },
 };
 
 const disenowebmurcia = {
@@ -351,7 +381,8 @@ const contact = {
     subtitle: "Let's work together",
     description: "Let's make your idea a <strong>reality</strong>",
   },
-  ourOfficesTitle: "We are located in the center of Murcia, although we prefer online management 😉",
+  ourOfficesTitle:
+    "We are located in the center of Murcia, although we prefer online management 😉",
   ourOffices: "Nuestras oficinas",
   ourOfficesText:
     "¿Prefieres hacer las cosas en persona? Nosotros no, pero por razones legales tenemos que poner alguna dirección.",
@@ -545,7 +576,6 @@ const reviews = {
   GMBscore: "5",
   GMBreviewsAmount: "Based on 8 reviews",
   reviewUs: "Rate us on ",
-
 };
 
 export const content = {

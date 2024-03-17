@@ -6,7 +6,6 @@ import Footer from "@components/footer.astro";
 import Banner from "@components/ui/banner.astro";
 import Navbar from "@components/navbar.astro";
 import Whatsapp from "@components/whatsapp.astro";
-import Schema from "@components/schema.astro";
 
 import "@fontsource-variable/inter/index.css";
 import "@styles/global.css";
@@ -27,7 +26,7 @@ const { ...head } = Astro.props;
 <html lang={lang}>
   <head>
     <BaseHead {...head} />
-    <Schema />
+    <slot name="schema"/>
     <style is:global>
       /* Improve Page speed */
       /* https://css-tricks.com/almanac/properties/c/content-visibility/ */
