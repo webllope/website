@@ -9,9 +9,6 @@ export const webllopeSenderEmail = "info@webllope.es";
 function send(message: MailData) {
   const isDev = import.meta.env.DEV;
 
-  console.log("# import.meta.env ->,", import.meta.env);
-  console.log("# process.env ->,", process.env);
-
   if (isDev) {
     console.group("#### [DEV] Sending email");
     console.log("Message:", message);
@@ -22,9 +19,6 @@ function send(message: MailData) {
 
   // Take Sendgrid API key from Vercel deployment
   sendGrid.setApiKey(process.env.SENDGRID_APY_KEY as string);
-  // sendGrid.setApiKey(
-  //   "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",
-  // );
   return sendGrid.send(message);
 }
 
