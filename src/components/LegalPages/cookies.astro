@@ -1,0 +1,26 @@
+---
+import Layout from "@layouts/layout.astro";
+import Container from "../ui/container.astro";
+
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const contenido = t("legal.cookies.content");
+---
+
+<Layout title={t("seo.blog.title")} description={t("seo.blog.description")}>
+  <Container class="px-8 py-16">
+    {
+      contenido.map((item) => (
+        <div class="p-8">
+          <h2 class="font-display text-2xl font-semibold text-neutral-950">
+            {item.title}
+          </h2>
+          <p set:html={item.description} />
+        </div>
+      ))
+    }
+  </Container>
+</Layout>

@@ -11,6 +11,12 @@ function filterOutPages(page) {
     page !== "https://webllope.es/en/blog/astro-framework-de-javascript/" &&
     page !== "https://webllope.es/en/blog/diseno-web-profesional-murcia/" &&
     page !== "https://webllope.es/en/blog/seo-murcia/" &&
+    page !== "https://webllope.es/en/privacidad/" &&
+    page !== "https://webllope.es/es/privacidad/" &&
+    page !== "https://webllope.es/es/cookies/" &&
+    page !== "https://webllope.es/en/cookies/" &&
+    page !== "https://webllope.es/es/legal/" &&
+    page !== "https://webllope.es/en/legal/" &&
     page !== "https://webllope.es/en/blog/aprende-seo-basico/"
   );
 }

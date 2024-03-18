@@ -580,9 +580,124 @@ const reviews = {
   reviewUs: "Valóranos en ",
 };
 
+const legal = {
+  cookies: {
+    title: "Política de Cookies",
+    content: [
+      {
+        title: "¿Qué son las cookies?",
+        description:
+          "Las cookies son pequeños archivos de texto que se almacenan en su navegador cuando visita muchas páginas web. Se utilizan para que las páginas web puedan funcionar, o para que funcionen de manera más eficiente, así como para proporcionar información a los propietarios del sitio.",
+      },
+      {
+        title: "Tipos de Cookies",
+        description:
+          "Las cookies pueden ser clasificadas de la siguiente manera:<br/><br/>- <strong>Cookies de sesión</strong>: son cookies temporales que permanecen en el archivo de cookies de su navegador hasta que abandone el sitio web. La información obtenida por medio de estas cookies sirve para analizar pautas de tráfico en la web. A la larga, esto nos permite proporcionar una mejor experiencia para mejorar el contenido y facilitar su uso.<br/>- <strong>Cookies permanentes</strong>: son almacenadas en el disco duro y nuestra web las lee cada vez que usted realiza una nueva visita. Una cookie permanente posee una fecha de expiración determinada. La cookie dejará de funcionar después de esa fecha.<br/>- <strong>Cookies propias</strong>: son cookies creadas por esta web y que sólo esta web puede leer.<br/>- <strong>Cookies de terceros</strong>: son cookies creadas por terceros y que utilizamos para diferentes servicios (por ejemplo, análisis de sitios web o publicidad).<br/><br/>Webllope no guarda ningún tipo de cookie",
+      },
+      {
+        title: "¿Se pueden eliminar las cookies?",
+        description:
+          "Sí, puedes eliminar cookies en tu navegador web. Aquí te indico cómo hacerlo en algunos navegadores populares:<br/><br/><ul><li><strong>Microsoft Edge:</strong> Abre Edge y haz clic en los tres puntos horizontales en la esquina superior derecha para abrir el menú. Selecciona 'Configuración' y haz clic en 'Privacidad, búsqueda y servicios'. Haz clic en 'Elegir qué borrar' y selecciona 'Cookies y otros datos del sitio web' y haz clic en 'Borrar ahora'.</li><li><strong>Mozilla Firefox:</strong> Abre Firefox y haz clic en el botón de menú y selecciona 'Opciones'. Haz clic en 'Privacidad y seguridad' y selecciona 'Cookies y datos del sitio'. Haz clic en 'Borrar datos' y selecciona 'Cookies y datos del sitio' y haz clic en 'Borrar'.</li><li><strong>Google Chrome:</strong> Abre Chrome y haz clic en los tres puntos verticales en la esquina superior derecha para abrir el menú. Selecciona 'Configuración'. En la sección 'Privacidad y seguridad', haz clic en 'Configuración de cookies y otros datos'. Haz clic en 'Ver todas las cookies y los datos del sitio'. Aquí puedes buscar las cookies específicas que deseas eliminar o eliminar todas las cookies haciendo clic en 'Eliminar todo'.</li></ul>",
+      },
+    ],
+  },
+  legal: {
+    title: " Aviso Legal",
+    content: [
+      {
+        title: "Condiciones generales de uso",
+        description:
+          "El acceso y uso de este sitio web está sujeto a las siguientes condiciones. Por favor, lea atentamente estas condiciones antes de utilizar este sitio web. El acceso y uso de este sitio web implica la aceptación de las siguientes condiciones. Si no está de acuerdo con estas condiciones, por favor, no utilice este sitio web.",
+      },
+      {
+        title: "Datos personales obtenidos",
+        description:
+          "Están escritos en la <a href='/es/privacidad/'><strong>Política de Privacidad</strong></a>",
+      },
+      {
+        title: "Compromisos de los usuarios",
+        description:
+          "El usuario queda informado, y acepta, que el acceso a la presente web no supone, en modo alguno, el inicio de una relación comercial con Webllope. De esta forma, el usuario se compromete a utilizar el sitio web, sus servicios y contenidos sin contravenir la legislación vigente, la buena fe y el orden público.<br/><br/>Queda prohibido el uso de la web con fines ilícitos o lesivos, o que, de cualquier forma, puedan causar perjuicio o impedir el normal funcionamiento del sitio web. Respecto de los contenidos de este sitio web, se prohíbe:<br/><br/>- Su reproducción, distribución o modificación, total o parcial, a menos que se cuente con la autorización de sus legítimos titulares.<br/>- Cualquier vulneración de los derechos del prestador o de los legítimos titulares.<br/>- Su utilización para fines comerciales o publicitarios.<br/><br/>En la utilización de la web webllope.es el usuario se compromete a no llevar a cabo ninguna conducta que pudiera dañar la imagen, los intereses y los derechos de Webllope o de terceros o que pudiera dañar, inutilizar o sobrecargar el portal webllope.es o que impidiera, de cualquier forma, la normal utilización de la web.<br/><br/>No obstante, el usuario debe ser consciente de que las medidas de seguridad de los sistemas informáticos en Internet no son enteramente fiables y que, por tanto webllope.es no puede garantizar la inexistencia de malware u otros elementos que puedan producir alteraciones en los sistemas informáticos (software y hardware) del usuario o en sus documentos electrónicos y ficheros contenidos en los mismos aunque ponemos todos los medios necesarios y las medidas de seguridad oportunas para evitar la presencia de estos elementos dañinos.",
+      },
+      {
+        title: "Plataforma de resolución de conflictos",
+        description:
+          "La Comisión Europea facilita una plataforma de resolución de litigios en línea que se encuentra disponible en el siguiente enlace: http://ec.europa.eu/consumers/odr/. Los consumidores podrán someter sus reclamaciones a través de la plataforma de resolución de litigios en línea.",
+      },
+      {
+        title: "Derechos de propiedad intelectual e industrial",
+        description:
+          "En virtud de lo dispuesto en los artículos 8 y 32.1 párrafo segundo de la Ley de Propiedad Intelectual, quedan expresamente prohibidas la reproducción, la distribución y la comunicación pública, incluida su modalidad de puesta a disposición, de la totalidad o parte de los contenidos de esta página web, con fines comerciales, en cualquier soporte y por cualquier medio técnico, sin la autorización de Webllope. El usuario se compromete a respetar los derechos de Propiedad Intelectual e Industrial titularidad de Webllope. Podrá visualizar los elementos del portal e incluso imprimirlos, copiarlos y almacenarlos en el disco duro de su ordenador o en cualquier otro soporte físico siempre y cuando sea, única y exclusivamente, para su uso personal y privado. El usuario deberá abstenerse de suprimir, alterar, eludir o manipular cualquier dispositivo de protección o sistema de seguridad que estuviera instalado en el las páginas de Webllope.",
+      },
+      {
+        title: "Enlaces externos",
+        description:
+          "Las páginas de la web webllope.es proporciona enlaces a otros sitios web propios y contenidos que son propiedad de terceros como:<br/><br/>- Herramientas<br/>- Plugins<br/>- Software<br/>- Recursos<br/>- Otros sitios web<br/><br/>Estos enlaces se proporcionan para su información y para su uso. No tenemos control sobre el contenido de estos sitios web o recursos, y no aceptamos responsabilidad alguna por ellos o por cualquier pérdida o daño que pueda surgir de su uso.",
+      },
+      {
+        title: "Exclusión de garantías y responsable",
+        description:
+          "Webllope no se hace responsable, en ningún caso, de los daños y perjuicios de cualquier naturaleza que pudieran ocasionar, a título enunciativo: errores u omisiones en los contenidos, falta de disponibilidad<br/><br/><ul><li>La falta de mantenimiento y efectivo funcionamiento de la web o de sus servicios y contenidos;</li><li>La existencia de virus, programas maliciosos o lesivos en los contenidos;</li><li>El uso ilícito, negligente, fraudulento o contrario a este Aviso Legal;</li><li>La falta de licitud, calidad, fiabilidad, utilidad y disponibilidad de los servicios prestados por terceros y puestos a disposición de los usuarios en el sitio web.</li></ul><br/>El prestador no se hace responsable bajo ningún concepto de los daños que pudieran dimanar del uso ilegal o indebido de la presente página web.",
+      },
+      {
+        title: "Ley aplicable y jurisdicción",
+        description:
+          "Con carácter general las relaciones entre Webllope con los usuarios de sus servicios telemáticos, presentes en esta web, se encuentran sometidas a la legislación y jurisdicción españolas y a los tribunales de Murcia.",
+      },
+    ],
+  },
+  privacy: {
+    title: " Política de Privacidad",
+    content: [
+      {
+        title: "Recomendación previa",
+        description:
+          "Le recomendamos que lea esta política de privacidad detenidamente antes de utilizar este sitio web. En ella se explica cómo tratamos sus datos personales y cómo protegemos su privacidad cuando utiliza nuestros servicios.<br/><br/>Webllope ha adecuado esta web a las exigencias de la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal (LOPD), y al Real Decreto 1720/2007, de 21 de diciembre, conocido como el Reglamento de desarrollo de la LOPD. Cumple también con el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016 relativo a la protección de las personas físicas (RGPD), así como con la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSICE o LSSI).",
+      },
+      {
+        title: "Principios que aplicaré sobre tu información",
+        description:
+          "<ul><li>Nunca solicitamos información personal a menos que realmente sea necesaria para prestarte los servicios que nos requieras</li><li>Nunca compartimos información personal de nuestros usuarios con nadie, excepto para cumplir con la ley o en caso que contemos con tu autorización expresa.</li><li>Nunca utilizaremos tus datos personales con una finalidad diferente a la expresada en esta política de privacidad.</li></ul>",
+      },
+      {
+        title: "De qué forma obtenemos datos",
+        description:
+          "Los datos personales que tratamos son los que nos facilitas al rellenar formularios de contacto únicamente, datos facilitados por el usuario",
+      },
+      {
+        title: "¿Cuáles son tus derechos cuando nos facilitas tus datos?",
+        description:
+          "Cualquier persona tiene derecho a obtener confirmación sobre si en Webllope estamos tratando datos personales que me concierne, o no. Las personas interesadas tienen derecho a: Solicitar el acceso a los datos personales relativos al interesado, Solicitar su rectificación o supresión, Solicitar la limitación de su tratamiento, Oponerse al tratamiento, Solicitar la portabilidad de los datos, Los interesados podrán acceder a sus datos personales, así como a solicitar la rectificación de los datos inexactos o, en su caso, solicitar su supresión cuando, entre otros motivos, los datos ya no sean necesarios para los fines que fueron recogidos. En determinadas circunstancias, los interesados podrán solicitar la limitación del tratamiento de sus datos, en cuyo caso únicamente los conservaré para el ejercicio o la defensa de reclamaciones.<br/><br/>En determinadas circunstancias y por motivos relacionados con su situación particular, los interesados podrán oponerse al tratamiento de sus datos. Webllope dejará de tratar los datos, salvo por motivos legítimos imperiosos, o el ejercicio o la defensa de posibles reclamaciones. Cómo interesado, tienes derecho a recibir los datos personales que te incumban, que nos hayas facilitado y en un formato estructurado, de uso común y lectura mecánica, y a transmitirlos a otro responsable del tratamiento cuando: El tratamiento esté basado en el consentimiento, Los datos hayan sido facilitados por la persona interesada,El tratamiento se efectúe por medios automatizados, Al ejercer tu derecho a la portabilidad de los datos, tendrás derecho a que los datos personales se transmitan directamente de responsable a responsable cuando sea técnicamente posible<br/><br/>Los interesados también tendrán derecho a la tutela judicial efectiva y a presentar una reclamación ante la autoridad de control, en este caso, la Agencia Española de Protección de Datos, si consideran que el tratamiento de datos personales que le conciernen infringe el Reglamento.",
+      },
+      {
+        title: "¿Con qué finalidad trato tus datos personales?",
+        description:
+          "<p>Cuando un usuario se conecta con esta web por ejemplo para comentar un post, mandar un correo al titular, suscribirse o realizar alguna contratación, está facilitando información de carácter personal de la que es responsable Webllope. Esa información puede incluir datos de carácter personal como pueden ser tu dirección IP, nombre, dirección física, dirección de correo electrónico, número de teléfono, y otra información. Al facilitar esta información, el usuario da su consentimiento para que su información sea recopilada, utilizada, gestionada y almacenada por https://webllope.es, sólo como se describe en el Aviso Legal y en la presente Política de Privacidad.</p> <p>En Webllope existen diferentes sistemas de captura de información personal y trato la información que me facilitan las personas interesadas con el siguiente fin por cada sistema de captura (formularios):</p><li><b>Formulario de contacto:</b> Solicito diferentes datos de carácter personal como Nombre, Email, para responder a los requerimientos de los usuarios de https://webllope.es. Por ejemplo, puedo utilizar esos datos para responder a tu solicitud y dar respuesta a las dudas, quejas, comentarios o inquietudes que puedas tener relativas a la información incluida en la web, los servicios que se prestan a través de la web, el tratamiento de sus datos personales, cuestiones referentes a los textos legales incluidos en la web, así como cualesquiera otras consultas que puedas tener y que no estén sujetas a las condiciones de contratación.&nbsp;Te informo que los datos que me facilitas estarán ubicados en los servidores de Webllope dentro de la UE.</li><p>Existen otras finalidades por la que trato tus datos personales:</p><br/><ul><li>Para garantizar el cumplimiento de las condiciones de uso y la ley aplicable. Esto puede incluir el desarrollo de herramientas y algoritmos que ayudan a esta web a garantizar la confidencialidad de los datos personales que recoge.</li><li>Para apoyar y mejorar los servicios que ofrece esta web.</li><li>También se recogen otros datos no identificativos que se obtienen mediante algunas cookies que se descargan en el ordenador del usuario cuando navega en esta web que detallo en la política de cookies.</li><li>Para gestionar las redes sociales. Webllope puede tener presencia en redes sociales. El tratamiento de los datos que se lleve a cabo de las personas que se hagan seguidoras en las redes sociales de las páginas oficiales de https://webllope.es, se regirá por este apartado. Así como por aquellas condiciones de uso, políticas de privacidad y normativas de acceso que pertenezcan a la red social que proceda en cada caso y aceptadas previamente por el usuario de El Responsable. Tratará sus datos con las finalidades de administrar correctamente su presencia en la red social, informando de actividades, productos o servicios de Webllope. Así como para cualquier otra finalidad que las normativas de las redes sociales permitan. En ningún caso utilizaré los perfiles de seguidores en redes sociales para enviar publicidad de manera individual.</li></ul>",
+      },
+      {
+        title: "Legitimación para el tratamiento de tus datos.",
+        description:
+          "La base legal para el tratamiento de tus datos es: el consentimiento.<br/><br/>Para contactar o realizar comentarios en esta web se requiere el consentimiento con esta política de privacidad.<br/><br/>Los datos personales proporcionados se conservarán hasta que se solicite su supresión por el interesado.",
+      },
+      {
+        title: "Aceptación y consentimiento.",
+        description:
+          "El usuario declara haber sido informado de las condiciones sobre protección de datos de carácter personal, aceptando y consintiendo el tratamiento de los mismos por parte de Webllope en la forma y para las finalidades indicadas en esta política de privacidad.",
+      },
+      {
+        title: "Correos comerciales.",
+        description:
+          "De acuerdo con la LSSICE, https://webllope.es no realiza prácticas de SPAM.",
+      },
+    ],
+  },
+};
+
+
 export const content = {
   ...misc,
   landing,
+  legal,
   reviews,
   disenowebmurcia,
   disenoTiendasOnlineMurcia,

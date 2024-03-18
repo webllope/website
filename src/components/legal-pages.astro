@@ -1,0 +1,17 @@
+---
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<div class="my-2 flex flex-col md:flex-row gap-2 justify-center items-center">
+  <a href={getRelativeLocaleUrl(lang, "cookies")}>{t("legal.cookies.title")}</a>
+  |
+  <a href={getRelativeLocaleUrl(lang, "legal")}>{t("legal.legal.title")}</a>
+  |
+  <a href={getRelativeLocaleUrl(lang, "privacidad")}
+    >{t("legal.privacy.title")}</a
+  >
+</div>

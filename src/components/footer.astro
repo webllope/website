@@ -2,6 +2,7 @@
 import { Icon } from "astro-icon";
 import { social, contact } from "../data";
 import Logo from "./logo.astro";
+import LegalPages from "./legal-pages.astro";
 
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
 import { getRelativeLocaleUrl } from "astro:i18n";
@@ -181,8 +182,9 @@ const items = {
         </div>
       </div>
       <div
-        class="mb-20 mt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
+        class="mb-20 mt-24 flex flex-wrap flex-col md:flex-row items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12 items-center">
         <Logo parent="Footer" />
+        <LegalPages />
         <p class="text-sm text-neutral-700">© webllope. 2024</p>
       </div>
     </div>

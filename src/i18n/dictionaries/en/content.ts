@@ -578,8 +578,122 @@ const reviews = {
   reviewUs: "Rate us on ",
 };
 
+const legal = {
+  cookies: {
+    title: "Cookie Policy",
+    content: [
+      {
+        title: "What are cookies?",
+        description:
+          "Cookies are small text files that are stored in your browser when you visit many web pages. They are used for web pages to function, or to function more efficiently, as well as to provide information to site owners.",
+      },
+      {
+        title: "Types of Cookies",
+        description:
+          "Cookies can be classified as follows:<br/><br/>- <strong>Session cookies</strong>: are temporary cookies that remain in your browser's cookie file until you leave the website. The information obtained through these cookies is used to analyze traffic patterns on the web. In the long run, this allows us to provide a better experience to improve content and facilitate its use.<br/>- <strong>Persistent cookies</strong>: are stored on the hard drive and our website reads them each time you make a new visit. A persistent cookie has a specific expiration date. The cookie will stop working after that date.<br/>- <strong>Own cookies</strong>: are cookies created by this website and only this website can read.<br/>- <strong>Third-party cookies</strong>: are cookies created by third parties and that we use for different services (for example, website analysis or advertising).<br/><br/>Webllope does not save any type of cookie",
+      },
+      {
+        title: "Can cookies be deleted?",
+        description:
+          "Yes, you can delete cookies in your web browser. Here's how to do it in some popular browsers:<br/><br/><ul><li><strong>Microsoft Edge:</strong> Open Edge and click the three horizontal dots in the upper right corner to open the menu. Select 'Settings' and click on 'Privacy, search and services'. Click on 'Choose what to delete' and select 'Cookies and other site data' and click 'Delete now'.</li><li><strong>Mozilla Firefox:</strong> Open Firefox and click on the menu button and select 'Options'. Click on 'Privacy and security' and select 'Cookies and site data'. Click on 'Delete data' and select 'Cookies and site data' and click on 'Delete'.</li><li><strong>Google Chrome:</strong> Open Chrome and click on the three vertical dots in the upper right corner to open the menu. Select 'Settings'. In the 'Privacy and security' section, click on 'Cookie and other data settings'. Click on 'View all cookies and site data'. Here you can search for specific cookies you want to delete or delete all cookies by clicking on 'Delete all'.</li></ul>",
+      },
+    ],
+  },
+  legal: {
+    title: " Legal Notice",
+    content: [
+      {
+        title: "General conditions of use",
+        description:
+          "Access and use of this website is subject to the following conditions. Please read these conditions carefully before using this website. Access and use of this website implies acceptance of the following conditions. If you do not agree with these conditions, please do not use this website.",
+      },
+      {
+        title: "Personal data obtained",
+        description:
+          "They are written in the <a href='/en/privacy/'><strong>Privacy Policy</strong></a>",
+      },
+      {
+        title: "User commitments",
+        description:
+          "The user is informed, and accepts, that access to this website does not imply, in any way, the beginning of a commercial relationship with Webllope. In this way, the user undertakes to use the website, its services and contents without contravening current legislation, good faith and public order.<br/><br/>The use of the website for illegal or harmful purposes, or that, in any way, may cause harm or prevent the normal functioning of the website is prohibited. Regarding the contents of this website, the following is prohibited:<br/><br/>- Its reproduction, distribution or modification, total or partial, unless you have the authorization of its legitimate owners.<br/>- Any violation of the rights of the provider or the legitimate owners.<br/>- Its use for commercial or advertising purposes.<br/><br/>In the use of the webllope.es website, the user undertakes not to carry out any conduct that could damage the image, interests and rights of Webllope or third parties or that could damage, disable or overload the webllope.es portal or that would prevent, in any way, the normal use of the website.<br/><br/>However, the user must be aware that the security measures of the computer systems on the Internet are not entirely reliable and that, therefore, webllope.es cannot guarantee the absence of malware or other elements that may cause alterations in the computer systems (software and hardware) of the user or in their electronic documents and files contained in them, although we put all the necessary means and appropriate security measures to avoid the presence of these harmful elements.",
+      },
+      {
+        title: "Platform for conflict resolution",
+        description:
+          "The European Commission provides an online dispute resolution platform that is available at the following link: http://ec.europa.eu/consumers/odr/. Consumers may submit their claims through the online dispute resolution platform.",
+      },
+      {
+        title: "Intellectual and industrial property rights",
+        description:
+          "In accordance with the provisions of articles 8 and 32.1 paragraph second of the Intellectual Property Law, the reproduction, distribution and public communication, including its method of making available, of all or part of the contents of this website, for commercial purposes, in any medium and by any technical means, without the authorization of Webllope. The user undertakes to respect the Intellectual and Industrial Property rights owned by Webllope. You may view the elements of the portal and even print, copy and store them on the hard drive of your computer or on any other physical medium as long as it is, solely and exclusively, for your personal and private use. The user must refrain from deleting, altering, evading or manipulating any protection device or security system that was installed on the webllope.es pages.",
+      },
+      {
+        title: "External links",
+        description:
+          "The pages of the webllope.es website provide links to other websites and content that are owned by third parties such as:<br/><br/>- Tools<br/>- Plugins<br/>- Software<br/>- Resources<br/>- Other websites<br/><br/>These links are provided for your information and use. We have no control over the content of these websites or resources, and we accept no responsibility for them or for any loss or damage that may arise from their use.",
+      },
+      {
+        title: "Exclusion of guarantees and liability",
+        description:
+          "Webllope is not responsible, in any case, for damages of any kind that may cause, by way of example: errors or omissions in the content, lack of availability<br/><br/><ul><li>The lack of maintenance and effective operation of the website or its services and content;</li><li>The existence of viruses, malicious or harmful programs in the content;</li><li>Illicit, negligent, fraudulent or contrary use of this Legal Notice;</li><li>The lack of legality, quality, reliability, usefulness and availability of the services provided by third parties and made available to users on the website.</li></ul><br/>The provider is not responsible under any circumstances for damages that may arise from the illegal or improper use of this website.",
+      },
+      {
+        title: "Applicable law and jurisdiction",
+        description:
+          "In general, the relations between Webllope and the users of its telematic services, present on this website, are subject to Spanish legislation and jurisdiction and to the courts of Murcia.",
+      },
+    ],
+  },
+  privacy: {
+    title: " Privacy Policy",
+    content: [
+      {
+        title: "Previous recommendation",
+        description:
+          "We recommend that you read this privacy policy carefully before using this website. It explains how we treat your personal data and how we protect your privacy when you use our services.<br/><br/>Webllope has adapted this website to the requirements of Organic Law 15/1999, of December 13, on the Protection of Personal Data (LOPD), and to Royal Decree 1720/2007, of December 21, known as the Regulation of development of the LOPD. It also complies with Regulation (EU) 2016/679 of the European Parliament and of the Council of April 27, 2016 on the protection of individuals (RGPD), as well as with Law 34/2002, of July 11, on Services of the Information Society and Electronic Commerce (LSSICE or LSSI).",
+      },
+      {
+        title: "Principles that I will apply to your information",
+        description:
+          "<ul><li>We never ask for personal information unless it is really necessary to provide you with the services you require</li><li>We never share personal information about our users with anyone, except to comply with the law or if we have your express authorization.</li><li>We will never use your personal data for a purpose other than that expressed in this privacy policy.</li></ul>",
+      },
+      {
+        title: "How do we obtain data?",
+        description:
+          "The personal data that we treat are those that you provide us when filling out contact forms only, data provided by the user",
+      },
+      {
+        title: "What are your rights when you provide us with your data?",
+        description:
+          "Any person has the right to obtain confirmation as to whether Webllope is treating personal data that concerns me, or not. Interested persons have the right to: Request access to personal data concerning the interested party, Request rectification or deletion, Request the limitation of its treatment, Oppose the treatment, Request the portability of the data, Interested parties may access their personal data, as well as request the rectification of inaccurate data or, where appropriate, request their deletion when, among other reasons, the data are no longer necessary for the purposes for which they were collected. In certain circumstances, interested parties may request the limitation of the processing of their data, in which case we will only keep them for the exercise or defense of claims.<br/><br/>In certain circumstances and for reasons related to their particular situation, interested parties may object to the processing of their data. Webllope will stop processing the data, except for compelling legitimate reasons, or the exercise or defense of possible claims. As an interested party, you have the right to receive the personal data that concerns you, that you have provided to us and in a structured format, of common use and mechanical reading, and to transmit them to another person responsible for the treatment when: The treatment is based on consent, The data have been provided by the interested party, The treatment is carried out by automated means, When exercising your right to data portability, you will have the right to have the personal data transmitted directly from controller to controller when technically possible.<br/><br/>Interested parties will also have the right to effective judicial protection and to file a claim with the supervisory authority, in this case, the Spanish Data Protection Agency, if they consider that the processing of personal data concerning them infringes the Regulation.",
+      },
+      {
+        title: "For what purpose do I process your personal data?",
+        description:
+          "<p>When a user connects with this website, for example to comment on a post, send an email to the owner, subscribe or make a contract, they are providing personal information for which Webllope is responsible. That information may include personal data such as your IP address, name, physical address, email address, telephone number, and other information. By providing this information, the user gives their consent for their information to be collected, used, managed and stored by https://webllope.es, only as described in the Legal Notice and in this Privacy Policy.</p> <p>At Webllope there are different systems for capturing personal information and I treat the information that the interested parties provide me with the following purpose for each capture system (forms):</p><li><b>Contact form:</b> I request different personal data such as Name, Email, to respond to the requirements of the users of https://webllope.es. For example, I can use this data to respond to your request and respond to the doubts, complaints, comments or concerns you may have regarding the information included on the website, the services provided through the website, the treatment of your personal data, questions regarding the legal texts included on the website, as well as any other queries you may have that are not subject to the conditions of contracting.&nbsp;I inform you that the data you provide me with will be located on the servers of Webllope within the EU.</li><p>There are other purposes for which I process your personal data:</p><br/><ul><li>To ensure compliance with the conditions of use and applicable law. This may include the development of tools and algorithms that help this website to guarantee the confidentiality of the personal data it collects.</li><li>To support and improve the services offered by this website.</li><li>Other non-identifying data is also collected through some cookies that are downloaded to the user's computer when browsing this website, which I detail in the cookie policy.</li><li>To manage social networks. Webllope may have a presence on social networks. The processing of the data that is carried out of the people who become followers on the social networks of the official pages of https://webllope.es, will be governed by this section. As well as by those conditions of use, privacy policies and access regulations that belong to the social network that is appropriate in each case and previously accepted by the user of The Person in charge. It will treat their data with the purpose of correctly managing their presence in the social network, informing of activities, products or services of Webllope. As well as for any other purpose that the regulations of the social networks allow. In no case will I use the profiles of followers in social networks to send individual advertising.</li></ul>",
+      },
+      {
+        title: "Legitimation for the treatment of your data.",
+        description:
+          "The legal basis for the treatment of your data is: consent.<br/><br/>To contact or make comments on this website, consent with this privacy policy is required.<br/><br/>The personal data provided will be kept until its deletion is requested by the interested party.",
+      },
+      {
+        title: "Acceptance and consent.",
+        description:
+          "The user declares to have been informed of the conditions on protection of personal data, accepting and consenting to the treatment of the same by Webllope in the manner and for the purposes indicated in this privacy policy.",
+      },
+      {
+        title: "Commercial emails.",
+        description:
+          "In accordance with the LSSICE, https://webllope.es does not carry out SPAM practices.",
+      },
+    ],
+  },
+};
+
 export const content = {
   ...misc,
+  legal,
   landing,
   reviews,
   disenowebmurcia,
