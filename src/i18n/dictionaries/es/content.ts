@@ -693,9 +693,13 @@ const legal = {
   },
 };
 
+const newspapers = {
+  title: "Tal vez hayas oído hablar de nosotros en estos prestigiosos periódicos digitales",
+}
 
 export const content = {
   ...misc,
+  newspapers,
   landing,
   legal,
   reviews,

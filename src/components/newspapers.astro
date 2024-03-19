@@ -1,0 +1,83 @@
+---
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+import { Image } from "astro:assets";
+
+import MurciaComLogo from "@assets/logos/murciacom-logo.jpg";
+import MarketingoLogo from "@assets/logos/marketingo-logo.png";
+import LagacetaLogo from "@assets/logos/lagaceta-logo.png";
+import RoiPress from "@assets/logos/roipress-logo.png";
+
+const newspapers = [
+  {
+    name: "Murcia.com Logo",
+    img: MurciaComLogo,
+    url: "https://www.murcia.com/tecnologia/noticias/2024/03/14-webllope-tu-empresa-de-diseno-web-en-murcia.asp",
+    width: 270,
+  },
+  {
+    name: "La Gaceta de Almería Logo",
+    img: LagacetaLogo,
+    url: "https://www.lagacetadealmeria.com/webllope-innovacion-y-diseno-web-en-murcia/",
+    width: 270,
+  },
+  {
+    name: "Marketingo Logo",
+    img: MarketingoLogo,
+    url: "https://www.marketingo.es/diseno-web-en-murcia-como-elegir-la-mejor-agencia-para-tu-proyecto/",
+    width: 270,
+  },
+  {
+    name: "RoiPress Logo",
+    img: RoiPress,
+    url: "https://www.roipress.com/2024/03/webllope-se-destaca-proponiendo-el.html",
+    width: 150,
+  },
+];
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<div class="mt-32 rounded-4xl bg-neutral-950 py-20 mb-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:max-w-none">
+        <div
+          class="flex items-center gap-x-8"
+          style="opacity: 1; transform: none;">
+          <h3
+            class="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
+            {t("newspapers.title")}
+          </h3><div class="h-px flex-auto bg-neutral-800"></div>
+        </div>
+        <div>
+          <ul class="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4">
+            {
+              newspapers.map((newspaper) => (
+                <li class="flex items-center">
+                  <a
+                    href={newspaper.url}
+                    target="_blank"
+                    rel="nofollow noopener noreferrer">
+                    <Image
+                      alt={newspaper.name}
+                      loading="lazy"
+                      decoding="async"
+                      data-nimg="1"
+                      src={newspaper.img}
+                      style="color: transparent;"
+                      class="rounded-xl h-[80px] hover:grayscale transition duration-300 hover:scale-105"
+                      width={newspaper.width}
+                      height={80}
+                    />
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

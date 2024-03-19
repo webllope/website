@@ -13,6 +13,7 @@ import ServiceRoadmap from "@components/service-roadmap/service-roadmap.astro";
 import FromBlog from "@components/from-blog.astro";
 import Faq from "@/components/faq.astro";
 import Schema from "@components/schemas/landing-schema.astro";
+import Newspapers from "@components/newspapers.astro";
 
 import officeImage from "@assets/paginas-web-murcia.webp";
 import seoImage from "@assets/disenador web murcia.png";
@@ -92,13 +93,13 @@ const t = useTranslations(lang);
       text: t("briefEcommerceInfo.cta"),
     }}
   />
+  <Newspapers />
   <Features />
   <GoogleMap />
   <div class="relative pt-12 lg:pt-16 mt-12 lg:mt-16">
     <Background />
     <FromBlog variant="landing-primary" />
   </div>
-  <Logos />
   <Faq title={t("landing.faq.title")} questions={t("landing.faq.content")} />
   <Cta />
 </Layout>

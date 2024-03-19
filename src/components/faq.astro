@@ -8,45 +8,58 @@ interface Props {
 }
 const { title, questions } = Astro.props as Props;
 ---
-<Container>
-  <h2 class="mx-auto text-3xl w-fit text-neutral-950 font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-4xl">
-          {title}
-        </h2>
-  {questions.map(({question, answer}) => (
-    <div class="mt-6 accordion group relative rounded-md border border-purple-900 w-auto lg:w-1/2 mx-auto" key={question}>
-      <button
-        class="accordion__button flex w-full flex-1 items-center justify-between gap-2 p-3 text-left font-medium transition hover:text-purple-500 sm:px-4"
-        type="button"
-        id={`${question.replace(/\s+/g, '-')}-accordion-menu-button`}
-        aria-expanded="false"
-        aria-controls={`${question.replace(/\s+/g, '-')}-accordion-menu-content`}
-      >
-        {question}
-        <Icon
-          name="tabler:chevron-down"
-          aria-hidden="true"
-          class="accordion__chevron h-7 w-7 shrink-0 transition-transform"
-        />
-      </button>
+
+<Container class="my-24">
+  <h2
+    class="mx-auto text-3xl w-fit text-neutral-950 font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-4xl">
+    {title}
+  </h2>
+  {
+    questions.map(({ question, answer }) => (
       <div
-        id={`${question.replace(/\s+/g, '-')}-accordion-menu-content`}
-        aria-labelledby={`${question.replace(/\s+/g, '-')}-accordion-menu-button`}
-        class="accordion__content hidden max-h-0 overflow-hidden px-3 transition-all duration-300 ease-in-out sm:px-4"
-      >
-        <p class="prose mb-4 mt-1 max-w-full transition-[height]" set:html={answer}>
-        </p>
+        class="mt-6 accordion group relative rounded-md border border-purple-900 w-auto lg:w-1/2 mx-auto"
+        key={question}>
+        <button
+          class="accordion__button flex w-full flex-1 items-center justify-between gap-2 p-3 text-left font-medium transition hover:text-purple-500 sm:px-4"
+          type="button"
+          id={`${question.replace(/\s+/g, "-")}-accordion-menu-button`}
+          aria-expanded="false"
+          aria-controls={`${question.replace(/\s+/g, "-")}-accordion-menu-content`}>
+          {question}
+          <Icon
+            name="tabler:chevron-down"
+            aria-hidden="true"
+            class="accordion__chevron h-7 w-7 shrink-0 transition-transform"
+          />
+        </button>
+        <div
+          id={`${question.replace(/\s+/g, "-")}-accordion-menu-content`}
+          aria-labelledby={`${question.replace(/\s+/g, "-")}-accordion-menu-button`}
+          class="accordion__content hidden max-h-0 overflow-hidden px-3 transition-all duration-300 ease-in-out sm:px-4">
+          <p
+            class="prose mb-4 mt-1 max-w-full transition-[height]"
+            set:html={answer}></p>
+        </div>
       </div>
-    </div>
-  ))}
+    ))
+  }
 </Container>
 
 <script>
   function accordionSetup() {
-    const accordionMenus = document.querySelectorAll(".accordion") as NodeListOf<HTMLElement>;
+    const accordionMenus = document.querySelectorAll(
+      ".accordion"
+    ) as NodeListOf<HTMLElement>;
     accordionMenus.forEach((accordionMenu) => {
-      const accordionButton = accordionMenu.querySelector(".accordion__button") as HTMLElement;
-      const accordionChevron = accordionMenu.querySelector(".accordion__chevron") as HTMLElement;
-      const accordionContent = accordionMenu.querySelector(".accordion__content") as HTMLElement;
+      const accordionButton = accordionMenu.querySelector(
+        ".accordion__button"
+      ) as HTMLElement;
+      const accordionChevron = accordionMenu.querySelector(
+        ".accordion__chevron"
+      ) as HTMLElement;
+      const accordionContent = accordionMenu.querySelector(
+        ".accordion__content"
+      ) as HTMLElement;
 
       if (accordionButton && accordionContent && accordionChevron) {
         accordionButton.addEventListener("click", (event) => {
@@ -55,7 +68,9 @@ const { title, questions } = Astro.props as Props;
           accordionMenu.classList.toggle("active", !isActive);
           accordionButton.setAttribute("aria-expanded", String(!isActive));
           accordionContent.classList.toggle("hidden", isActive);
-          accordionContent.style.maxHeight = isActive ? "0px" : `${accordionContent.scrollHeight}px`;
+          accordionContent.style.maxHeight = isActive
+            ? "0px"
+            : `${accordionContent.scrollHeight}px`;
           accordionChevron.classList.toggle("rotate-180", !isActive);
 
           if (isActive) {

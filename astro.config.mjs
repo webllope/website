@@ -17,6 +17,8 @@ function filterOutPages(page) {
     page !== "https://webllope.es/en/cookies/" &&
     page !== "https://webllope.es/es/legal/" &&
     page !== "https://webllope.es/en/legal/" &&
+    page !==
+      "https://webllope.es/en/blog/mejora-tu-posicionamiento-web-murcia/" &&
     page !== "https://webllope.es/en/blog/aprende-seo-basico/"
   );
 }

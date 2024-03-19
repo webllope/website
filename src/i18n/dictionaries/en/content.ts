@@ -691,9 +691,14 @@ const legal = {
   },
 };
 
+const newspapers = {
+  title: "You may have heard of us in these prestigious digital newspapers",
+};
+
 export const content = {
   ...misc,
   legal,
+  newspapers,
   landing,
   reviews,
   disenowebmurcia,
