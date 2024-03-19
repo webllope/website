@@ -63,9 +63,9 @@ Esto es lo que debes esperar de una **agencia de posicionamiento web** o lo que 
 
 ¿Listo para tener la página web con mejor posicionamiento? Ya tienes los tips sólo queda ejecutar.
 
-## En Webllope un posicionamiento web profesional para ti
+## En Webllope hacemos un posicionamiento web profesional para ti
 
-En caso de querer continuar adelante con la ayuda de **profesionales del osicionamiento web**, no dudes en contactarnos. También puedes hacer una consulta y la responderemos encantados.
+En caso de querer continuar adelante con la ayuda de **profesionales del posicionamiento web**, no dudes en contactarnos. También puedes hacer una consulta y la responderemos encantados.
 
 **Haznos saber que vienes de este artículo y disfruta de un descuento**.
 <a href="/es/contacto/" class="w-full flex">
