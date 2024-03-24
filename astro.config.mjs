@@ -10,6 +10,7 @@ function filterOutPages(page) {
     page !== "https://webllope.es/es/blog/is-it-important-to-have-a-website/" &&
     page !== "https://webllope.es/en/blog/astro-framework-de-javascript/" &&
     page !== "https://webllope.es/en/blog/diseno-web-profesional-murcia/" &&
+    page !== "https://webllope.es/en/blog/mejores-diseñadores-web/" &&
     page !== "https://webllope.es/en/blog/seo-murcia/" &&
     page !== "https://webllope.es/en/privacidad/" &&
     page !== "https://webllope.es/es/privacidad/" &&
@@ -19,8 +20,6 @@ function filterOutPages(page) {
     page !== "https://webllope.es/en/legal/" &&
     page !==
       "https://webllope.es/en/blog/mejora-tu-posicionamiento-web-murcia/" &&
-    "https://webllope.es/en/blog/mejores-diseñadores-web/" &&
-    "https://webllope.es/es/blog/mejores-diseñadores-web/" &&
     page !== "https://webllope.es/en/blog/aprende-seo-basico/"
   );
 }
