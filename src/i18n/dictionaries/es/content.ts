@@ -6,7 +6,7 @@ const landing = {
     tertiary:
       "Somos <strong class='animate-text'>diseñadores web</strong> y además expertos en SEO y <strong>posicionamiento web Murcia</strong>.",
     quaternary:
-      "Nos comprometemos a hacer que tu negocio destaque en internet a un precio inmejorable (desde 150€).",
+      "Nos comprometemos a hacer que tu negocio destaque en internet a un precio inmejorable (desde 250€).",
     cta: "Consulta sin compromiso",
   },
   faq: {
@@ -15,7 +15,7 @@ const landing = {
       {
         question: "¿Cuánto cuesta hacer una página web?",
         answer:
-          "El precio de una página web depende de la complejidad de la misma. No obstante, usando diseños predefinidos (los cuales cumplen con las necesidades del 95% de los negocios) se hacen desde un mínimo de 150€, y si necesitas algo más personalizado, se hará un presupuesto a medida.",
+          "El precio de una página web depende de la complejidad de la misma. No obstante, usando diseños predefinidos (los cuales cumplen con las necesidades del 95% de los negocios) se hacen desde un mínimo de 250€, y si necesitas algo más personalizado, se hará un presupuesto a medida.",
       },
       {
         question: "¿Para qué sirve una página web?",
