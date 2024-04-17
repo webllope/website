@@ -6,7 +6,7 @@ const landing = {
     tertiary:
       "We are <strong>website designers</strong> and also experts in <strong>SEO</strong> and <strong>web positioning Murcia</strong>",
     quaternary:
-      "We are committed to making your business stand out on the internet at an unbeatable price (from 150€)",
+      "We are committed to making your business stand out on the internet at an unbeatable price (from 250€)",
     cta: "Inquire now!",
   },
   faq: {
@@ -15,7 +15,7 @@ const landing = {
       {
         question: "How much does a website cost?",
         answer:
-          "The price of a website depends on the complexity of it. However, using predefined designs (which meet the needs of 95% of businesses) they are made from a minimum of 150€, and if you need something more personalized, a custom budget will be made.",
+          "The price of a website depends on the complexity of it. However, using predefined designs (which meet the needs of 95% of businesses) they are made from a minimum of 250€, and if you need something more personalized, a custom budget will be made.",
       },
       {
         question: "What is a website for?",
