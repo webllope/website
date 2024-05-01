@@ -20,36 +20,31 @@ const getFormattedDate = (date) => formatDate(lang, date);
 
 const { frontmatter } = Astro.props;
 const author = await getEntry(frontmatter.author);
+const currentPathname = Astro.url.pathname;
+const schema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": `https://www.webllope.es/${currentPathname}`,
+  },
+  headline: frontmatter.title,
+  datePublished: frontmatter.publishDate,
+  author: {
+    "@type": "Person",
+    name: "Daniel Maestre",
+    url: "https://www.webllope.es/es/daniel-maestre/",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Webllope, Diseño web Murcia",
+  },
+  description: frontmatter.description,
+});
 ---
 
 <Layout title={frontmatter.seoTitle} description={frontmatter.description}>
-  <script>
-    const currentPathname = Astro.url.pathname;
-    const { frontmatter } = Astro.props;
-    var el = document.createElement("script");
-    el.type = "application/ld+json";
-    el.text = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      mainEntityOfPage: {
-        "@type": "WebPage",
-        "@id": `https://www.webllope.es/${currentPathname}`,
-      },
-      headline: frontmatter.title,
-      datePublished: frontmatter.publishDate,
-      author: {
-        "@type": "Person",
-        name: "Daniel Maestre",
-        url: "https://www.webllope.es/es/daniel-maestre/",
-      },
-      publisher: {
-        "@type": "Organization",
-        name: "Webllope, Diseño web Murcia",
-      },
-      description: frontmatter.description,
-    });
-    document.querySelector("body").appendChild(el);
-  </script>
+  <script type="application/ld+json" set:html={schema} />
   <main class="w-full flex-auto">
     <article class="mx-auto max-w-7xl px-6 lg:px-8 mt-24 sm:mt-32 lg:mt-40">
       <div class="mx-auto max-w-2xl lg:max-w-none">
