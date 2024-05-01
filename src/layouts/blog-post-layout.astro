@@ -46,9 +46,9 @@ const author = await getEntry(frontmatter.author);
         "@type": "Organization",
         name: "Webllope, Diseño web Murcia",
       },
-      description:
-        frontmatter.description,
+      description: frontmatter.description,
     });
+    document.querySelector("body").appendChild(el);
   </script>
   <main class="w-full flex-auto">
     <article class="mx-auto max-w-7xl px-6 lg:px-8 mt-24 sm:mt-32 lg:mt-40">
