@@ -1,0 +1,37 @@
+---
+import { getLangFromUrl } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+---
+{lang === 'es' && (
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "@id": "https://www.webllope.es/es/servicios/#website",
+    "name": "Webllope Servicios de diseño web",
+    "alternateName": "Servicios de diseño web en Murcia. Creamos tu página web y la posicionamos en buscadores.",
+    "description": "En Webllope ofrecemos servicios de diseño web, posicionamiento SEO y SEM, diseño de tiendas online, y marketing digital en Murcia.",
+    "url": "https://www.webllope.es/es/servicios/",
+    "datePublished": "2023-12-28T11:26:41+00:00",
+    "dateModified": "2024-05-01T02:55:41+00:00"
+  }
+</script>
+)
+}
+{lang === 'en' && (
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "@id": "https://www.webllope.es/en/servicios/#website",
+    "name": "Webllope web design services",
+    "alternateName": "Website Design Murcia Services. We create your ideal website",
+    "description": "At Webllope we offer web design, SEO and SEM positioning services, online store design, and digital marketing in Murcia.",
+    "url": "https://www.webllope.es/en/servicios/",
+    "datePublished": "2023-12-28T11:26:41+00:00",
+    "dateModified": "2024-05-10T02:55:41+00:00"
+  }
+</script>
+)
+}

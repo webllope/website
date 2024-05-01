@@ -13,15 +13,16 @@ import { Image } from "astro:assets";
 import seoImage1 from "@assets/seo-murcia.webp";
 import seoImage2 from "@assets/agencia-seo-murcia.webp";
 
+import Schema from "@components/schemas/seo-murcia-schema.astro";
+
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<Layout
-  title={t("seo.seoMurcia.title")}
-  description={t("seo.seoMurcia.description")}>
+<Layout title={t("seo.seoMurcia.title")} description={t("seo.seoMurcia.description")}>
+  <Schema slot="schema" />
   <Background />
   <Hero
     primaryText={t("seoMurcia.hero.primary")}
@@ -35,13 +36,7 @@ const t = useTranslations(lang);
     title={t("seoMurcia.textLeft.title")}
     firstP={t("seoMurcia.textLeft.primary")}
     secondP={t("seoMurcia.textLeft.secondary")}>
-    <Image
-      alt="SEO en Murcia"
-      src={seoImage1}
-      width="220"
-      height="443"
-      class="h-full mx-auto mt-6"
-    />
+    <Image alt="SEO en Murcia" src={seoImage1} width="220" height="443" class="h-full mx-auto mt-6" />
   </TextLeftSection>
   <Clients />
   <TextRightSection

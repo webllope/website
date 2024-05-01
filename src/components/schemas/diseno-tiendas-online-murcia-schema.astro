@@ -1,0 +1,37 @@
+---
+import { getLangFromUrl } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+---
+{lang === 'es' && (
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "@id": "https://www.webllope.es/es/diseno-tiendas-online-murcia/#website",
+    "name": "Webllope, Diseño de Tiendas Online en Murcia",
+    "alternateName": "Diseño de Tiendas Online en Murcia. Crea tu e-commerce ahora",
+    "description": "Diseño de tienda online en Murcia. Creamos tu tienda con las mejores tecnologías y herramientas de calidad.",
+    "url": "https://www.webllope.es/es/diseno-tiendas-online-murcia/",
+    "datePublished": "2023-12-28T11:26:41+00:00",
+    "dateModified": "2024-05-01T02:55:41+00:00"
+  }
+</script>
+)
+}
+{lang === 'en' && (
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "@id": "https://www.webllope.es/en/diseno-tiendas-online-murcia/#website",
+    "name": "Webllope, Online Store Design in Murcia",
+    "alternateName": "Online Store Design in Murcia. Create your e-commerce now",
+    "description": "Online store design in Murcia. We create your store with the best technologies and quality tools.",
+    "url": "https://www.webllope.es/en/diseno-tiendas-online-murcia/",
+    "datePublished": "2023-12-28T11:26:41+00:00",
+    "dateModified": "2024-05-10T02:55:41+00:00"
+  }
+</script>
+)
+}

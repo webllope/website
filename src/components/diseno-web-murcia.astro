@@ -13,15 +13,16 @@ import { Image } from "astro:assets";
 import diseñoWebMurciaImage from "/public/blogImages/diseño-web-profesional-murcia.webp";
 import diseñoWebMurcia from "@assets/diseño-web-murcia.jpg";
 
+import Schema from "@components/schemas/diseno-web-murcia-schema.astro";
+
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<Layout
-  title={t("seo.disenoWebMurcia.title")}
-  description={t("seo.disenoWebMurcia.description")}>
+<Layout title={t("seo.disenoWebMurcia.title")} description={t("seo.disenoWebMurcia.description")}>
+  <Schema slot="schema" />
   <Background />
   <Hero
     primaryText={t("disenowebmurcia.hero.primary")}
@@ -34,13 +35,7 @@ const t = useTranslations(lang);
     title={t("disenowebmurcia.textLeft.title")}
     firstP={t("disenowebmurcia.textLeft.primary")}
     secondP={t("disenowebmurcia.textLeft.secondary")}>
-    <Image
-      alt="Páginas web en Murcia"
-      width={600}
-      height={350}
-      class="rounded-xl"
-      src={diseñoWebMurciaImage}
-    />
+    <Image alt="Páginas web en Murcia" width={600} height={350} class="rounded-xl" src={diseñoWebMurciaImage} />
   </TextLeftSection>
   <Clients />
   <TextRightSection
@@ -51,13 +46,7 @@ const t = useTranslations(lang);
       text: t("disenowebmurcia.textRight.cta"),
       link: "/contacto",
     }}>
-    <Image
-      alt="Diseño Web Murcia"
-      width={600}
-      height={400}
-      class="rounded-xl h-fit my-auto"
-      src={diseñoWebMurcia}
-    />
+    <Image alt="Diseño Web Murcia" width={600} height={400} class="rounded-xl h-fit my-auto" src={diseñoWebMurcia} />
   </TextRightSection>
   <Logos />
   <TextOnlySection

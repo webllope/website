@@ -23,6 +23,33 @@ const author = await getEntry(frontmatter.author);
 ---
 
 <Layout title={frontmatter.seoTitle} description={frontmatter.description}>
+  <script>
+    const currentPathname = Astro.url.pathname;
+    const { frontmatter } = Astro.props;
+    var el = document.createElement("script");
+    el.type = "application/ld+json";
+    el.text = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": `https://www.webllope.es/${currentPathname}`,
+      },
+      headline: frontmatter.title,
+      datePublished: frontmatter.publishDate,
+      author: {
+        "@type": "Person",
+        name: "Daniel Maestre",
+        url: "https://www.webllope.es/es/daniel-maestre/",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "Webllope, Diseño web Murcia",
+      },
+      description:
+        frontmatter.description,
+    });
+  </script>
   <main class="w-full flex-auto">
     <article class="mx-auto max-w-7xl px-6 lg:px-8 mt-24 sm:mt-32 lg:mt-40">
       <div class="mx-auto max-w-2xl lg:max-w-none">
@@ -32,26 +59,19 @@ const author = await getEntry(frontmatter.author);
             class="mt-6 font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-6xl">
             {frontmatter.title}
           </h1>
-          <time
-            datetime={frontmatter.publishDate.toISOString()}
-            class="order-first text-sm text-neutral-950">
+          <time datetime={frontmatter.publishDate.toISOString()} class="order-first text-sm text-neutral-950">
             {getFormattedDate(frontmatter.publishDate)}
           </time>
           <p class="mt-6 text-sm font-semibold text-neutral-950">
             {t("blog.author")}
-            <a class="underline" href={getRelativeLocaleUrl(lang, author.slug)}
-              >{author?.data.name}</a
-            >, {author?.data.title} | <span class="font-normal"
-              >{t("blog.readingTime")} {frontmatter.timeNeeded}</span
-            >
+            <a class="underline" href={getRelativeLocaleUrl(lang, author.slug)}>{author?.data.name}</a>, {
+              author?.data.title
+            } | <span class="font-normal">{t("blog.readingTime")} {frontmatter.timeNeeded}</span>
           </p>
         </header>
 
-        <div
-          class="[&>*]:mx-auto [&>*]:max-w-3xl [&>:first-child]:!mt-0 [&>:last-child]:!mb-0 mt-24 sm:mt-32 lg:mt-40">
-          <article
-            class="prose lg:prose-xl"
-            style="font-feature-settings: normal; font-variation-settings: normal;">
+        <div class="[&>*]:mx-auto [&>*]:max-w-3xl [&>:first-child]:!mt-0 [&>:last-child]:!mb-0 mt-24 sm:mt-32 lg:mt-40">
+          <article class="prose lg:prose-xl" style="font-feature-settings: normal; font-variation-settings: normal;">
             <slot />
           </article>
         </div>

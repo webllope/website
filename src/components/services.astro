@@ -8,15 +8,16 @@ import tiendaOnlineImage from "@assets/tiendaOnline.webp";
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
 import ServiceSection from "./service-section.astro";
 
+import Schema from "@components/schemas/services-schema.astro";
+
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 // TODO: check images 'alt' attribute, they are just in Spanish
 ---
 
-<Layout
-  title={t("seo.services.title")}
-  description={t("seo.services.description")}>
+<Layout title={t("seo.services.title")} description={t("seo.services.description")}>
+  <Schema slot="schema" />
   <SectionHead
     section={t("services.sectionHead.title")}
     title={t("services.sectionHead.subtitle")}
@@ -48,10 +49,7 @@ const t = useTranslations(lang);
     services={t("services.seoServices")}
   />
 
-  <SectionHead
-    title={t("services.sectionHead3.subtitle")}
-    description={t("services.sectionHead3.description")}
-  />
+  <SectionHead title={t("services.sectionHead3.subtitle")} description={t("services.sectionHead3.description")} />
 
   <ServiceSection
     image={{

@@ -15,13 +15,14 @@ import ecommerceImage from "@assets/imagen-tienda-online-murcia2.png";
 
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
 
+import Schema from "@components/schemas/diseno-tiendas-online-murcia-schema.astro";
+
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<Layout
-  title={t("seo.disenoTiendasOnlineMurcia.title")}
-  description={t("seo.disenoTiendasOnlineMurcia.description")}>
+<Layout title={t("seo.disenoTiendasOnlineMurcia.title")} description={t("seo.disenoTiendasOnlineMurcia.description")}>
+  <Schema slot="schema" />
   <Background />
   <Hero
     primaryText={t("disenoTiendasOnlineMurcia.hero.primary")}

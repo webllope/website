@@ -15,13 +15,14 @@ import seoImage from "@assets/agencia-seo-murcia.webp";
 
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
 
+import Schema from "@components/schemas/posicionamiento-web-murcia-schema.astro";
+
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<Layout
-  title={t("seo.posicionamientoWebMurcia.title")}
-  description={t("seo.posicionamientoWebMurcia.description")}>
+<Layout title={t("seo.posicionamientoWebMurcia.title")} description={t("seo.posicionamientoWebMurcia.description")}>
+  <Schema slot="schema" />
   <Background />
   <Hero
     primaryText={t("posicionamientoWebMurcia.hero.primary")}
@@ -35,13 +36,7 @@ const t = useTranslations(lang);
     title={t("posicionamientoWebMurcia.textLeft.title")}
     firstP={t("posicionamientoWebMurcia.textLeft.primary")}
     secondP={t("posicionamientoWebMurcia.textLeft.secondary")}>
-    <Image
-      alt="Posicionamiento Web Murcia"
-      class="rounded-xl h-fit my-auto"
-      width={600}
-      height={350}
-      src={seoImage}
-    />
+    <Image alt="Posicionamiento Web Murcia" class="rounded-xl h-fit my-auto" width={600} height={350} src={seoImage} />
   </TextLeftSection>
   <Clients />
   <TextRightSection

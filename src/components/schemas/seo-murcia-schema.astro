@@ -1,0 +1,37 @@
+---
+import { getLangFromUrl } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+---
+{lang === 'es' && (
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "@id": "https://www.webllope.es/es/seo-murcia/#website",
+    "name": "Webllope, SEO Murcia",
+    "alternateName": "SEO en Murcia. Nuestra agencia SEO te hará destacar",
+    "description": "En Webllope no solo somos expertos en hacer páginas web, también hacemos el mejor SEO y nos preocupamos por el éxito de tu negocio.",
+    "url": "https://www.webllope.es/es/seo-murcia/",
+    "datePublished": "2023-12-28T11:26:41+00:00",
+    "dateModified": "2024-05-01T02:55:41+00:00"
+  }
+</script>
+)
+}
+{lang === 'en' && (
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "@id": "https://www.webllope.es/en/seo-murcia/#website",
+    "name": "Webllope, SEO Murcia",
+    "alternateName": "SEO in Murcia. Our SEO agency will make you stand out",
+    "description": "At Webllope we are not only experts in making websites, we also do the best SEO and we care about the success of your business.",
+    "url": "https://www.webllope.es/en/seo-murcia/",
+    "datePublished": "2023-12-28T11:26:41+00:00",
+    "dateModified": "2024-05-10T02:55:41+00:00"
+  }
+</script>
+)
+}
