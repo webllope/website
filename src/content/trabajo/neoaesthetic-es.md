@@ -13,7 +13,11 @@ quote:
     author: { name: "Alicia", position: "Fundadora de Neoaesthetic" },
   }
 tags: [webdev, cms]
-cover: { src: "@assets/businessCovers/Neoaesthetic.webp", alt: "Web de Neoaesthetic" }
+cover:
+  {
+    src: "@assets/businessCovers/Neoaesthetic.webp",
+    alt: "Web de Neoaesthetic",
+  }
 date: "2023-07-06 17:00"
 lang: "es"
 imagesAmount: 4
@@ -27,5 +31,25 @@ El trabajo con ellos fue de diseño y desarrollo de su sitio web usando **Wordpr
 
 Neoaesthetic ya tenía una buena base y se movían por las redes sociales por si mismos, tenían 100 reseñas en Google con 4.5 estrellas pero tenían una página anticuada con un dominio pagado por ellos hace tiempo que tuvimos que migrar a nuestro host premium aumentando así la velocidad de respuesta de la web a parte de cambiar por completo y mejorar su contenido.
 <a href="https://neoaesthetic.com" rel="nofollow">Resultado final</a>
+
+## Resultados obtenidos hasta la fecha
+
+Según [lighthouse](https://es.semrush.com/blog/como-utilizar-google-lighthouse/) las notas de la página de Neoaesthetic son:
+
+<figure>
+<img src="/blogImages/lighthouse-web-neoaesthetic.png" title="Análisis de rendimiento Neoaesthetic" alt="Análisis de rendimiento Neoaesthetic" width="760" height="140" loading="lazy"/>
+<figcaption class="text-center">Análisis de rendimiento Neoaesthetic<figcaption>
+</figure>
+
+Como se observa, según el propio Google el rendimiento de la página es de un 100, la accesibilidad de un 94, buenas prácticas un 100 y SEO un 100.
+
+<figure>
+<img src="/blogImages/search-analytics-neoaesthetic.png" title="Análisis de búsquedas y clics de Neoaesthetic" alt="Análisis de búsquedas y clics de Neoaesthetic" width="760" height="280" loading="lazy"/>
+<figcaption class="text-center">Análisis de búsquedas y clics de Neoaesthetic<figcaption>
+</figure>
+
+En esta imagen podemos observar los últimos 3 meses de esta página, siendo una página que posiciona muy alto para búsquedas locales (servicios concretos en Aguadulce), y posiciona decentemente en algunos servicios en Almería. 
+
+Se han conseguido 410 clics y casi 10 mil visualizaciones, todo esto obtenido a pesar de que el servicio contratado con nosotros era el más básico de solo creación de página web sin incluir posicionamiento web / SEO y que la página solo tiene 4 meses de vida a día de hoy (13/05/2024), pero siempre hacemos un SEO básico que funciona bastante bien. Trabajo bien hecho.
 
 ### Diseño

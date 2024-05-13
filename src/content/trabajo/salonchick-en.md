@@ -13,7 +13,8 @@ quote:
     author: { name: "X", position: "Fundadora de SalonChick" },
   }
 tags: [webdev, cms]
-cover: { src: "@assets/businessCovers/SalonChick.webp", alt: "SalonChick's website" }
+cover:
+  { src: "@assets/businessCovers/SalonChick.webp", alt: "SalonChick's website" }
 date: "2023-07-06 17:00"
 lang: "en"
 imagesAmount: 4
@@ -27,5 +28,25 @@ Unseal approached us early in their development, having just raised funds throug
 
 After reaching a high of $12k, PlaceboCoin went to zero in a matter of hours. Because we took payment in PlaceboCoin but our subcontractors insisted on being paid in USD we have taken a huge financial loss on this project.
 <a href="https://centroesteticasalonchick.es" rel="nofollow">Final Result</a>
+
+## Results obtained to this date
+
+Based on [lighthouse](https://www.semrush.com/blog/google-lighthouse/) the test results for the page are:
+
+<figure>
+<img src="/blogImages/lighthouse-web-salonchick.png" title="Performance analysis of Salon Chick" alt="Performance analysis of Salon Chick" width="760" height="140" loading="lazy"/>
+<figcaption class="text-center">Performance analysis of Salon Chick<figcaption>
+</figure>
+
+As can be seen, according to Google itself, the page performance is 94, accessibility is 94, good practices are 100, and SEO is 100.
+
+<figure>
+<img src="/blogImages/search-analytics-salonchick.png" title="Salon Chick Search and Click Analytics" alt="Salon Chick Search and Click Analytics" loading="lazy"/>
+<figcaption class="text-center">Salon Chick Search and Click Analytics<figcaption>
+</figure>
+
+In this image we can see the last 2 months of this page, being a page that ranks very highly for local searches (specific services in Roquetas de Mar), and ranks decently for some services in Almería.
+
+306 clicks and 7 thousand views have been achieved, all this obtained despite the fact that the service contracted with us was the most basic of just creating a website without including web positioning / SEO and that the page has only been alive for 3 months. today (05/13/2024), but we always do basic SEO that works quite well. Job well done means a happy client.
 
 ## Design

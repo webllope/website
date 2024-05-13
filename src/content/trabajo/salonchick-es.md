@@ -26,4 +26,24 @@ imagesAmount: 4
 El trabajo con SalonChick se basó en unir información y servicios ofrecidos por el salón y por su negocio de tatuajes, Dettagli Ink. La cantidad de servicios ofrecidos era abrumadora y había que listarlos todos en un mismo sitio web de forma simple para conseguir una fácil comprensión por parte de los clientes asiduos y los nuevos.
 <a href="https://centroesteticasalonchick.com" rel="nofollow">Resultado final</a>
 
+## Resultados obtenidos hasta la fecha
+
+Según [lighthouse](https://es.semrush.com/blog/como-utilizar-google-lighthouse/) las notas de la página de Salon Chick son:
+
+<figure>
+<img src="/blogImages/lighthouse-web-salonchick.png" title="Análisis de rendimiento Salon Chick" alt="Análisis de rendimiento Salon Chick" width="760" height="140" loading="lazy"/>
+<figcaption class="text-center">Análisis de rendimiento Salon Chick<figcaption>
+</figure>
+
+Como se observa, según el propio Google el rendimiento de la página es de un 100, la accesibilidad de un 94, buenas prácticas un 100 y SEO un 100.
+
+<figure>
+<img src="/blogImages/search-analytics-salonchick.png" title="Análisis de búsquedas y clics de Salon Chick" alt="Análisis de búsquedas y clics de Salon Chick" loading="lazy"/>
+<figcaption class="text-center">Análisis de búsquedas y clics de Salon Chick<figcaption>
+</figure>
+
+En esta imagen podemos observar los últimos 2 meses de esta página, siendo una página que posiciona muy alto para búsquedas locales (servicios concretos en Roquetas de Mar), y posiciona decentemente para algunos servicios en Almería.
+
+Se han conseguido 306 clics y 7 mil visualizaciones, todo esto obtenido a pesar de que el servicio contratado con nosotros era el más básico de solo creación de página web sin incluir posicionamiento web / SEO y que la página solo tiene 3 meses de vida a día de hoy (13/05/2024), pero siempre hacemos un SEO básico que funciona bastante bien. Trabajo bien hecho.
+
 ### Diseño
