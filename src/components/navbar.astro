@@ -3,16 +3,17 @@ import Container from "@components/ui/container.astro";
 import {
   Astronav,
   MenuItems,
-  MenuIcon,
   Dropdown as DropdownContainer,
-  DropdownItems,
 } from "astro-navbar";
+import MenuIcon from "./nav-menu-icon.astro";
 import Logo from "@components/logo.astro";
 import NavMenuItem from "@components/nav-menu-item.astro";
 
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
 import LanguagePicker from "@components/language-picker.astro";
 import { getRelativeLocaleUrl } from "astro:i18n";
+
+import "@/styles/global.css";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -72,7 +73,7 @@ const menuitems: Array<{
         <Logo parent="Header" />
         <div class="flex flex-row gap-6 items-center lg:hidden">
           <LanguagePicker variant="small" />
-          <MenuIcon class="w-4 h-4 text-gray-800" xmlns="a" />
+          <MenuIcon class="w-4 h-4 text-gray-800" />
         </div>
       </div>
       <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
