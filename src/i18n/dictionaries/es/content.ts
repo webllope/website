@@ -124,7 +124,7 @@ const posicionamientoWebMurcia = {
     primary:
       "Si necesitas un <strong>consultor SEO</strong> para mejorar la visibilidad que tu empresa tiene en internet, estás de suerte. Contacta ahora sin compromiso y disfruta de que un experto en SEO te explique detalladamente lo necesario para conseguir el mejor posicionamiento web de tu página y así conseguir más clientes potenciales.",
     secondary:
-      "Ofrecemos un enfoque integral, combinando diseño web y <strong>estrategias de posicionamiento</strong> para potenciar tu presencia online en Murcia.",
+      "Ofrecemos un enfoque integral, combinando <a href='https://www.webllope.es/es/'>diseño web</a> y <strong>estrategias de posicionamiento</strong> para potenciar tu presencia online en Murcia.",
   },
   textRight: {
     title: "Empresa de Posicionamiento Web en Murcia",
@@ -149,7 +149,7 @@ const seoMurcia = {
     secondary:
       "Webllope es una <strong>agencia de SEO en Murcia</strong> y contamos con <strong>expertos</strong> en el equipo.",
     tertiary:
-      "El SEO es el proceso de optimización de una página web para que esta aparezca en las primeras posiciones de la búsqueda de <strong>Google</strong>. Te ayudaremos a destacar en las búsquedas locales. Descubre cómo podemos llevar tu presencia online al siguiente nivel.",
+      "El SEO es el proceso de optimización de una <a href='https://www.webllope.es/es/'>página web</a> para que esta aparezca en las primeras posiciones de la búsqueda de <strong>Google</strong>. Te ayudaremos a destacar en las búsquedas locales. Descubre cómo podemos llevar tu presencia online al siguiente nivel.",
     quaternary:
       "En todo momento sabrás qué trabajo hemos realizado, en que se ha invertido el dinero, y qué resultados hemos conseguido, el SEO es un proceso largo en el que ambas partes debemos mantener la comunicación para mantener un <strong>100% de transparencia</strong>.",
   },

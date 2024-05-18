@@ -404,7 +404,7 @@ const aboutUs = {
   },
   title: "About us",
   paragraphs: [
-    "Webllope was born from two friends who met in the Computer Engineering degree and years later after both working as web and software developers they realized the growth potential that technology can give to businesses of all sizes. The main problem of these businesses is the lack of awareness about how solutions adapted to their business model can help them, and how effective it is to have digital content on the internet accessible to everyone that promotes their business.",
+    "<a href='https://www.webllope.es/es/'>Webllope</a> was born from two friends who met in the Computer Engineering degree and years later after both working as web and software developers they realized the growth potential that technology can give to businesses of all sizes. The main problem of these businesses is the lack of awareness about how solutions adapted to their business model can help them, and how effective it is to have digital content on the internet accessible to everyone that promotes their business.",
     "At Webllope we are more than colleagues - we are a family. We took our first steps in computer engineering together, during our time at university. Since then and until now, trying to improve the world with technology as a means.",
   ],
   years: "Years",

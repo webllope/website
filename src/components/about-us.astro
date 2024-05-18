@@ -37,7 +37,7 @@ const paragraphs = t("aboutUs.paragraphs");
     title={t("aboutUs.sectionHead.subtitle")}
     description={t("aboutUs.sectionHead.description")}>
     <div class="mt-10 max-w-2xl space-y-6 text-base">
-      {paragraphs.map((p) => <p>{p}</p>)}
+      {paragraphs.map((p) => <p set:html={p}></p>)}
     </div>
   </Sectionhead>
 
