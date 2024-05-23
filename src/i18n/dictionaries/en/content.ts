@@ -43,14 +43,14 @@ const landing = {
 
 const disenowebmurcia = {
   hero: {
-    primary: "Website Design Murcia",
+    primary: "Website Design Agency Murcia",
     secondary:
       "Elegant and effective <strong>web pages</strong> that attract customers, guaranteed results. We are reliable web designers, experienced and we really care about improving your business",
     tertiary:
       "It's not just web design, we also carry out <strong>SEO optimization and web positioning</strong>. There is no point in having a website if it does not appear in the first results of Google, we will take your online visibility to the next level at an <strong>unbeatable price</strong>",
   },
   textLeft: {
-    title: "Web Pages in Murcia",
+    title: "¿Is Webllope your go-to agency in Murcia?",
     primary:
       "We are a <strong class='animate-text'>website design agency</strong> located in Murcia, we know all the places in the region and surroundings, and we have experience working with local businesses of all sizes",
     secondary:
@@ -549,7 +549,7 @@ const seo = {
       "As creators of websites we exhibit the websites that took our clients to the next digital level on the internet.",
   },
   disenoWebMurcia: {
-    title: "Website Design Murcia. We Create Your Perfect Website",
+    title: "Website Design Agency at Murcia. We Create Your Perfect Website",
     description:
       "We are website designers with more than 5 years of experience. We create professional websites and we really care about your success.",
   },

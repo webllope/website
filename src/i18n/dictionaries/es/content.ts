@@ -43,18 +43,18 @@ const landing = {
 
 const disenowebmurcia = {
   hero: {
-    primary: "Diseño Web Murcia",
+    primary: "Agencia de Diseño web en Murcia",
     secondary:
       "Diseño de <strong>páginas web</strong> elegantes y eficaces que consiguen clientes, resultados garantizados. Somos diseñadores web de confianza, experimentados y nos preocupamos de verdad por conseguir que tu negocio mejore.",
     tertiary:
       "No solo es un diseño web, también llevamos a cabo optimización <strong>SEO y posicionamiento web</strong>. De nada sirve una página web si esta no sale en los primeros resultados de Google, llevaremos tu visibilidad online al siguiente nivel a un <strong>precio inmejorable</strong>.",
   },
   textLeft: {
-    title: "Páginas Web en Murcia",
+    title: "¿Es Webllope tu agencia adecuada?",
     primary:
       "En Webllope creamos un excelente <strong class='animate-text'>diseño de páginas web</strong>, conocemos todos los lugares de la región y alrededores, y tenemos experiencia trabajando con negocios locales de todos los tamaños.",
     secondary:
-      "En el actual escenario digital de Murcia, encontrar la agencia adecuada para el <strong>diseño y desarrollo de páginas web</strong> puede marcar la diferencia. En lo que <strong>creación de páginas web</strong> respecta, Webllope puede orgullosamente decir que es una empresa de máxima calidad, no solo producimos resultados excepcionales sino que nos preocupamos realmente porque nuestros clientes triunfen.",
+      "En el actual escenario digital de Murcia, encontrar la <b>agencia</b> adecuada para el <strong>diseño y desarrollo de páginas web</strong> puede marcar la diferencia. En lo que <strong>creación de páginas web</strong> respecta, Webllope puede orgullosamente decir que es una empresa de máxima calidad, no solo producimos resultados excepcionales sino que nos preocupamos realmente porque nuestros clientes triunfen.",
   },
   textRight: {
     title: "Empresa de Diseño Web en Murcia",
@@ -551,7 +551,7 @@ const seo = {
       "Como creadores de páginas web exhibimos los sitios web que elevaron a nuestros clientes al siguiente nivel digital en internet.",
   },
   disenoWebMurcia: {
-    title: "Diseño Web Murcia. Creamos tu Página Web Perfecta",
+    title: "Agencia de Diseño Web en Murcia. Creamos tu Página Web Perfecta",
     description:
       "Somos diseñadores de páginas web con más de 5 años de experiencia. Creamos páginas web profesionales y nos preocupamos por tu éxito de verdad.",
   },
