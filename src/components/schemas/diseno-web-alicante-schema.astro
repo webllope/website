@@ -1,0 +1,37 @@
+---
+import { getLangFromUrl } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+---
+{lang === 'es' && (
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "@id": "https://www.webllope.es/es/diseno-web-alicante/#website",
+    "name": "Diseño web Alicante",
+    "alternateName": "Diseño web en Alicante. Creamos tu página web y la posicionamos en buscadores.",
+    "description": "Expertos en el diseño web en Alicante. Más de 5 años de experiencia. Creamos páginas web profesionales y nos preocupamos por el éxito de tu negocio.",
+    "url": "https://www.webllope.es/es/diseno-web-alicante/",
+    "datePublished": "2023-12-28T11:26:41+00:00",
+    "dateModified": "2024-06-01T02:55:41+00:00"
+  }
+</script>
+)
+}
+{lang === 'en' && (
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "@id": "https://www.webllope.es/en/diseno-web-alicante/#website",
+    "name": "Website Design Alicante",
+    "alternateName": "Website Design Alicante. We create your ideal website",
+    "description": "Website design in Alicante. More than 5 years working as web designers. We create your website with the best technologies and quality tools.",
+    "url": "https://www.webllope.es/en/diseno-web-alicante/",
+    "datePublished": "2023-12-28T11:26:41+00:00",
+    "dateModified": "2024-06-01T02:55:41+00:00"
+  }
+</script>
+)
+}

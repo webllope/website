@@ -3,7 +3,7 @@ export const ui = {
   nav: {
     home: "Inicio",
     services: "Servicios",
-    disenoweb: "Agencia de Diseño Web en Murcia",
+    disenoweb: "Diseño Web en Alicante",
     disenotiendasonline: "Diseño de Tiendas Online",
     posicionamientoweb: "Posicionamiento Web",
     seo: "SEO",

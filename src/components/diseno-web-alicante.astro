@@ -1,0 +1,57 @@
+---
+import Hero from "@components/hero.astro";
+import Logos from "@components/logos.astro";
+import Layout from "@layouts/layout.astro";
+import Background from "@components/background.astro";
+import TextLeftSection from "@components/text-left-section.astro";
+import TextRightSection from "@components/text-right-section.astro";
+import TextOnlySection from "@components/text-only-section.astro";
+import Clients from "@components/clients.astro";
+import ContactForm from "@components/contact-form";
+
+import { Image } from "astro:assets";
+import diseñoWebAlicante from "/public/blogImages/diseno-web-alicante.webp";
+import diseñoWebAlicante2 from "@assets/diseno-web-en-alicante.webp";
+
+import Schema from "@/components/schemas/diseno-web-alicante-schema.astro";
+
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout title={t("seo.disenoWebAlicante.title")} description={t("seo.disenoWebAlicante.description")}>
+  <Schema slot="schema" />
+  <Background />
+  <Hero
+    primaryText={t("disenowebalicante.hero.primary")}
+    secondaryText={t("disenowebalicante.hero.secondary")}
+    tertiaryText={t("disenowebalicante.hero.tertiary")}
+    slotClasses="lg:w-4/12">
+    <ContactForm client:load url={Astro.url} />
+  </Hero>
+  <TextLeftSection
+    title={t("disenowebalicante.textLeft.title")}
+    firstP={t("disenowebalicante.textLeft.primary")}
+    secondP={t("disenowebalicante.textLeft.secondary")}>
+    <Image alt="Páginas web en Murcia" width={600} height={350} class="rounded-xl" src={diseñoWebAlicante} />
+  </TextLeftSection>
+  <Clients />
+  <TextRightSection
+    title={t("disenowebalicante.textRight.title")}
+    firstP={t("disenowebalicante.textRight.primary")}
+    secondP={t("disenowebalicante.textRight.secondary")}
+    cta={{
+      text: t("disenowebalicante.textRight.cta"),
+      link: "/contacto",
+    }}>
+    <Image alt="Diseño Web Murcia" width={600} height={400} class="rounded-xl h-fit my-auto" src={diseñoWebAlicante2} />
+  </TextRightSection>
+  <Logos />
+  <TextOnlySection
+    title={t("disenowebalicante.textOnly.title")}
+    firstP={t("disenowebalicante.textOnly.primary")}
+    secondP={t("disenowebalicante.textOnly.secondary")}
+  />
+</Layout>

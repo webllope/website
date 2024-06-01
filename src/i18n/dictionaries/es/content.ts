@@ -41,13 +41,13 @@ const landing = {
   },
 };
 
-const disenowebmurcia = {
+const disenowebalicante = {
   hero: {
-    primary: "Agencia de Diseño web en Murcia",
+    primary: "Diseño Web Alicante",
     secondary:
-      "Diseño de <strong>páginas web</strong> elegantes y eficaces que consiguen clientes, resultados garantizados. Somos diseñadores web de confianza, experimentados y nos preocupamos de verdad por conseguir que tu negocio mejore.",
+      "Diseño de <strong class='animate-text'>páginas web</strong> elegantes y eficaces que consiguen clientes, resultados garantizados. Somos diseñadores web de confianza, experimentados y nos preocupamos de verdad por conseguir que tu negocio llegue a más clientes, y nunca hemos defraudado hasta ahora, ninguna opinión o reseña negativa.",
     tertiary:
-      "No solo es un diseño web, también llevamos a cabo optimización <strong>SEO y posicionamiento web</strong>. De nada sirve una página web si esta no sale en los primeros resultados de Google, llevaremos tu visibilidad online al siguiente nivel a un <strong>precio inmejorable</strong>.",
+      "No solo es un <strong>diseño web</strong>, también llevamos a cabo optimización <strong>SEO y posicionamiento web</strong>. De nada sirve una página web si esta no sale en los primeros resultados de Google, llevaremos tu visibilidad online al siguiente nivel a un <strong>precio inmejorable</strong>.",
   },
   textLeft: {
     title: "¿Es Webllope tu agencia adecuada?",
@@ -550,10 +550,10 @@ const seo = {
     description:
       "Como creadores de páginas web exhibimos los sitios web que elevaron a nuestros clientes al siguiente nivel digital en internet.",
   },
-  disenoWebMurcia: {
-    title: "Agencia de Diseño Web en Murcia. Creamos tu Página Web Perfecta",
+  disenoWebAlicante: {
+    title: "Diseño Web Alicante. Creamos tu Página Web Perfecta",
     description:
-      "Somos diseñadores de páginas web con más de 5 años de experiencia. Creamos páginas web profesionales y nos preocupamos por tu éxito de verdad.",
+      "Expertos en el diseño web en Alicante. Más de 5 años de experiencia. Creamos páginas web profesionales y nos preocupamos por el éxito de tu negocio",
   },
   disenoTiendasOnlineMurcia: {
     title: "Diseño de Tiendas Online en Murcia. Crea tu e-commerce ahora",
@@ -703,7 +703,7 @@ export const content = {
   landing,
   legal,
   reviews,
-  disenowebmurcia,
+  disenowebalicante,
   disenoTiendasOnlineMurcia,
   posicionamientoWebMurcia,
   seoMurcia,

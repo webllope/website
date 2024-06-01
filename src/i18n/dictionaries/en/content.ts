@@ -41,9 +41,9 @@ const landing = {
   },
 };
 
-const disenowebmurcia = {
+const disenowebalicante = {
   hero: {
-    primary: "Website Design Agency Murcia",
+    primary: "Alicante Web Design",
     secondary:
       "Elegant and effective <strong>web pages</strong> that attract customers, guaranteed results. We are reliable web designers, experienced and we really care about improving your business",
     tertiary:
@@ -548,12 +548,12 @@ const seo = {
     description:
       "As creators of websites we exhibit the websites that took our clients to the next digital level on the internet.",
   },
-  disenoWebMurcia: {
-    title: "Website Design Agency at Murcia. We Create Your Perfect Website",
+  disenoWebAlicante: {
+    title: "Website Design in Alicante. We create your ideal website",
     description:
-      "We are website designers with more than 5 years of experience. We create professional websites and we really care about your success.",
+      "Website design in Alicante. More than 5 years working as web designers. We create your website with the best technologies and quality tools.",
   },
-  disenoTiendasOnlineMurcia: {
+    disenoTiendasOnlineMurcia: {
     title: "Online Store Design in Murcia. Create your e-commerce now",
     description:
       "Online store design in Murcia. We create your store with the best technologies and quality tools.",
@@ -701,7 +701,7 @@ export const content = {
   newspapers,
   landing,
   reviews,
-  disenowebmurcia,
+  disenowebalicante,
   disenoTiendasOnlineMurcia,
   posicionamientoWebMurcia,
   seoMurcia,
