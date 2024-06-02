@@ -41,14 +41,20 @@ const t = useTranslations(lang);
       link: "/contacto",
       text: t("landing.hero.cta"),
     }}>
-    <Image
-      alt="Diseño Web Murcia"
-      class="transform scale-x-[-1] drop-shadow-xl"
-      loading="eager"
-      width={400}
-      src={heroImage}
-      densities={[1.5, 2]}
-    />
+    <div class="w-26 relative border-1 border-solid border-black">
+      <span
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xl font-bold text-neutral-950 sm:text-2xl"
+        >Webllope</span
+      >
+      <Image
+        id="test"
+        alt="Diseño Web Murcia"
+        class="drop-shadow-xl"
+        loading="eager"
+        src={heroImage}
+        densities={[1.5, 2]}
+      />
+    </div>
   </Hero>
   <TextLeftSection
     title={t("briefAboutUs.title")}
@@ -91,3 +97,12 @@ const t = useTranslations(lang);
   <Faq title={t("landing.faq.title")} questions={t("landing.faq.content")} />
   <Cta />
 </Layout>
+<script>
+  const testElement = document.getElementById("test");
+  window.addEventListener("scroll", () => {
+    const rotation = window.scrollY / 10;
+    if (testElement) {
+      testElement.style.transform = `rotate(${rotation * 2}deg)`;
+    }
+  });
+</script>

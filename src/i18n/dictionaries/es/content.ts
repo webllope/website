@@ -47,29 +47,29 @@ const disenowebalicante = {
     secondary:
       "Diseño de <strong class='animate-text'>páginas web</strong> elegantes y eficaces que consiguen clientes, resultados garantizados. Somos diseñadores web de confianza, experimentados y nos preocupamos de verdad por conseguir que tu negocio llegue a más clientes, y nunca hemos defraudado hasta ahora, ninguna opinión o reseña negativa.",
     tertiary:
-      "No solo es un <strong>diseño web</strong>, también llevamos a cabo optimización <strong>SEO y posicionamiento web</strong>. De nada sirve una página web si esta no sale en los primeros resultados de Google, llevaremos tu visibilidad online al siguiente nivel a un <strong>precio inmejorable</strong>.",
+      "No solo es un <strong>diseño web</strong>, también llevamos a cabo optimización del <strong>posicionamiento web</strong> para que tu negocio llegue a más gente. De nada sirve una página web si esta no sale en los primeros resultados de Google, llevaremos tu visibilidad online al siguiente nivel a un <strong>precio inmejorable</strong>.",
   },
   textLeft: {
-    title: "¿Es Webllope tu agencia adecuada?",
+    title: "¿Buscas una página web para tu negocio en Alicante?",
     primary:
-      "En Webllope creamos un excelente <strong class='animate-text'>diseño de páginas web</strong>, conocemos todos los lugares de la región y alrededores, y tenemos experiencia trabajando con negocios locales de todos los tamaños.",
+      "En Webllope realizamos un excelente <strong class='animate-text'>diseño de páginas web</strong>, conocemos bien la zona de Alicante y alrededores, y tenemos experiencia trabajando con negocios locales de varios tamaños, a pesar de que la mayoría de nuestros clientes son pequeñas empresas que desean recibir más clientes.",
     secondary:
-      "En el actual escenario digital de Murcia, encontrar la <b>agencia</b> adecuada para el <strong>diseño y desarrollo de páginas web</strong> puede marcar la diferencia. En lo que <strong>creación de páginas web</strong> respecta, Webllope puede orgullosamente decir que es una empresa de máxima calidad, no solo producimos resultados excepcionales sino que nos preocupamos realmente porque nuestros clientes triunfen.",
+      "En el actual escenario digital de Alicante, encontrar la <b>agencia</b> adecuada para el <strong>diseño y desarrollo de páginas web</strong> puede marcar la diferencia. En lo que <strong>creación de páginas web</strong> respecta, Webllope puede orgullosamente decir que es una empresa de máxima calidad, no solo producimos resultados excepcionales sino que nos preocupamos genuinamente porque nuestros clientes triunfen, lo notarás desde el momento en el que contactes con nosotros",
   },
   textRight: {
-    title: "Empresa de Diseño Web en Murcia",
+    title: "Desarrollo Web Profesional",
     primary:
-      "Si te interesa <strong>contratar un diseño web en Murcia</strong> estás en el sitio correcto, y si has llegado hasta esta página es porque hemos debido hacer un posicionamiento web efectivo. Nosotros mismos hemos hecho el SEO de esta página, por lo que si has llegado hasta aquí es porque sabemos lo que hacemos.",
+      "Si te interesa conseguir una <strong>página web profesional en Alicante</strong>, que lleve a tu negocio al siguiente nivel, estás en el sitio correcto. Si has llegado hasta esta página es porque hemos debido hacer un posicionamiento web efectivo. Nosotros mismos hemos hecho el posicionamiento web de esta página, por lo que si has llegado hasta aquí es porque sabemos como conseguir nuevos usuarios que visiten un negocio.",
     secondary:
-      "Para conocer el <strong>presupuesto de una página web</strong>, no dudes en contactar con nosotros, te haremos un presupuesto a medida. No te preocupes, no te vamos a cobrar un precio desorbitado, somos una empresa de <strong>diseño web para pymes</strong> y queremos que tu negocio crezca junto a nosotros.",
+      "Para conocer el presupuesto de <strong>crear una página web en Alicante</strong>, no dudes en contactar con nosotros, te haremos un presupuesto a medida. No te preocupes, no te vamos a cobrar un precio desorbitado, de hecho el 90% de las páginas que desean los clientes cuestan <strong>menos de 300€</strong>, queremos que tu negocio crezca junto a nosotros.",
     cta: "Contacta con nosotros",
   },
   textOnly: {
-    title: "Contratar Diseño Web Profesional",
+    title: "Consigue tu diseño web en Alicante",
     primary:
-      "Si buscas una <strong class='animate-text'>empresa de diseño web en Murcia</strong> que te ofrezca un servicio completo, has llegado al lugar correcto. En Webllope no solo nos encargamos de la creación de páginas web, si no que también nos preocupamos por el posicionamiento web y el SEO de tu página.",
+      "Si buscas una <strong class='animate-text'>empresa de diseño web en Alicante</strong> que te ofrezca un servicio completo, has llegado al lugar correcto. En Webllope no solo nos encargamos de la creación de páginas web, si no que también nos preocupamos por el posicionamiento web y el SEO de tu página.",
     secondary:
-      "Si necesitas una <strong>página web para tu negocio</strong> que sea atractiva esté optimizada de forma que salga en los primeros resultados de Google, no dudes en contactar con nosotros.",
+      "Antes de nada, cuando nos contactes al poco tiempo te mostraremos un diseño para que veas como se vería tu página web y si te gusta, procederemos con el desarrollo de la misma. No dudes en contactar, no pierdes nada por ello.",
     cta: "Ver nuestros servicios",
   },
 };

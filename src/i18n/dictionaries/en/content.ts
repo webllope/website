@@ -43,34 +43,34 @@ const landing = {
 
 const disenowebalicante = {
   hero: {
-    primary: "Alicante Web Design",
+    primary: "Web Design Alicante",
     secondary:
-      "Elegant and effective <strong>web pages</strong> that attract customers, guaranteed results. We are reliable web designers, experienced and we really care about improving your business",
+      "Elegant and effective <strong class='animate-text'>web design</strong> that attracts customers, guaranteed results. We are trusted web designers, experienced and genuinely care about getting your business to reach more customers, and we have never disappointed so far, no negative reviews or opinions.",
     tertiary:
-      "It's not just web design, we also carry out <strong>SEO optimization and web positioning</strong>. There is no point in having a website if it does not appear in the first results of Google, we will take your online visibility to the next level at an <strong>unbeatable price</strong>",
+      "It's not just a <strong>web design</strong>, we also carry out <strong>web positioning optimization</strong> so that your business reaches more people. A website is useless if it doesn't appear in the top results of Google, we will take your online visibility to the next level at an unbeatable price.",
   },
   textLeft: {
-    title: "¿Is Webllope your go-to agency in Murcia?",
+    title: "Looking for a website for your business in Alicante?",
     primary:
-      "We are a <strong class='animate-text'>website design agency</strong> located in Murcia, we know all the places in the region and surroundings, and we have experience working with local businesses of all sizes",
+      "At Webllope, we create excellent <strong class='animate-text'>web design</strong>. We are familiar with the Alicante area and surroundings, and we have experience working with local businesses of various sizes, although most of our clients are small businesses looking to attract more customers.",
     secondary:
-      "In the current digital scenario of Murcia, finding the right agency for <strong>web design and development</strong> can make a difference. As far as <strong>web design</strong> is concerned, Webllope can proudly say that it is a company of the highest quality, not only do we produce exceptional results but we really care that our clients succeed",
+      "In the current digital scenario in Alicante, finding the right <b>agency</b> for <strong>web design and development</strong> can make a difference. When it comes to <strong>web design</strong>, Webllope can proudly say that we are a high-quality company. We not only produce exceptional results, but we genuinely care about our clients' success, and you will notice it from the moment you contact us.",
   },
   textRight: {
-    title: "Web Design Company in Murcia",
+    title: "Professional Web Development",
     primary:
-      "If you are interested in <strong>hiring web design in Murcia</strong> you are in the right place, and if you have come to this page it is because we must have done effective web positioning. We have done the SEO of this page ourselves, so if you have come here it is because we know what we are doing.",
+      "If you are interested in getting a <strong>professional website in Alicante</strong> that takes your business to the next level, you are in the right place. If you have reached this page, it's because we must have done effective web positioning. We have done the SEO for this page ourselves, so if you have reached here, it's because we know how to attract new users to a business.",
     secondary:
-      "To know the <strong>budget of a web page</strong>, do not hesitate to contact us, we will make a budget tailored to you. Do not worry, we are not going to charge you an exorbitant price, we are a <strong>web design company for SMEs</strong> and we want your business to grow with us.",
+      "To know the budget for <strong>creating a website in Alicante</strong>, don't hesitate to contact us. We will provide you with a customized quote. Don't worry, we won't charge you an exorbitant price. In fact, 90% of the websites our clients request cost <strong>less than €300</strong>. We want your business to grow with us.",
     cta: "Contact us",
   },
   textOnly: {
-    title: "Professional Web Design Murcia",
+    title: "Get your web design in Alicante",
     primary:
-      "If you are looking for a <strong class='animate-text'>web design company in Murcia</strong> that offers you a complete service, you have come to the right place. At Webllope we not only take care of creating web pages, but we also take care of web positioning and SEO of your page.",
+      "If you are looking for a <strong class='animate-text'>web design company in Alicante</strong> that offers you a complete service, you have come to the right place. At Webllope, we not only create websites, but we also take care of web positioning and SEO for your website.",
     secondary:
-      "If you need a <strong>web page for your business</strong> that is attractive and at the same time optimized to appear in the first results of Google, do not hesitate to contact us. We specialize in <strong>SEO in Murcia</strong> and in the <strong>design of online stores</strong>.",
-    cta: "View our services",
+      "When you contact us, we will show you a design shortly so you can see how your website would look. If you like it, we will proceed with the development. Don't hesitate to contact us, you have nothing to lose.",
+    cta: "See our services",
   },
 };
 
