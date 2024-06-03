@@ -120,7 +120,7 @@ const posicionamientoWebMurcia = {
       "Webllope es una <strong>empresa de posicionamiento web en Murcia</strong> que te ofrece un servicio completo. No solo nos encargamos de la creación de páginas web, si no que también nos preocupamos por el posicionamiento web y el SEO de tu página.",
   },
   textLeft: {
-    title: "Diseño web y Posicionamiento en Murcia",
+    title: "Posicionamiento en Murcia",
     primary:
       "Si necesitas un <strong>consultor SEO</strong> para mejorar la visibilidad que tu empresa tiene en internet, estás de suerte. Contacta ahora sin compromiso y disfruta de que un experto en SEO te explique detalladamente lo necesario para conseguir el mejor posicionamiento web de tu página y así conseguir más clientes potenciales.",
     secondary:
@@ -149,7 +149,7 @@ const seoMurcia = {
     secondary:
       "Webllope es una <strong>agencia de SEO en Murcia</strong> y contamos con <strong>expertos</strong> en el equipo.",
     tertiary:
-      "El SEO es el proceso de optimización de una <a href='https://www.webllope.es/es/'>página web</a> para que esta aparezca en las primeras posiciones de la búsqueda de <strong>Google</strong>. Te ayudaremos a destacar en las búsquedas locales. Descubre cómo podemos llevar tu presencia online al siguiente nivel.",
+      "El SEO es el proceso de optimización de una página web para que esta aparezca en las primeras posiciones de la búsqueda de <strong>Google</strong>. Te ayudaremos a destacar en las búsquedas locales. Descubre cómo podemos llevar tu presencia online al siguiente nivel.",
     quaternary:
       "En todo momento sabrás qué trabajo hemos realizado, en que se ha invertido el dinero, y qué resultados hemos conseguido, el SEO es un proceso largo en el que ambas partes debemos mantener la comunicación para mantener un <strong>100% de transparencia</strong>.",
   },
@@ -158,7 +158,7 @@ const seoMurcia = {
     primary:
       "Nuestros <strong class='animate-text'>expertos en SEO</strong> analizarán y mejorarán tu posición en los motores de búsqueda. Contacta sin compromiso y envía tu petición, en menos de 24 horas tendrás un presupuesto a medida.",
     secondary:
-      "En <strong>Webllope</strong>, entendemos la importancia de la optimización local en Murcia. Nuestro enfoque personalizado garantiza resultados tangibles y sostenibles en el tiempo, mejoraremos tu <strong>posicionamiento seo</strong> y por lo tanto tu cantidad de tráfico y ventas.",
+      "En <strong>Webllope</strong>, entendemos la importancia de la optimización local en Murcia. Nuestro enfoque personalizado garantiza resultados tangibles y sostenibles en el tiempo, mejoraremos tu <strong>posicionamiento seo</strong> y por lo tanto la cantidad de tráfico y ventas de tu <a href='https://www.webllope.es/es/'>diseño web en Murcia</a>.",
   },
   textRight: {
     title: "Tu empresa necesita SEO",
@@ -195,7 +195,7 @@ const features = {
     {
       title: "Amplia Experiencia",
       description:
-        "Durante 5 años como <strong>desarrolladores de páginas web</strong> hemos visto como agencias de diseño web en Murcia desaparecían. Sin embargo nuestros métodos nos mantienen en la cima.",
+        "Durante 5 años como <strong>desarrolladores de páginas web</strong> hemos visto como agencias de diseño web en Murcia y de <a href='https://www.webllope.es/es/diseno-web-alicante'>diseño web en Alicante</a> desaparecían. Sin embargo nuestros métodos nos mantienen en la cima.",
     },
     {
       title: "Información Instantánea",
@@ -223,7 +223,7 @@ const clients = {
 const briefAboutUs = {
   title: "Diseño de páginas web profesionales en Murcia",
   firstP:
-    "Somos una agencia de <strong>creación de páginas webs</strong> y <a class='underline' href='/es/seo-murcia'><strong>SEO en Murcia</strong></a>. Especializados en crear <strong>páginas web corporativas</strong> con personalidad, haciendo un estudio previo del mercado y de los competidores. Multiplicamos las visitas a tu negocio en internet en un corto periodo de tiempo.",
+    "Somos una agencia de <strong>creación de páginas webs</strong> y <a class='underline' href='https://www.webllope.es/es/seo-murcia'><strong>SEO en Murcia</strong></a>. Especializados en crear <strong>páginas web corporativas</strong> con personalidad, haciendo un estudio previo del mercado y de los competidores. Multiplicamos las visitas a tu negocio en internet en un corto periodo de tiempo.",
   secondP:
     "Si confías en nosotros, no solo tendrás una página web empresarial excelente si no que a un precio increíblemente reducido. Consideramos que el mercado ha sido muy desconsiderado con las <strong>páginas webs para pymes</strong> y queremos cambiar eso ofreciendo el mejor <strong>desarrollo de páginas webs en Murcia</strong> y al mejor precio posible.",
   cta: "Contacta con nosotros",
@@ -262,7 +262,7 @@ const roadmap = {
   },
   third: {
     paragraph1:
-      "Se habla la posibilidad de que se implemente SEO (Posicionamiento web) en la página. En caso afirmativo, el siguiente paso nuestro equipo procede con el estudio de palabras clave o <i>keywords</i> y la configuración para que Google rastree la página y la indexe en los resultados de búsqueda.",
+      "Se habla la posibilidad de que se implemente SEO (<a href='https://www.webllope.es/es/posicionamiento-web-murcia'>Posicionamiento web</a>) en la página. En caso afirmativo, el siguiente paso nuestro equipo procede con el estudio de palabras clave o <i>keywords</i> y la configuración para que Google rastree la página y la indexe en los resultados de búsqueda.",
   },
   fourth: {
     paragraph1:
