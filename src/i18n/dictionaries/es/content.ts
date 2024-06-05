@@ -514,7 +514,7 @@ const seo = {
       "En Webllope ofrecemos servicios de diseño web, posicionamiento SEO y SEM, diseño de tiendas online, y marketing digital en Murcia.",
   },
   main: {
-    title: "Diseño Web Murcia. Agencia de Diseño Páginas Web",
+    title: "Diseño Web Murcia. Agencia de Diseño de Páginas Web",
     description:
       "Diseño de Páginas Web en Murcia. Somos una agencia con más de 5 años de experiencia, creamos tu web y conseguimos clientes en internet.",
   },
