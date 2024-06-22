@@ -12,7 +12,7 @@ import noelia from "@assets/reviewsImages/noelia.png";
 import mariajesus from "@assets/reviewsImages/mariajesus.png";
 import javierramos from "@assets/reviewsImages/javierramos.png";
 import gonzalodiaz from "@assets/reviewsImages/gonzalodiaz.png";
-import tonigarcia from "@assets/reviewsImages/tonigarcia.png"; 
+import tonigarcia from "@assets/reviewsImages/tonigarcia.png";
 import miguelgimeno from "@assets/reviewsImages/miguelgimeno.png";
 import davidsantos from "@assets/reviewsImages/davidsantos.png";
 
@@ -114,6 +114,7 @@ const ReviewsCarousel = () => {
               <FiveStars />
               <p className="text-sm">{truncate(review.opinion)}</p>
               <img
+                alt="Icono de Google"
                 className="absolute top-1 right-2 w-auto h-4"
                 src={GoogleIcon.src}
               />

@@ -531,6 +531,21 @@ const seo = {
     description:
       "In our web development blog you will find detailed information: from current complex technologies to the basics of web design.",
   },
+  cookies: {
+    title: "Cookie Policy | Webllope",
+    description:
+      "In this section you will find detailed information about the cookies we use on our website.",
+  },
+  legal: {
+    title: "Legal Notice | Webllope",
+    description:
+      "In this section you will find detailed information about the legal notice of our website.",
+  },
+  privacidad: {
+    title: "Privacy Policy | Webllope",
+    description:
+      "In this section you will find detailed information about the privacy policy of our website.",
+  },
   author: {
     daniel: {
       title: "Daniel's Articles | Webllope",
@@ -553,7 +568,7 @@ const seo = {
     description:
       "Website design in Alicante. More than 5 years working as web designers. We create your website with the best technologies and quality tools.",
   },
-    disenoTiendasOnlineMurcia: {
+  disenoTiendasOnlineMurcia: {
     title: "Online Store Design in Murcia. Create your e-commerce now",
     description:
       "Online store design in Murcia. We create your store with the best technologies and quality tools.",
@@ -610,7 +625,7 @@ const legal = {
       {
         title: "Personal data obtained",
         description:
-          "They are written in the <a href='/en/privacy/'><strong>Privacy Policy</strong></a>",
+          "They are written in the <a href='/en/privacidad/'><strong>Privacy Policy</strong></a>",
       },
       {
         title: "User commitments",

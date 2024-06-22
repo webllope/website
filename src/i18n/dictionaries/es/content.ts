@@ -533,6 +533,21 @@ const seo = {
     description:
       "En nuestro blog de desarrollo web encontrarás información detallada: desde tecnologías complejas actuales hasta lo básico del diseño web.",
   },
+  cookies: {
+    title: "Política de Cookies | Webllope",
+    description:
+      "En Webllope no guardamos ningún tipo de cookie, pero aquí te explicamos qué son y cómo puedes eliminarlas en tu navegador.",
+  },
+  privacidad: {
+    title: "Política de Privacidad | Webllope",
+    description:
+      "En Webllope nos preocupamos por tu privacidad, por eso aquí te explicamos cómo tratamos tus datos personales.",
+  },
+  legal: {
+    title: "Aviso Legal | Webllope",
+    description:
+      "Aquí te explicamos los términos y condiciones de uso de nuestra página web.",
+  },
   author: {
     daniel: {
       title: "Artículos de Daniel | Webllope",
@@ -694,8 +709,9 @@ const legal = {
 };
 
 const newspapers = {
-  title: "Tal vez hayas oído hablar de nosotros en estos prestigiosos periódicos digitales",
-}
+  title:
+    "Tal vez hayas oído hablar de nosotros en estos prestigiosos periódicos digitales",
+};
 
 export const content = {
   ...misc,
