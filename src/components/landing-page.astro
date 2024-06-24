@@ -60,6 +60,7 @@ const t = useTranslations(lang);
     title={t("briefAboutUs.title")}
     firstP={t("briefAboutUs.firstP")}
     secondP={t("briefAboutUs.secondP")}
+    thirdP={t("briefAboutUs.thirdP")}
     cta={{
       link: "/contacto",
       text: t("briefAboutUs.cta"),
@@ -90,6 +91,16 @@ const t = useTranslations(lang);
   <Newspapers />
   <Features />
   <GoogleMap />
+  <TextOnlySection
+    title={t("landing.textOnly.primary")}
+    firstP={t("landing.textOnly.secondary")}
+    secondP={t("landing.textOnly.tertiary")}
+    thirdP={t("landing.textOnly.quaternary")}
+    cta={{
+      link: "/contacto",
+      text: t("briefEcommerceInfo.cta"),
+    }}
+  />
   <div class="relative pt-12 lg:pt-16 mt-12 lg:mt-16">
     <Background />
     <FromBlog variant="landing-primary" />

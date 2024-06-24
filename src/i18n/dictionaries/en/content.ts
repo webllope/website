@@ -39,6 +39,15 @@ const landing = {
       },
     ],
   },
+  textOnly: {
+    primary: "Improve your business's digital marketing",
+    secondary:
+      "We build websites that attract and retain visitors, improving your business's <strong>digital marketing</strong> mainly by creating a professional and optimized website that appears in the top Google search results.",
+    tertiary:
+      "To fully enhance digital marketing, we also offer services such as social media management, design and creation of your business logo, and the typography and color palette for your digital brand.",
+    quaternary:
+      "We can manage <strong>your social media</strong> for you, so you only need to focus on your business. We ensure that your social media is always updated at a very low cost, keeping your customers informed about the latest news from your business.",
+  },
 };
 
 const disenowebalicante = {
@@ -154,14 +163,16 @@ const seoMurcia = {
       "At all times you will know what work we have done, what the money has been invested in, and what results we have achieved, SEO is a long process in which both parties must maintain communication to maintain <strong>100% transparency</strong>.",
   },
   textLeft: {
-    title: "SEO Consultant in Murcia",
+    title: "SEO Agency Murcia",
     primary:
       "Our <strong class='animate-text'>SEO experts in Murcia</strong> will analyze and improve your position in search engines. Contact us without obligation and send your request, in less than 24 hours you will have a budget tailored to you.",
     secondary:
       "At <strong>Webllope</strong>, we understand the importance of local optimization in Murcia. Our personalized approach guarantees tangible and sustainable results over time, we will improve your <strong>seo positioning</strong> and therefore your amount of traffic and sales.",
+    tertiary:
+      "You didn't come to this page by accident; you arrived here because we've done a great job as an SEO agency, managing to position this page above the competitors. We could do the same for your business.",
   },
   textRight: {
-    title: "Your company needs SEO",
+    title: "SEO Consultant in Murcia",
     primary:
       "Online visibility is key to business success. Do you want your company in Murcia to stand out among local competition? SEO is the answer. Discover how our personalized strategies can transform your online presence and attract <strong>relevant customers</strong>.",
     secondary:
@@ -173,9 +184,31 @@ const seoMurcia = {
     primary:
       "Well-executed SEO strategies generate long-term results, offering a significant ROI (return on investment). However, the initial investment could be considerable depending on the competition in your business sector.",
     secondary:
+      "If you want us to perform an <strong>SEO audit</strong> of your website, or if you don't have a website and want us to create one from scratch, you're in the right place.",
+    tertiary:
       "<strong>SEO positioning in Murcia</strong> has its particularities, so it is important that you put yourself in the hands of experts. Do not hesitate to contact us without obligation, we genuinely care that your business grows and is successful.",
   },
 };
+
+const seoRoadmap = {
+  first: {
+    paragraph1:
+      "We analyze your objectives, competitors, clientele, and conduct a thorough study of the <strong>keywords</strong> we want to rank your website for on Google.",
+    paragraph2:
+      "Once the analysis is complete, we structure all the steps we need to take to improve the digital marketing of your business.",
+  },
+  second: {
+    paragraph1:
+      "We create and position your <strong>website in Murcia</strong> and ensure it appears in the top search results on search engines like Google when someone searches for your business's main service or product.",
+    paragraph2:
+      "We manage social media if the service has been contracted, to enhance your overall digital presence.",
+  },
+  third: {
+    paragraph1:
+      "We show you the results obtained by improving your website's SEO ranking, including the number of new clients we're receiving per month, the number of sales, calls, and more.",
+  },
+};
+
 
 const features = {
   primary: "What benefits will having your own website provide you?",
@@ -444,7 +477,9 @@ const briefAboutUs = {
   firstP:
     "We are a <strong>web development and SEO agency</strong>. Specialized in creating <strong>corporate websites</strong> with personality, making a previous study of the market and competitors. We multiply the visits to your business on the internet in a short period of time.",
   secondP:
-    "If you trust us, not only will you have an excellent business website but also at an incredibly reduced price. We consider that the market has been very inconsiderate with <strong>websites for SMEs</strong> and we want to change that by offering the best <strong>web development in Murcia</strong> and at the best possible price.",
+    "If you trust us, not only will you have an excellent business website but also at an incredibly reduced price.",
+  thirdP:
+    "We consider that the market has been very inconsiderate with <strong>websites for SMEs</strong> and we want to change that by offering the best <strong>web development in Murcia</strong> and at the best possible price.",
   cta: "Contact us",
 };
 
@@ -740,4 +775,5 @@ export const content = {
   ourWork,
   aboutUs,
   seo,
+  seoRoadmap,
 };

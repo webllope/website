@@ -39,6 +39,15 @@ const landing = {
       },
     ],
   },
+  textOnly: {
+    primary: "Mejora el marketing digital de tu negocio",
+    secondary:
+      "Construimos páginas web que atraen y retienen a los visitantes, mejoramos el <strong>marketing digital</strong> de tu negocio principalmente con la creación de una página web profesional y optimizada para que aparezca en los primeros resultados de Google.",
+    tertiary:
+      "Aunque para aumentar el marketing digital al completo también ofrecemos servicios manejo de redes sociales, diseño y creacion del logotipo de tu negocio y de la tipografía y paleta de colores de tu marca digital.",
+    quaternary:
+      "El manejo de <strong>tus redes sociales</strong> podría ser llevado por nosotros, y así no tendrías que preocuparte por nada más que por tu negocio, nos aseguraríamos de que tus redes sociales siempre estén actualizadas por un precio muy bajo, asegurando que tus clientes siempre estén informados de las últimas novedades de tu negocio.",
+  },
 };
 
 const disenowebalicante = {
@@ -147,23 +156,25 @@ const seoMurcia = {
   hero: {
     primary: "SEO Murcia",
     secondary:
-      "Webllope es una <strong>agencia de SEO en Murcia</strong> y contamos con <strong>expertos</strong> en el equipo.",
+      "Webllope es una <strong>agencia SEO en Murcia</strong> y contamos con <strong>expertos</strong> en el equipo.",
     tertiary:
       "El SEO es el proceso de optimización de una página web para que esta aparezca en las primeras posiciones de la búsqueda de <strong>Google</strong>. Te ayudaremos a destacar en las búsquedas locales. Descubre cómo podemos llevar tu presencia online al siguiente nivel.",
     quaternary:
       "En todo momento sabrás qué trabajo hemos realizado, en que se ha invertido el dinero, y qué resultados hemos conseguido, el SEO es un proceso largo en el que ambas partes debemos mantener la comunicación para mantener un <strong>100% de transparencia</strong>.",
   },
   textLeft: {
-    title: "Consultor SEO en Murcia",
+    title: "Agencia SEO Murcia",
     primary:
       "Nuestros <strong class='animate-text'>expertos en SEO</strong> analizarán y mejorarán tu posición en los motores de búsqueda. Contacta sin compromiso y envía tu petición, en menos de 24 horas tendrás un presupuesto a medida.",
     secondary:
       "En <strong>Webllope</strong>, entendemos la importancia de la optimización local en Murcia. Nuestro enfoque personalizado garantiza resultados tangibles y sostenibles en el tiempo, mejoraremos tu <strong>posicionamiento seo</strong> y por lo tanto la cantidad de tráfico y ventas de tu <a href='https://www.webllope.es/es/'>diseño web en Murcia</a>.",
+    tertiary:
+      "No has llegado a esta página por casualidad, has llegado aquí porque hemos hecho un gran trabajo como <strong>agencia SEO</strong>, consiguiendo posicionar esta página y poniendola por encima de los competidores, lo mismo podríamos hacer con tu negocio.",
   },
   textRight: {
-    title: "Tu empresa necesita SEO",
+    title: "Consultor SEO en Murcia",
     primary:
-      "La visibilidad online es clave para el éxito empresarial. ¿Quieres que tu empresa en Murcia destaque entre la competencia local? El SEO es la respuesta. Descubre cómo nuestras estrategias personalizadas pueden transformar tu presencia en línea y atraer <strong>clientes relevantes</strong>.",
+      "La visibilidad online es clave para el éxito empresarial. ¿Quieres que tu empresa en Murcia destaque entre la competencia local? El SEO es la respuesta. Descubre cómo nuestras estrategias personalizadas pueden transformar tu presencia en línea y atraer <strong>clientes relevantes</strong> gracias a un excelente marketing digital.",
     secondary:
       "Posicionarte como un referente en tu industria aumentará la <strong>confianza de los clientes locales</strong>. Al ver tu página web rápidamente entenderán vuestro compromiso y responsabilidad con el cliente.",
     cta: "Contacta con nosotros",
@@ -173,6 +184,8 @@ const seoMurcia = {
     primary:
       "Las estrategias de SEO bien ejecutadas generan resultados a largo plazo, ofreciendo un ROI (beneficios de tu inversión) significativo. Sin embargo la inversión inicial podría ser considerable o no dependiendo de la competencia que haya en el sector de tu negocio.",
     secondary:
+      "Si deseas que realicemos una <strong>auditoría SEO</strong> de tu página web, o por el contrario no tienes sitio web y quieres que hagamos uno desde 0, estás en el sitio adecuado.",
+    tertiary:
       "El <strong>posicionamiento seo en Murcia</strong> tiene sus particularidades, por lo que es importante que te pongas en manos de expertos. No dudes en contactar con nosotros sin compromiso, nos preocupamos genuinamente porque tu negocio crezca y tenga éxito.",
   },
 };
@@ -223,9 +236,11 @@ const clients = {
 const briefAboutUs = {
   title: "Diseño de páginas web profesionales en Murcia",
   firstP:
-    "Somos una agencia de <strong>creación de páginas webs</strong> y <a class='underline' href='https://www.webllope.es/es/seo-murcia'><strong>SEO en Murcia</strong></a>. Especializados en crear <strong>páginas web corporativas</strong> con personalidad, haciendo un estudio previo del mercado y de los competidores. Multiplicamos las visitas a tu negocio en internet en un corto periodo de tiempo.",
+    "Somos una agencia de <strong>diseño de páginas webs</strong> y <a class='underline' href='https://www.webllope.es/es/seo-murcia'><strong>SEO en Murcia</strong></a>. Especializados en crear <strong>páginas web corporativas</strong> con personalidad, haciendo un estudio previo del mercado y de los competidores, aumentamos tu <strong>presencia digital</strong>. Multiplicamos las visitas a tu negocio en internet en un corto periodo de tiempo.",
   secondP:
-    "Si confías en nosotros, no solo tendrás una página web empresarial excelente si no que a un precio increíblemente reducido. Consideramos que el mercado ha sido muy desconsiderado con las <strong>páginas webs para pymes</strong> y queremos cambiar eso ofreciendo el mejor <strong>desarrollo de páginas webs en Murcia</strong> y al mejor precio posible.",
+    "Si confías en nosotros, no solo tendrás una página web empresarial excelente si no que a un precio increíblemente reducido.",
+  thirdP:
+    "Consideramos que el mercado ha sido muy desconsiderado con las <strong>páginas webs para pymes</strong> y queremos cambiar eso ofreciendo el mejor <strong>desarrollo de páginas webs en Murcia</strong> y al mejor precio posible. Sin cobrarte ni un centavo extra mensual por el mantenimiento web como otras agencias.",
   cta: "Contacta con nosotros",
 };
 
@@ -243,7 +258,7 @@ const briefSeoInfo = {
   firstP:
     "No somos una <strong>empresa de diseño web</strong> común y corriente, nuestros fundadores Daniel Maestre y Jose María Martínez son Ingenieros de Software con un amplio conocimiento del desarrollo web habiendo trabajado durante años como programadores en bancos y agencias de soluciones de software. ",
   secondP:
-    "Estás en el lugar correcto si necesitas una <strong>página web para tu negocio</strong> llamativa y al mismo tiempo optimizada de forma que Google entienda que es una página hecha al detalle y cuidando todos los detalles, y por ende, debe ser mostrada a los usuarios en los primeros resultados de sus búsquedas. El SEO es el proceso en el que los creadores de páginas webs optimizan el contenido de la página web para que esta aparezca en las primeras posiciones en los motores de búsqueda de Google.",
+    "Estás en el lugar correcto si necesitas una <strong>página web para tu negocio</strong> llamativa y al mismo tiempo optimizada de forma que Google entienda que es una página hecha al detalle y cuidando todos los detalles, y por ende, debe ser mostrada a los usuarios en los primeros resultados de sus búsquedas. Estos primeros resultados se consigun gracias al SEO. Este es el proceso en el que los creadores de páginas webs optimizan el contenido de la página web para que esta aparezca en las primeras posiciones en los motores de búsqueda de Google.",
   cta: "Ver nuestros servicios",
 };
 
@@ -274,7 +289,26 @@ const roadmap = {
     paragraph1:
       "¡Enhorabuena! Ya está tu sitio web publicado. Esto es solo el comienzo, desde este momento estamos a tu disposición por si se quiere hacer algún cambio ligero en la página, como añadir fotos diferentes, nuevos productos o servicios, etc.",
     paragraph2:
-      "Actualizaremos recurrentement todos los plugin para mantenerlos al día para evitar problemas de seguridad y rendimiento. En caso de haberse hecho SEO, haremos un seguimiento mensual para comprobar que la página no pierda puestos de posicionamiento en Google.",
+      "Realizamos gratuitamente un mantenimiento web, esto es, actualizaremos recurrentemente todos los plugin para mantenerlos al día para evitar problemas de seguridad y rendimiento. En caso de haberse hecho SEO, haremos un seguimiento mensual para comprobar que la página no pierda puestos de posicionamiento en Google.",
+  },
+};
+
+const seoRoadmap = {
+  first: {
+    paragraph1:
+      "Analizamos tus objetivos, a la competencia, a la clientela y un estudio exhaustivo de las <strong>palabras clave</strong> o <i>keywords</i> a las que queremos posicionar tu página web en Google.",
+    paragraph2:
+      "Hecho el análisis nos ponemos a estructurar todos los pasos que debemos hacer para mejorar el marketing digital de tu negocio.",
+  },
+  second: {
+    paragraph1:
+      "Creamos y posicionamos tu <strong>web en murcia</strong> y nos aseguramos que salga en los primeros resultados de los motores de búsqueda como Google cuando alguien busca el servicio o producto principal de tu negocio.",
+    paragraph2:
+      "Nos encargamos de las redes sociales en caso de que se haya contratado el servicio, para mejorar todo el conjunto de tu presencia digital.",
+  },
+  third: {
+    paragraph1:
+      "Te mostramos los resultados obtenidos al mejorar el posicionamiento seo de tu página, cuantos clientes nuevos estamos recibiendo al mes, cuantas ventas, cuantas llamadas...",
   },
 };
 
@@ -743,4 +777,5 @@ export const content = {
   authors,
   index,
   seo,
+  seoRoadmap,
 };

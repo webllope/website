@@ -8,6 +8,7 @@ import TextRightSection from "@components/text-right-section.astro";
 import TextOnlySection from "@components/text-only-section.astro";
 import Clients from "@components/clients.astro";
 import ContactForm from "@components/contact-form";
+import ServiceRoadmap from "./service-roadmap/service-roadmap.astro";
 
 import { Image } from "astro:assets";
 import seoImage1 from "@assets/seo-murcia.webp";
@@ -35,7 +36,8 @@ const t = useTranslations(lang);
   <TextLeftSection
     title={t("seoMurcia.textLeft.title")}
     firstP={t("seoMurcia.textLeft.primary")}
-    secondP={t("seoMurcia.textLeft.secondary")}>
+    secondP={t("seoMurcia.textLeft.secondary")}
+    thirdP={t("seoMurcia.textLeft.tertiary")}>
     <Image alt="SEO en Murcia" src={seoImage1} width="220" height="443" class="h-full mx-auto mt-6" />
   </TextLeftSection>
   <Clients />
@@ -55,10 +57,12 @@ const t = useTranslations(lang);
       src={seoImage2}
     />
   </TextRightSection>
+  <ServiceRoadmap seoRoadmap={true} />
   <Logos />
   <TextOnlySection
     title={t("seoMurcia.textOnly.title")}
     firstP={t("seoMurcia.textOnly.primary")}
     secondP={t("seoMurcia.textOnly.secondary")}
+    thirdP={t("seoMurcia.textOnly.tertiary")}
   />
 </Layout>
