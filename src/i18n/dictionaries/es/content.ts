@@ -90,6 +90,8 @@ const disenoTiendasOnlineMurcia = {
       "Monta tu <strong>tienda online</strong> y empieza a vender tus productos en internet. Diseñamos tu tienda con las mejores tecnologías y herramientas de calidad.",
     tertiary:
       "Si necesitas un <i>e-commerce</i> o comercio online que sea atractivo, consiga ventas y al mismo tiempo optimizada para que aparezca en los primeros resultados de Google, no dudes en contactar con nosotros. Estamos especializados en <strong>SEO en Murcia</strong> y en el <strong>diseño de tiendas online</strong> responsive.",
+    quaternary:
+      "En el competitivo mundo del <strong>comercio electrónico</strong>, contar con una tienda online bien diseñada es fundamental para el éxito de cualquier negocio. En nuestra empresa, nos especializamos en el diseño de <strong>páginas web</strong> adaptadas a las necesidades de nuestros clientes en Murcia, garantizando una experiencia de usuario excepcional y un diseño atractivo.",
   },
   textLeft: {
     title: "Crear tienda online en Murcia",
@@ -114,7 +116,17 @@ const disenoTiendasOnlineMurcia = {
       "No te conformes con cualquier tipo de <strong>e-commerce</strong> para tu negocio, si buscas una tienda virtual que convierta visitas en ventas y que además esté optimizada para que aparezca en los primeros resultados de Google, has llegado al lugar correcto.",
     secondary:
       "Nos comprometemos a crear una <strong>página de ventas online</strong> que sea eficaz, el cliente no tendrá ninguna duda a la hora de su utilización ya que se podrá hacer compras de forma intuitiva y sencilla. No dudes en contactar, no pierdes nada por ello.",
+    tertiary:
+      "El <strong>marketing digital</strong> es una herramienta esencial para aumentar la visibilidad de tu tienda virtual. A través de estrategias efectivas, podemos ayudarte a alcanzar a tu público objetivo y aumentar tus ventas. Utilizamos técnicas avanzadas de <strong>posicionamiento SEO</strong> para asegurar que tu tienda aparezca en los primeros resultados de búsqueda, atrayendo más tráfico y potenciales clientes.",
     cta: "Contacta sin compromiso",
+  },
+  textOnly2: {
+    title: "Advantages of E-commerce and Social Media",
+    primary:
+      "E-commerce offers numerous advantages, such as the ability to sell your products 24/7 and reach customers worldwide. Additionally, with well-managed <strong>online sales</strong>, you can reduce operational costs and provide a convenient and secure shopping experience for your customers.",
+    secondary:
+      "Social media plays a crucial role in promoting your <strong>web store</strong>. With a well-defined strategy, you can use platforms like Facebook, Instagram, and Twitter to interact with your customers, promote your products, and drive traffic to your <strong>virtual store</strong>.",
+    cta: "Contact us without obligation",
   },
 };
 
@@ -141,7 +153,8 @@ const posicionamientoWebMurcia = {
       "En <strong class='animate-text'>Webllope</strong>, entendemos el mercado local en Murcia. Nuestro enfoque personalizado garantiza resultados efectivos en términos de posicionamiento web y diseño adaptado a las necesidades de tu negocio.",
     secondary:
       "Para conocer el <strong>presupuesto de posicionamiento web</strong>, no dudes en contactar con nosotros, te haremos un presupuesto a medida. No te preocupes, no te vamos a cobrar un precio desorbitado.",
-    tertiary: "Webllope ofrece un servicio excelente como <strong>agencia seo</strong> y queremos que tu negocio crezca junto a nosotros, si tu página sale en los primeros resultados y por encima de la competencia, también nos beneficia a nosotros, por esto queremos que a tu página le vaya lo mejor posible y nos esforzamos por conseguirlo.",
+    tertiary:
+      "Webllope ofrece un servicio excelente como <strong>agencia seo</strong> y queremos que tu negocio crezca junto a nosotros, si tu página sale en los primeros resultados y por encima de la competencia, también nos beneficia a nosotros, por esto queremos que a tu página le vaya lo mejor posible y nos esforzamos por conseguirlo.",
     cta: "Contacta con nosotros",
   },
   textOnly: {
@@ -150,7 +163,8 @@ const posicionamientoWebMurcia = {
       "El presupuesto depende mayoritariamente del servicio que ofrezca tu negocio, ya que esto definirá la dificultad de posicionar tu página web en los primeros resultados de Google. No obstante, no te preocupes, te haremos un presupuesto a medida y será la <strong>auditoría SEO</strong> más asequible del mercado.",
     secondary:
       "Obtén un presupuesto personalizado para tu estrategia de <strong>posicionamiento web seo en Murcia</strong>. Estamos aquí para ayudarte a alcanzar tus objetivos online.",
-    tertiary: "Ofrecemos servicios de creación de diseño web desde 0 y el posicionamiento del mismo, al igual que servicios de posicionamiento individualmente, es decir, que ya tienes una página web y deseas que esta posicione mejor en Google."
+    tertiary:
+      "Ofrecemos servicios de creación de diseño web desde 0 y el posicionamiento del mismo, al igual que servicios de posicionamiento individualmente, es decir, que ya tienes una página web y deseas que esta posicione mejor en Google.",
   },
 };
 

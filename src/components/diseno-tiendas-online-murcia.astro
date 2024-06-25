@@ -8,6 +8,7 @@ import TextRightSection from "@components/text-right-section.astro";
 import TextOnlySection from "@components/text-only-section.astro";
 import Clients from "@components/clients.astro";
 import ContactForm from "@components/contact-form";
+import GoogleMap from "./google-map.astro";
 
 import { Image } from "astro:assets";
 import diseñoTiendasOnlineMurcia from "@assets/diseño-tiendas-online-murcia.png";
@@ -28,6 +29,7 @@ const t = useTranslations(lang);
     primaryText={t("disenoTiendasOnlineMurcia.hero.primary")}
     secondaryText={t("disenoTiendasOnlineMurcia.hero.secondary")}
     tertiaryText={t("disenoTiendasOnlineMurcia.hero.tertiary")}
+    quaternaryText={t("disenoTiendasOnlineMurcia.hero.quaternary")}
     slotClasses="lg:w-4/12">
     <ContactForm client:load url={Astro.url} />
   </Hero>
@@ -66,5 +68,16 @@ const t = useTranslations(lang);
     title={t("disenoTiendasOnlineMurcia.textOnly.title")}
     firstP={t("disenoTiendasOnlineMurcia.textOnly.primary")}
     secondP={t("disenoTiendasOnlineMurcia.textOnly.secondary")}
+    thirdP={t("disenoTiendasOnlineMurcia.textOnly.tertiary")}
+  />
+  <GoogleMap />
+  <TextOnlySection
+    title={t("disenoTiendasOnlineMurcia.textOnly2.title")}
+    firstP={t("disenoTiendasOnlineMurcia.textOnly2.primary")}
+    secondP={t("disenoTiendasOnlineMurcia.textOnly2.secondary")}
+    cta={{
+      text: t("disenoTiendasOnlineMurcia.textOnly2.cta"),
+      link: "/contacto",
+    }}
   />
 </Layout>

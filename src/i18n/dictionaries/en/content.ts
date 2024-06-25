@@ -90,6 +90,8 @@ const disenoTiendasOnlineMurcia = {
       "Set up your own online store and start selling your products on the internet. We design your store with the best technologies and quality tools.",
     tertiary:
       "If you need an <i>e-commerce</i> that is attractive and at the same time optimized to appear in the first results of Google, do not hesitate to contact us. We specialize in <strong>SEO in Murcia</strong> and in the <strong>design of online stores</strong>.",
+    quaternary:
+      "In the competitive world of <strong>e-commerce</strong>, having a well-designed online store is essential for the success of any business. Our company specializes in designing web pages tailored to the needs of our clients in Murcia, ensuring an exceptional user experience and an attractive design.",
   },
   textLeft: {
     title: "Create online store in Murcia",
@@ -114,6 +116,8 @@ const disenoTiendasOnlineMurcia = {
       "Do not settle for any type of <strong>e-commerce</strong> for your business, if you are looking for an online store that converts visits into sales and that is also optimized to appear in the first results of Google, you have come to the right place.",
     secondary:
       "We are committed to creating an <strong>online sales page</strong> that is effective, the customer will have no doubt when using it as purchases can be made intuitively and simply. Do not hesitate to contact, you have nothing to lose.",
+    tertiary:
+      "<strong>Digital marketing</strong> is a crucial tool for increasing the visibility of your virtual store. Through effective strategies, we can help you reach your target audience and boost your sales. We use advanced SEO positioning techniques to ensure your store appears in the top search results, attracting more traffic and potential customers.",
     cta: "Contact us without obligation",
   },
 };
@@ -141,7 +145,8 @@ const posicionamientoWebMurcia = {
       "At <strong class='animate-text'>Webllope</strong>, we understand the local market in Murcia. Our personalized approach guarantees effective results in terms of web positioning and design tailored to the needs of your business.",
     secondary:
       "To know the <strong>web positioning budget</strong>, do not hesitate to contact us, we will make a budget tailored to you. Do not worry, we are not going to charge you an exorbitant price",
-    tertiary: "Webllope offers <strong>web positioning service for SMEs</strong> and we want your business to grow with us.",
+    tertiary:
+      "Webllope offers <strong>web positioning service for SMEs</strong> and we want your business to grow with us.",
     cta: "Contact us",
   },
   textOnly: {
