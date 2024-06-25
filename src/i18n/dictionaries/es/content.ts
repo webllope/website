@@ -76,7 +76,7 @@ const disenowebalicante = {
   textOnly: {
     title: "Consigue tu diseño web en Alicante",
     primary:
-      "Si buscas una <strong class='animate-text'>empresa de diseño web en Alicante</strong> que te ofrezca un servicio completo, has llegado al lugar correcto. En Webllope no solo nos encargamos de la creación de páginas web, si no que también nos preocupamos por el posicionamiento web y el SEO de tu página.",
+      "Si buscas una <strong class='animate-text'>empresa de diseño web en Alicante</strong> que te ofrezca un servicio completo, has llegado al lugar correcto. En Webllope no solo nos encargamos de la creación de páginas web, si no que también nos preocupamos por el posicionamiento y el SEO de tu diseño web.",
     secondary:
       "Antes de nada, cuando nos contactes al poco tiempo te mostraremos un diseño para que veas como se vería tu página web y si te gusta, procederemos con el desarrollo de la misma. No dudes en contactar, no pierdes nada por ello.",
     cta: "Ver nuestros servicios",
@@ -122,16 +122,16 @@ const posicionamientoWebMurcia = {
   hero: {
     primary: "Posicionamiento Web Murcia",
     secondary:
-      "¡Optimiza tu <strong>presencia online</strong> en Murcia con nuestro Servicio de Posicionamiento Web!",
+      "¡Mejora tu <strong>presencia online</strong> en Murcia con nuestro Servicio de Posicionamiento Web!",
     tertiary:
-      "Destaca en las búsquedas de la región y atrae a más <strong class='animate-text'>clientes potenciales</strong>. Gracias a este servicio, tu página web mejorará en visibilidad y saldrá en los resultados de Google.",
+      "Destaca en las búsquedas de la región y atrae a más <strong class='animate-text'>clientes potenciales</strong>. Gracias a este servicio, tu página web mejorará en visibilidad y saldrá en los resultados de Google poniéndose por encima de la competencia.",
     quaternary:
       "Webllope es una <strong>empresa de posicionamiento web en Murcia</strong> que te ofrece un servicio completo. No solo nos encargamos de la creación de páginas web, si no que también nos preocupamos por el posicionamiento web y el SEO de tu página.",
   },
   textLeft: {
     title: "Posicionamiento en Murcia",
     primary:
-      "Si necesitas un <strong>consultor SEO</strong> para mejorar la visibilidad que tu empresa tiene en internet, estás de suerte. Contacta ahora sin compromiso y disfruta de que un experto en SEO te explique detalladamente lo necesario para conseguir el mejor posicionamiento web de tu página y así conseguir más clientes potenciales.",
+      "Si necesitas un <strong>consultor SEO</strong> para mejorar la visibilidad que tu empresa tiene en internet, estás de suerte. Contacta ahora sin compromiso y disfruta de que un experto en SEO te explique detalladamente lo necesario para conseguir el mejor posicionamiento para tu diseño web y así conseguir más clientes potenciales.",
     secondary:
       "Ofrecemos un enfoque integral, combinando <a href='https://www.webllope.es/es/'>diseño web</a> y <strong>estrategias de posicionamiento</strong> para potenciar tu presencia online en Murcia.",
   },
@@ -140,7 +140,8 @@ const posicionamientoWebMurcia = {
     primary:
       "En <strong class='animate-text'>Webllope</strong>, entendemos el mercado local en Murcia. Nuestro enfoque personalizado garantiza resultados efectivos en términos de posicionamiento web y diseño adaptado a las necesidades de tu negocio.",
     secondary:
-      "Para conocer el <strong>presupuesto de posicionamiento web</strong>, no dudes en contactar con nosotros, te haremos un presupuesto a medida. No te preocupes, no te vamos a cobrar un precio desorbitado, Webllope ofrece servicio de <strong>posicionamiento web para pymes</strong> y queremos que tu negocio crezca junto a nosotros.",
+      "Para conocer el <strong>presupuesto de posicionamiento web</strong>, no dudes en contactar con nosotros, te haremos un presupuesto a medida. No te preocupes, no te vamos a cobrar un precio desorbitado.",
+    tertiary: "Webllope ofrece un servicio excelente como <strong>agencia seo</strong> y queremos que tu negocio crezca junto a nosotros, si tu página sale en los primeros resultados y por encima de la competencia, también nos beneficia a nosotros, por esto queremos que a tu página le vaya lo mejor posible y nos esforzamos por conseguirlo.",
     cta: "Contacta con nosotros",
   },
   textOnly: {
@@ -149,6 +150,7 @@ const posicionamientoWebMurcia = {
       "El presupuesto depende mayoritariamente del servicio que ofrezca tu negocio, ya que esto definirá la dificultad de posicionar tu página web en los primeros resultados de Google. No obstante, no te preocupes, te haremos un presupuesto a medida y será la <strong>auditoría SEO</strong> más asequible del mercado.",
     secondary:
       "Obtén un presupuesto personalizado para tu estrategia de <strong>posicionamiento web seo en Murcia</strong>. Estamos aquí para ayudarte a alcanzar tus objetivos online.",
+    tertiary: "Ofrecemos servicios de creación de diseño web desde 0 y el posicionamiento del mismo, al igual que servicios de posicionamiento individualmente, es decir, que ya tienes una página web y deseas que esta posicione mejor en Google."
   },
 };
 
@@ -309,6 +311,27 @@ const seoRoadmap = {
   third: {
     paragraph1:
       "Te mostramos los resultados obtenidos al mejorar el posicionamiento seo de tu página, cuantos clientes nuevos estamos recibiendo al mes, cuantas ventas, cuantas llamadas...",
+  },
+};
+
+const posicionamientoRoadmap = {
+  first: {
+    paragraph1:
+      "Analizamos tus objetivos, a la competencia, a la clientela y un estudio exhaustivo de las <strong>palabras clave</strong> o <i>keywords</i> a las que queremos posicionar tu página web en Google.",
+    paragraph2:
+      "Hecho el análisis nos ponemos a estructurar todos los pasos que debemos hacer para mejorar el <strong>marketing digital</strong> de tu negocio.",
+  },
+  second: {
+    paragraph1:
+      "Creamos y posicionamos tu <strong>web en murcia</strong> y nos aseguramos que salga en los primeros resultados de los motores de búsqueda como Google cuando alguien busca el servicio o producto principal de tu negocio.",
+    paragraph2:
+      "Nos encargamos de las redes sociales en caso de que se haya contratado el servicio, para mejorar todo el conjunto de tu presencia y marketing digital.",
+  },
+  third: {
+    paragraph1:
+      "Te mostramos los resultados obtenidos al mejorar el <strong>posicionamiento seo</strong> de tu página, cuantos clientes nuevos estamos recibiendo al mes, cuantas ventas, cuantas llamadas...",
+    paragraph2:
+      "Al final de cada mes te volvemos a contactar para enviarte un informe detallado de la analítica web, mostrándote que tal le fue a tu página web este último mes y si lo deseas te propondremos mejoras para el siguiente mes.",
   },
 };
 
@@ -778,4 +801,5 @@ export const content = {
   index,
   seo,
   seoRoadmap,
+  posicionamientoRoadmap,
 };

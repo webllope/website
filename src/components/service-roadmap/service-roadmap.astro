@@ -8,11 +8,12 @@ const t = useTranslations(lang);
 
 interface Props {
   seoRoadmap?: boolean;
+  posicionamientoRoadmap?: boolean;
 }
 
-const { seoRoadmap = false } = Astro.props;
+const { seoRoadmap = false, posicionamientoRoadmap = false } = Astro.props;
 
-const paragraphs = [
+const landingParagraphs = [
   [t("roadmap.first.paragraph1"), t("roadmap.first.paragraph2")],
   [t("roadmap.second.paragraph1"), t("roadmap.second.paragraph2")],
   [t("roadmap.third.paragraph1")],
@@ -25,6 +26,14 @@ const seoParagraphs = [
   [t("seoRoadmap.second.paragraph1"), t("seoRoadmap.second.paragraph2")],
   [t("seoRoadmap.third.paragraph1")],
 ];
+
+const posicionamientoParagraphs = [
+  [t("posicionamientoRoadmap.first.paragraph1"), t("posicionamientoRoadmap.first.paragraph2")],
+  [t("posicionamientoRoadmap.second.paragraph1"), t("posicionamientoRoadmap.second.paragraph2")],
+  [t("posicionamientoRoadmap.third.paragraph1"), t("posicionamientoRoadmap.third.paragraph2")],
+];
+
+const paragraphs = seoRoadmap ? seoParagraphs : posicionamientoRoadmap ? posicionamientoParagraphs : landingParagraphs;
 ---
 <div
   class="relative isolate bg-neutral-50 py-16 sm:py-28 md:py-32 mt-24 sm:mt-32 lg:mt-40">
@@ -32,22 +41,7 @@ const seoParagraphs = [
   <div class="mx-auto max-w-[90rem] px-6 lg:px-8">
     <ol class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 justify-center gap-y-10">
       {
-        !seoRoadmap ? paragraphs.map((paragraph, index) => (
-          <li class="relative mb-6 sm:mb-0 pr-2">
-            <div class="flex items-center gap-2">
-              <div class="z-10 flex items-center justify-center w-8 h-8 bg-black rounded-full  text-white shrink-0">
-                <strong>{index + 1}</strong>
-              </div>
-              <div class="flex w-full bg-gray-200 h-0.5 dark:bg-gray-700" />
-            </div>
-            <div class="mt-6 sm:pe-8 flex flex-col gap-4">
-              <!-- <h3 class="text-lg font-semibold text-gray-900 mt-4 mb-2">
-                Flowbite Library v1.0.0
-              </h3> -->
-              {paragraph.map(nested => <p class="text-base font-normal text-gray-500" set:html={nested} />)}
-            </div>
-          </li>
-        )) : seoParagraphs.map((paragraph, index) => (
+        paragraphs.map((paragraph, index) => (
           <li class="relative mb-6 sm:mb-0 pr-2">
             <div class="flex items-center gap-2">
               <div class="z-10 flex items-center justify-center w-8 h-8 bg-black rounded-full  text-white shrink-0">

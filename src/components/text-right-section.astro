@@ -11,18 +11,18 @@ interface Props {
   title: string;
   firstP: string;
   secondP?: string;
+  thirdP?: string;
   cta?: {
     text: string;
     link: string;
   };
 }
 
-const { title, firstP, secondP, cta } = Astro.props;
+const { title, firstP, secondP, thirdP, cta } = Astro.props;
 ---
 
 <Container class="px-6">
-  <div
-    class="flex flex-col lg:flex-row justify-between mx-auto max-w-2xl lg:max-w-none gap-12 mt-8">
+  <div class="flex flex-col lg:flex-row justify-between mx-auto max-w-2xl lg:max-w-none gap-12 mt-8">
     <slot />
     <div class="max-w-2xl">
       <div
@@ -33,14 +33,13 @@ const { title, firstP, secondP, cta } = Astro.props;
         <div class="flex flex-col gap-3.5">
           <span set:html={firstP} />
           {secondP && <span set:html={secondP} />}
+          {thirdP && <span set:html={thirdP} />}
         </div>
 
         {
           cta && (
             <div class="flex mt-10">
-              <Link href={getRelativeLocaleUrl(lang, cta?.link)}>
-                {cta?.text}
-              </Link>
+              <Link href={getRelativeLocaleUrl(lang, cta?.link)}>{cta?.text}</Link>
             </div>
           )
         }

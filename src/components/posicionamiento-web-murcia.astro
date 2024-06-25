@@ -8,6 +8,7 @@ import TextRightSection from "@components/text-right-section.astro";
 import TextOnlySection from "@components/text-only-section.astro";
 import Clients from "@components/clients.astro";
 import ContactForm from "@components/contact-form";
+import ServiceRoadmap from "./service-roadmap/service-roadmap.astro";
 
 import { Image } from "astro:assets";
 import diseñoTiendasOnlineMurcia from "@assets/diseño-tiendas-online-murcia.png";
@@ -43,6 +44,7 @@ const t = useTranslations(lang);
     title={t("posicionamientoWebMurcia.textRight.title")}
     firstP={t("posicionamientoWebMurcia.textRight.primary")}
     secondP={t("posicionamientoWebMurcia.textRight.secondary")}
+    thirdP={t("posicionamientoWebMurcia.textRight.tertiary")}
     cta={{
       text: t("posicionamientoWebMurcia.textRight.cta"),
       link: "/contacto",
@@ -55,10 +57,12 @@ const t = useTranslations(lang);
       src={diseñoTiendasOnlineMurcia}
     />
   </TextRightSection>
+  <ServiceRoadmap posicionamientoRoadmap={true}/>
   <Logos />
   <TextOnlySection
     title={t("posicionamientoWebMurcia.textOnly.title")}
     firstP={t("posicionamientoWebMurcia.textOnly.primary")}
     secondP={t("posicionamientoWebMurcia.textOnly.secondary")}
+    thirdP={t("posicionamientoWebMurcia.textOnly.tertiary")}
   />
 </Layout>

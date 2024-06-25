@@ -140,7 +140,8 @@ const posicionamientoWebMurcia = {
     primary:
       "At <strong class='animate-text'>Webllope</strong>, we understand the local market in Murcia. Our personalized approach guarantees effective results in terms of web positioning and design tailored to the needs of your business.",
     secondary:
-      "To know the <strong>web positioning budget</strong>, do not hesitate to contact us, we will make a budget tailored to you. Do not worry, we are not going to charge you an exorbitant price, Webllope offers <strong>web positioning service for SMEs</strong> and we want your business to grow with us.",
+      "To know the <strong>web positioning budget</strong>, do not hesitate to contact us, we will make a budget tailored to you. Do not worry, we are not going to charge you an exorbitant price",
+    tertiary: "Webllope offers <strong>web positioning service for SMEs</strong> and we want your business to grow with us.",
     cta: "Contact us",
   },
   textOnly: {
@@ -149,6 +150,8 @@ const posicionamientoWebMurcia = {
       "The budget depends mainly on the service offered by your business, as this will define the difficulty of positioning your website in the first results of Google. However, do not worry, we will make a budget tailored to you and it will be the most affordable on the market.",
     secondary:
       "Get a personalized budget for your <strong>web positioning strategy in Murcia</strong>. We are here to help you achieve your online goals.",
+    tertiary:
+      "We offer web design creation services from scratch and the positioning of it, as well as individual positioning services. In other words, if you already have a website and want it to rank better on Google.",
   },
 };
 
@@ -209,6 +212,26 @@ const seoRoadmap = {
   },
 };
 
+const posicionamientoRoadmap = {
+  first: {
+    paragraph1:
+      "We analyze your objectives, competitors, clientele, and conduct a thorough study of the <strong>keywords</strong> we want to rank your website for on Google.",
+    paragraph2:
+      "Once the analysis is complete, we structure all the steps we need to take to improve the <strong>digital marketing</strong> of your business.",
+  },
+  second: {
+    paragraph1:
+      "We create and position your <strong>website in Murcia</strong> and ensure it appears in the top search results on search engines like Google when someone searches for your business's main service or product.",
+    paragraph2:
+      "We manage social media if the service has been contracted, to enhance your overall digital presence and marketing.",
+  },
+  third: {
+    paragraph1:
+      "We show you the results obtained by improving your website's <strong>SEO ranking</strong>, including the number of new clients we're receiving per month, the number of sales, calls, and more.",
+    paragraph2:
+      "At the end of each month, we contact you again to send you a detailed web analytics report, showing you how your website performed in the last month, and if you wish, we will propose improvements for the next month.",
+  },
+};
 
 const features = {
   primary: "What benefits will having your own website provide you?",
@@ -776,4 +799,5 @@ export const content = {
   aboutUs,
   seo,
   seoRoadmap,
+  posicionamientoRoadmap,
 };
