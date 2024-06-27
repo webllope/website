@@ -121,12 +121,12 @@ const disenoTiendasOnlineMurcia = {
     cta: "Contacta sin compromiso",
   },
   textOnly2: {
-    title: "Advantages of E-commerce and Social Media",
+    title: "Ventajas del Comercio Electrónico y Redes Sociales",
     primary:
-      "E-commerce offers numerous advantages, such as the ability to sell your products 24/7 and reach customers worldwide. Additionally, with well-managed <strong>online sales</strong>, you can reduce operational costs and provide a convenient and secure shopping experience for your customers.",
+      "El <strong>comercio electrónico</strong> ofrece numerosas ventajas, como la posibilidad de vender tus productos las 24 horas del día y llegar a clientes de todo el mundo. Además, con una venta online bien gestionada, puedes reducir costos operativos y ofrecer una experiencia de compra cómoda y segura para tus clientes.",
     secondary:
-      "Social media plays a crucial role in promoting your <strong>web store</strong>. With a well-defined strategy, you can use platforms like Facebook, Instagram, and Twitter to interact with your customers, promote your products, and drive traffic to your <strong>virtual store</strong>.",
-    cta: "Contact us without obligation",
+      "Las <strong>redes sociales</strong> juegan un papel crucial en la promoción de tu web tienda. Con una estrategia bien definida, puedes utilizar plataformas como Facebook, Instagram y Twitter para interactuar con tus clientes, promocionar tus productos y generar tráfico hacia tu tienda virtual.",
+    cta: "Contacta sin compromiso",
   },
 };
 

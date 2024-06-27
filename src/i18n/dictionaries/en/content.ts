@@ -120,6 +120,14 @@ const disenoTiendasOnlineMurcia = {
       "<strong>Digital marketing</strong> is a crucial tool for increasing the visibility of your virtual store. Through effective strategies, we can help you reach your target audience and boost your sales. We use advanced SEO positioning techniques to ensure your store appears in the top search results, attracting more traffic and potential customers.",
     cta: "Contact us without obligation",
   },
+  textOnly2: {
+    title: "Advantages of E-commerce and Social Media",
+    primary:
+      "E-commerce offers numerous advantages, such as the ability to sell your products 24/7 and reach customers worldwide. Additionally, with well-managed <strong>online sales</strong>, you can reduce operational costs and provide a convenient and secure shopping experience for your customers.",
+    secondary:
+      "Social media plays a crucial role in promoting your <strong>web store</strong>. With a well-defined strategy, you can use platforms like Facebook, Instagram, and Twitter to interact with your customers, promote your products, and drive traffic to your <strong>virtual store</strong>.",
+    cta: "Contact us without obligation",
+  },
 };
 
 const posicionamientoWebMurcia = {
