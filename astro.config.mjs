@@ -5,7 +5,12 @@ import sitemap from "@astrojs/sitemap";
 import vercel from "@astrojs/vercel/serverless";
 import react from "@astrojs/react";
 function filterOutPages(page) {
+  const englishBlogLinksAllowed = [
+    "https://webllope.es/en/blog/is-it-important-to-have-a-website/",
+  ];
+
   return (
+    !(page.includes("/en/blog/") && !englishBlogLinksAllowed.includes(page)) &&
     page !== "https://webllope.es/en/blog/importancia-tener-pagina-web/" &&
     page !== "https://webllope.es/es/blog/is-it-important-to-have-a-website/" &&
     page !== "https://webllope.es/en/blog/astro-framework-de-javascript/" &&
