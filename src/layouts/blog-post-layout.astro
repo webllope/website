@@ -26,7 +26,7 @@ const schema = JSON.stringify({
   "@type": "BlogPosting",
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": `https://www.webllope.es/${currentPathname}`,
+    "@id": `https://www.webllope.es${currentPathname}`,
   },
   headline: frontmatter.title,
   datePublished: frontmatter.publishDate,
@@ -38,6 +38,10 @@ const schema = JSON.stringify({
   publisher: {
     "@type": "Organization",
     name: "Webllope, Diseño web Murcia",
+  },
+  logo: {
+    "@type": "ImageObject",
+    url: "https://www.webllope.es/_astro/webllope-bigger-logo.iJn7V7c4_Z17o9cC.webp",
   },
   description: frontmatter.description,
 });
