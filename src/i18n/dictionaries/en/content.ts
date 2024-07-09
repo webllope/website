@@ -640,6 +640,11 @@ const seo = {
     description:
       "Website design in Alicante. More than 5 years working as web designers. We create your website with the best technologies and quality tools.",
   },
+  redesSocialesMurcia: {
+    title: "Social Media Agency in Murcia. Improve your business presence",
+    description:
+      "We are digital marketing experts, we manage your social networks in Murcia. Make your business visible to the public on the internet.",
+  },
   disenoTiendasOnlineMurcia: {
     title: "Online Store Design in Murcia. Create your e-commerce now",
     description:

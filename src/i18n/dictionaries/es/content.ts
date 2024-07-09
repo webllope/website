@@ -130,6 +130,49 @@ const disenoTiendasOnlineMurcia = {
   },
 };
 
+const redesSocialesMurcia = {
+  hero: {
+    primary: "Agencia de Redes Sociales en Murcia",
+    secondary:
+      "En el entorno digital actual, la creación de contenido <strong class='animate-text'>atractivo y rápido</strong> en formato vertical se ha vuelto esencial para destacar en plataformas como TikTok, Instagram y YouTube Shorts. Nosotros <strong>te haremos viral</strong> en ese área.",
+    tertiary:
+      "Webllope es una agencia de <strong>marketing digital</strong>. Ofrecemos varios servicios, entre ellos la <strong>gestión de redes sociales</strong>",
+    quaternary:
+      "Las audiencias modernas prefieren consumir contenido rápido y visualmente impactante, lo que hace que los videos cortos y verticales sean una herramienta poderosa para aumentar la visibilidad de tu marca.<br/><br/>Estudios recientes muestran que más del <strong>80% de los usuarios</strong> de redes sociales interactúan más con videos verticales que con cualquier otro tipo de contenido.",
+  },
+  textLeft: {
+    title: "Grabación de Contenido en Formato Vertical",
+    primary: "Nuestros servicios de grabación incluyen:",
+    secondary:
+      "<ul><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Alta calidad de producción</h3>: Utilizamos equipos de última generación para asegurar la mejor calidad visual y sonora.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Creatividad y originalidad</h3>: Trabajamos contigo para desarrollar ideas creativas y originales que resuenen con tu público objetivo.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Adaptación a diversas plataformas</h3>: Creamos contenido optimizado para TikTok, Instagram Reels y YouTube Shorts, asegurando que cada video esté perfectamente adaptado a las especificaciones de cada plataforma.</li></ul>",
+    cta: "Contacta con nosotros",
+  },
+  textRight: {
+    title: "Gestión integral de redes sociales",
+    primary:
+      "Además de la creación de contenido, ofrecemos servicios completos de gestión de redes sociales:",
+    secondary:
+      "<ul><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Planificación y estrategia</h3>: Desarrollamos una estrategia de contenido que se alinea con tus objetivos de negocio.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Publicación y programación</h3>: Nos encargamos de la publicación regular de contenido en tus cuentas de redes sociales.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Interacción con la audiencia</h3>: Gestionamos los comentarios y mensajes para mantener una comunicación activa y positiva con tus seguidores.</li></ul>",
+    cta: "Contacta con nosotros",
+  },
+  textOnly: {
+    title: "Beneficios del Marketing Digital para tu negocio",
+    primary:
+      "Trabajar con nuestra agencia de marketing digital en Murcia te proporcionará numerosos beneficios:",
+    secondary:
+      "<ul><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Mayor exposición</h3>: Aumentarás la visibilidad de tu marca en las redes sociales más populares.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Mejor conexión con la audiencia</h3>: Conectarás de manera más efectiva con tu público objetivo a través de contenido atractivo y relevante.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Crecimiento de la interacción</h3>: Incrementarás la interacción con tus seguidores, lo que puede traducirse en mayores conversiones y ventas.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Posicionamiento de marca</h3>: Fortalecerás la percepción de tu marca como moderna y adaptada a las últimas tendencias digitales.</li></ul>",
+    cta: "Contacta sin compromiso",
+  },
+  textOnly2: {
+    title: "Estrategias para Aumentar la Visibilidad",
+    primary:
+      "Implementamos diversas estrategias para maximizar la visibilidad de tu contenido:",
+    secondary:
+      "<ul><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Optimización SEO</h3>: Aseguramos que tus videos estén optimizados con las palabras clave adecuadas para mejorar su posición en los resultados de búsqueda.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Publicidad en redes sociales</h3>: Si quisieses podríamos utilizar campañas publicitarias pagadas para aumentar el alcance de tus videos y atraer a nuevos seguidores.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Análisis y reporte</h3>: Monitoreamos el rendimiento de tus videos y te proporcionamos informes detallados para ajustar y mejorar la estrategia continuamente.</li></ul>",
+    cta: "Contacta sin compromiso",
+  },
+};
+
 const posicionamientoWebMurcia = {
   hero: {
     primary: "Posicionamiento Web Murcia",
@@ -637,6 +680,12 @@ const seo = {
     description:
       "Como creadores de páginas web exhibimos los sitios web que elevaron a nuestros clientes al siguiente nivel digital en internet.",
   },
+  redesSocialesMurcia: {
+    title:
+      "Agencia de Redes Sociales en Murcia. Mejora la presencia de tu negocio",
+    description:
+      "Somos expertos en marketing digital, gestionamos tus redes sociales en Murcia. Haz tu negocio visible al público en internet.",
+  },
   disenoWebAlicante: {
     title: "Diseño Web Alicante. Creamos tu Página Web Perfecta",
     description:
@@ -793,6 +842,7 @@ export const content = {
   reviews,
   disenowebalicante,
   disenoTiendasOnlineMurcia,
+  redesSocialesMurcia,
   posicionamientoWebMurcia,
   seoMurcia,
   features,

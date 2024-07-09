@@ -12,6 +12,7 @@ export const ui = {
     blog: "Blog",
     aboutUs: "Sobre nosotros",
     contact: "Contacto",
+    redessociales: "Redes Sociales Murcia",
   },
   languagePicker: "Idioma",
   footer: {

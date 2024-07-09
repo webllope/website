@@ -12,6 +12,7 @@ export const ui = {
     blog: "Blog",
     aboutUs: "About us",
     contact: "Contact",
+    redessociales: "Digital Marketing Murcia",
   },
   languagePicker: "Language",
   footer: {

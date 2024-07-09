@@ -1,0 +1,37 @@
+---
+import { getLangFromUrl } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+---
+{lang === 'es' && (
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "@id": "https://www.webllope.es/es/redes-sociales-murcia/#website",
+    "name": "Agencia de Redes Sociales en Murcia",
+    "alternateName": "Webllope Agencia de Redes Sociales y Marketing Digital",
+    "description": "Somos expertos en marketing digital, gestionamos tus redes sociales en Murcia. Haz tu negocio visible al público en internet..",
+    "url": "https://www.webllope.es/es/redes-sociales-murcia/",
+    "datePublished": "2024-07-08T11:26:41+00:00",
+    "dateModified": "2024-07-08T11:26:41+00:00"
+  }
+</script>
+)
+}
+{lang === 'en' && (
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "@id": "https://www.webllope.es/en/redes-sociales-murcia/#website",
+    "name": "Social Media Agency in Murcia",
+    "alternateName": "Social Media Agency in Murcia. Digital Marketing at its best",
+    "description": "We are digital marketing experts, we manage your social networks in Murcia. Make your business visible to the public on the internet.",
+    "url": "https://www.webllope.es/en/redes-sociales-murcia/",
+    "datePublished": "2024-07-08T11:26:41+00:00",
+    "dateModified": "2024-07-08T11:26:41+00:00"
+  }
+</script>
+)
+}

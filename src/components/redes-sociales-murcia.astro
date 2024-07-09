@@ -1,0 +1,88 @@
+---
+import Hero from "@components/hero.astro";
+import Logos from "@components/logos.astro";
+import Layout from "@layouts/layout.astro";
+import Background from "@components/background.astro";
+import TextLeftSection from "@components/text-left-section.astro";
+import TextRightSection from "@components/text-right-section.astro";
+import TextOnlySection from "@components/text-only-section.astro";
+import Clients from "@components/clients.astro";
+import ContactForm from "@components/contact-form";
+import GoogleMap from "./google-map.astro";
+
+import { Image } from "astro:assets";
+import diseñoTiendasOnlineMurcia from "@assets/diseño-tiendas-online-murcia.png";
+import ecommerceImage from "@assets/imagen-tienda-online-murcia2.png";
+
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+import Schema from "@components/schemas/redes-sociales-murcia-schema.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout title={t("seo.redesSocialesMurcia.title")} description={t("seo.redesSocialesMurcia.description")}>
+  <Schema slot="schema" />
+  <Background />
+  <Hero
+    primaryText={t("redesSocialesMurcia.hero.primary")}
+    secondaryText={t("redesSocialesMurcia.hero.secondary")}
+    tertiaryText={t("redesSocialesMurcia.hero.tertiary")}
+    quaternaryText={t("redesSocialesMurcia.hero.quaternary")}
+    slotClasses="lg:w-4/12">
+    <ContactForm client:load url={Astro.url} />
+  </Hero>
+  <TextLeftSection
+    title={t("redesSocialesMurcia.textLeft.title")}
+    firstP={t("redesSocialesMurcia.textLeft.primary")}
+    secondP={t("redesSocialesMurcia.textLeft.secondary")}
+    cta={{
+      text: t("redesSocialesMurcia.textLeft.cta"),
+      link: "/contacto",
+    }}>
+    <iframe
+      width="315"
+      height="560"
+      src="https://www.youtube.com/embed/UFN_pK7yIGo"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </TextLeftSection>
+  <Clients />
+  <TextRightSection
+    title={t("redesSocialesMurcia.textRight.title")}
+    firstP={t("redesSocialesMurcia.textRight.primary")}
+    secondP={t("redesSocialesMurcia.textRight.secondary")}
+    cta={{
+      text: t("redesSocialesMurcia.textRight.cta"),
+      link: "/contacto",
+    }}>
+    <iframe
+      width="315"
+      height="560"
+      src="https://www.youtube.com/embed/g7VDdIdVr6k"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </TextRightSection>
+  <Logos />
+  <TextOnlySection
+    title={t("redesSocialesMurcia.textOnly.title")}
+    firstP={t("redesSocialesMurcia.textOnly.primary")}
+    secondP={t("redesSocialesMurcia.textOnly.secondary")}
+    thirdP={t("redesSocialesMurcia.textOnly.tertiary")}
+  />
+  <GoogleMap />
+  <TextOnlySection
+    title={t("redesSocialesMurcia.textOnly2.title")}
+    firstP={t("redesSocialesMurcia.textOnly2.primary")}
+    secondP={t("redesSocialesMurcia.textOnly2.secondary")}
+    cta={{
+      text: t("redesSocialesMurcia.textOnly2.cta"),
+      link: "/contacto",
+    }}
+  />
+</Layout>
