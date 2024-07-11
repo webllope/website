@@ -1,0 +1,70 @@
+---
+import Hero from "@components/hero.astro";
+import Logos from "@components/logos.astro";
+import Layout from "@layouts/layout.astro";
+import Background from "@components/background.astro";
+import TextLeftSection from "@components/text-left-section.astro";
+import TextRightSection from "@components/text-right-section.astro";
+import TextOnlySection from "@components/text-only-section.astro";
+import Clients from "@components/clients.astro";
+import ContactForm from "@components/contact-form";
+import GoogleMap from "./google-map.astro";
+
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+import Schema from "@components/schemas/empresa-animacion-3D-schema.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout title={t("seo.empresaAnimacion3D.title")} description={t("seo.empresaAnimacion3D.description")}>
+  <Schema slot="schema" />
+  <Background />
+  <Hero
+    primaryText={t("empresaAnimacion3D.hero.primary")}
+    secondaryText={t("empresaAnimacion3D.hero.secondary")}
+    tertiaryText={t("empresaAnimacion3D.hero.tertiary")}
+    quaternaryText={t("empresaAnimacion3D.hero.quaternary")}
+    slotClasses="lg:w-4/12">
+    <ContactForm client:load url={Astro.url} />
+  </Hero>
+  <TextLeftSection
+    title={t("empresaAnimacion3D.textLeft.title")}
+    firstP={t("empresaAnimacion3D.textLeft.primary")}
+    secondP={t("empresaAnimacion3D.textLeft.secondary")}
+    cta={{
+      text: t("empresaAnimacion3D.textLeft.cta"),
+      link: "/contacto",
+    }}>
+    <iframe
+      width="315"
+      height="560"
+      src="https://www.youtube.com/embed/CWUvP0iYYOc"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </TextLeftSection>
+  <Clients />
+  <TextRightSection
+    title={t("empresaAnimacion3D.textRight.title")}
+    firstP={t("empresaAnimacion3D.textRight.primary")}
+    secondP={t("empresaAnimacion3D.textRight.secondary")}>
+    <iframe
+      width="315"
+      height="560"
+      src="https://www.youtube.com/embed/vaeSbAGgw94?controls=0&iv_load_policy=3&modestbranding=1&rel=0&showinfo=0"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </TextRightSection>
+  <Logos />
+  <TextOnlySection
+    title={t("empresaAnimacion3D.textOnly.title")}
+    firstP={t("empresaAnimacion3D.textOnly.primary")}
+    secondP={t("empresaAnimacion3D.textOnly.secondary")}
+  />
+  <GoogleMap />
+</Layout>

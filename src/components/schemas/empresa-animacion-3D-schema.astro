@@ -1,0 +1,37 @@
+---
+import { getLangFromUrl } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+---
+{lang === 'es' && (
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "@id": "https://www.webllope.es/es/empresa-animacion-3d/#website",
+    "name": "Empresa de Animación 3D. Webllope",
+    "alternateName": "Webllope Agencia Animación 3D y Marketing Digital",
+    "description": "Empresa de animación 3D. Creamos contenido visual para tu negocio y te ayudamos a destacar entre la competencia.",
+    "url": "https://www.webllope.es/es/empresa-animacion-3d/",
+    "datePublished": "2024-07-11T11:26:41+00:00",
+    "dateModified": "2024-07-11T11:26:41+00:00"
+  }
+</script>
+)
+}
+{lang === 'en' && (
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "@id": "https://www.webllope.es/en/empresa-animacion-3d/#website",
+    "name": "3D Animation Company. Webllope",
+    "alternateName": "Webllope 3D Animation Agency and Digital Marketing",
+    "description": "3D animation company. We create visual content for your business and help you stand out from the competition.",
+    "url": "https://www.webllope.es/en/empresa-animacion-3d/",
+    "datePublished": "2024-07-11T11:26:41+00:00",
+    "dateModified": "2024-07-11T11:26:41+00:00"
+  }
+</script>
+)
+}

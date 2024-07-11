@@ -225,6 +225,74 @@ const seoRoadmap = {
   },
 };
 
+const creamosLogo = {
+  hero: {
+    primary: "We Create Your Business Logo",
+    secondary:
+      "At <a href='https://webllope.es'><strong>Webllope</strong></a>, we understand the importance of a good <strong>logo</strong> for your brand identity. A <strong>logo</strong> is not just an image; it is the first impression you give to your customers and should reflect the essence and values of your company.",
+    tertiary:
+      " With over five years of experience in the industry, we have perfected the art of designing <strong>logos</strong> that are both <strong>elegant</strong> and <strong>personalized</strong>, ensuring that each of our designs is unique and memorable.",
+    quaternary: "Contact Us Today!",
+  },
+  textLeft: {
+    title: "Why Choose Our Services?",
+    primary:
+      "Choosing our agency for your <strong>logo</strong> creation provides you with multiple benefits:",
+    secondary:
+      "<ul><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Elegance and Personalization</h3>: Each <strong>logo</strong> we design is unique and meticulously crafted to reflect your brand's identity and values. We do not believe in generic designs; each project is an opportunity to create something special and distinctive.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Economic Accessibility</h3>: We offer high-quality design solutions at competitive prices. We believe that good design should be accessible to everyone, regardless of the size of your business.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Collaborative Process</h3>: Our client-centered approach ensures that we work closely with you at every step of the design process. From the initial consultation to the final delivery, your vision and feedback are fundamental to us.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>5 Years of Experience</h3>: Over these years, we have worked with a wide variety of clients, from small startups to large corporations, gaining vast experience in <strong>logo design</strong></li></ul>",
+    cta: "Contact us",
+  },
+  textRight: {
+    title: "Our Design Process",
+    primary:
+      "To ensure that your <strong>logo</strong> perfectly reflects your brand's essence, we follow a detailed and collaborative design process:",
+    secondary:
+      "<ul><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Initial Consultation</h3>: We start with a meeting to understand your ideas, preferences, and goals. We listen carefully to your needs to ensure we capture your brand's vision.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Research and Brainstorming</h3>: We conduct a thorough analysis of your sector and competitors to identify trends and create a unique and relevant concept.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Sketches and Review</h3>: We present you with several initial sketches and work together to refine the design. We value your feedback and make adjustments until you are completely satisfied.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Final Delivery</h3>: Once approved, we deliver the <strong>logo</strong> in all the necessary formats for both digital and print use, ensuring its versatility and applicability across different media.</li></ul>",
+  },
+  textOnly: {
+    title: "Benefits of a Well-Designed Logo",
+    primary:
+      "A well-designed <strong>logo</strong> offers multiple advantages for your brand:",
+    secondary:
+      "<ul><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Brand Recognition</h3>: A professional <strong>logo</strong> helps establish and strengthen your brand identity, making it easily recognizable to your customers.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Credibility and Professionalism</h3>: An attractive and well-executed design conveys confidence and professionalism, which is essential to attract and retain customers.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Versatility</h3>: Our <strong>logos</strong> are designed to be used across a variety of media, from business cards to social media and websites, ensuring a consistent and effective brand presence.</li></ul>",
+    cta: "Contact us without obligation",
+  },
+};
+
+const empresaAnimacion3D = {
+  hero: {
+    primary: "3D Animation Company",
+    secondary:
+      "At <a href='https://webllope.es'><strong>Webllope</strong></a>, we specialize in creating <strong>3D animations</strong> that not only impress but also tell stories in a vivid and realistic way. With over five years of experience, we have perfected our approach to offering high-quality <strong>animated videos</strong> at economical prices.",
+    tertiary:
+      "With over five years of experience in the industry. During these years, we have worked with various clients across a wide range of sectors, accumulating vast experience in <strong>3D animation</strong>.",
+    quaternary: "Contact Us Today!",
+  },
+  textLeft: {
+    title: "Why Choose Our Services?",
+    primary:
+      "Choosing our <strong>3D animation</strong> company offers multiple benefits:",
+    secondary:
+      "<ul><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Impact and Realism</h3>: We strive to create <strong>animations</strong> that are not only visually appealing but also effectively and realistically convey messages.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Economic Accessibility</h3>: We offer high-quality animation solutions at competitive prices, ensuring you get the best value for your investment.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Collaborative Process</h3>: We work closely with you at every stage of the process to ensure the final product meets your expectations and objectives.</li></ul>",
+    cta: "Contact us",
+  },
+  textRight: {
+    title: "Our Creation Process",
+    primary:
+      "To ensure our <strong>3D animations</strong> are of the highest quality, we follow a detailed and collaborative creation process:",
+    secondary:
+      "<ul><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Initial Consultation</h3>: We start with a meeting to understand your ideas and objectives. We listen carefully to your needs to ensure we capture your project's vision.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Research and Concept Development</h3>: We analyze your sector and competition to develop a unique and relevant concept.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Production and Review</h3>: We present you with several initial sketches and work together to perfect the animation. We value your feedback and make adjustments until you are completely satisfied.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Final Delivery</h3>: Once approved, we deliver the animation in all the necessary formats for use across various platforms and media.</li></ul>",
+  },
+  textOnly: {
+    title: "Benefits of a Well-Designed 3D Animation",
+    primary:
+      "A well-designed <strong>3D animation</strong> offers multiple advantages for your brand:",
+    secondary:
+      "<ul><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Greater Engagement and Attraction</h3>: 3D animations capture the audience's attention more effectively than other types of content.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Conveying Complex Messages</h3>: They facilitate the explanation of complex concepts in a visual and attractive way.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Versatility</h3>: Our <strong>animations</strong> are designed to be used across a variety of media, from corporate presentations to social networks.</li></ul>",
+    cta: "Contact us without obligation",
+  },
+};
+
 const posicionamientoRoadmap = {
   first: {
     paragraph1:
@@ -243,6 +311,49 @@ const posicionamientoRoadmap = {
       "We show you the results obtained by improving your website's <strong>SEO ranking</strong>, including the number of new clients we're receiving per month, the number of sales, calls, and more.",
     paragraph2:
       "At the end of each month, we contact you again to send you a detailed web analytics report, showing you how your website performed in the last month, and if you wish, we will propose improvements for the next month.",
+  },
+};
+
+const redesSocialesMurcia = {
+  hero: {
+    primary: "Social Media Agency in Murcia",
+    secondary:
+      "In today's digital environment, creating <strong class='animate-text'>attractive and fast</strong> content in vertical format has become essential to stand out on platforms like TikTok, Instagram, and YouTube Shorts. We <strong>will make you go viral</strong> in that area.",
+    tertiary:
+      "Webllope is a <strong>digital marketing</strong> agency. We offer various services, including <strong>social media management</strong>",
+    quaternary:
+      "Modern audiences prefer to consume quick and visually impactful content, making short, vertical videos a powerful tool to increase your brand's visibility.<br/><br/>Recent studies show that more than <strong>80% of social media users</strong> engage more with vertical videos than with any other type of content.",
+  },
+  textLeft: {
+    title: "Recording Content in Vertical Format",
+    primary: "Our recording services include:",
+    secondary:
+      "<ul><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>High production quality</h3>: We use the latest equipment to ensure the best visual and sound quality.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Creativity and originality</h3>: We work with you to develop creative and original ideas that resonate with your target audience.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Adaptation to various platforms</h3>: We create content optimized for TikTok, Instagram Reels, and YouTube Shorts, ensuring that each video is perfectly adapted to the specifications of each platform.</li></ul>",
+    cta: "Contact us",
+  },
+  textRight: {
+    title: "Comprehensive Social Media Management",
+    primary:
+      "In addition to content creation, we offer complete social media management services:",
+    secondary:
+      "<ul><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Planning and strategy</h3>: We develop a content strategy that aligns with your business objectives.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Publishing and scheduling</h3>: We take care of the regular posting of content on your social media accounts.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Audience interaction</h3>: We manage comments and messages to maintain active and positive communication with your followers.</li></ul>",
+    cta: "Contact us",
+  },
+  textOnly: {
+    title: "Benefits of Digital Marketing for Your Business",
+    primary:
+      "Working with our digital marketing agency in Murcia will provide you with numerous benefits:",
+    secondary:
+      "<ul><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Greater exposure</h3>: Increase the visibility of your brand on the most popular social media platforms.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Better connection with the audience</h3>: Connect more effectively with your target audience through engaging and relevant content.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Growth in interaction</h3>: Increase interaction with your followers, which can translate into higher conversions and sales.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Brand positioning</h3>: Strengthen the perception of your brand as modern and adapted to the latest digital trends.</li></ul>",
+    cta: "Contact us without obligation",
+  },
+  textOnly2: {
+    title: "Strategies to Increase Visibility",
+    primary:
+      "We implement various strategies to maximize the visibility of your content:",
+    secondary:
+      "<ul><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>SEO Optimization</h3>: We ensure your videos are optimized with the right keywords to improve their position in search results.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Social media advertising</h3>: If you wish, we can use paid advertising campaigns to increase the reach of your videos and attract new followers.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Analysis and reporting</h3>: We monitor the performance of your videos and provide you with detailed reports to continuously adjust and improve the strategy.</li></ul>",
+    cta: "Contact us without obligation",
   },
 };
 
@@ -645,6 +756,16 @@ const seo = {
     description:
       "We are digital marketing experts, we manage your social networks in Murcia. Make your business visible to the public on the internet.",
   },
+  empresaAnimacion3D: {
+    title: "3D Animation Company. We create high-quality animations",
+    description:
+      "3D animation company. We create high-quality animations that impress and tell stories in a vivid and realistic way.",
+  },
+  creamosLogo: {
+    title: "Logo Design for Your Business. We Create Your Brand Image",
+    description:
+      "Elegant and affordable logo design. We create your brand image and help you stand out from the competition.",
+  },
   disenoTiendasOnlineMurcia: {
     title: "Online Store Design in Murcia. Create your e-commerce now",
     description:
@@ -819,4 +940,7 @@ export const content = {
   seo,
   seoRoadmap,
   posicionamientoRoadmap,
+  redesSocialesMurcia,
+  creamosLogo,
+  empresaAnimacion3D,
 };

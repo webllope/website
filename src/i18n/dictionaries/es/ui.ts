@@ -13,6 +13,8 @@ export const ui = {
     aboutUs: "Sobre nosotros",
     contact: "Contacto",
     redessociales: "Redes Sociales Murcia",
+    creamoslogo: "Creamos tu logo",
+    empresaAnimacion3D: "Animación 3D",
   },
   languagePicker: "Idioma",
   footer: {

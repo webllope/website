@@ -1,0 +1,77 @@
+---
+import Hero from "@components/hero.astro";
+import Logos from "@components/logos.astro";
+import Layout from "@layouts/layout.astro";
+import Background from "@components/background.astro";
+import TextLeftSection from "@components/text-left-section.astro";
+import TextRightSection from "@components/text-right-section.astro";
+import TextOnlySection from "@components/text-only-section.astro";
+import Clients from "@components/clients.astro";
+import ContactForm from "@components/contact-form";
+import GoogleMap from "./google-map.astro";
+
+import { Image } from "astro:assets";
+import creamosTuLogoImage from "@assets/creamos-tu-logo.jpg";
+import creamosTuLogoImage2 from "@assets/diseno-logotipo-negocio.jpg";
+
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+import Schema from "@components/schemas/creamos-logo-para-negocio-schema.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout title={t("seo.creamosLogo.title")} description={t("seo.creamosLogo.description")}>
+  <Schema slot="schema" />
+  <Background />
+  <Hero
+    primaryText={t("creamosLogo.hero.primary")}
+    secondaryText={t("creamosLogo.hero.secondary")}
+    tertiaryText={t("creamosLogo.hero.tertiary")}
+    quaternaryText={t("creamosLogo.hero.quaternary")}
+    slotClasses="lg:w-4/12">
+    <ContactForm client:load url={Astro.url} />
+  </Hero>
+  <TextLeftSection
+    title={t("creamosLogo.textLeft.title")}
+    firstP={t("creamosLogo.textLeft.primary")}
+    secondP={t("creamosLogo.textLeft.secondary")}
+    cta={{
+      text: t("creamosLogo.textLeft.cta"),
+      link: "/contacto",
+    }}>
+    <Image
+      alt="Creamos tu logo"
+      width={500}
+      height={750}
+      class="rounded-xl"
+      src={creamosTuLogoImage2}
+      style={{ height: "100%" }}
+    />
+  </TextLeftSection>
+  <Clients />
+  <TextRightSection
+    title={t("creamosLogo.textRight.title")}
+    firstP={t("creamosLogo.textRight.primary")}
+    secondP={t("creamosLogo.textRight.secondary")}>
+    <Image
+      alt="Creamos tu logo"
+      width={500}
+      class="rounded-xl"
+      src={creamosTuLogoImage}
+      style={{ height: "100%", margin: "auto" }}
+    />
+  </TextRightSection>
+  <Logos />
+  <TextOnlySection
+    title={t("creamosLogo.textOnly.title")}
+    firstP={t("creamosLogo.textOnly.primary")}
+    secondP={t("creamosLogo.textOnly.secondary")}
+    cta={{
+      text: t("creamosLogo.textOnly.cta"),
+      link: "/contacto",
+    }}
+  />
+  <GoogleMap />
+</Layout>

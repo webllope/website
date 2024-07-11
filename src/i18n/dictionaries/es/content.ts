@@ -173,6 +173,74 @@ const redesSocialesMurcia = {
   },
 };
 
+const creamosLogo = {
+  hero: {
+    primary: "Creamos el logo de tu negocio",
+    secondary:
+      "En <a href='https://webllope.es'><strong>Webllope</strong></a>, entendemos la importancia de un buen <strong>logo</strong> para la identidad de tu marca. Un <strong>logo</strong> no solo es una imagen, es la primera impresión que das a tus clientes y debe reflejar la esencia y valores de tu empresa.",
+    tertiary:
+      " Con más de cinco años de experiencia en el sector, hemos perfeccionado el arte de diseñar <strong>logos</strong> que son a la vez <strong>elegantes</strong> y <strong>personalizados</strong>, asegurando que cada uno de nuestros diseños sea único y memorable.",
+    quaternary: "¡Contáctanos Hoy Mismo!",
+  },
+  textLeft: {
+    title: "¿Por Qué Elegir Nuestros Servicios?",
+    primary:
+      "La elección de nuestra agencia para la creación de tu <strong>logo</strong> te brinda múltiples beneficios:",
+    secondary:
+      "<ul><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Elegancia y Personalización</h3>: Cada <strong>logo</strong> que diseñamos es único y está meticulosamente elaborado para reflejar la identidad y los valores de tu marca. No creemos en los diseños genéricos; cada proyecto es una oportunidad para crear algo especial y distintivo.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Accesibilidad Económica</h3>: Ofrecemos soluciones de diseño de alta calidad a precios competitivos. Creemos que un buen diseño debe ser accesible para todos, independientemente del tamaño de tu negocio.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Proceso Colaborativo</h3>: Nuestro enfoque centrado en el cliente garantiza que trabajamos estrechamente contigo en cada paso del proceso de diseño. Desde la consulta inicial hasta la entrega final, tu visión y feedback son fundamentales para nosotros.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>5 Años de Trayectoria</h3>: A lo largo de estos años, hemos trabajado con una amplia variedad de clientes, desde pequeñas startups hasta grandes corporaciones, acumulando una vasta experiencia en el <strong>diseño de logos</strong></li></ul>",
+    cta: "Contacta con nosotros",
+  },
+  textRight: {
+    title: "Nuestro Proceso de Diseño",
+    primary:
+      "Para garantizar que tu <strong>logo</strong> refleje perfectamente la esencia de tu marca, seguimos un proceso de diseño detallado y colaborativo:",
+    secondary:
+      "<ul><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Consulta Inicial</h3>: Comenzamos con una reunión para entender tus ideas, preferencias y objetivos. Escuchamos atentamente tus necesidades para asegurarnos de captar la visión de tu marca.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Investigación y Brainstorming</h3>: Realizamos un análisis exhaustivo de tu sector y competencia para identificar tendencias y crear un concepto único y relevante.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Bocetos y Revisión</h3>: Te presentamos varios bocetos iniciales y trabajamos en conjunto para perfeccionar el diseño. Valoramos tu feedback y realizamos ajustes hasta que estés completamente satisfecho.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Entrega Final</h3>: Una vez aprobado, te entregamos el <strong>logo</strong> en todos los formatos necesarios para su uso tanto digital como impreso, asegurando su versatilidad y aplicabilidad en diferentes medios.</li></ul>",
+  },
+  textOnly: {
+    title: "Beneficios de un Logo Bien Diseñado",
+    primary:
+      "Un <strong>logo</strong> bien diseñado ofrece múltiples ventajas para tu marca:",
+    secondary:
+      "<ul><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Reconocimiento de Marca</h3>: Un <strong>logo</strong> profesional ayuda a establecer y fortalecer la identidad de tu marca, haciendo que sea fácilmente reconocible para tus clientes.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Credibilidad y Profesionalismo</h3>: Un diseño atractivo y bien ejecutado transmite confianza y profesionalismo, lo cual es fundamental para atraer y retener clientes.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Versatilidad</h3>: Nuestros <strong>logos</strong> están diseñados para ser utilizados en una variedad de medios, desde tarjetas de visita hasta redes sociales y sitios web, garantizando una presencia de marca coherente y efectiva.</li></ul>",
+    cta: "Contacta sin compromiso",
+  },
+};
+
+const empresaAnimacion3D = {
+  hero: {
+    primary: "Empresa de Animación 3D",
+    secondary:
+      "En <a href='https://webllope.es'><strong>Webllope</strong></a>, nos especializamos en la creación de <strong>animaciones 3D</strong> que no solo impresionan, sino que también cuentan historias de manera vívida y realista. Con más de cinco años de experiencia, hemos perfeccionado nuestro enfoque para ofrecer <strong>vídeos animados</strong> de alta calidad a precios económicos.",
+    tertiary:
+      "Con más de cinco años de experiencia en el sector. Durante estos años, hemos trabajado con diversos clientes en una amplia gama de sectores, acumulando una vasta experiencia en <strong>animación 3D</strong>.",
+    quaternary: "¡Contáctanos Hoy Mismo!",
+  },
+  textLeft: {
+    title: "¿Por Qué Elegir Nuestros Servicios?",
+    primary:
+      "Optar por nuestra empresa de <strong>animación 3D</strong> tiene múltiples beneficios:",
+    secondary:
+      "<ul><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Impacto y Realismo</h3>: Nos esforzamos por crear <strong>animaciones</strong> que no solo sean visualmente atractivas, sino que también logren transmitir mensajes de manera efectiva y realista.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Accesibilidad Económica</h3>:  Ofrecemos soluciones de animación de alta calidad a precios competitivos, asegurando que obtengas el mejor valor por tu inversión.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Proceso Colaborativo</h3>: Trabajamos estrechamente contigo en cada etapa del proceso para asegurarnos de que el producto final cumpla con tus expectativas y objetivos.</li></ul>",
+    cta: "Contacta con nosotros",
+  },
+  textRight: {
+    title: "Nuestro Proceso de Creación",
+    primary:
+      "Para garantizar que nuestras <strong>animaciones 3D</strong> sean de la más alta calidad, seguimos un proceso de creación detallado y colaborativo:",
+    secondary:
+      "<ul><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Consulta Inicial</h3>: Empezamos con una reunión para entender tus ideas y objetivos. Escuchamos atentamente tus necesidades para asegurar que captamos la visión de tu proyecto.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Investigación y Desarrollo de Concepto</h3>: Analizamos tu sector y competencia para desarrollar un concepto único y relevante.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Producción y Revisión</h3>: Te presentamos varios bocetos iniciales y trabajamos juntos para perfeccionar la animación. Valoramos tu feedback y realizamos ajustes hasta que estés completamente satisfecho.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Entrega Final</h3>: Una vez aprobada, te entregamos la animación en todos los formatos necesarios para su uso en diversas plataformas y medios.</li></ul>",
+  },
+  textOnly: {
+    title: "Beneficios de una Animación 3D Bien Diseñada",
+    primary:
+      "Una <strong>animación 3D</strong> bien diseñada ofrece múltiples ventajas para tu marca:",
+    secondary:
+      "<ul><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Mayor Enganche y Atracción</h3>: Las animaciones 3D capturan la atención del público de manera más efectiva que otros tipos de contenido.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Transmisión de Mensajes Complejos</h3>: Facilitan la explicación de conceptos complejos de manera visual y atractiva.</li><li class='list-disc my-4 list-inside'><h3 class='font-bold inline'>Versatilidad</h3>: Nuestras <strong>animaciones</strong> están diseñadas para ser utilizadas en una variedad de medios, desde presentaciones corporativas hasta redes sociales.</li></ul>",
+    cta: "Contacta sin compromiso",
+  },
+};
+
 const posicionamientoWebMurcia = {
   hero: {
     primary: "Posicionamiento Web Murcia",
@@ -686,6 +754,16 @@ const seo = {
     description:
       "Somos expertos en marketing digital, gestionamos tus redes sociales en Murcia. Haz tu negocio visible al público en internet.",
   },
+  empresaAnimacion3D: {
+    title: "Empresa de Animación 3D. Creamos contenido visual",
+    description:
+      "Empresa de animación 3D. Creamos contenido visual para tu negocio y te ayudamos a destacar entre la competencia.",
+  },
+  creamosLogo: {
+    title: "Diseño de logotipo para tu negocio. Creamos tu imagen de marca",
+    description:
+      "Diseño de logotipo elegante y económico. Creamos tu imagen de marca y te ayudamos a destacar entre la competencia.",
+  },
   disenoWebAlicante: {
     title: "Diseño Web Alicante. Creamos tu Página Web Perfecta",
     description:
@@ -850,6 +928,7 @@ export const content = {
   cta,
   fromBlog,
   moreJobs,
+  creamosLogo,
   aboutYourProject,
   tags,
   briefAboutUs,
@@ -867,4 +946,5 @@ export const content = {
   seo,
   seoRoadmap,
   posicionamientoRoadmap,
+  empresaAnimacion3D,
 };

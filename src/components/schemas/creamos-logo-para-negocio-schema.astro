@@ -1,0 +1,37 @@
+---
+import { getLangFromUrl } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+---
+{lang === 'es' && (
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "@id": "https://www.webllope.es/es/creamos-logo-para-negocio/#website",
+    "name": "Creamos el logo de tu negocio",
+    "alternateName": "Webllope. Agencia de diseño que creará un logo único y económico para tu negocio",
+    "description": "Agencia de diseño que creará un logo único y económico para tu negocio. Más de 5 años ofreciendo servicios de diseño",
+    "url": "https://www.webllope.es/es/creamos-logo-para-negocio/",
+    "datePublished": "2024-07-11T11:26:41+00:00",
+    "dateModified": "2024-07-11T11:26:41+00:00"
+  }
+</script>
+)
+}
+{lang === 'en' && (
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "@id": "https://www.webllope.es/en/creamos-logo-para-negocio/#website",
+    "name": "We create the logo for your business",
+    "alternateName": "Webllope. Design agency that will create a unique and economical logo for your business",
+    "description": "Design agency that will create a unique and economical logo for your business. More than 5 years offering design services",
+    "url": "https://www.webllope.es/en/creamos-logo-para-negocio/",
+    "datePublished": "2024-07-11T11:26:41+00:00",
+    "dateModified": "2024-07-11T11:26:41+00:00"
+  }
+</script>
+)
+}
