@@ -433,6 +433,7 @@ const tags = {
   backend: "Backend",
   businesses: "Businesses",
   webdesign: "Web design",
+  windows: "Windows",
   wordpress: "Wordpress",
   seo: "SEO",
   javascript: "JavaScript",
