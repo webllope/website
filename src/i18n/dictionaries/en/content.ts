@@ -566,10 +566,10 @@ const contact = {
   },
   ourOfficesTitle:
     "We are located in the center of Murcia, although we prefer online management 😉",
-  ourOffices: "Nuestras oficinas",
+  ourOffices: "Where are we?",
   ourOfficesText:
     "¿Prefieres hacer las cosas en persona? Nosotros no, pero por razones legales tenemos que poner alguna dirección.",
-  sendEmail: "Mándanos un email",
+  sendEmail: "Send us an email",
 };
 
 const index = {

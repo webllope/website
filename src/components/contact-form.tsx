@@ -31,7 +31,7 @@ export default function ContactForm({ url }: ContactFormProps) {
   }> = [
     {
       autoComplete: "name",
-      placeholder: "Daniel",
+      placeholder: "",
       type: "text",
       name: "name",
       maxLength: 255,
@@ -39,7 +39,7 @@ export default function ContactForm({ url }: ContactFormProps) {
     },
     {
       autoComplete: "email",
-      placeholder: "info@webllope.es",
+      placeholder: "",
       type: "email",
       name: "email",
       maxLength: 255,
@@ -47,7 +47,7 @@ export default function ContactForm({ url }: ContactFormProps) {
     },
     {
       autoComplete: "organization",
-      placeholder: "Webllope",
+      placeholder: "",
       type: "text",
       name: "company",
       maxLength: 255,
@@ -55,7 +55,7 @@ export default function ContactForm({ url }: ContactFormProps) {
     },
     {
       autoComplete: "tel",
-      placeholder: "+34 722 10 99 24",
+      placeholder: "",
       type: "tel",
       name: "phone",
       maxLength: 24,

@@ -486,7 +486,7 @@ const moreJobs = {
 const aboutYourProject = {
   title: "Cuéntanos tu idea",
   button: "Dí Hola",
-  offices: "Nuestras oficinas",
+  offices: "¿Donde estámos?",
 };
 
 const tags = {
