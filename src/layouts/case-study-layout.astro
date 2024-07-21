@@ -93,11 +93,9 @@ const client = await getEntry(frontmatter.client);
                 <Image
                   alt={frontmatter.cover.alt}
                   fetchpriority="high"
-                  width="1300"
-                  height="720"
                   decoding="async"
                   data-nimg="1"
-                  class="w-full grayscale transition duration-300 hover:grayscale-0"
+                  class="mx-auto grayscale-0 transition duration-300 hover:grayscale"
                   src={frontmatter.cover.src}
                   style="color: transparent;"
                   loading="eager"
@@ -116,7 +114,7 @@ const client = await getEntry(frontmatter.client);
               style="font-feature-settings: normal; font-variation-settings: normal;">
               <slot />
             </article>
-            <WebsiteReview paths={imagesPaths} alt="Neoaesthetic Image" />
+            <WebsiteReview paths={imagesPaths} alt={frontmatter.name + "diseño web imagen"} />
           </div>
         </div>
       </div>

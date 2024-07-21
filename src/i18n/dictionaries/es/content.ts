@@ -4,10 +4,10 @@ const landing = {
     secondary:
       "Diseño de <strong>páginas web profesionales</strong> para empresas de todos los tamaños y autónomos.",
     tertiary:
-      "Somos <strong class='animate-text'>diseñadores web</strong> y además expertos en SEO y <strong>posicionamiento web Murcia</strong>.",
+      "Somos <strong class='animate-text'>diseñadores web</strong> titulados, con más de 5 años de experiencia. Nos comprometemos a hacer que tu negocio destaque en internet a un precio inmejorable.",
     quaternary:
-      "Nos comprometemos a hacer que tu negocio destaque en internet a un precio inmejorable (desde 250€).",
-    cta: "Consulta sin compromiso",
+      "Pídenos tu <strong>diseño web</strong> y te mostraremos varias páginas web para tu negocio para que puedas elegir a tu gusto, sin compromiso.",
+    cta: "Contacta y recibe varios diseños",
   },
   faq: {
     title: "Preguntas frecuentes",
@@ -491,6 +491,7 @@ const aboutYourProject = {
 
 const tags = {
   webdev: "Desarrollo web",
+  logo: "Logo",
   cms: "CMS",
   blockchain: "Desarrollo Blockchain",
   web3: "Web3",
@@ -613,7 +614,7 @@ const ourWork = {
     subtitle:
       "Diseño web y marketing digital adaptado a empresas de cualquier tamaño",
     description:
-      "Creemos en la eficiencia y maximización de nuestro recursos para dar el mejor valor a nuestros clientes. Somos un equipo y trabajamos como tal para conseguir los mejores resultados y posicionar a nuestros clientes en el mercado en línea.",
+      "Creemos en la eficiencia y maximización de nuestro recursos para dar el mejor valor a nuestros clientes. Somos un equipo y trabajamos como tal para conseguir los mejores resultados y posicionar a nuestros clientes en Google, superando así a su competencia.",
   },
   title: "Últimos trabajos",
   work: {

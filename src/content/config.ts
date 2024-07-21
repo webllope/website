@@ -71,7 +71,7 @@ const workCollection = defineCollection({
         message: z.string(),
         author: z.object({ name: z.string(), position: z.string() }),
       }),
-      tags: z.array(z.enum(["webdev", "cms", "blockchain"])),
+      tags: z.array(z.enum(["webdev", "cms", "blockchain", "seo", "logo"])),
       cover: z.object({
         src: image(),
         alt: z.string(),

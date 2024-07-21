@@ -10,7 +10,7 @@ client: "salonchick"
 quote:
   {
     message: "Daniel from Webllope did a great job; we spent several months communicating to ensure everything went perfectly. He maintained his professionalism while listening to all my requests and desired changes on the website.",
-    author: { name: "X", position: "Fundadora de SalonChick" },
+    author: { name: "Laura", position: "Fundadora de SalonChick" },
   }
 tags: [webdev, cms]
 cover:

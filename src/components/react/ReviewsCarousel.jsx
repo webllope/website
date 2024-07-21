@@ -27,6 +27,7 @@ const reviews = [
     name: "Daniel Ximénez S.",
     opinion:
       "Gracias por la página web chicos sois los mejores. Un trato espectacular y siempre atentos a que nos gustase la página y hasta que no estaba todo perfecto no la dieron por terminada",
+    time: "Hace una semana",
   },
   {
     url: "https://maps.app.goo.gl/yh5KWrS8Fi2BN5BcA",
@@ -34,6 +35,7 @@ const reviews = [
     name: "Noelia",
     opinion:
       "Aproveché una promoción que incluía página web y optimización SEO juntos, y además de hacerme una página web bonita, me sale la primera-segunda en varios resultados en Google. Daniel fue muy agradable y atento conmigo, lo recomiendo, volvería a contratarle",
+    time: "Hace un mes",
   },
   {
     url: "https://maps.app.goo.gl/z6LTuyP6LVeVZq8t8",
@@ -41,6 +43,7 @@ const reviews = [
     name: "Maria Jesús MR",
     opinion:
       "Estuve buscando agencias de diseño web en Murcia para que me ayudasen con un problemita que tenía en mi página web ya que no posicionaba muy bien, y algo hicieron con el SEO que ahora la página vuelve a tener el tráfico mensual que solía tener incluso lo ha mejorado, han vuelto a contactar clientes nuevos desde la página web. Muchas gracias a Daniel que fue muy amable conmigo",
+    time: "Hace un mes",
   },
   {
     url: "https://maps.app.goo.gl/J9R5QhviEuhjJoZ18",
@@ -48,6 +51,7 @@ const reviews = [
     name: "F Javier Ramos",
     opinion:
       "Conozco a Dani, diseñador web en Webllope, hemos colaborado juntos en algunos proyectos y sé que es un muy buen profesional. Se centra en satisfacer las necesidades de sus clientes y no solo crea páginas web excelentes si no que son eficaces y consiguen nuevos clientes. Lo recomiendo y animo a que contactéis con él para futuros proyectos.",
+    time: "Hace 2 meses",
   },
   {
     url: "https://maps.app.goo.gl/Ddf2VDCXPQDAF54E9",
@@ -55,6 +59,7 @@ const reviews = [
     name: "Gonzalo Díaz Cañavate",
     opinion:
       "Hacen un servicio excelente, la pagina web de mi negocio quedo genial y solo me costo 150€.",
+    time: "Hace 3 meses",
   },
   {
     url: "https://maps.app.goo.gl/HjiUud9rzNB3FZZw7",
@@ -62,6 +67,7 @@ const reviews = [
     name: "Toni García San F",
     opinion:
       "Me hicieron el diseño web de mi salón y sale nuestra página de las primeras cuando la buscas en google",
+    time: "Hace 4 meses",
   },
   {
     url: "https://maps.app.goo.gl/3bN76zUyzXcz7aDK9",
@@ -69,6 +75,7 @@ const reviews = [
     name: "miguel gimeno garcia",
     opinion:
       "Los recomiendo totalmente , cercanos super profesionales , facilitan muchisimo todo y aportan ideas novedosas aparte de su constancia y profesionalidad !!",
+    time: "Hace 4 meses",
   },
   {
     url: "https://maps.app.goo.gl/kydc5fYFArbRTfSw6",
@@ -76,6 +83,7 @@ const reviews = [
     name: "David Santos Lopez",
     opinion:
       "El mejor diseño web de Murcia, segunda vez que contrato sus servicios de página web y SEO 🎉",
+    time: "Hace 5 meses",
   },
 ];
 
@@ -107,7 +115,7 @@ const ReviewsCarousel = () => {
                     {review.name}
                   </span>
                   <span className="mt-1 text-xs text-gray-500">
-                    Hace una semana
+                    {review.time}
                   </span>
                 </div>
               </div>

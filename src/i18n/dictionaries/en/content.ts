@@ -426,6 +426,7 @@ const aboutYourProject = {
 
 const tags = {
   webdev: "Web development",
+  logo: "Logo",
   cms: "CMS",
   blockchain: "Blockchain development",
   web3: "Web3",
