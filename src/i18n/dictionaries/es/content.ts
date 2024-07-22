@@ -632,7 +632,7 @@ const contact = {
   },
   ourOfficesTitle:
     "Estamos localizados en el centro de Murcia, aunque nosotros preferimos la gestión online 😉",
-  ourOffices: "Nuestras oficinas",
+  ourOffices: "¿Dónde estamos?",
   ourOfficesText:
     "¿Prefieres hacer las cosas en persona? Nosotros no, pero por razones legales tenemos que poner alguna dirección.",
   sendEmail: "Mándanos un email",
