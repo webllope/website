@@ -37,15 +37,9 @@ const t = useTranslations(lang);
       text: t("redesSocialesMurcia.textLeft.cta"),
       link: "/contacto",
     }}>
-    <iframe
-      title="Redes Sociales Murcia Shorts Embed"
-      width="315"
-      height="560"
-      src="https://www.youtube.com/embed/UFN_pK7yIGo"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
+    <video controls width="315" height="560">
+      <source src="/src/assets/videos/redes-sociales-murcia.mp4" type="video/mp4" />
+    </video>
   </TextLeftSection>
   <Clients />
   <TextRightSection
@@ -56,22 +50,15 @@ const t = useTranslations(lang);
       text: t("redesSocialesMurcia.textRight.cta"),
       link: "/contacto",
     }}>
-    <iframe
-      title="Redes Sociales Murcia Shorts Embed"
-      width="315"
-      height="560"
-      src="https://www.youtube.com/embed/g7VDdIdVr6k"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
+    <video controls width="315" height="560">
+      <source src="/src/assets/videos/redes-sociales-en-murcia.mp4" type="video/mp4" />
+    </video>
   </TextRightSection>
   <Logos />
   <TextOnlySection
     title={t("redesSocialesMurcia.textOnly.title")}
     firstP={t("redesSocialesMurcia.textOnly.primary")}
     secondP={t("redesSocialesMurcia.textOnly.secondary")}
-    thirdP={t("redesSocialesMurcia.textOnly.tertiary")}
   />
   <GoogleMap />
   <TextOnlySection

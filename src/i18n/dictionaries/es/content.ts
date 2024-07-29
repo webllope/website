@@ -701,7 +701,7 @@ const seo = {
   main: {
     title: "Diseño Web Murcia. Agencia de Diseño de Páginas Web",
     description:
-      "Diseño de Páginas Web en Murcia. Somos una agencia con más de 5 años de experiencia, creamos tu web y conseguimos clientes en internet.",
+      "Diseño Web en Murcia. Somos una agencia con más de 5 años de experiencia, creamos tu página web y te conseguimos clientes en internet.",
   },
   aboutUs: {
     title: "Conoce Nuestro Equipo | Webllope",
@@ -792,7 +792,7 @@ const reviews = {
   title: "¿Qué opinan nuestros clientes sobre nosotros?",
   GMBname: "Webllope",
   GMBscore: "5",
-  GMBreviewsAmount: "Basado en 8 reseñas",
+  GMBreviewsAmount: "Basado en 19 reseñas",
   reviewUs: "Valóranos en ",
 };
 

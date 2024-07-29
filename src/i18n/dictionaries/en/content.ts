@@ -789,7 +789,7 @@ const reviews = {
   title: "What do our clients think about us?",
   GMBname: "Webllope",
   GMBscore: "5",
-  GMBreviewsAmount: "Based on 8 reviews",
+  GMBreviewsAmount: "Based on 19 reviews",
   reviewUs: "Rate us on ",
 };
 

@@ -37,30 +37,18 @@ const t = useTranslations(lang);
       text: t("empresaAnimacion3D.textLeft.cta"),
       link: "/contacto",
     }}>
-    <iframe
-      title="Animación empresa 3D Shorts Embed"
-      width="315"
-      height="560"
-      src="https://www.youtube.com/embed/CWUvP0iYYOc"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
+    <video controls width="315" height="560">
+      <source src="/src/assets/videos/animación-empresa-3D.mp4" type="video/mp4" />
+    </video>
   </TextLeftSection>
   <Clients />
   <TextRightSection
     title={t("empresaAnimacion3D.textRight.title")}
     firstP={t("empresaAnimacion3D.textRight.primary")}
     secondP={t("empresaAnimacion3D.textRight.secondary")}>
-    <iframe
-      title="Shorts Embed for animacion empresa 3D"
-      width="315"
-      height="560"
-      src="https://www.youtube.com/embed/vaeSbAGgw94?controls=0&iv_load_policy=3&modestbranding=1&rel=0&showinfo=0"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
+    <video controls width="315" height="560">
+      <source src="/src/assets/videos/animacion-empresa-3D.mp4" type="video/mp4" />
+    </video>
   </TextRightSection>
   <Logos />
   <TextOnlySection
