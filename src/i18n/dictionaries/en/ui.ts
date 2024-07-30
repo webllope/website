@@ -3,7 +3,8 @@ export const ui = {
   nav: {
     home: "Home",
     services: "Services",
-    disenoweb: "Alicante Web Design",
+    disenowebalicante: "Alicante Web Design",
+    disenowebmataro: "Mataro Web Design",
     disenotiendasonline: "E-commerce website",
     posicionamientoweb: "Web Positioning",
     seo: "SEO",

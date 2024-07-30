@@ -1,0 +1,98 @@
+---
+import Cta from "@components/cta.astro";
+import Features from "@components/features.astro";
+import Hero from "@components/hero.astro";
+import Logos from "@components/logos.astro";
+import Layout from "@layouts/layout.astro";
+import Background from "@components/background.astro";
+import GoogleMap from "@components/google-map.astro";
+import TextLeftSection from "@components/text-left-section.astro";
+import TextRightSection from "@components/text-right-section.astro";
+import Clients from "@components/clients-reviews.astro";
+import FromBlog from "@components/from-blog.astro";
+import Schema from "@components/schemas/diseno-web-mataro-schema.astro";
+import Newspapers from "@components/newspapers.astro";
+
+import officeImage from "@assets/paginas-web-mataro.webp";
+import seoImage from "@assets/disenador-web-mataro.png";
+import heroImage from "@assets/diseno-web-mataro.webp";
+import { Image } from "astro:assets";
+
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import TextOnlySection from "./text-only-section.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout title={t("seo.disenoWebMataro.title")} description={t("seo.disenoWebMataro.description")}>
+  <Schema slot="schema" />
+  <Background />
+  <Hero
+    primaryText={t("disenoWebMataro.hero.primary")}
+    secondaryText={t("disenoWebMataro.hero.secondary")}
+    tertiaryText={t("disenoWebMataro.hero.tertiary")}
+    quaternaryText={t("disenoWebMataro.hero.quaternary")}
+    cta={{
+      link: "/contacto",
+      text: t("disenoWebMataro.hero.cta"),
+    }}>
+    <div class="w-26 relative border-1 border-solid border-black">
+      <span
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xl font-bold text-neutral-950 sm:text-2xl"
+        >Webllope</span
+      >
+      <Image
+        id="diseno-web-mataro"
+        alt="Diseño Web Mataro"
+        class="drop-shadow-xl"
+        loading="eager"
+        src={heroImage}
+        densities={[1.5, 2]}
+      />
+    </div>
+  </Hero>
+  <TextLeftSection
+    title={t("disenoWebMataro.textLeft.title")}
+    firstP={t("disenoWebMataro.textLeft.primary")}
+    secondP={t("disenoWebMataro.textLeft.secondary")}
+    cta={{
+      link: "/contacto",
+      text: t("disenoWebMataro.textLeft.cta"),
+    }}>
+    <Image alt="Páginas Web Mataro" width={359} height={524} class="rounded-xl" src={officeImage} />
+  </TextLeftSection>
+  <Clients />
+  <TextRightSection
+    title={t("disenoWebMataro.textRight.title")}
+    firstP={t("disenoWebMataro.textRight.primary")}
+    secondP={t("disenoWebMataro.textRight.secondary")}>
+    <Image alt="Diseño de Web Mataro" src={seoImage} width="500" height="400" class="h-full mx-auto mt-6" />
+  </TextRightSection>
+  <Newspapers />
+  <TextOnlySection
+    title={t("disenoWebMataro.textOnly.primary")}
+    firstP={t("disenoWebMataro.textOnly.secondary")}
+    secondP={t("disenoWebMataro.textOnly.tertiary")}
+    thirdP={t("disenoWebMataro.textOnly.quaternary")}
+    cta={{
+      link: "/contacto",
+      text: t("disenoWebMataro.textOnly.cta"),
+    }}
+  />
+  <Features />
+  <div class="relative pt-12 lg:pt-16 mt-12 lg:mt-16">
+    <Background />
+    <FromBlog variant="landing-primary" />
+  </div>
+  <Cta />
+</Layout>
+<script>
+  const testElement = document.getElementById("diseno-web-mataro");
+  window.addEventListener("scroll", () => {
+    const rotation = window.scrollY / 10;
+    if (testElement) {
+      testElement.style.transform = `rotate(${rotation * 2}deg)`;
+    }
+  });
+</script>

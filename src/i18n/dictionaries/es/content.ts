@@ -50,6 +50,45 @@ const landing = {
   },
 };
 
+const disenoWebMataro = {
+  hero: {
+    primary: "Diseño Web Mataró",
+    secondary:
+      "<strong>Diseño de páginas web</strong> para pymes y autónomos de Mataró.",
+    tertiary:
+      "Somos <strong class='animate-text'>ingenieros web</strong> titulados, con más de 5 años de experiencia. Nos comprometemos a hacer que tu negocio destaque en internet y supere a la competencia a un precio inmejorable.",
+    quaternary:
+      "Pídenos tu <strong>diseño web</strong> y te mostraremos varias páginas web para que elijas a la carta en cual te gustaría ver a tu negocio.",
+    cta: "Contacta y recibe varios diseños",
+  },
+  textLeft: {
+    title: "Página web para tu negocio en Mataró",
+    primary:
+      "En Webllope realizamos el mejor <strong class='animate-text'>diseño de páginas web</strong> y al <strong>mejor precio</strong>, y tenemos experiencia trabajando con negocios locales de varios tamaños, aunque nuestra especialidad son pequeñas empresas que necesitan un empujón para recibir más clientes.",
+    secondary:
+      "En el actual panorama digital de Mataro, encontrar la <strong>agencia diseño web</strong> correcta puede ser determinante. En términos de <strong>creación de páginas web</strong>, Webllope puede afirmar con orgullo que es una empresa de máxima calidad. No solo obtenemos resultados excepcionales, sino que también nos preocupamos genuinamente por el éxito de nuestros clientes. Lo notarás desde el momento en que nos contactes.",
+    cta: "Contacta con nosotros",
+  },
+  textRight: {
+    title: "Posicionamiento Web Mataro",
+    primary:
+      "Si te interesa una <strong>página profesional</strong> pero al mismo tiempo que esté <strong>posicionada</strong> y salga de las primeras en las búsquedas para tu sector en tu zona, estás en el sitio correcto. Si has llegado hasta esta página es porque hemos debido hacer un posicionamiento web muy efectivo, ya que es un mercado muy competido.",
+    secondary:
+      "Es nuestra mayor prueba de efectividad, y todos nuestros trabajos previos nos avalan. Si quieres saber más sobre el servicio de creación de web y <strong>posicionamiento web en Mataró</strong>, no dudes en contactar con nosotros, te haremos un presupuesto a medida.",
+    cta: "Contacta con nosotros",
+  },
+  textOnly: {
+    primary: "Mejora el marketing digital de tu negocio en Mataró",
+    secondary:
+      "Desarrollamos páginas web que no solo atraen, sino que también retienen a los usuarios. Mejoramos el <strong>marketing digital</strong> de tu negocio principalmente a través de la creación de una página web profesional y optimizada para aparecer en los primeros resultados de Google y una buena experiencia de usuario para que este se quiera quedar en la página.",
+    tertiary:
+      "Para potenciar el marketing digital en su totalidad, también ofrecemos servicios de gestión de redes sociales, diseño y creación del logotipo de tu negocio, así como de la tipografía y paleta de colores de tu marca digital.",
+    quaternary:
+      "Nosotros podemos encargarnos del manejo de <strong>tus redes sociales</strong>, permitiéndote centrarte únicamente en tu negocio. Nos aseguramos de que tus redes sociales estén siempre actualizadas por un precio muy accesible, garantizando que tus clientes estén informados de las últimas novedades de tu negocio.",
+    cta: "Contacta con nosotros",
+  },
+};
+
 const disenowebalicante = {
   hero: {
     primary: "Diseño Web Alicante",
@@ -771,6 +810,11 @@ const seo = {
     description:
       "Expertos en el diseño web en Alicante. Más de 5 años de experiencia. Creamos páginas web profesionales y nos preocupamos por el éxito de tu negocio",
   },
+  disenoWebMataro: {
+    title: "Diseño Web Mataro. Creamos tu Página Web Perfecta",
+    description:
+      "Diseño Web Mataro. Más de 5 años de experiencia. Creamos páginas web profesionales y nos preocupamos por el éxito de tu negocio",
+  },
   disenoTiendasOnlineMurcia: {
     title: "Diseño de Tiendas Online en Murcia. Crea tu e-commerce ahora",
     description:
@@ -927,6 +971,7 @@ export const content = {
   seoMurcia,
   features,
   logos,
+  disenoWebMataro,
   cta,
   fromBlog,
   moreJobs,

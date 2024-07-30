@@ -50,6 +50,45 @@ const landing = {
   },
 };
 
+const disenoWebMataro = {
+  hero: {
+    primary: "Web Design Mataró",
+    secondary:
+      "<strong>Website design</strong> for SMEs and freelancers in Mataró.",
+    tertiary:
+      "We are certified <strong class='animate-text'>web engineers</strong> with over 5 years of experience. We are committed to making your business stand out on the internet and surpass the competition at an unbeatable price.",
+    quaternary:
+      "Request your <strong>web design</strong> and we will show you several websites to choose from, so you can decide how you want your business to be presented online.",
+    cta: "Contact us and receive several designs",
+  },
+  textLeft: {
+    title: "Website for your business in Mataró",
+    primary:
+      "At Webllope, we offer the best <strong class='animate-text'>website design</strong> at the <strong>best price</strong>. We have experience working with local businesses of various sizes, although our specialty is small companies that need a boost to attract more customers.",
+    secondary:
+      "In the current digital landscape of Mataro, finding the right <strong>web design agency</strong> can be crucial. When it comes to <strong>website creation</strong>, Webllope can proudly say it is a top-quality company. We not only achieve exceptional results but also genuinely care about our clients' success. You will notice this from the moment you contact us.",
+    cta: "Contact us",
+  },
+  textRight: {
+    title: "Web Positioning Mataro",
+    primary:
+      "If you are interested in a <strong>professional website</strong> that is also <strong>well-positioned</strong> and appears among the top search results for your sector in your area, you are in the right place. If you have reached this page, it means we must have done very effective web positioning, as it is a highly competitive market.",
+    secondary:
+      "This is our greatest proof of effectiveness, and all our previous work supports us. If you want to know more about the web creation and <strong>web positioning service in Mataró</strong>, do not hesitate to contact us, and we will provide you with a custom quote.",
+    cta: "Contact us",
+  },
+  textOnly: {
+    primary: "Improve your business's digital marketing in Mataró",
+    secondary:
+      "We develop websites that not only attract but also retain users. We improve your business's <strong>digital marketing</strong> mainly through the creation of a professional and optimized website to appear in the top Google results and provide a good user experience to keep them on the site.",
+    tertiary:
+      "To enhance digital marketing as a whole, we also offer social media management services, logo design and creation for your business, as well as typography and color palette design for your digital brand.",
+    quaternary:
+      "We can take care of managing your <strong>social media</strong>, allowing you to focus solely on your business. We ensure that your social media is always up to date at a very affordable price, guaranteeing that your customers are always informed about the latest news of your business.",
+    cta: "Contact us",
+  },
+};
+
 const disenowebalicante = {
   hero: {
     primary: "Web Design Alicante",
@@ -753,6 +792,11 @@ const seo = {
     description:
       "Website design in Alicante. More than 5 years working as web designers. We create your website with the best technologies and quality tools.",
   },
+  disenoWebMataro: {
+    title: "Website Design in Mataro. We create your ideal website",
+    description:
+      "Website design in Mataro. More than 5 years working as web designers. We create your website with the best technologies and quality tools.",
+  },
   redesSocialesMurcia: {
     title: "Social Media Agency in Murcia. Improve your business presence",
     description:
@@ -945,4 +989,5 @@ export const content = {
   redesSocialesMurcia,
   creamosLogo,
   empresaAnimacion3D,
+  disenoWebMataro,
 };
