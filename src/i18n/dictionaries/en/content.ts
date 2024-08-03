@@ -476,7 +476,10 @@ const tags = {
   windows: "Windows",
   wordpress: "Wordpress",
   seo: "SEO",
+  css: "CSS",
+  api: "API",
   javascript: "JavaScript",
+  accessibility: "Accessibility",
 };
 
 const services = {
