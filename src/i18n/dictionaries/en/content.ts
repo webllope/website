@@ -480,6 +480,7 @@ const tags = {
   api: "API",
   javascript: "JavaScript",
   accessibility: "Accessibility",
+  offtopic: "Off topic",
 };
 
 const services = {

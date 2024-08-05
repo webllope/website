@@ -545,6 +545,7 @@ const tags = {
   api: "API",
   javascript: "JavaScript",
   accessibility: "Accesibilidad",
+  offtopic: "General",
 };
 
 const services = {

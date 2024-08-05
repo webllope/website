@@ -7,6 +7,7 @@ import react from "@astrojs/react";
 function filterOutPages(page) {
   const englishBlogLinksAllowed = [
     "https://webllope.es/en/blog/is-it-important-to-have-a-website/",
+    "https://webllope.es/en/blog/best-murcia-golf-resort/",
   ];
 
   return (
@@ -20,6 +21,7 @@ function filterOutPages(page) {
     page !== "https://webllope.es/en/blog/mejores-dise%C3%B1adores-web/" &&
     page !== "https://webllope.es/en/blog/seo-murcia/" &&
     page !== "https://webllope.es/en/blog/pantalla-azul-windows-2024/" &&
+    page !== "https://webllope.es/es/blog/best-murcia-golf-resort/" &&
     page !== "https://webllope.es/en/privacidad/" &&
     page !== "https://webllope.es/es/privacidad/" &&
     page !== "https://webllope.es/es/cookies/" &&
