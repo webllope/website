@@ -1,0 +1,60 @@
+---
+draft: false
+name: "aquasur"
+title: "Aquasur."
+description: "Empresa de servicios de tratamiento agua."
+seoTitle: "Diseño web para la empresa Aquasur"
+seoDescription: "Mostramos el diseño web para Aquasur, servicios de tratamiento agua en Murcia con más de 15 años de experiencia."
+snippet: "Creamos un logo y una página web corporativa que representa su marca con la paleta de colores solicitada y ayude a la gente local a ver sus servicios y facilita contacto entre ellos y el cliente. Esta página está muy bien posicionada y trae clientes nuevos mensuales. También hicimos servicio de creación de logotipo y de ficha de Google."
+client: "aquasur"
+quote:
+  {
+    message: "Desde el principio hasta el final un trato exquisito",
+    author: { name: "Jose Manuel", position: "Fundador de Aquasur" },
+  }
+tags: [webdev, logo, seo]
+cover:
+  {
+    src: "@assets/businessCovers/aquasur-logo.png",
+    alt: "Web de aquasur",
+  }
+date: "2024-09-08 12:00"
+lang: "es"
+imagesAmount: 1
+---
+
+## Creación de logotipo corporativo
+
+Creamos su logotipo profesional corporativo de empresa basándonos en sus requerimientos, les ofrecimos más de 15 diseños para que se tuviese un gran abanico para elegir el adecuado
+
+## Trabajo de diseño y desarrollo de página web
+
+Aquasur es una empresa de tratamientos de agua con más de 18 años de experiencia, expertos en <a href="https://aquasurservicios.es" rel="dofollow">descalcificador agua murcia</a>.
+
+El trabajo con ellos fue de diseño y desarrollo de su sitio web usando **Wordpress** y aplicando posicionamiento web de forma que si alguien busca palabras clave referentes a su sector en su localización (murcia) su página aparezca de las primeras a los usuarios.
+
+Aquasur partían desde 0 en cuanto a presencia digital, a pesar de llevar 18 años en el sector, gracias a nosotros posicionan primeros en las búsquedas sobre sus servicios en Murcia y reciben clientes nuevos mensuales.
+
+<a href="https://aquasurservicios.es" rel="nofollow">Ver el resultado final</a>
+
+## Resultados obtenidos hasta la fecha
+
+Según [lighthouse](https://es.semrush.com/blog/como-utilizar-google-lighthouse/) (la herramienta de análisis de Google) las notas de la página de aquasurservicios.es son:
+
+<figure>
+<img class="mx-auto" src="/blogImages/lighthouse-web-aquasur.png" title="Análisis de rendimiento Aquasur" alt="Análisis de rendimiento Aquasur" loading="lazy"/>
+<figcaption class="text-center">Análisis de rendimiento Aquasur<figcaption>
+</figure>
+
+Como se observa, según el propio Google el rendimiento de la página es de un 85, accesibilidad 94, buenas prácticas un 100 y SEO un 100.
+
+<!-- <figure>
+<img src="/blogImages/search-analytics-pinturasyverticalesgdb.png" title="Análisis de búsquedas y clics de pinturasyverticalesgdb" alt="Análisis de búsquedas y clics de pinturasyverticalesgdb" width="760" height="280" loading="lazy"/>
+<figcaption class="text-center">Análisis de búsquedas y clics de pinturasyverticalesgdb<figcaption>
+</figure>
+
+En esta imagen podemos observar los últimos 3 meses de esta página, siendo una página que posiciona muy alto para búsquedas locales (servicios concretos en Aguadulce), y posiciona decentemente en algunos servicios en Almería.  -->
+
+<!-- Se han conseguido 410 clics y casi 10 mil visualizaciones, todo esto obtenido a pesar de que el servicio contratado con nosotros era el más básico de solo creación de página web sin incluir posicionamiento web / SEO y que la página solo tiene 4 meses de vida a día de hoy (13/05/2024), pero siempre hacemos un SEO básico que funciona bastante bien. Trabajo bien hecho. -->
+
+### Diseño

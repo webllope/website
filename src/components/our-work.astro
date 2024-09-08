@@ -22,17 +22,13 @@ const publishedWorkEntries = (
   })
 )
   .sort(function (a, b) {
-    return b.data.date.valueOf() - a.data.date.valueOf();
+    return b?.data.date.valueOf() - a?.data.date.valueOf();
   })
   .slice(0, 3);
 
 const clients = await getCollection("clients", ({ slug }) => {
-  return publishedWorkEntries.some((work) => work.data.client.slug == slug);
+  return publishedWorkEntries.some((work) => work?.data.client.slug == slug);
 });
-
-const client = clients.find((client) => client.id === "neoaesthetic.md")!;
-
-// TODO: We have to make this images have the correct size originally, avoiding changing it with css which causes bad performance (cuando sepamos los logos y tal lo haremos)
 ---
 
 <Layout
@@ -55,7 +51,7 @@ const client = clients.find((client) => client.id === "neoaesthetic.md")!;
         {
           publishedWorkEntries.map((work) => {
             const client = clients.find(
-              (client) => client.slug === work.data.client.slug,
+              (client) => client.slug === work?.data.client.slug,
             )!;
             const url = getRelativeLocaleUrl(lang, `/trabajo/${work.slug}`);
 
@@ -65,40 +61,40 @@ const client = clients.find((client) => client.id === "neoaesthetic.md")!;
                   <div class="col-span-full sm:flex sm:items-center sm:justify-between sm:gap-x-8 lg:col-span-1 lg:block">
                     <div class="sm:flex sm:items-center sm:gap-x-6 lg:block">
                       <Image
-                        alt={client.data.name + " Logo"}
+                        alt={client?.data.name + " Logo"}
                         loading="lazy"
                         decoding="async"
                         data-nimg="1"
                         class="flex-none"
                         height="125"
-                        width={client.data.logos.markDark.width}
-                        src={client.data.logos.markDark}
+                        width={client?.data.logos.markDark?.width}
+                        src={client?.data.logos.markDark}
                         style="color: transparent;"
                       />
                       <h3 class="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
-                        {client.data.name}
+                        {client?.data.name}
                       </h3>
                     </div>
                     <div class="mt-1 flex gap-x-4 sm:mt-0 lg:block">
                       <p class="text-sm tracking-tight text-neutral-950 after:ml-4 after:font-semibold after:text-neutral-300 after:content-['/'] lg:mt-2 lg:after:hidden">
-                        {work.data.tags
+                        {work?.data.tags
                           .map((tag) => t(`tags.${tag}`))
                           .join(", ")}
                       </p>
                       <p class="text-sm text-neutral-950 lg:mt-2">
-                        <time datetime={work.data.date.toISOString()}>
-                          {capitalize(getFormattedDate(work.data.date))}
+                        <time datetime={work?.data.date.toISOString()}>
+                          {capitalize(getFormattedDate(work?.data.date))}
                         </time>
                       </p>
                     </div>
                   </div>
                   <div class="col-span-full lg:col-span-2 lg:max-w-2xl">
                     <p class="font-display text-4xl font-medium text-neutral-950">
-                      <a href={url}>{work.data.title}</a>
+                      <a href={url}>{work?.data.title}</a>
                     </p>
                     <div class="mt-6 space-y-6 text-base text-neutral-600">
-                      <p>{work.data.description}</p>
-                      <p>{work.data.snippet}</p>
+                      <p>{work?.data.description}</p>
+                      <p>{work?.data.snippet}</p>
                     </div>
                     <div class="mt-8 flex">
                       <a
@@ -111,11 +107,11 @@ const client = clients.find((client) => client.id === "neoaesthetic.md")!;
                     <div class="pl-8 mt-12 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                       <figure class="text-sm">
                         <blockquote class="text-neutral-600 [&>*]:relative [&>:first-child]:before:absolute [&>:first-child]:before:right-full [&>:first-child]:before:content-['“'] [&>:last-child]:after:content-['”']">
-                          <p>{work.data.quote.message}</p>
+                          <p>{work?.data.quote.message}</p>
                         </blockquote>
                         <figcaption class="mt-6 font-semibold text-neutral-950">
-                          {work.data.quote.author.name},{" "}
-                          {work.data.quote.author.position}
+                          {work?.data.quote.author.name},{" "}
+                          {work?.data.quote.author.position}
                         </figcaption>
                       </figure>
                     </div>
@@ -128,15 +124,6 @@ const client = clients.find((client) => client.id === "neoaesthetic.md")!;
       </div>
     </div>
   </div>
-
-  <Message
-    title={t("successCases")}
-    content={client.data.reviews[0][lang].content}
-    image={{
-      alt: `Diseño Web ${client.data.name}`,
-      src: client.data.logos.light,
-    }}
-  />
 
   <AboutYourProject />
 </Layout>

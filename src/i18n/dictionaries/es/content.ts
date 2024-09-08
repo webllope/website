@@ -42,7 +42,7 @@ const landing = {
   textOnly: {
     primary: "Mejora el marketing digital de tu negocio",
     secondary:
-      "Construimos páginas web que atraen y retienen a los visitantes, mejoramos el <strong>marketing digital</strong> de tu negocio principalmente con la creación de una página web profesional y optimizada para que aparezca en los primeros resultados de Google.",
+      "Construimos páginas web que atraen y retienen a los visitantes, mejoramos el <strong>marketing digital</strong> de tu negocio principalmente con la creación de una página web profesional y optimizada para que aparezca en los primeros resultados de Google gracias a nuestro servicio de <a class='underline' href='https://www.webllope.es/es/seo-murcia'><strong>SEO en Murcia</strong></a>.",
     tertiary:
       "Aunque para aumentar el marketing digital al completo también ofrecemos servicios manejo de redes sociales, diseño y creacion del logotipo de tu negocio y de la tipografía y paleta de colores de tu marca digital.",
     quaternary:
@@ -402,11 +402,11 @@ const clients = {
 const briefAboutUs = {
   title: "Diseño de páginas web profesionales en Murcia",
   firstP:
-    "Somos una agencia de <strong>diseño de páginas webs</strong> y <a class='underline' href='https://www.webllope.es/es/seo-murcia'><strong>SEO en Murcia</strong></a>. Especializados en crear <strong>páginas web corporativas</strong> con personalidad, haciendo un estudio previo del mercado y de los competidores, aumentamos tu <strong>presencia digital</strong>. Multiplicamos las visitas a tu negocio en internet en un corto periodo de tiempo.",
+    "Somos una agencia de <strong>diseño de páginas webs</strong>. Especializados en crear <strong>páginas web corporativas</strong> con personalidad, haciendo un estudio previo del mercado y de los competidores.",
   secondP:
-    "Si confías en nosotros, no solo tendrás una página web empresarial excelente si no que a un precio increíblemente reducido.",
+    "Multiplicamos las visitas a tu negocio en internet en un corto periodo de tiempo.",
   thirdP:
-    "Consideramos que el mercado ha sido muy desconsiderado con las <strong>páginas webs para pymes</strong> y queremos cambiar eso ofreciendo el mejor <strong>desarrollo de páginas webs en Murcia</strong> y al mejor precio posible. Sin cobrarte ni un centavo extra mensual por el mantenimiento web como otras agencias.",
+    "El mercado ha sido muy desconsiderado con las <strong>páginas webs para pymes</strong> y queremos cambiar eso ofreciendo el mejor <strong>desarrollo de páginas webs en Murcia</strong> al mejor precio posible. Sin cobrarte ni un centavo extra mensual por el mantenimiento web.",
   cta: "Contacta con nosotros",
 };
 

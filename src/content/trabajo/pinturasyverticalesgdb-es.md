@@ -28,13 +28,13 @@ Les creamos su logotipo profesional corporativo de empresa basándonos en sus re
 
 ## Trabajo de diseño y desarrollo de página web
 
-Pinturas y Verticales GDB es una empresa de mantenimiento y servicios técnicos con más de 20 años de experiencia, expertos en trabajos verticales.
+Pinturas y Verticales GDB es una empresa de mantenimiento y servicios técnicos con más de 20 años de experiencia, expertos en <a href="https://pinturasyverticalesgdb.es" rel="dofollow">trabajos verticales en Murcia</a>.
 
 El trabajo con ellos fue de diseño y desarrollo de su sitio web usando **Wordpress** y aplicando un SEO básico de forma que si alguien busca palabras clave referentes a su sector en su localización su página aparezca de las primeras a los usuarios.
 
 Pinturas y Verticales GDB partían desde 0 en cuanto a presencia digital, a pesar de llevar 20 años en el sector, gracias a nosotros posicionan primeros en las búsquedas sobre sus servicios en Murcia y reciben clientes nuevos mensuales
 
-<a href="https://pinturasyverticalesgdb.es" rel="nofollow">Resultado final</a>
+<a href="https://pinturasyverticalesgdb.es" rel="nofollow">Ver el resultado final</a>
 
 ## Resultados obtenidos hasta la fecha
 

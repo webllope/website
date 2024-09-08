@@ -10,12 +10,11 @@ interface Props {
     src: ImageMetadata;
   };
 }
-
 const { content, image, title } = Astro.props;
+console.log(image);
 ---
 
-<div
-  class="relative isolate bg-neutral-50 py-16 sm:py-28 md:py-32 mt-24 sm:mt-32 lg:mt-40">
+<div class="relative isolate bg-neutral-50 py-16 sm:py-28 md:py-32 mt-24 sm:mt-32 lg:mt-40">
   <Background />
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:max-w-none">
@@ -26,8 +25,7 @@ const { content, image, title } = Astro.props;
           </div>
           <blockquote
             class="relative font-display text-xl font-medium tracking-tight text-neutral-950 sm:text-2xl mt-8">
-            <p
-              class="before:content-['“'] after:content-['”'] sm:before:absolute sm:before:right-full">
+            <p class="before:content-['“'] after:content-['”'] sm:before:absolute sm:before:right-full">
               {content}
             </p>
           </blockquote><figcaption class="mt-10">
