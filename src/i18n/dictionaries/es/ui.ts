@@ -33,7 +33,7 @@ export const ui = {
       title: "Conectar",
     },
     findUs: {
-      //El título es así porque debo meter la palabra Webllope en esta columna somewhere.
+      //El título es así porque debo meter la palabra Webllope en esta columna somewhere.xd
       title: "Contacta",
     },
     comingSoon: "Próximamente",
