@@ -389,7 +389,7 @@ const features = {
     {
       title: "Diferencia de la Competencia",
       description:
-        "Destaca entre la competencia local al tener una presencia en línea profesional y completa gracias a un diseño web apto para móviles y un buen <strong>posicionamiento SEO y SEM</strong>.",
+        "Destaca entre la competencia local al tener una presencia en línea profesional y completa gracias a un diseño web apto para móviles y un gran <strong>posicionamiento SEO y SEM</strong>.",
     },
   ],
 };
