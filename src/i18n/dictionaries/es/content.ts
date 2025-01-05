@@ -546,6 +546,7 @@ const tags = {
   javascript: "JavaScript",
   accessibility: "Accesibilidad",
   offtopic: "General",
+  chatgpt: "ChatGPT",
 };
 
 const services = {
