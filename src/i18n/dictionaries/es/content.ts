@@ -1,6 +1,6 @@
 const landing = {
   hero: {
-    primary: "Diseño Web Murcia",
+    primary: "Diseño Web en Murcia",
     secondary:
       "Diseño de <strong>páginas web profesionales</strong> para empresas de todos los tamaños y autónomos.",
     tertiary:
