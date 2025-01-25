@@ -15,7 +15,7 @@ Este artículo profundiza en la importancia del conocimiento de PHP para el desa
 
 
 <figure>
-<img src="/blogImages/php-para-desarrollo-de-wordpress.webp" title="PHP para desarrollo de Wordpress" alt="PHP para desarrollo de Wordpress" loading="lazy"/>
+<img src="/blogImages/php-para-desarrollo-de-wordpress.png" title="PHP para desarrollo de Wordpress" alt="PHP para desarrollo de Wordpress" loading="lazy"/>
 <figcaption class="text-center">PHP para desarrollo de Wordpress<figcaption>
 </figure>
 

@@ -374,7 +374,7 @@ const features = {
     {
       title: "Amplia Experiencia",
       description:
-        "Durante 5 años como <strong>desarrolladores de páginas web</strong> hemos visto como agencias de diseño web en Murcia y de <a href='https://www.webllope.es/es/diseno-web-alicante'>diseño web en Alicante</a> desaparecían. Sin embargo nuestros métodos nos mantienen en la cima.",
+        "Durante 5 años como <strong>desarrolladores de páginas web</strong> hemos visto como agencias de diseño web en Murcia y de <a href='https://www.webllope.es/'>diseño web en Murcia</a> desaparecían. Sin embargo nuestros métodos nos mantienen en la cima.",
     },
     {
       title: "Información Instantánea",

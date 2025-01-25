@@ -10,14 +10,12 @@ const t = useTranslations(lang);
 const contenido = t("legal.privacy.content");
 ---
 
-<Layout title={t("seo.blog.title")} description={t("seo.blog.description")}>
+<Layout title={t("seo.privacidad.title")} description={t("seo.privacidad.description")}>
   <Container class="px-8 py-16">
     {
       contenido.map((item) => (
         <div class="p-8">
-          <h2 class="font-display text-2xl font-semibold text-neutral-950">
-            {item.title}
-          </h2>
+          <h2 class="font-display text-2xl font-semibold text-neutral-950">{item.title}</h2>
           <p set:html={item.description} />
         </div>
       ))
