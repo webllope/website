@@ -20,20 +20,16 @@ const publishedWorkEntries = (
   await getCollection("trabajo", ({ data }) => {
     return data.lang === lang && !data.draft && data.date < new Date();
   })
-)
-  .sort(function (a, b) {
-    return b?.data.date.valueOf() - a?.data.date.valueOf();
-  })
-  .slice(0, 3);
+).sort(function (a, b) {
+  return b?.data.date.valueOf() - a?.data.date.valueOf();
+});
 
 const clients = await getCollection("clients", ({ slug }) => {
   return publishedWorkEntries.some((work) => work?.data.client.slug == slug);
 });
 ---
 
-<Layout
-  title={t("seo.ourWork.title")}
-  description={t("seo.ourWork.description")}>
+<Layout title={t("seo.ourWork.title")} description={t("seo.ourWork.description")}>
   <Sectionhead
     section={t("ourWork.sectionHead.title")}
     title={t("ourWork.sectionHead.subtitle")}
@@ -50,9 +46,7 @@ const clients = await getCollection("clients", ({ slug }) => {
       <div class="mt-10 space-y-20 sm:space-y-24 lg:space-y-32">
         {
           publishedWorkEntries.map((work) => {
-            const client = clients.find(
-              (client) => client.slug === work?.data.client.slug,
-            )!;
+            const client = clients.find((client) => client.slug === work?.data.client.slug)!;
             const url = getRelativeLocaleUrl(lang, `/trabajo/${work.slug}`);
 
             return (
@@ -71,15 +65,11 @@ const clients = await getCollection("clients", ({ slug }) => {
                         src={client?.data.logos.markDark}
                         style="color: transparent;"
                       />
-                      <h3 class="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
-                        {client?.data.name}
-                      </h3>
+                      <h3 class="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">{client?.data.name}</h3>
                     </div>
                     <div class="mt-1 flex gap-x-4 sm:mt-0 lg:block">
                       <p class="text-sm tracking-tight text-neutral-950 after:ml-4 after:font-semibold after:text-neutral-300 after:content-['/'] lg:mt-2 lg:after:hidden">
-                        {work?.data.tags
-                          .map((tag) => t(`tags.${tag}`))
-                          .join(", ")}
+                        {work?.data.tags.map((tag) => t(`tags.${tag}`)).join(", ")}
                       </p>
                       <p class="text-sm text-neutral-950 lg:mt-2">
                         <time datetime={work?.data.date.toISOString()}>
@@ -110,8 +100,7 @@ const clients = await getCollection("clients", ({ slug }) => {
                           <p>{work?.data.quote.message}</p>
                         </blockquote>
                         <figcaption class="mt-6 font-semibold text-neutral-950">
-                          {work?.data.quote.author.name},{" "}
-                          {work?.data.quote.author.position}
+                          {work?.data.quote.author.name}, {work?.data.quote.author.position}
                         </figcaption>
                       </figure>
                     </div>
