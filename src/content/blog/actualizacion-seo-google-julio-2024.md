@@ -14,7 +14,7 @@ tags: [seo]
 Julio ha sido un mes movido en el mundo del SEO, con Google anunciando nuevas directrices y actualizaciones que impactan en la forma en que se posicionan los sitios web.  A continuación, te presentamos un resumen de las principales novedades del mes:
 
 <figure>
-<img src="/blogImages/actualizacion-google-julio-2024.webp" title="Actualización google julio 2024" alt="Actualización google julio 2024" loading="lazy"/>
+<img class="mx-auto" src="/blogImages/actualizacion-google-julio-2024.webp" title="Actualización google julio 2024" alt="Actualización google julio 2024" loading="lazy"/>
 <figcaption class="text-center">Actualización google julio 2024<figcaption>
 </figure>
 

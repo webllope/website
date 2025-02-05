@@ -15,7 +15,7 @@ Este artículo profundiza en la importancia del conocimiento de PHP para el desa
 
 
 <figure>
-<img src="/blogImages/acceso-web-desde-hong-kong.webp" title="Acceso a web desde Hong Kong" alt="Acceso a web desde Hong Kong" loading="lazy"/>
+<img class="mx-auto" src="/blogImages/acceso-web-desde-hong-kong.webp" title="Acceso a web desde Hong Kong" alt="Acceso a web desde Hong Kong" loading="lazy"/>
 <figcaption class="text-center">Acceso a web desde Hong Kong<figcaption>
 </figure>
 
