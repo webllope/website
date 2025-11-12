@@ -2,8 +2,9 @@ import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
-import vercel from "@astrojs/vercel/serverless";
+import vercel from "@astrojs/vercel/static";
 import react from "@astrojs/react";
+
 function filterOutPages(page) {
   const englishBlogLinksAllowed = [
     "https://webllope.es/en/blog/is-it-important-to-have-a-website/",
@@ -58,7 +59,6 @@ export default defineConfig({
       enabled: true,
     },
   }),
-  output: "server",
   i18n: {
     defaultLocale: "es",
     locales: ["en", "es"],
