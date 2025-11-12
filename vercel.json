@@ -39,6 +39,11 @@
       ]
     }
   ],
+  "build": {
+    "env": {
+      "NODE_VERSION": "22"
+    }
+  },
   "redirects": [
     {
       "source": "/old-url-path/",
