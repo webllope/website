@@ -26,7 +26,7 @@ imagesAmount: 2
 
 ## Trabajo de diseño y desarrollo de página web
 
-Tapizados Bel es una empresa de Car Detailing con más de 10 años de experiencia, expertos en <a href="https://tapizadosbel.es/" rel="dofollow">car detailing y tapizados en Fuente Álamo</a>.
+Tapizados Bel es una empresa de Car Detailing con más de 10 años de experiencia, expertos en car detailing y tapizados en Fuente Álamo.
 
 El trabajo con Tapizados Bel consistió en el diseño y desarrollo de su sitio web utilizando WordPress, aplicando un SEO avanzado orientado a su sector y ubicación. Ahora, si alguien busca servicios relacionados con la tapicería de coches en su zona, su página aparece entre los primeros resultados.
 
@@ -35,7 +35,5 @@ Partían desde cero en cuanto a presencia digital, a pesar de contar con años d
 ## Nuevo Logo
 
 También se les creó un logotipo desde cero, ya que no disponían de uno profesional y querían imprimir el logo en camisetas y furgonetas, como se puede ver se les creó un logotipo ambientado en el trabajo automovilístico.
-
-<a href="https://tapizadosbel.es/" rel="nofollow">Ver el resultado final de la web</a>
 
 ### Diseño

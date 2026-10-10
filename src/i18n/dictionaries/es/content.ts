@@ -15,7 +15,7 @@ const landing = {
       {
         question: "¿Cuánto cuesta hacer una página web?",
         answer:
-          "El precio de una página web depende de la complejidad de la misma. No obstante, usando diseños predefinidos (los cuales cumplen con las necesidades del 95% de los negocios) se hacen desde un mínimo de 250€, y si necesitas algo más personalizado, se hará un presupuesto a medida.",
+          "El precio de una página web depende de la complejidad de la misma. No obstante, usando diseños predefinidos (los cuales cumplen con las necesidades del 95% de los negocios) se hacen desde un mínimo de 350€, y si necesitas algo más personalizado, se hará un presupuesto a medida.",
       },
       {
         question: "¿Para qué sirve una página web?",
@@ -963,7 +963,68 @@ const newspapers = {
     "Tal vez hayas oído hablar de nosotros en estos prestigiosos periódicos digitales",
 };
 
+// ponytail: edit here to refresh the "Why Webllope" section as competitors change
+const whyWebllope = {
+  eyebrow: "Por qué Webllope",
+  title: "¿Por qué elegir Webllope?",
+  intro:
+    "Elegir quién hace tu <strong>página web</strong> es elegir con quién vas a trabajar durante meses. Con nosotros el trato es <strong>muy personal</strong>: hablas siempre con la misma persona y nunca tendrás la sensación de que te están tomando el pelo.",
+  points: [
+    {
+      title: "Trato cercano y personal",
+      description:
+        "Hablas directamente con quien diseña tu web, por WhatsApp, teléfono o en persona en Murcia. Sin centralitas, sin tickets y sin intermediarios que no conocen tu negocio.",
+    },
+    {
+      title: "Sin sentir que te toman el pelo",
+      description:
+        "Presupuesto cerrado y claro antes de empezar. Sin cuotas mensuales escondidas ni un cargo extra por cada pequeño cambio que pides. Sabes en todo momento qué pagas y por qué.",
+    },
+    {
+      title: "Una persona joven y altamente capacitada",
+      description:
+        "Tu web la hace un <strong>diseñador y desarrollador web titulado</strong>, joven y con más de 5 años de experiencia, que trabaja cada día con las últimas tecnologías como Astro, React o WordPress.",
+    },
+    {
+      title: "Adaptado a la inteligencia artificial",
+      description:
+        "Usamos la <strong>inteligencia artificial</strong> para trabajar más rápido y preparamos tu web para que te encuentren tanto en Google como en asistentes como ChatGPT, Gemini o Perplexity.",
+    },
+  ],
+  table: {
+    caption: "Comparativa entre Webllope, una agencia tradicional y una plantilla o freelance low-cost",
+    head: ["", "Webllope", "Agencia tradicional", "Plantilla / low-cost"],
+    rows: [
+      ["Con quién hablas", "Siempre la misma persona", "Comercial y equipo que rota", "Soporte genérico o nadie"],
+      ["Precio", "Cerrado y transparente, desde 350€", "Alto y con extras por cambio", "Barato al inicio, caro al crecer"],
+      ["Cuotas mensuales", "Sin mantenimiento obligatorio", "Cuota mensual habitual", "Licencias y plugins de pago"],
+      ["Propuestas de diseño", "Varios diseños sin compromiso", "Una propuesta tras pagar", "Plantilla genérica"],
+      ["SEO local en Murcia", "Incluido desde el primer día", "Servicio aparte", "No incluido"],
+      ["Tecnología e IA", "Últimas tecnologías + IA", "Depende del equipo", "Lo que traiga la plantilla"],
+    ],
+  },
+  testimonials: [
+    {
+      name: "Daniel Ximénez S.",
+      quote:
+        "Un trato espectacular y siempre atentos a que nos gustase la página y hasta que no estaba todo perfecto no la dieron por terminada.",
+    },
+    {
+      name: "Noelia",
+      quote:
+        "Además de hacerme una página web bonita, me sale la primera-segunda en varios resultados en Google. Daniel fue muy agradable y atento conmigo.",
+    },
+    {
+      name: "F Javier Ramos",
+      quote:
+        "Se centra en satisfacer las necesidades de sus clientes y no solo crea páginas web excelentes sino que son eficaces y consiguen nuevos clientes.",
+    },
+  ],
+  cta: "Hablemos de tu web",
+};
+
 export const content = {
+  whyWebllope,
   ...misc,
   newspapers,
   landing,

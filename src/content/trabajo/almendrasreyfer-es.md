@@ -31,8 +31,6 @@ El trabajo con ellos fue de diseño y desarrollo de su sitio web usando **Wordpr
 
 Almendras Reyfer partían desde 0 en cuanto a presencia digital, a pesar de llevar 40 años en el sector, gracias a nosotros posicionan primeros en las búsquedas sobre sus servicios en su localidad y alcanzan nuevas visitas cada mes
 
-<a href="https://almendrasreyfer.com/" rel="nofollow">Ver el Resultado final</a>
-
 ## Resultados obtenidos hasta la fecha
 
 Según [lighthouse](https://es.semrush.com/blog/como-utilizar-google-lighthouse/) (la herramienta de análisis de Google) las notas de la página de almendrasreyfer.com son:

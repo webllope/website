@@ -1,0 +1,81 @@
+---
+import Container from "./ui/container.astro";
+import Link from "./ui/link.astro";
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const why = t("whyWebllope");
+---
+
+<section id="por-que-webllope" class="mt-24 scroll-mt-24">
+  <Container class="px-6">
+    <div class="max-w-3xl">
+      <span class="text-sm font-semibold uppercase tracking-widest text-brand-600">{why.eyebrow}</span>
+      <h2 class="mt-3 font-display text-3xl font-semibold tracking-tight text-neutral-950 [text-wrap:balance] sm:text-4xl">
+        {why.title}
+      </h2>
+      <p class="mt-6 text-xl text-neutral-600" set:html={why.intro} />
+    </div>
+
+    <ul class="mt-12 grid gap-6 sm:grid-cols-2">
+      {
+        why.points.map((point, i) => (
+          <li class="rounded-3xl border border-neutral-200 bg-white p-6 sm:p-8">
+            <span class="font-display text-sm font-semibold text-brand-600">0{i + 1}</span>
+            <h3 class="mt-2 text-xl font-semibold text-neutral-950">{point.title}</h3>
+            <p class="mt-3 leading-relaxed text-neutral-600" set:html={point.description} />
+          </li>
+        ))
+      }
+    </ul>
+
+    <div class="mt-16 overflow-x-auto rounded-3xl border border-neutral-200 bg-white">
+      <table class="w-full min-w-[640px] text-left text-sm sm:text-base">
+        <caption class="sr-only">{why.table.caption}</caption>
+        <thead>
+          <tr class="border-b border-neutral-200">
+            {why.table.head.map((h, i) => (
+              <th scope="col" class:list={["p-4 sm:p-5 font-semibold", i === 1 ? "bg-brand-600 text-white" : "text-neutral-950"]}>{h}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {
+            why.table.rows.map((row) => (
+              <tr class="border-b border-neutral-100 last:border-0">
+                {row.map((cell, i) =>
+                  i === 0 ? (
+                    <th scope="row" class="p-4 sm:p-5 font-medium text-neutral-950">{cell}</th>
+                  ) : (
+                    <td class:list={["p-4 sm:p-5", i === 1 ? "bg-brand-50 font-medium text-brand-900" : "text-neutral-500"]}>{cell}</td>
+                  )
+                )}
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <div class="mt-16 grid gap-6 md:grid-cols-3">
+      {
+        why.testimonials.map((item) => (
+          <figure class="flex flex-col justify-between rounded-3xl bg-neutral-950 p-6 text-white">
+            <blockquote class="leading-relaxed text-neutral-200">“{item.quote}”</blockquote>
+            <figcaption class="mt-6 flex items-center gap-2 text-sm">
+              <span class="text-amber-400" aria-hidden="true">★★★★★</span>
+              <span class="font-semibold">{item.name}</span>
+              <span class="text-neutral-500">· Google</span>
+            </figcaption>
+          </figure>
+        ))
+      }
+    </div>
+
+    <div class="mt-10 flex">
+      <Link href={getRelativeLocaleUrl(lang, "/contacto")}>{why.cta}</Link>
+    </div>
+  </Container>
+</section>

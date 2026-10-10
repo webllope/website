@@ -11,16 +11,16 @@ const { title, questions } = Astro.props as Props;
 
 <Container class="my-24">
   <h2
-    class="mx-auto text-3xl w-fit text-neutral-950 font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-4xl">
+    class="mx-auto mb-10 text-3xl w-fit text-neutral-950 font-semibold tracking-tight text-neutral-950 [text-wrap:balance] sm:text-4xl">
     {title}
   </h2>
   {
     questions.map(({ question, answer }) => (
       <div
-        class="mt-6 accordion group relative rounded-md border border-purple-900 w-auto lg:w-1/2 mx-auto"
+        class="mt-4 accordion group relative rounded-2xl border border-neutral-200 bg-white w-auto lg:w-2/3 mx-auto transition hover:border-brand-200"
         key={question}>
         <button
-          class="accordion__button flex w-full flex-1 items-center justify-between gap-2 p-3 text-left font-medium transition hover:text-purple-500 sm:px-4"
+          class="accordion__button flex w-full flex-1 items-center justify-between gap-2 p-3 text-left font-medium transition hover:text-brand-600 sm:px-6 sm:py-4"
           type="button"
           id={`${question.replace(/\s+/g, "-")}-accordion-menu-button`}
           aria-expanded="false"

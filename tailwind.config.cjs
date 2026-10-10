@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
@@ -23,6 +24,9 @@ module.exports = {
           },
         ],
       },
+
+      // ponytail: one alias so the brand hue can be swapped in a single place
+      colors: { brand: colors.violet },
 
       borderRadius: {
         "4xl": "2.5rem",

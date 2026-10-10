@@ -4,8 +4,6 @@ import { getLangFromUrl, useTranslations } from "@i18n/utils";
 import { Image } from "astro:assets";
 
 import MurciaComLogo from "@assets/logos/murciacom-logo.jpg";
-import MarketingoLogo from "@assets/logos/marketingo-logo.png";
-import LagacetaLogo from "@assets/logos/lagaceta-logo.png";
 import RoiPress from "@assets/logos/roipress-logo.png";
 
 const newspapers = [
@@ -13,18 +11,6 @@ const newspapers = [
     name: "Murcia.com Logo",
     img: MurciaComLogo,
     url: "https://www.murcia.com/tecnologia/noticias/2024/03/14-webllope-tu-empresa-de-diseno-web-en-murcia.asp",
-    width: 270,
-  },
-  {
-    name: "La Gaceta de Almería Logo",
-    img: LagacetaLogo,
-    url: "https://www.lagacetadealmeria.com/webllope-innovacion-y-diseno-web-en-murcia/",
-    width: 270,
-  },
-  {
-    name: "Marketingo Logo",
-    img: MarketingoLogo,
-    url: "https://www.marketingo.es/diseno-web-en-murcia-como-elegir-la-mejor-agencia-para-tu-proyecto/",
     width: 270,
   },
   {
@@ -52,7 +38,7 @@ const t = useTranslations(lang);
           </h3><div class="h-px flex-auto bg-neutral-800"></div>
         </div>
         <div>
-          <ul class="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4">
+          <ul class="mt-10 grid grid-cols-2 gap-x-8 gap-y-10">
             {
               newspapers.map((newspaper) => (
                 <li class="flex items-center">

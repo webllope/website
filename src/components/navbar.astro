@@ -73,8 +73,9 @@ const menuitems: Array<{
 ];
 ---
 
+<div class="sticky top-0 z-40 border-b border-neutral-950/5 bg-white/75 backdrop-blur-lg">
 <Container>
-  <header class="flex flex-col lg:flex-row justify-between items-center my-5">
+  <header class="flex flex-col lg:flex-row justify-between items-center py-3">
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
         <Logo parent="Header" />
@@ -88,9 +89,15 @@ const menuitems: Array<{
           {menuitems.map((item, index) => <NavMenuItem item={item} hrefUrl={getRelativeLocaleUrl(lang, item.path)} />)}
         </ul>
       </MenuItems>
-      <div class="hidden lg:block">
+      <div class="hidden lg:flex items-center gap-2">
         <LanguagePicker />
+        <a
+          href={getRelativeLocaleUrl(lang, "/contacto")}
+          class="rounded-full bg-neutral-950 px-4 py-2 text-sm font-medium text-white transition hover:bg-brand-600">
+          {t("nav.contact")}
+        </a>
       </div>
     </Astronav>
   </header>
 </Container>
+</div>

@@ -1,5 +1,5 @@
 export const ui = {
-  banner: "SUMMER PROMOTION 🎉 YOUR WEBSITE NOW FROM 250€",
+  banner: "WEBSITES FROM 350€",
   nav: {
     home: "Home",
     services: "Services",

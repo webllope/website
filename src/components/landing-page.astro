@@ -14,6 +14,7 @@ import FromBlog from "@components/from-blog.astro";
 import Faq from "@/components/faq.astro";
 import Schema from "@components/schemas/landing-schema.astro";
 import Newspapers from "@components/newspapers.astro";
+import WhyWebllope from "@components/why-webllope.astro";
 
 import officeImage from "@assets/paginas-web-murcia.webp";
 import seoImage from "@assets/disenador-web-murcia.png";
@@ -67,6 +68,7 @@ const t = useTranslations(lang);
     }}>
     <Image alt="Páginas Web Murcia" width={359} height={524} class="rounded-xl" src={officeImage} title="Diseño web en Murcia" />
   </TextLeftSection>
+  <WhyWebllope />
   <Clients />
   <TextRightSection
     title={t("briefSeoInfo.title")}

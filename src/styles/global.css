@@ -1,7 +1,29 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fcfcfd;
+  color: #0a0a0a;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #ddd6fe;
+}
+
 h1,
 h2,
 h3 {
   font-variation-settings: "wdth" 125;
+  letter-spacing: -0.02em;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #7c3aed, #4f46e5 50%, #0ea5e9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .animate-text {

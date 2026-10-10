@@ -6,7 +6,7 @@ const landing = {
     tertiary:
       "We are <strong>website designers</strong> and also experts in <strong>SEO</strong> and <strong>web positioning Murcia</strong>",
     quaternary:
-      "We are committed to making your business stand out on the internet at an unbeatable price (from 250€)",
+      "We are committed to making your business stand out on the internet at an unbeatable price (from 350€)",
     cta: "Inquire now!",
   },
   faq: {
@@ -15,7 +15,7 @@ const landing = {
       {
         question: "How much does a website cost?",
         answer:
-          "The price of a website depends on the complexity of it. However, using predefined designs (which meet the needs of 95% of businesses) they are made from a minimum of 250€, and if you need something more personalized, a custom budget will be made.",
+          "The price of a website depends on the complexity of it. However, using predefined designs (which meet the needs of 95% of businesses) they are made from a minimum of 350€, and if you need something more personalized, a custom budget will be made.",
       },
       {
         question: "What is a website for?",
@@ -959,7 +959,68 @@ const newspapers = {
   title: "You may have heard of us in these prestigious digital newspapers",
 };
 
+// ponytail: edit here to refresh the "Why Webllope" section as competitors change
+const whyWebllope = {
+  eyebrow: "Why Webllope",
+  title: "Why choose Webllope?",
+  intro:
+    "Choosing who builds your <strong>website</strong> means choosing who you'll work with for months. With us the service is <strong>truly personal</strong>: you always talk to the same person and you'll never feel like you're being taken for a ride.",
+  points: [
+    {
+      title: "Close, personal service",
+      description:
+        "You talk directly to the person designing your website, by WhatsApp, phone or in person in Murcia. No call centres, no tickets, no middlemen who don't know your business.",
+    },
+    {
+      title: "No feeling of being ripped off",
+      description:
+        "A clear, fixed quote before we start. No hidden monthly fees and no extra charge for every small change you ask for. You always know what you pay and why.",
+    },
+    {
+      title: "A young, highly qualified professional",
+      description:
+        "Your website is built by a <strong>qualified web designer and developer</strong>, young and with 5+ years of experience, who works daily with the latest technologies such as Astro, React or WordPress.",
+    },
+    {
+      title: "Ready for artificial intelligence",
+      description:
+        "We use <strong>artificial intelligence</strong> to work faster and we prepare your website to be found on Google and on assistants like ChatGPT, Gemini or Perplexity.",
+    },
+  ],
+  table: {
+    caption: "Comparison between Webllope, a traditional agency and a template or low-cost freelancer",
+    head: ["", "Webllope", "Traditional agency", "Template / low-cost"],
+    rows: [
+      ["Who you talk to", "Always the same person", "Sales rep and rotating team", "Generic support or no one"],
+      ["Price", "Fixed and transparent, from €350", "High, with extras per change", "Cheap at first, costly later"],
+      ["Monthly fees", "No mandatory maintenance", "Monthly fee is common", "Paid licences and plugins"],
+      ["Design proposals", "Several designs, no commitment", "One proposal after paying", "Generic template"],
+      ["Local SEO in Murcia", "Included from day one", "Separate service", "Not included"],
+      ["Technology & AI", "Latest tech + AI", "Depends on the team", "Whatever the template has"],
+    ],
+  },
+  testimonials: [
+    {
+      name: "Daniel Ximénez S.",
+      quote:
+        "Amazing service, always making sure we liked the website, and they didn't call it finished until everything was perfect.",
+    },
+    {
+      name: "Noelia",
+      quote:
+        "Besides building me a beautiful website, I now rank first or second for several Google searches. Daniel was very kind and attentive.",
+    },
+    {
+      name: "F Javier Ramos",
+      quote:
+        "He focuses on meeting his clients' needs and doesn't just build excellent websites, they are effective and bring in new customers.",
+    },
+  ],
+  cta: "Let's talk about your website",
+};
+
 export const content = {
+  whyWebllope,
   ...misc,
   legal,
   newspapers,

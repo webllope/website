@@ -1,38 +1,52 @@
 ---
 import { getLangFromUrl } from "@i18n/utils";
 
+import { social, contact, locations } from "../../data";
+
 const lang = getLangFromUrl(Astro.url);
+
+// Organization + LocalBusiness. Add Wikidata / Crunchbase URLs to sameAs once those profiles exist.
+const organization = {
+  "@context": "https://schema.org",
+  "@type": ["Organization", "LocalBusiness"],
+  "@id": "https://www.webllope.es/#organization",
+  name: contact.companyName,
+  legalName: "Webllope SL",
+  description:
+    lang === "es"
+      ? "Diseño web en Murcia. Páginas web profesionales, SEO local y tiendas online con trato cercano y personal."
+      : "Web design in Murcia. Professional websites, local SEO and online stores with close, personal service.",
+  url: `https://www.webllope.es/${lang}/`,
+  logo: "https://www.webllope.es/webllope-logo.webp",
+  image: "https://www.webllope.es/SocialMediaSharedImage.png",
+  email: contact.email.info,
+  telephone: "+34722109924",
+  priceRange: "€€",
+  foundingDate: "2023-12-28",
+  founder: { "@type": "Person", name: "Daniel Maestre", url: `https://www.webllope.es/${lang}/daniel-maestre/` },
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Plaza Circular",
+    addressLocality: locations[0].city,
+    addressRegion: locations[0].state,
+    postalCode: locations[0].zip,
+    addressCountry: "ES",
+  },
+  geo: { "@type": "GeoCoordinates", latitude: locations[0].latitude, longitude: locations[0].longitude },
+  hasMap: contact.GMBlink,
+  areaServed: ["Murcia", "Región de Murcia", "Alicante", "España"],
+  sameAs: [
+    social.facebook,
+    social.instagram,
+    social.linkedin,
+    "https://x.com/webllope",
+    social.github,
+    contact.GMBlink,
+  ],
+};
 ---
+<script type="application/ld+json" set:html={JSON.stringify(organization)} />
 {lang === 'es' && (
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org/",
-    "@id": "https://www.webllope.es/es/#organization",
-    "@type": "Corporation",
-    "name": "Webllope",
-    "legalname": "Webllope SL",
-    "description": "Diseño Web Murcia. Somos una agencia con más de 5 años de experiencia, creamos tu página web y conseguimos clientes en internet.",
-    "image": "https://www.webllope.es/_astro/diseno-web-murcia.fU8dtQy1_2f1gCa.webp",
-    "url": "https://www.webllope.es/es/",
-    "logo": "https://www.webllope.es/_astro/webllope-bigger-logo.iJn7V7c4_Z17o9cC.webp",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Murcia",
-      "addressRegion": "ES",
-      "postalCode": "30008",
-      "streetAddress": "Plaza Circular"
-    },
-    "email": "info@business.es",
-    "foundingDate": "28-12-2023",
-    "telephone": "+34722109924",
-    "sameAs": [
-      "https://www.facebook.com/people/Webllope/61555751421324/",
-      "https://www.instagram.com/webllope/",
-      "https://es.linkedin.com/company/webllope",
-      "https://twitter.com/webllope"
-    ]
-  }
-</script>
 <script type="application/ld+json">
   {
     "@context": "https://schema.org/",
@@ -42,7 +56,7 @@ const lang = getLangFromUrl(Astro.url);
     "description": "Diseño de Páginas Web en Murcia. Somos una agencia con más de 5 años de experiencia, creamos tu web y conseguimos clientes en internet.",
     "offers": {
       "@type": "Offer",
-      "price": "250"
+      "price": "350"
     },
     "url": "https://www.webllope.es/es/"
   }
@@ -70,7 +84,7 @@ const lang = getLangFromUrl(Astro.url);
         "name": "¿Cuánto cuesta hacer una página web?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "El precio de una página web depende de la complejidad de la misma. No obstante, usando diseños predefinidos (los cuales cumplen con las necesidades del 95% de los negocios) se hacen desde un mínimo de 250€, y si necesitas algo más personalizado, se hará un presupuesto a medida."
+          "text": "El precio de una página web depende de la complejidad de la misma. No obstante, usando diseños predefinidos (los cuales cumplen con las necesidades del 95% de los negocios) se hacen desde un mínimo de 350€, y si necesitas algo más personalizado, se hará un presupuesto a medida."
         }
       },
       {
@@ -113,35 +127,6 @@ const lang = getLangFromUrl(Astro.url);
 <script type="application/ld+json">
   {
     "@context": "https://schema.org/",
-    "@id": "https://www.webllope.es/en/#organization",
-    "@type": "Corporation",
-    "name": "Webllope",
-    "legalname": "Webllope SL",
-    "description": "Your web design agency in Murcia. A team of developers will take care of the design and SEO positioning of your website, become visible on the internet.",
-    "image": "https://www.webllope.es/_astro/diseno-web-murcia.l_ham3_a_Z2s03tp.webp",
-    "url": "https://www.webllope.es/en/",
-    "logo": "https://www.webllope.es/_astro/webllope-bigger-logo.iJn7V7c4_Z17o9cC.webp",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Murcia",
-      "addressRegion": "ES",
-      "postalCode": "30008",
-      "streetAddress": "Plaza Circular"
-    },
-    "email": "info@business.es",
-    "foundingDate": "28-12-2023",
-    "telephone": "+34722109924",
-    "sameAs": [
-      "https://www.facebook.com/people/Webllope/61555751421324/",
-      "https://www.instagram.com/webllope/",
-      "https://es.linkedin.com/company/webllope",
-      "https://twitter.com/webllope"
-    ]
-  }
-</script>
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org/",
     "@type": "WebSite",
     "@id": "https://www.webllope.es/en/#website",
     "name": "Webllope",
@@ -162,7 +147,7 @@ const lang = getLangFromUrl(Astro.url);
         "name": "How much does a website cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The price of a website depends on the complexity of it. However, using predefined designs (which meet the needs of 95% of businesses) they are made from a minimum of 250€, and if you need something more personalized, a custom budget will be made."
+          "text": "The price of a website depends on the complexity of it. However, using predefined designs (which meet the needs of 95% of businesses) they are made from a minimum of 350€, and if you need something more personalized, a custom budget will be made."
         }
       },
       {

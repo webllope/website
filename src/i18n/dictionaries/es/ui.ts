@@ -1,5 +1,5 @@
 export const ui = {
-  banner: "PROMOCIÓN DE AÑO NUEVO TU PÁGINA DESDE 350€",
+  banner: "PÁGINAS WEB DESDE 350€",
   nav: {
     home: "Inicio",
     services: "Servicios",
